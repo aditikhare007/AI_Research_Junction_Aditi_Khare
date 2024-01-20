@@ -9,7 +9,6 @@
 [<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">](<https://twitter.com/AditiKh32506701/>)
 [<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">](<aditikhare007@gmail.com>)
 
-
 ** Global Top AI Community Member @Landing.AI @MLOPS Community, @Pandas AI, @Full Stack Deep Learning, @H2o.ai Generative AI, @Modular & @Cohere AI @hugging Face Research Papers Group @Papers with Code @DAIR.AI ** ** Completed 90+ Online Technical Paid Courses from Udemy & Coursera as I believe in Continuous Learning and Growth Mindset ** 
 
 ## ** AI Research Junction @Aditi Khare - Research Paper Summaries @Generative AI @Computer Vision @Quantum AI ** ##
@@ -29,6 +28,7 @@
 ## ** Gen AI Research Papers Summaries ** ##
 
 ## ** JAN 2024 ** ##
+
 1. Chainpoll - A high efficacy method for LLM hallucination detection - https://arxiv.org/pdf/2310.18344v1.pdf
 2. AI-Optimized-Catheter-Design-could-prevent-urinary-tract-infections-without-drugs/ - https://www.scientificamerican.com/article/ai-optimized-catheter-design-could-prevent-urinary-tract-infections-without-drugs/
 3. TrustLLM - Trustworthiness in Large Language Models - https://arxiv.org/abs/2308.05374
@@ -41,36 +41,37 @@
 ## ** DEC 2023 ** ## 
 
 1. 11th Dec 2023 - ** Mistral-embed - An embedding model with a 1024 embedding dimension, achieves 55.26 on MTEB**  - https://mistral.ai/news/mixtral-of-experts/-
-2. 11th Dec 2023 - **LLM360-Fully Transparent Open-Source LLMs** -https://arxiv.org/pdf/2312.06550.pdf
-3. 12th Dec 2023 - **Mathematical Language Models: A Survey**-https://arxiv.org/abs/2312.07622
-4. 13th Dec 2023 - **PromptBench: A Library for Evaluation of Large Language Models**-https://arxiv.org/pdf/2312.07910.pdf
-5. 1st Dec 2023 - **Mamba: Linear-Time Sequence Modeling with Selective State Spaces**-https://arxiv.org/ftp/arxiv/papers/2312/2312.00752.pdf
-6.14th Dec 2023 - **Distributed Representations of Words and Phrases and their Compositionality (Word2vec)**-https://papers.nips.cc/paper_files/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf
-7. 11th Dec 2023 - **Beyond Human Data - Scaling Self-Training for Problem-Solving with Language Models**
+2. 11th Dec 2023 - ** LLM360-Fully Transparent Open-Source LLMs** -https://arxiv.org/pdf/2312.06550.pdf
+3. 12th Dec 2023 - ** Mathematical Language Models: A Survey**-https://arxiv.org/abs/2312.07622
+4. 13th Dec 2023 - ** PromptBench: A Library for Evaluation of Large Language Models**-https://arxiv.org/pdf/2312.07910.pdf
+5. 1st Dec 2023 - ** Mamba: Linear-Time Sequence Modeling with Selective State Spaces**-https://arxiv.org/ftp/arxiv/papers/2312/2312.00752.pdf
+6. 14th Dec 2023 - ** Distributed Representations of Words and Phrases and their Compositionality (Word2vec)**-https://papers.nips.cc/paper_files/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf
+7. 11th Dec 2023 - ** Beyond Human Data - Scaling Self-Training for Problem-Solving with Language Models**
    - Approach for self-training with feedback that can substantially reduce dependence on human-generated data.
    - Combined Model-generated data with a reward function improves the performance of LLMs on problem-solving tasks-https://arxiv.org/abs/2312.06585
 
 ## ** Nov 2023 ** ##
-1. 9th Nov 2023 - **A Survey of Large Language Models in Medicine: Principles, Applications, and Challenges**-https://arxiv.org/abs/2311.05112
-2. **System 2 Attention** - leverages the reasoning and instruction following capabilities of LLMs to decide what to attend to; it regenerates input context to only include relevant portions before attending to the regenerated context to elicit the final response from the model; increases factuality and outperforms standard attention-based LLMs on tasks such as QA and math world problems - https://arxiv.org/abs/2311.11829),
-3. **Advancing Long-Context LLMs** - an overview of the methodologies for enhancing Transformer architecture modules that optimize long-context capabilities across all stages from pre-training to inference.-https://arxiv.org/abs/2311.12351
+
+1. 9th Nov 2023 - **A Survey of Large Language Models in Medicine: Principles, Applications, and Challenges**- https://arxiv.org/abs/2311.05112
+2. **System 2 Attention** - Leverages Reasoning & Instruction following capabilities of LLMs to decide what to attend to; it regenerates input context to only include relevant portions before attending to the regenerated context to elicit the final response from the model; increases factuality and outperforms standard attention-based LLMs on tasks such as QA and math world problems - https://arxiv.org/abs/2311.11829),
+3. **Advancing Long-Context LLMs** - Overview of the methodologies for enhancing Transformer architecture modules that optimize long-context capabilities across all stages from pre-training to inference.-https://arxiv.org/abs/2311.12351.
 4. **Parallel Speculative Sampling** - approach to reduce inference time of LLMs based on a variant of speculative sampling and parallel decoding; achieves significant speed-ups (up to 30%) by only learning as little as O(d_emb) additional parameters-https://arxiv.org/abs/2311.13581.
-5. **Mirasol3B** - a multimodal model for learning across audio, video, and text which decouples the multimodal modeling into separate, focused autoregressive models; the inputs are processed according to the modalities; this approach can handle longer videos compared to other models and it outperforms state-of-the-art approach on video QA, long video QA, and audio-video-text benchmark-https://arxiv.org/abs/2311.05698
-6. **GPQA** - proposes a graduate-level Google-proof QA benchmark consisting of 448 multiple-choice questions written by domain experts in biology, physics, and chemistry; the strongest GPT-4 based baseline achieves 39% accuracy; this benchmark offers scalable oversight experiments that can help obtain reliable and truthful information from modern AI systems that surpass human capabilities-https://arxiv.org/abs/2311.12022
+5. **Mirasol3B** - Multimodal model for learning across audio, video, and text which decouples the multimodal modeling into separate, focused autoregressive models; the inputs are processed according to the modalities; this approach can handle longer videos compared to other models and it outperforms state-of-the-art approach on video QA, long video QA, and audio-video-text benchmark-https://arxiv.org/abs/2311.05698
+6. **GPQA** - Proposes a graduate-level Google-proof QA benchmark consisting of 448 multiple-choice questions written by domain experts in biology, physics, and chemistry; the strongest GPT-4 based baseline achieves 39% accuracy; this benchmark offers scalable oversight experiments that can help obtain reliable and truthful information from modern AI systems that surpass human capabilities-https://arxiv.org/abs/2311.12022
 7. **Chain-of-Thought Reasoning to Language Agents** - summary of CoT reasoning, foundational mechanics underpinning CoT techniques, and their application to language agent frameworks.-https://arxiv.org/abs/2311.11797
 8. **GAIA** - a benchmark for general AI assistants consisting of real-world questions that require a set of fundamental abilities such as reasoning, multimodal handling, web browsing, and generally tool-use proficiency; shows that human respondents obtain 92% vs. 15% for GPT-4 equipped with plugins-https://arxiv.org/abs/2311.12983.
-9. **Chain-of-Note** - an approach to improve the robustness and reliability of retrieval-augmented language models in facing noisy, irrelevant documents and in handling unknown scenarios; CoN generates sequential reading notes for the retrieved documents, enabling an evaluation of their relevance to the given question and integrating this information to formulate the final answer; CoN significantly outperforms standard retrieval-augmented language models and achieves an average improvement of +7.9 in EM score given entirely noisy retrieved documents and +10.5 in rejection rates for real-time questions that fall outside the pre-training knowledge scope-https://arxiv.org/abs/2311.09210.
-10. **LLMs for Scientific Discovery** - explores the impact of large language models, particularly GPT-4, across various scientific fields including drug discovery, biology, and computational chemistry; assesses GPT-4's understanding of complex scientific concepts, its problem-solving capabilities, and its potential to advance scientific research through expert-driven case assessments and benchmark testing-https://arxiv.org/abs/2311.07361
-11.**Fine-Tuning LLMs for Factuality** - fine-tunes language model for factuality without requiring human labeling; it learns from automatically generated factuality preference rankings and targets open-ended generation settings; it significantly improves the factuality of Llama-2 on held-out topics compared with RLHF or decoding strategies targeted at factuality-https://arxiv.org/abs/2311.08401.
+9. **Chain-of-Note** - Approach to improve the robustness and reliability of retrieval-augmented language models in facing noisy, irrelevant documents and in handling unknown scenarios; CoN generates sequential reading notes for the retrieved documents, enabling an evaluation of their relevance to the given question and integrating this information to formulate the final answer; CoN significantly outperforms standard retrieval-augmented language models and achieves an average improvement of +7.9 in EM score given entirely noisy retrieved documents and +10.5 in rejection rates for real-time questions that fall outside the pre-training knowledge scope-https://arxiv.org/abs/2311.09210.
+10. **LLMs for Scientific Discovery** - Explores the impact of large language models, particularly GPT-4, across various scientific fields including drug discovery, biology, and computational chemistry; assesses GPT-4's understanding of complex scientific concepts, its problem-solving capabilities, and its potential to advance scientific research through expert-driven case assessments and benchmark testing-https://arxiv.org/abs/2311.07361
+11.**Fine-Tuning LLMs for Factuality** - Fine-tunes language model for factuality without requiring human labeling; it learns from automatically generated factuality preference rankings and targets open-ended generation settings; it significantly improves the factuality of Llama-2 on held-out topics compared with RLHF or decoding strategies targeted at factuality-https://arxiv.org/abs/2311.08401.
 12.**Contrastive CoT Prompting** - proposes a contrastive chain of thought method to enhance language model reasoning; the approach provides both valid and invalid reasoning demonstrations, to guide the model to reason step-by-step while reducing reasoning mistakes; also proposes an automatic method to construct contrastive demonstrations and demonstrates improvements over CoT promptiing-https://arxiv.org/abs/2311.09277.
 13.**A Survey on Language Models for Code** - provides an overview of LLMs for code, including a review of 50+ models, 30+ evaluation tasks, and 500 related works-https://arxiv.org/abs/2311.07989v1
 14. **JARVIS-1** - an open-world agent that can perceive multimodal input-https://arxiv.org/abs/2311.05997.
 15. **Learning to Filter Context for RAG** - proposes a method that improves the quality of the context provided to the generator via two steps: 1) identifying useful context based on lexical and information-theoretic approaches, and 2) training context filtering models that can filter retrieved contexts at inference; outperforms existing approaches on extractive question answering-https://arxiv.org/abs/2311.08377v1.
-16. **MART** - proposes an approach for improving LLM safety with multi-round automatic red-teaming; incorporates automatic adversarial prompt writing and safe response generation, which increases red-teaming scalability and the safety of LLMs; violation rate of an LLM with limited safety alignment reduces up to 84.7% after 4 rounds of MART, achieving comparable performance to LLMs with extensive adversarial prompt writing-https://arxiv.org/abs/2311.07689.
-17.**LLMs can Deceive Users** - explores the use of an autonomous stock trading agent powered by LLMs; finds that the agent acts upon insider tips and hides the reason behind the trading decision; shows that helpful and safe LLMs can strategically deceive users in a realistic situation without direction instructions or training for deception-https://arxiv.org/abs/2311.07590.
-18. **Hallucination in LLMs**-A comprehensive survey-https://arxiv.org/abs/2311.05232.
-19. **GPT4All** - outlines technical details of the GPT4All model family along with the open-source repository that aims to democratize access to LLMs-https://arxiv.org/abs/2311.04931.
-20. **FreshLLMs** - proposes a dynamic QA benchmark-https://arxiv.org/abs/2310.03214
+16. **MART** - Proposes an approach for improving LLM safety with multi-round automatic red-teaming; incorporates automatic adversarial prompt writing and safe response generation, which increases red-teaming scalability and the safety of LLMs; violation rate of an LLM with limited safety alignment reduces up to 84.7% after 4 rounds of MART, achieving comparable performance to LLMs with extensive adversarial prompt writing-https://arxiv.org/abs/2311.07689.
+17.**LLMs can Deceive Users** - Explores the use of an autonomous stock trading agent powered by LLMs; finds that the agent acts upon insider tips and hides the reason behind the trading decision; shows that helpful and safe LLMs can strategically deceive users in a realistic situation without direction instructions or training for deception-https://arxiv.org/abs/2311.07590.
+18. **Hallucination in LLMs**- A comprehensive survey-https://arxiv.org/abs/2311.05232.
+19. **GPT4All** - Outlines technical details of the GPT4All model family along with the open-source repository that aims to democratize access to LLMs-https://arxiv.org/abs/2311.04931.
+20. **FreshLLMs** - Proposes a dynamic QA benchmark-https://arxiv.org/abs/2310.03214.
 
 ## ** OCT 2023** ##                                                                                                                         
 
