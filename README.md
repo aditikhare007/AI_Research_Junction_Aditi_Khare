@@ -3,7 +3,7 @@
 
 ## Greetings AI Community 👋 About me 
 
-** AWS & AI Research Specialist - Principal Applied AI Product Engineer [Product-Owner] & Enterprise Architect @PepsiCo | IIM-A | Community Member@Landing.AI | AI Research Specialist [Portfolio] | Author | Quantum AI | Mojo | Next JS | 7+ Years of Experience in Fortune 50 Product Companies | ** 
+** AWS & AI Research Specialist - Principal Applied AI Product Engineer [Product-Owner] & Enterprise Architect @PepsiCo | IIM-A | Community Member @Landing AI | AI Research Specialist [Portfolio] | Author | Quantum AI | Mojo | Next JS | 7+ Years of Experience in Fortune 50 Product Companies | ** 
 
 [<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">](<https://www.linkedin.com/in/aditi-khare-5840977b/>)
 [<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">](<https://twitter.com/AditiKh32506701/>)
@@ -13,7 +13,7 @@
 
 ## ** AI Research Junction @Aditi Khare - AI Research Specialist Portfolio - Research Paper Summaries @Generative AI @Computer Vision @Quantum AI ** ##
 
-<a href="https://github.com/aditikhare007/Aditi-AI-Research-Specialist-Portfolio" class="button icon search"> ** Aditi AI Research Specialist Portfolio** </a> 
+<a href="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare" class="button icon search"> ** Aditi AI Research Specialist Portfolio** </a> 
 
 ## ** My AI Newsletter-AI Research Junction @Research Papers Summaries @Generative AI, @Computer Vision @Quantum AI ** ## 
 
@@ -35,6 +35,7 @@
 5. DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models - https://arxiv.org/abs/2401.06066
 6. VAST AI releases Triplane Meets Gaussian Splatting on Hugging Face - Fast and Generalizable Single-View 3D Reconstruction with Transformers Demo - https://arxiv.org/abs/2312.09147
 7. Masked Audio Generation using a Single Non-Autoregressive Transformers - https://arxiv.org/abs/2401.04577
+8. 
 
 ## ** DEC 2023 ** ## 
 
@@ -45,8 +46,8 @@
 5. 1st Dec 2023 - **Mamba: Linear-Time Sequence Modeling with Selective State Spaces**-https://arxiv.org/ftp/arxiv/papers/2312/2312.00752.pdf
 6.14th Dec 2023 - **Distributed Representations of Words and Phrases and their Compositionality (Word2vec)**-https://papers.nips.cc/paper_files/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf
 7. 11th Dec 2023 - **Beyond Human Data - Scaling Self-Training for Problem-Solving with Language Models**
-   Approach for self-training with feedback that can substantially reduce dependence on human-generated data.
-   The model-generated data combined with a reward function improves the performance of LLMs on problem-solving tasks-https://arxiv.org/abs/2312.06585
+   - Approach for self-training with feedback that can substantially reduce dependence on human-generated data.
+   - Combined Model-generated data with a reward function improves the performance of LLMs on problem-solving tasks-https://arxiv.org/abs/2312.06585
 
 ## ** Nov 2023 ** ##
 1. 9th Nov 2023 - **A Survey of Large Language Models in Medicine: Principles, Applications, and Challenges**-https://arxiv.org/abs/2311.05112
