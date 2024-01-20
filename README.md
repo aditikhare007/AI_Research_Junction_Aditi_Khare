@@ -1,6 +1,3 @@
-## AI_Research_Junction_Aditi_Khare ##
-## AI_Research_Junction@Aditi_Khare - Research Papers Summaries @Gen AI @Computer Vision @Quantum AI ##
-
 ## Greetings AI Community 👋 About me 
 
 ** AWS & AI Research Specialist - Principal Applied AI Product Engineer [Product-Owner] & Enterprise Architect @PepsiCo | IIM-A | Community Member @Landing AI | AI Research Specialist [Portfolio] | Author | Quantum AI | Mojo | Next JS | 7+ Years of Experience in Fortune 50 Product Companies | ** 
