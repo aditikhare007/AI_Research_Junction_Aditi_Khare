@@ -57,7 +57,6 @@
 6. **GPQA** - Proposes a graduate-level Google-proof QA benchmark consisting of 448 multiple-choice questions written by domain experts in biology, physics, and chemistry; the strongest GPT-4 based baseline achieves 39% accuracy; this benchmark offers scalable oversight experiments that can help obtain reliable and truthful information from modern AI systems that surpass human capabilities-https://arxiv.org/abs/2311.12022
 7. **Chain-of-Thought Reasoning to Language Agents** - summary of CoT reasoning, foundational mechanics underpinning CoT techniques, and their application to language agent frameworks.-https://arxiv.org/abs/2311.11797
 8. **GAIA** - a benchmark for general AI assistants consisting of real-world questions that require a set of fundamental abilities such as reasoning, multimodal handling, web browsing, and generally tool-use proficiency; shows that human respondents obtain 92% vs. 15% for GPT-4 equipped with plugins-https://arxiv.org/abs/2311.12983.
-9. **Chain-of-Note** - Approach to improve the robustness and reliability of retrieval-augmented language models in facing noisy, irrelevant documents and in handling unknown scenarios; CoN generates sequential reading notes for the retrieved documents, enabling an evaluation of their relevance to the given question and integrating this information to formulate the final answer; CoN significantly outperforms standard retrieval-augmented language models and achieves an average improvement of +7.9 in EM score given entirely noisy retrieved documents and +10.5 in rejection rates for real-time questions that fall outside the pre-training knowledge scope-https://arxiv.org/abs/2311.09210.
 10. **LLMs for Scientific Discovery** - Explores the impact of large language models-particularly GPT-4, across various scientific fields including drug discovery, biology, and computational chemistry; assesses GPT-4's understanding of complex scientific concepts, its problem-solving capabilities, and its potential to advance scientific research through expert-driven case assessments and benchmark testing-https://arxiv.org/abs/2311.07361
 11.**Fine-Tuning LLMs for Factuality** - Fine-tunes language model for factuality without requiring human labeling; it learns from automatically generated factuality preference rankings and targets open-ended generation settings- it significantly improves the factuality of Llama-2 on held-out topics compared with RLHF or decoding strategies targeted at factuality-https://arxiv.org/abs/2311.08401.
 12.**Contrastive CoT Prompting**-Proposes a contrastive chain of thought method to enhance language model reasoning; the approach provides both valid and invalid reasoning demonstrations, to guide the model to reason step-by-step while reducing reasoning mistakes; also proposes an automatic method to construct contrastive demonstrations and demonstrates improvements over CoT promptiing-https://arxiv.org/abs/2311.09277.
@@ -75,19 +74,19 @@
 1. **Spectron**-Approach for spoken language modeling trained end-to-end to directly process spectrograms-it can be fine-tuned to generate high-quality accurate spoken language-the method surpasses existing spoken language models in speaker preservation and semantic coherence-https://arxiv.org/abs/2305.15255.                      |
 2. **LLMs Meet New Knowledge** - Presents benchmark to assess LLMs' abilities in knowledge understanding, differentiation, and association; benchmark results show-https://arxiv.org/abs/2310.14820
 3. **Detecting Pretraining Data from LLMs** - Explores the problem of pretraining data detection which aims to determine if a black box model was trained on a given text; proposes a detection method named Min-K% Prob as an effective tool for benchmark example contamination detection, privacy auditing of machine unlearning, and copyrighted text detection in LM’s pertaining data-https://arxiv.org/abs/2310.16789.
-4. **ConvNets Match Vision Transformers** - evaluates a performant ConvNet architecture pretrained on JFT-4B at scale; observes a log-log scaling law between the held out loss and compute budget; after fine-tuning on ImageNet, NFNets match the reported performance of Vision Transformers with comparable compute budgets-https://arxiv.org/abs/2310.16764.                         |
+4. **ConvNets Match Vision Transformers** - Evaluates a performant ConvNet architecture pretrained on JFT-4B at scale; observes a log-log scaling law between the held out loss and compute budget; after fine-tuning on ImageNet, NFNets match the reported performance of Vision Transformers with comparable compute budgets-https://arxiv.org/abs/2310.16764.                         |
 5. **Managing AI Risks** - Short Paper outlining risks from upcoming and advanced AI systems, including an examination of social harms, malicious uses, and other potential societal issues emerging from the rapid adoption of autonomous AI systems-https://managing-ai-risks.com/managing_ai_risks.pdf.
 6. **Branch-Solve-Merge Reasoning in LLMs**-LLM Program that consists of branch, solve, and merge modules parameterized with specific prompts to the base LLM; this enables an LLM to plan a decomposition of task into multiple parallel sub-tasks, independently solve them, and fuse solutions to the sub-tasks; improves evaluation correctness and consistency for multiple LLMs-https://arxiv.org/abs/2310.15123.               
 7. **LLMs for Software Engineering**-A comprehensive survey of LLMs for software engineering, including open research and technical challenges-https://arxiv.org/abs/2310.03533
 8. **Self-RAG**- Presents new retrieval-augmented framework that enhances an LM’s quality and factuality through retrieval and self-reflection; trains an LM that adaptively retrieves passages on demand, and generates and reflects on the passages and its own generations using special reflection tokens-it significantly outperforms SoTA LLMs-https://arxiv.org/abs/2310.11511.
 9. **Retrieval-Augmentation for Long-form Question Answering**-Explores retrieval-augmented language models on long-form question answering; finds that retrieval is an important component but evidence documents should be carefully added to the LLM; finds that attribution error happens more frequently when retrieved documents lack sufficient information/evidence for answering the question-https://arxiv.org/abs/2310.12150.   
 10. A Study of LLM-Generated Self-Explanations** - assesses an LLM's capability to self-generate feature attribution explanations; self-explanation is useful to improve performance and truthfulness in LLMs-this capability can be used together with chain-of-thought prompting-https://arxiv.org/abs/2310.11207.
-11. **OpenAgents** - an open platform for using and hosting language agents in the wild; includes three agents, including a Data Agent for data analysis, a Plugins Agent with 200+ daily API tools, and a Web Agent for autonomous web browsing-https://arxiv.org/abs/2310.10634v1.                                                                                              |
+11. **OpenAgents** - Open Platform for using and hosting language agents in the wild; includes three agents, including a Data Agent for data analysis, a Plugins Agent with 200+ daily API tools, and a Web Agent for autonomous web browsing-https://arxiv.org/abs/2310.10634v1.                                                                                              |
 12.**LLMs can Learn Rules** - presents a two-stage framework that learns a rule library for reasoning with LLMs; in the first stage-https://arxiv.org/abs/2310.07064.
 13.**Meta Chain-of-Thought Prompting** - a generalizable chain-of-thought-https://arxiv.org/abs/2310.06692.
 14. **Improving Retrieval-Augmented LMs with Compressors**-Presents two approaches to compress retrieved documents into text summaries before pre-pending them in-context: 1) extractive compressor-Selects useful sentences from retrieved documents and abstractive compressor - generates summaries by synthesizing information from multiple documents; achieves a compression rate of as low as 6% with minimal loss in performance on language modeling tasks and open domain question answering tasks; the proposed training scheme performs selective augmentation which helps to generate empty summaries when retrieved docs are irrelevant or unhelpful for a task-https://arxiv.org/abs/2310.04408.
 15. ** Retrieval meets Long Context LLMs** - compares retrieval augmentation and long-context windows for downstream tasks to investigate if the methods can be combined to get the best of both worlds; an LLM with a 4K context window using simple RAG can achieve comparable performance to a fine-tuned LLM with 16K context; retrieval can significantly improve the performance of LLMs regardless of their extended context window sizes; a retrieval-augmented LLaMA2-70B with a 32K context window outperforms GPT-3.5-turbo-16k on seven long context tasks including question answering and query-based summarization-https://arxiv.org/abs/2310.03025.
-16. **StreamingLLM** - a framework that enables efficient streaming LLMs with attention sinks, a phenomenon where the KV states of initial tokens will largely recover the performance of window attention; the emergence of the attention sink is due to strong attention scores towards the initial tokens; this approach enables LLMs trained with finite length attention windows to generalize to infinite sequence length without any additional fine-tuning-https://arxiv.org/abs/2309.17453.
+16. **StreamingLLM** - Framework that enables efficient streaming LLMs with attention sinks, a phenomenon where the KV states of initial tokens will largely recover the performance of window attention; the emergence of the attention sink is due to strong attention scores towards the initial tokens; this approach enables LLMs trained with finite length attention windows to generalize to infinite sequence length without any additional fine-tuning-https://arxiv.org/abs/2309.17453.
 17.**The Dawn of LMMs** - a comprehensive analysis of GPT-4V to deepen the understanding of large multimodal models-https://arxiv.org/abs/2309.17421.
 18. **Training LLMs with Pause Tokens** - performs training and inference on LLMs with a learnable <pause> token which helps to delay the model's answer generation and attain performance gains on general understanding tasks of Commonsense QA and math word problem-solving; experiments show that this is only beneficial provided that the delay is introduced in both pertaining and downstream fine-tuning-  https://arxiv.org/abs/2310.02226.
 19.**Analogical Prompting**-New Prompting Approach to automatically guide the reasoning process of LLMs; the approach is different from chain-of-thought in that it doesn’t require labeled exemplars of the reasoning process; the approach is inspired by analogical reasoning and prompts LMs to self-generate relevant exemplars or knowledge in the context-https://arxiv.org/abs/2310.01714.
@@ -110,10 +109,12 @@
 ## ** JULY 2023 ** ## 
 
 1. Universal Adversarial LLM Attacks** - finds universal and transferable adversarial attacks that cause aligned models like ChatGPT and Bard to generate objectionable behaviors; the approach automatically produces adversarial suffixes using greedy and gradient search-https://arxiv.org/abs/2307.15043.
-2. **A Survey on Evaluation of LLMs** - a comprehensive overview of evaluation methods for LLMs focusing on what to evaluate, where to evaluate, and how to evaluate-https://arxiv.org/abs/2307.03109                  3. **How Language Models Use Long Contexts** - finds that LM performance is often highest when relevant information occurs at the beginning or end of the input context; performance degrades when relevant information is provided in the middle of a long context-https://arxiv.org/abs/2307.03172.
-4. **LLMs as Effective Text Rankers** - Proposes a prompting technique that enables open-source LLMs to perform state-of-the-art text ranking on standard benchmarks- https://arxiv.org/abs/2306.17563                 5. **Multimodal Generation with Frozen LLMs** - introduces an approach that effectively maps images to the token space of LLMs; enables models like PaLM and GPT-4 to tackle visual tasks without parameter updates; enables multimodal tasks and uses in-context learning to tackle various visual tasks-https://arxiv.org/abs/2306.17842.
+2. **A Survey on Evaluation of LLMs** - a comprehensive overview of evaluation methods for LLMs focusing on what to evaluate, where to evaluate, and how to evaluate-https://arxiv.org/abs/2307.03109
+3. **How Language Models Use Long Contexts** - finds that LM performance is often highest when relevant information occurs at the beginning or end of the input context; performance degrades when relevant information is provided in the middle of a long context-https://arxiv.org/abs/2307.03172.
+4. **LLMs as Effective Text Rankers** - Proposes a prompting technique that enables open-source LLMs to perform state-of-the-art text ranking on standard benchmarks- https://arxiv.org/abs/2306.17563
+5. **Multimodal Generation with Frozen LLMs** - introduces an approach that effectively maps images to the token space of LLMs; enables models like PaLM and GPT-4 to tackle visual tasks without parameter updates; enables multimodal tasks and uses in-context learning to tackle various visual tasks-https://arxiv.org/abs/2306.17842.
 6. **CodeGen2.5** - releases a new code LLM trained on 1.5T tokens; the 7B model is on par with >15B code-generation models and it’s optimized for fast sampling-https://arxiv.org/abs/2305.02309.                     
-7. **InterCode** - introduces a framework of interactive coding as a reinforcement learning environment; this is different from the typical coding benchmarks that consider a static sequence-to-sequence process.    - https://arxiv.org/abs/2306.14898.
+7. **InterCode** - introduces a framework of interactive coding as a reinforcement learning environment; this is different from the typical coding benchmarks that consider a static sequence-to-sequence process- https://arxiv.org/abs/2306.14898.
 
 ## ** JUNE 2023 ** ## 
 
@@ -128,38 +129,34 @@
 9. **RoboCat** - New Foundation agent that can operate different robotic arms and can solve tasks from as few as 100 demonstrations; the self-improving AI agent can self-generate new training data to improve its technique and get more efficient at adapting to new tasks-https://arxiv.org/abs/2306.11706.       |
 10. **ClinicalGPT** - Language model optimized through extensive and diverse medical data, including medical records, domain-specific knowledge, and multi-round dialogue consultations.                   https://arxiv.org/abs/2306.09968s        |
 11. **An Overview of Catastrophic AI Risks** - provides an overview of the main sources of catastrophic AI risks; the goal is to foster more understanding of these risks and ensure AI systems are developed in a safe manner-https://arxiv.org/abs/2306.12001v1.
-12. **AudioPaLM** - fuses text-based and speech-based LMs, PaLM-2 and AudioLM, into a multimodal architecture that supports speech understanding and generation; outperforms existing systems for speech translation tasks with zero-shot speech-to-text translation capabilities-https://arxiv.org/abs/2306.12925v1
+12. **AudioPaLM**-Text-based and speech-based LMs, PaLM-2 and AudioLM, into a multimodal architecture that supports speech understanding and generation; outperforms existing systems for speech translation tasks with zero-shot speech-to-text translation capabilities-https://arxiv.org/abs/2306.12925v1.
 
 ## ** MAY 2023 ** ## 
 
-1. **Gorilla** - a finetuned LLaMA-based model that surpasses GPT-4 on writing API calls. This capability can help identify the right API, boosting the ability of LLMs to interact with external tools to complete specific tasks-https://arxiv.org/abs/2305.15334.
+1. **Gorilla**-Finetuned LLaMA-based model that surpasses GPT-4 on writing API calls. This capability can help identify the right API, boosting the ability of LLMs to interact with external tools to complete specific tasks-https://arxiv.org/abs/2305.15334.
 2. **The False Promise of Imitating Proprietary LLMs** - provides a critical analysis of models that are finetuned on the outputs of a stronger model; argues that model imitation is a false premise and that the higher leverage action to improve open source models is to develop better base models-https://arxiv.org/abs/2305.15717
-3. **InstructBLIP** - explores visual-language instruction tuning based on the pre-trained BLIP-2 models; achieves state-of-the-art zero-shot performance on 13 held-out datasets, outperforming BLIP-2 and Flamingo.  https://arxiv.org/abs/2305.06500                                  
-4. **Active Retrieval Augmented LLMs** - introduces FLARE, retrieval augmented generation to improve the reliability of LLMs; FLARE actively decides when and what to retrieve across the course of the generation; demonstrates superior or competitive performance on long-form knowledge-intensive generation tasks-https://arxiv.org/abs/2305.06983.
-5. **FrugalGPT** - presents strategies to reduce the inference cost associated with using LLMs while improving performance-https://arxiv.org/abs/2305.05176.                                                           6. **StarCoder** - an open-access 15.5B parameter LLM with 8K context length and is trained on large amounts of code spanning 80+ programming languages-https://arxiv.org/abs/2305.06161.                             
-10. **AudioGPT: Understanding and Generating Speech, Music, Sound, and Talking Head** - connects ChatGPT with audio foundational models to handle challenging audio tasks and a modality transformation interface to enable spoken dialogue-https://arxiv.org/abs/2304.12995
-11. **DataComp: In search of the next generation of multimodal datasets** - releases a new multimodal dataset benchmark containing 12.8B image-text pairs-https://arxiv.org/abs/2304.14108.                            12. **ChatGPT for Information Extraction** - provides a deeper assessment of ChatGPT's performance on the important information extraction task-https://arxiv.org/abs/2304.11633                                                                                                              |
+3. **InstructBLIP**-Explores visual-language instruction tuning based on the pre-trained BLIP-2 models; achieves state-of-the-art zero-shot performance on 13 held-out datasets, outperforming BLIP-2 and Flamingo.  https://arxiv.org/abs/2305.06500                                  
+4. **Active Retrieval Augmented LLMs**-Introduces FLARE, retrieval augmented generation to improve the reliability of LLMs; FLARE actively decides when and what to retrieve across the course of the generation; demonstrates superior or competitive performance on long-form knowledge-intensive generation tasks-https://arxiv.org/abs/2305.06983.
+5. **AudioGPT: Understanding and Generating Speech, Music, Sound, and Talking Head** - connects ChatGPT with audio foundational models to handle challenging audio tasks and a modality transformation interface to enable spoken dialogue-https://arxiv.org/abs/2304.12995
+6. **DataComp: In search of the next generation of multimodal datasets** - releases a new multimodal dataset benchmark containing 12.8B image-text pairs-https://arxiv.org/abs/2304.14108.                            12. **ChatGPT for Information Extraction** - provides a deeper assessment of ChatGPT's performance on the important information extraction task-https://arxiv.org/abs/2304.11633                                                                                                              |
 ## ** MARCH 2023 ** ##
 
-1. **GPT-4 Technical Report** - GPT-4 - a large multimodal model with broader general knowledge and problem-solving abilities-https://arxiv.org/abs/2303.08774v2                                                       2. **LERF: Language Embedded Radiance Fields** - a method for grounding language embeddings from models like CLIP into NeRF; this enables open-ended language queries in 3D.                                
+1. **GPT-4 Technical Report**-GPT-4-Large multimodal model with broader general knowledge and problem-solving abilities-https://arxiv.org/abs/2303.08774v2.
+2. **LERF: Language Embedded Radiance Fields**-Method for grounding language embeddings from models like CLIP into NeRF; this enables open-ended language queries in 3D.                                
 3. **An Overview on Language Models: Recent Developments and Outlook** - an overview of language models covering recent developments and future directions. It also covers topics like linguistic units, structures, training methods, evaluation, and applications-https://arxiv.org/abs/2303.05759.                                                 |
-4. Eliciting Latent Predictions from Transformers with the Tuned Lens** - a method for transformer interpretability that can trace a language model predictions as it develops layer by layer.                    - https://arxiv.org/abs/2303.08112.                                                 |
-
+4. Eliciting Latent Predictions from Transformers with the Tuned Lens**-Method for transformer interpretability that can trace a language model predictions as it develops layer by layer-https://arxiv.org/abs/2303.08112.                                                 |
 ## ** FEB 2023 ** ## 
 
 1. **Multimodal Chain-of-Thought Reasoning in Language Models** - Uses vision features to elicit chain-of-thought reasoning in multimodality, enabling the model to generate effective rationales that contribute to answer inference-https://arxiv.org/abs/2302.00923.
 2. [Code]-https://github.com/amazon-science/mm-cot
 3. **Dreamix: Video Diffusion Models are General Video Editors** - a diffusion model that performs text-based motion and appearance editing of general videos.                                                        
-4. **Benchmarking Large Language Models for News Summarization**-https://arxiv.org/abs/2301.13848                                                                                                                                   
-6. **Large Language Models Can Be Easily Distracted by Irrelevant Context** - finds that many prompting techniques fail when presented with irrelevant context for arithmetic reasoning-                                                                            |
-
+4. **Benchmarking Large Language Models for News Summarization**-https://arxiv.org/abs/2301.13848                                                                                                                                                                                                   |
 ## ** JAN 2023 ** ## 
 
 1. **Rethinking with Retrieval: Faithful Large Language Model Inference** - shows the potential of enhancing LLMs by retrieving relevant external knowledge based on decomposed reasoning steps obtained through chain-of-thought prompting- https://arxiv.org/abs/2301.00303.
 2. **SparseGPT: Massive Language Models Can Be Accurately Pruned In One-Shot** - presents a technique for compressing large language models while not sacrificing performance; "pruned to at least 50% sparsity in one-shot, without any retraining-https://arxiv.org/abs/2301.00774.                                                                                               |
 3. **ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders** - a performant model based on a fully convolutional masked autoencoder framework and other architectural improvements. CNNs are sticking back-https://arxiv.org/abs/2301.00808.
-4. [Code - https://github.com/facebookresearch/convnext-v2].
-5.                                      |                                                                                          |
+                                     |                                                                                          |
 ## ** Open AI's Prompt Engineering Handbook ** ##
 
 https://platform.openai.com/docs/guides/prompt-engineering
@@ -212,7 +209,7 @@ https://github.com/tensorchord/Awesome-LLMOps
 ## ** A list of open LLMs available for commercial use by @eugeneyan ** ##
 https://github.com/eugeneyan/open-llms
 
-## ** @ModularAI - @Mojo 🔥 — a new programming language for all AI developers ** ##
+## ** @ModularAI - @Mojo 🔥 — AI developers ** ##
 Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models.
 
 ## ** Replit - Training Large Language Models ** ##
@@ -252,15 +249,14 @@ Amber paper Link - https://arxiv.org/abs/2312.06550
 ## Awesome Research Github Repositories ## 
 
 1.##  Zero to Hero Research Scientist @Andrejkarpathy ##
-   https://github.com/karpathy/nn-zero-to-hero - @Andrejkarpathy
+   https://github.com/karpathy/nn-zero-to-hero-@Andrejkarpathy
 
 2. ## Awesome Machine Learning Models in Production ##
 https://github.com/EthicalML/awesome-production-machine-learning
 
 ## Speech Recongition ## 
 
-## Picking a Python Speech Recognition Package ## 
-## Packages for speech recognition exist on PyPI ## 
+## Choosing Python Speech Recognition Package that exist on PyPI ## 
 
 1. apiai
 2. assemblyai
@@ -269,7 +265,7 @@ https://github.com/EthicalML/awesome-production-machine-learning
 5. SpeechRecognition
 6. watson-developer-cloud
 
-## ** Aditi open Source AI Research Portfolio ** ## 
+## ** Open Source AI Libraries ** ## 
 
 ## ChatBots Browser Extension AI Libraries ## 
 
@@ -304,7 +300,7 @@ https://github.com/JShollaj/awesome-llm-interpretability
 5. Arxiv Sanity Preserver.
 6. Arvix Vanity.
 
-## ** Quantum AI Research Papers Collection ** ##
+## ** Quantum AI Research Papers ** ##
 
 ## ** DEC 2023 ** ## 
 
