@@ -1,5 +1,5 @@
-# AI_Research_Junction_Aditi_Khare
-AI_Research_Junction@Aditi_Khare - Research Papers Summaries @Gen AI @Computer Vision @Quantum AI
+## AI_Research_Junction_Aditi_Khare ##
+## AI_Research_Junction@Aditi_Khare - Research Papers Summaries @Gen AI @Computer Vision @Quantum AI ##
 
 ## Greetings AI Community 👋 About me 
 
@@ -299,8 +299,8 @@ https://github.com/JShollaj/awesome-llm-interpretability
 2. 18th Dec 2023 - ** Design of Quantum Machine Learning Course for a Computer Science Program ** - https://ieeexplore.ieee.org/document/10313632
 3. 2nd Dec 2023 - ** Hybrid Quantum Neural Network in High-dimensional Data Classification ** - https://arxiv.org/abs/2312.01024 
 
-## ** Thank you so much for visiting my AI Research Junction@Aditi Khare - Research Papers Summaries @Generative AI @Computer Vision @Quautum AI ** ##
+#### ** Thank you so much for visiting my AI Research Junction@Aditi Khare - Research Papers Summaries @Generative AI @Computer Vision @Quautum AI ** ####
 
-## ** If you find my AI Research Junction@Aditi Khare useful please star my repository to support my work - Happy Learning ** ##
+#### ** If you find my AI Research Junction@Aditi Khare useful please star my repository to support my work - Happy Learning ** ####
  
 
