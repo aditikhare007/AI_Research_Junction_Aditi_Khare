@@ -87,17 +87,17 @@
 14. **Improving Retrieval-Augmented LMs with Compressors**-Presents two approaches to compress retrieved documents into text summaries before pre-pending them in-context: 1) extractive compressor-Selects useful sentences from retrieved documents and abstractive compressor - generates summaries by synthesizing information from multiple documents; achieves a compression rate of as low as 6% with minimal loss in performance on language modeling tasks and open domain question answering tasks; the proposed training scheme performs selective augmentation which helps to generate empty summaries when retrieved docs are irrelevant or unhelpful for a task-https://arxiv.org/abs/2310.04408.
 15. ** Retrieval meets Long Context LLMs** - compares retrieval augmentation and long-context windows for downstream tasks to investigate if the methods can be combined to get the best of both worlds; an LLM with a 4K context window using simple RAG can achieve comparable performance to a fine-tuned LLM with 16K context; retrieval can significantly improve the performance of LLMs regardless of their extended context window sizes; a retrieval-augmented LLaMA2-70B with a 32K context window outperforms GPT-3.5-turbo-16k on seven long context tasks including question answering and query-based summarization-https://arxiv.org/abs/2310.03025.
 16. **StreamingLLM** - Framework that enables efficient streaming LLMs with attention sinks, a phenomenon where the KV states of initial tokens will largely recover the performance of window attention; the emergence of the attention sink is due to strong attention scores towards the initial tokens; this approach enables LLMs trained with finite length attention windows to generalize to infinite sequence length without any additional fine-tuning-https://arxiv.org/abs/2309.17453.
-17.**The Dawn of LMMs** - a comprehensive analysis of GPT-4V to deepen the understanding of large multimodal models-https://arxiv.org/abs/2309.17421.
-18. **Training LLMs with Pause Tokens** - performs training and inference on LLMs with a learnable <pause> token which helps to delay the model's answer generation and attain performance gains on general understanding tasks of Commonsense QA and math word problem-solving; experiments show that this is only beneficial provided that the delay is introduced in both pertaining and downstream fine-tuning-  https://arxiv.org/abs/2310.02226.
-19.**Analogical Prompting**-New Prompting Approach to automatically guide the reasoning process of LLMs; the approach is different from chain-of-thought in that it doesn’t require labeled exemplars of the reasoning process; the approach is inspired by analogical reasoning and prompts LMs to self-generate relevant exemplars or knowledge in the context-https://arxiv.org/abs/2310.01714.
+17.**The Dawn of LMMs**-Comprehensive analysis of GPT-4V to deepen the understanding of large multimodal models-https://arxiv.org/abs/2309.17421.
+18. **Training LLMs with Pause Tokens**-Performs training and inference on LLMs with a learnable <pause> token which helps to delay the model's answer generation and attain performance gains on general understanding tasks of Commonsense QA and math word problem-solving; experiments show that this is only beneficial provided that the delay is introduced in both pertaining and downstream fine-tuning-  https://arxiv.org/abs/2310.02226.
+19.**Analogical Prompting**-New Prompting Approach to automatically guide the reasoning process of LLMs; the approach is different from chain-of-thought in that it doesn’t require labeled exemplars of the reasoning process-the approach is inspired by analogical reasoning and prompts LMs to self-generate relevant exemplars or knowledge in the context-https://arxiv.org/abs/2310.01714.
 
 ## ** SEPT 2023 ** ##                                                                                                                                                                                                                                                                                                                                                                                                                         
 1. **AlphaMissense** - AI Model classifying missense variants to help pinpoint the cause of diseases; the model is used to develop a catalogue of genetic mutations; it can categorize 89% of all 71 million possible missense variants as either likely pathogenic or likely benign-https://www.science.org/doi/10.1126/science.adg7492.
 2. **Chain-of-Verification reduces Hallucination in LLMs**-Develops a method to enable LLMs to "deliberate" on responses to correct mistakes; include the following steps: 1) draft initial response, 2) plan verification questions to fact-check the draft.
 3. Answer questions independently to avoid bias from other responses and generate a final verified response- https://arxiv.org/abs/2309.11495
-4. **Contrastive Decoding Improves Reasoning in Large Language Models** - shows that contrastive decoding leads Llama-65B to outperform Llama 2 and other models on commonsense reasoning and reasoning benchmarks-https://arxiv.org/abs/2309.09117.
+4. **Contrastive Decoding Improves Reasoning in Large Language Models**-Shows that contrastive decoding leads Llama-65B to outperform Llama 2 and other models on commonsense reasoning and reasoning benchmarks-https://arxiv.org/abs/2309.09117.
 5. **LongLoRA** - Efficient fine-tuning approach to significantly extend the context windows of pre-trained LLMs; implements shift short attention-a substitute that approximates the standard self-attention pattern during training; it has less GPU memory cost and training time compared to full fine-tuning while not compromising accuracy- https://arxiv.org/abs/2309.12307.
-6. **LLMs for Generating Structured Data** - studies the use of LLMs for generating complex structured data; proposes a structure-aware fine-tuning method, applied to Llama-7B, which significantly outperform other model like GPT-3.5/4 and Vicuna-13B-https://arxiv.org/abs/2309.08963
+6. **LLMs for Generating Structured Data**-Studies the use of LLMs for generating complex structured data; proposes a structure-aware fine-tuning method, applied to Llama-7B, which significantly outperform other model like GPT-3.5/4 and Vicuna-13B-https://arxiv.org/abs/2309.08963
 7. **Textbooks Are All You Need II**-New 1.3 billion parameter model trained on 30 billion tokens; the dataset consists of "textbook-quality" synthetically generated data; phi-1.5 competes or outperforms other larger models on reasoning tasks suggesting that data quality plays a more important role than previously thought-https://arxiv.org/abs/2309.05463.
 8. **The Rise and Potential of LLM Based Agents** - A Comprehensive overview of LLM based agents; covers from how to construct these agents to how to harness them for good-https://arxiv.org/abs/2309.07864.                                                                        |
 ## ** AUG 2023 ** ##
@@ -119,14 +119,14 @@
 
 ## ** JUNE 2023 ** ## 
 
-1. **LeanDojo** - Open-Source Lean Playground consisting of toolkits, data, models, and benchmarks for theorem proving; also develops ReProver, a retrieval augmented LLM-based prover for theorem solving using premises from a vast math library-https://arxiv.org/abs/2306.15626
+1. **LeanDojo** - Open-Source Lean Playground consisting of toolkits, data, models, and benchmarks for theorem proving-also develops ReProver, Retrieval augmented LLM-based prover for theorem solving using premises from a vast math library-https://arxiv.org/abs/2306.15626.
 2. **Extending Context Window of LLMs**-Extends the context window of LLMs like LLaMA to up to 32K with minimal fine-tuning (within 1000 steps); previous methods for extending the context window are inefficient but this approach attains good performance on several tasks while being more efficient and cost-effective-https://arxiv.org/abs/2306.15595.
 3. **Computer Vision Through the Lens of Natural Language** - proposes a modular approach for solving computer vision problems by leveraging LLMs; the LLM is used to reason over outputs from independent and descriptive modules that provide extensive information about an image-https://arxiv.org/abs/2306.16410.
-4. **Understanding Theory-of-Mind in LLMs with LLMs** - a framework for procedurally generating evaluations with LLMs; proposes a benchmark to study the social reasoning capabilities of LLMs with LLMs.   https://arxiv.org/abs/2306.15448
-5. **Evaluations with No Labels** - A Framework for self-supervised evaluation of LLMs by analyzing their sensitivity or invariance to transformations on input text; can be used to monitor LLM behavior on datasets streamed during live model deployment-https://arxiv.org/abs/2306.13651v1), [Tweet
+4. **Understanding Theory-of-Mind in LLMs with LLMs** - a framework for procedurally generating evaluations with LLMs; proposes a benchmark to study the social reasoning capabilities of LLMs with LLMs.   https://arxiv.org/abs/2306.15448.
+5. **Evaluations with No Labels**-A Framework for self-supervised evaluation of LLMs by analyzing their sensitivity or invariance to transformations on input text; can be used to monitor LLM behavior on datasets streamed during live model deployment-https://arxiv.org/abs/2306.13651v1), [Tweet
 6. **Long-range Language Modeling with Self-Retrieval** - an architecture and training procedure for jointly training a retrieval-augmented language model from scratch for long-range language modeling tasks.        - https://arxiv.org/abs/2306.13421.
-7. **Scaling MLPs: A Tale of Inductive Bias** - Shows that the performance of MLPs improves with scale and highlights that lack of inductive bias can be compensated- https://arxiv.org/abs/2306.13575
-8. **Textbooks Are All You Need** - introduces a new 1.3B parameter LLM called phi-1; it’s significantly smaller in size and trained for 4 days using a selection of textbook-quality data and synthetic textbooks and exercises with GPT-3.5; achieves promising results on the HumanEval benchmark-https://arxiv.org/abs/2306.11644
+7. **Scaling MLPs-A Tale of Inductive Bias** - Shows that the performance of MLPs improves with scale and highlights that lack of inductive bias can be compensated- https://arxiv.org/abs/2306.13575
+8. **Textbooks Are All You Need** - Introduces a new 1.3B parameter LLM called phi-1; it’s significantly smaller in size and trained for 4 days using a selection of textbook-quality data and synthetic textbooks and exercises with GPT-3.5; achieves promising results on the HumanEval benchmark-https://arxiv.org/abs/2306.11644
 9. **RoboCat** - New Foundation agent that can operate different robotic arms and can solve tasks from as few as 100 demonstrations; the self-improving AI agent can self-generate new training data to improve its technique and get more efficient at adapting to new tasks-https://arxiv.org/abs/2306.11706.       |
 10. **ClinicalGPT** - Language model optimized through extensive and diverse medical data, including medical records, domain-specific knowledge, and multi-round dialogue consultations.                   https://arxiv.org/abs/2306.09968s        |
 11. **An Overview of Catastrophic AI Risks** - provides an overview of the main sources of catastrophic AI risks; the goal is to foster more understanding of these risks and ensure AI systems are developed in a safe manner-https://arxiv.org/abs/2306.12001v1.
@@ -149,14 +149,13 @@
 ## ** FEB 2023 ** ## 
 
 1. **Multimodal Chain-of-Thought Reasoning in Language Models** - Uses vision features to elicit chain-of-thought reasoning in multimodality, enabling the model to generate effective rationales that contribute to answer inference-https://arxiv.org/abs/2302.00923.
-2. [Code]-https://github.com/amazon-science/mm-cot
-3. **Dreamix: Video Diffusion Models are General Video Editors** - a diffusion model that performs text-based motion and appearance editing of general videos.                                                        
-4. **Benchmarking Large Language Models for News Summarization**-https://arxiv.org/abs/2301.13848                                                                                                                                                                                                   |
+2. **Dreamix: Video Diffusion Models are General Video Editors** - a diffusion model that performs text-based motion and appearance editing of general videos.                                                        
+3. **Benchmarking Large Language Models for News Summarization**-https://arxiv.org/abs/2301.13848.                                                                                                                                                                                                  |
 ## ** JAN 2023 ** ## 
 
 1. **Rethinking with Retrieval: Faithful Large Language Model Inference** - shows the potential of enhancing LLMs by retrieving relevant external knowledge based on decomposed reasoning steps obtained through chain-of-thought prompting- https://arxiv.org/abs/2301.00303.
-2. **SparseGPT: Massive Language Models Can Be Accurately Pruned In One-Shot** - presents a technique for compressing large language models while not sacrificing performance; "pruned to at least 50% sparsity in one-shot, without any retraining-https://arxiv.org/abs/2301.00774.                                                                                               |
-3. **ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders** - a performant model based on a fully convolutional masked autoencoder framework and other architectural improvements. CNNs are sticking back-https://arxiv.org/abs/2301.00808.
+2. **SparseGPT: Massive Language Models Can Be Accurately Pruned In One-Shot** - Presents a technique for compressing large language models while not sacrificing performance; "pruned to at least 50% sparsity in one-shot, without any retraining-https://arxiv.org/abs/2301.00774.                                                                                               |
+3. **ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders** - Performant model based on a fully convolutional masked autoencoder framework and other architectural improvements. CNNs are sticking back-https://arxiv.org/abs/2301.00808.
                                      |                                                                                          |
 ## ** Open AI's Prompt Engineering Handbook ** ##
 
@@ -219,7 +218,7 @@ https://replit.com/@MckayWrigley/Takeoff-School-LangChain-101-Models?v=1
 ## ** Lean Copilot: LLMs as Copilots for Theorem Proving in Lean ** ## 
 Lean Copilot allows large language models (LLMs) to be used in Lean for proof automation, e.g., suggesting tactics/premises and searching for proofs. You can use our built-in models from LeanDojo or bring your own models that run either locally (w/ or w/o GPUs) or on the cloud.
 
-## ** Cohere.AI - LLM University ** ##
+## ** Cohere AI - LLM University ** ##
 https://docs.cohere.com/docs/llmu?_gl=1*1k8vxo5*_gcl_au*MTE2MjEzMDAwNi4xNzAyODE1ODA5*_ga*NjUwODA2NDQ4LjE2ODQxNDkwMTU.*_ga_CRGS116RZS*MTcwMjgxNTgwOC40LjEuMTcwMjgxNTgyOS4zOS4wLjA.
 
 ## ** Cohere.AI - Playground using RAG ** ##
@@ -249,14 +248,13 @@ Amber paper Link - https://arxiv.org/abs/2312.06550
 
 ## Awesome Research Github Repositories ## 
 
-1.##  Zero to Hero Research Scientist @Andrejkarpathy ##
+1. Zero to Hero Research Scientist @Andrejkarpathy 
    https://github.com/karpathy/nn-zero-to-hero-@Andrejkarpathy
 
-2. ## Awesome Machine Learning Models in Production ##
+2. Awesome Machine Learning Models in Production 
 https://github.com/EthicalML/awesome-production-machine-learning
 
 ## Speech Recongition ## 
-
 ## Choosing Python Speech Recognition Package that exist on PyPI ## 
 
 1. apiai
@@ -281,7 +279,7 @@ https://github.com/EthicalML/awesome-production-machine-learning
  - Conversation history saved locally
  - Export and Import all your data.
 
-2. Vald - An open-source, cloud-native distributed vector search engine
+2. Vald-Open-source,Cloud-native distributed vector search engine.
 - Features horizontal scaling.
 - Customizable filtering.
 - Auto-indexing/backup.
@@ -302,6 +300,8 @@ https://github.com/JShollaj/awesome-llm-interpretability
 6. Arvix Vanity.
 
 ## ** Quantum AI Research Papers ** ##
+## ** JAN 2024 ** ##
+
 
 ## ** DEC 2023 ** ## 
 
