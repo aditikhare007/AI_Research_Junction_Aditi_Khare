@@ -26,13 +26,15 @@
 
 ## ** JAN 2024 ** ##
 
-1. Chainpoll - A high efficacy method for LLM hallucination detection - https://arxiv.org/pdf/2310.18344v1.pdf
-2. AI-Optimized-Catheter-Design-could-prevent-urinary-tract-infections-without-drugs/ - https://www.scientificamerican.com/article/ai-optimized-catheter-design-could-prevent-urinary-tract-infections-without-drugs/
-3. TrustLLM - Trustworthiness in Large Language Models - https://arxiv.org/abs/2308.05374
-4. LLaMA Pro: Progressive LLaMA with Block Expansion - https://arxiv.org/abs/2401.02415
-5. DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models - https://arxiv.org/abs/2401.06066
-6. VAST AI releases Triplane Meets Gaussian Splatting on Hugging Face - Fast and Generalizable Single-View 3D Reconstruction with Transformers Demo - https://arxiv.org/abs/2312.09147
-7. Masked Audio Generation using a Single Non-Autoregressive Transformers - https://arxiv.org/abs/2401.04577
+1. ChatQA - NIVIDIA'S GPT-4 Level Conversational QA Models - https://arxiv.org/pdf/2401.10225v1.pdf
+2. Meta's Self-Rewarding Language Models -  https://arxiv.org/abs/2401.10020
+3. Chainpoll - A high efficacy method for LLM hallucination detection - https://arxiv.org/pdf/2310.18344v1.pdf
+4. AI-Optimized-Catheter-Design-could-prevent-urinary-tract-infections-without-drugs/ - https://www.scientificamerican.com/article/ai-optimized-catheter-design-could-prevent-urinary-tract-infections-without-drugs/
+5. TrustLLM - Trustworthiness in Large Language Models - https://arxiv.org/abs/2308.05374
+6. LLaMA Pro: Progressive LLaMA with Block Expansion - https://arxiv.org/abs/2401.02415
+7. DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models - https://arxiv.org/abs/2401.06066
+8. VAST AI releases Triplane Meets Gaussian Splatting on Hugging Face - Fast and Generalizable Single-View 3D Reconstruction with Transformers Demo - https://arxiv.org/abs/2312.09147
+9. Masked Audio Generation using a Single Non-Autoregressive Transformers - https://arxiv.org/abs/2401.04577
  
 
 ## ** DEC 2023 ** ## 
