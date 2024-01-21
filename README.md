@@ -16,7 +16,7 @@
 
 [<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/trustllm-trustworthiness-llms-aditi-khare-ch7uc/>)
 
-<a href="https://www.linkedin.com/pulse/trustllm-trustworthiness-llms-aditi-khare-ch7uc/?trackingId=jCG0Bv%2FlT8KQCjiiAaCJbg%3D%3D" class="button icon search"> ** Aditi Khare AI Research Junction Newletter ** </a> 
+<a href="https://www.linkedin.com/pulse/trustllm-trustworthiness-llms-aditi-khare-ch7uc/?trackingId=22VQqAeUQC2QTG8QdZySQA%3D%3D" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
 ### If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you!! ###
 
