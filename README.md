@@ -14,9 +14,9 @@
 
 ## ** My AI Newsletter-AI Research Junction @Research Papers Summaries @Generative AI, @Computer Vision @Quantum AI ** ## 
 
-[<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/trustllm-trustworthiness-llms-aditi-khare-ch7uc/>)
+[<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/1-chatqa-nividias-gpt-4-level-conversational-qa-models-aditi-khare-jrxjc/>)
 
-<a href="https://www.linkedin.com/pulse/trustllm-trustworthiness-llms-aditi-khare-ch7uc/?trackingId=22VQqAeUQC2QTG8QdZySQA%3D%3D" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
+<a href="https://www.linkedin.com/pulse/1-chatqa-nividias-gpt-4-level-conversational-qa-models-aditi-khare-jrxjc/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
 ### If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you!! ###
 
