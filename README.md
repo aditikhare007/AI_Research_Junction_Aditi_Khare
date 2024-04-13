@@ -14,7 +14,7 @@
 
 ## ** My AI Newsletter-AI Research Junction @Research Papers Summaries @Generative AI, @Computer Vision @Quantum AI ** ## 
 
-[<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/1-chatqa-nividias-gpt-4-level-conversational-qa-models-aditi-khare-jrxjc/>)
+[<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/>)
 
 <a href="https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
