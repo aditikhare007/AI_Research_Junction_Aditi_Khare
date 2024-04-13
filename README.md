@@ -22,7 +22,45 @@
 
 ## ** Welcome to AI Research Junction@Aditi Khare-Research Papers Summaries @Generative AI @Computer Vision @Quantum AI ** ##
 
+## ** Quantum AI Research Papers Summaries ** ##
+
+## ** APRIL 2024 ** ##
+
+1. Practical application of quantum neural network to materials informatics - https://www.nature.com/articles/s41598-024-59276-0
+
+## ** MARCH 2024 ** ##
+
+## ** FEB 2024 ** ##
+
+## ** JAN 2024 ** ##
+
 ## ** Gen AI Research Papers Summaries ** ##
+
+## ** FEB-MARCH-APRIL 2024 ** ##
+
+1. Google Research's CodecLM - Aligning Language Models with Tailored Synthetic Data-https://arxiv.org/abs/2404.05875
+2. Multilingual Large Language Model - An Overview - https://arxiv.org/pdf/2404.04925.pdf
+3. Google-DeepMind's Mixture-of-Depths - Dynamically allocating compute in Transformer-based Language Models-https://arxiv.org/abs/2404.02258
+4. Giskard - Open-Source Evaluation & Testing framework for LLMs and ML models-Reference Links - 
+Website - https://www.giskard.ai/
+Github - https://github.com/Giskard-AI/giskard
+Docs - https://docs.giskard.ai/en/stable/
+DeepLearning.ai Red Teaming LLM Applications Course Link - https://www.giskard.ai/knowledge/course-deeplearningai-red-teaming-llm-applications
+5. Databricks-Mosaic AI Research's DBRX - Databricks Blog -https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm
+Github - https://github.com/databricks/dbrx
+Hugging Face - https://huggingface.co/databricks/dbrx-base
+6. AI21's Jamba - SSM-Transformer Model-AI2I Labs Blog - https://www.ai21.com/blog/announcing-jamba
+Website - https://www.ai21.com/jamba
+Hugging Face - https://huggingface.co/ai21labs/Jamba-v0.1
+7. Mistral AI's Mistral Large - New cutting-edge text generation model and Used for complex multilingual reasoning tasks- https://mistral.ai/news/mistral-large/
+8. Google's Genie - Generative Interactive Environments & Large Language Models on Tabular Data-https://arxiv.org/pdf/2402.17944v1.pdf
+9. Allen Institute for AI 's OLMo - Open Language Model - Accelerating the Science of Language Models-Weights - https://huggingface.co/allenai/OLMo-7B 
+Code - https://github.com/allenai/OLMo 
+Data - https://huggingface.co/datasets/allenai/dolma 
+Evaluation - https://github.com/allenai/OLMo-Eval 
+Adaptation - https://github.com/allenai/open-instruct
+Paper Link - https://arxiv.org/abs/2402.00838
+Website - https://allenai.org/olmo
 
 ## ** JAN 2024 ** ##
 
