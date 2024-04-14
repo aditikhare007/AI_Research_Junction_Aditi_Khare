@@ -61,7 +61,17 @@ DBRX advances the state-of-the-art in efficiency among open models due to its fi
 9. DeepSeekMoE - Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models - https://arxiv.org/abs/2401.06066
 10. VAST AI releases Triplane Meets Gaussian Splatting on Hugging Face - Fast and Generalizable Single-View 3D Reconstruction with Transformers Demo - https://arxiv.org/abs/2312.09147
 11. Masked Audio Generation using a Single Non-Autoregressive Transformers - https://arxiv.org/abs/2401.04577
- 
+
+### AI LEARNING RESOURCES ### 
+
+|       **AI LEARNING RESOURCES DESCRIPTION**      |    **AI LEARNING RESOURCES**                 |       **AI LEARNING CATEGORY**            |  
+| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | 
+| 1. **Open AI's Prompt Engineering Handbook** | [website](https://platform.openai.com/docs/guides/prompt-engineering),[Github](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks) | **Generative AI** | 
+| 2. **Lilianweng's Gitub Resources & Blogs** | [Github](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) | **Generative AI** | 
+| 3. **Real-time mMchine-Learning-Challenges & Solutions by @Chip Huyen** | [blog](https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.htm) | **PRODUCTION-GRADE MACHINE LEARNING SYSTEMS** | 
+| 4. **Building LLM Applications for Production** | [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html | **PRODUCTION-GRADE LLMS APPLICATIONS** | 
+
+### ** AI RESEARCH PAPERS COLLECTION [JAN 2023 - DEC 2023] ** ###
 
 ## ** DEC 2023 ** ## 
 
@@ -182,25 +192,6 @@ DBRX advances the state-of-the-art in efficiency among open models due to its fi
 1. **Rethinking with Retrieval: Faithful Large Language Model Inference** - shows the potential of enhancing LLMs by retrieving relevant external knowledge based on decomposed reasoning steps obtained through chain-of-thought prompting- https://arxiv.org/abs/2301.00303.
 2. **SparseGPT: Massive Language Models Can Be Accurately Pruned In One-Shot** - Presents a technique for compressing large language models while not sacrificing performance; "pruned to at least 50% sparsity in one-shot, without any retraining-https://arxiv.org/abs/2301.00774.                                                                                               
 3. **ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders**-https://arxiv.org/abs/2301.00808.
-
-### AI LEARNING RESOURCES ### 
-
-|       **AI LEARNING RESOURCES DESCRIPTION**      |    **AI LEARNING RESOURCES**                 |       **AI LEARNING CATEGORY**            |  
-| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | 
-| 1. **Open AI's Prompt Engineering Handbook** | [website](https://platform.openai.com/docs/guides/prompt-engineering),[Github](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks) | **Generative AI** | 
-
-
-
-
-
-|     **AI LEARNING RESOURCES DESCRIPTION **      |  **AI LEARNING RESOURCES**   |  **AI LEARNING CATEGORY**    |
-| ------------------------------------------------| ------------------------------------------------------------------  | ----------------------------------  |---------------------------------------|
-
-| 1. **Open AI's Prompt Engineering Handbook** | [website](https://platform.openai.com/docs/guides/prompt-engineering),[Github](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks)| **PROMPT ENGINEERING** |
-| 2. **Lilianweng's Gitub Resources & Blogs** | [Github](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) | **PROMPT ENGINEERING** |
-| 3. **Real-time machine learning-cChallenges & Solutions by @Chip Huyen**|[blog](https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.htm), [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)| **PRODUCTION-GRADE MACHINE LEARNING SYSTEMS**|
-| 4. **Building LLM applications for production by @Chip Huyen**| [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html) | **PRODUCTION-GRADE LLMS APPLICATIONS** |
-
 
 ## ** Thank you so much for visiting my AI Research Junction@Aditi Khare - Research Papers Summaries @Generative AI @Computer Vision @Quautum AI ** ##
 
