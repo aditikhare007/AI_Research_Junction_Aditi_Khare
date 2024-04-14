@@ -37,8 +37,8 @@
 ## ** Gen AI Research Papers Summaries ** ##
 
 | **AI Research Papers ** | **Papers Summaries ** | **Resource Links** | **Papers Category ** | 
-| ---------------------------------------------------------------------------------------------| -----------------------------------------------------------------------------------------------------------------| --------------------------------------------------------------------- | -------------------------------- | 
-| 1. **Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention** | ** This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention. | [Paper](https://arxiv.org/pdf/2404.07143.pdf),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | **Gen AI ** | 
+| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------- | 
+| 1. Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention | This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention. | [Paper](https://arxiv.org/pdf/2404.07143.pdf),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | Generative AI | 
 
 
 ## ** FEB-MARCH-APRIL 2024 ** ##
