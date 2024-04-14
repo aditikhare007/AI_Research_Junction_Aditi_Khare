@@ -20,28 +20,35 @@
 
 ### If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you!! ###
 
-## ** Welcome to AI Research Junction@Aditi Khare-Research Papers Summaries @Generative AI @Computer Vision @Quantum AI ** ##
+## ** Welcome to AI Research Junction@Aditi Khare-AI Research Papers Summaries @Generative AI @Computer Vision @Quantum AI ** ##
 
-## ** Quantum AI Research Papers Summaries ** ##
+## AI RESERACH PAPERS SUMMARIES ## 
 
-## ** APRIL 2024 ** ##
+## ** QUANTUM AI RESEARCH PAPERS SUMMARIES ** ##
 
-1. Practical application of quantum neural network to materials informatics - https://www.nature.com/articles/s41598-024-59276-0
+## ** JAN 2024 - APRIL 2024 ** ##
 
-## ** MARCH 2024 ** ##
+| **AI RESEARCH PAPERS ** | **PAPERS SUMMARIES ** | **RESOURCE LINKS ** | **PAPERS CATEGORY ** | 
+| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
+| 1. **1. Practical application of quantum neural network to materials informatics** | **This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention.** | [Paper](https://www.nature.com/articles/s41598-024-59276-0),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | **QUANTUM AI** | 
 
-## ** FEB 2024 ** ##
 
-## ** JAN 2024 ** ##
 
-## ** Gen AI Research Papers Summaries ** ##
-
-| **AI Research Papers ** | **Papers Summaries ** | **Resource Links** | **Papers Category ** | 
-| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------- | 
-| 1. Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention | This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention. | [Paper](https://arxiv.org/pdf/2404.07143.pdf),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | Generative AI | 
-
+## ** GENERATIVE AI RESERACH PAPERS SUMMARIES  ** ##
 
 ## ** FEB-MARCH-APRIL 2024 ** ##
+
+| **AI Research Papers ** | **Papers Summaries ** | **Resource Links** | **Papers Category ** | 
+| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
+| 1. **Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention** | **This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention.** | [Paper](https://arxiv.org/pdf/2404.07143.pdf),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | **Generative AI** | 
+
+
+
+
+
+
+
+
 
 1. Google Research's CodecLM - Aligning Language Models with Tailored Synthetic Data-https://arxiv.org/abs/2404.05875
 2. Multilingual Large Language Model - An Overview - https://arxiv.org/pdf/2404.04925.pdf
@@ -346,18 +353,14 @@ https://github.com/JShollaj/awesome-llm-interpretability
 5. Arxiv Sanity Preserver.
 6. Arvix Vanity.
 
-## ** Quantum AI Research Papers ** ##
-## ** JAN 2024 ** ##
-
-
 ## ** DEC 2023 ** ## 
 
 1. 21st Dec 2023 - ** Exploiting Novel GPT-4 APIs ** - https://arxiv.org/abs/2312.14302
 2. 18th Dec 2023 - ** Design of Quantum Machine Learning Course for a Computer Science Program ** - https://ieeexplore.ieee.org/document/10313632
 3. 2nd Dec 2023 - ** Hybrid Quantum Neural Network in High-dimensional Data Classification ** - https://arxiv.org/abs/2312.01024 
 
-#### ** Thank you so much for visiting my AI Research Junction@Aditi Khare - Research Papers Summaries @Generative AI @Computer Vision @Quautum AI ** ####
+## ** Thank you so much for visiting my AI Research Junction@Aditi Khare - Research Papers Summaries @Generative AI @Computer Vision @Quautum AI ** ##
 
-#### ** If you find my AI Research Junction@Aditi Khare useful please star my repository to support my work - Happy Learning ** ####
+## ** If you find my AI Research Junction@Aditi Khare useful please star my repository to support my work - Happy Learning ** ##
  
 
