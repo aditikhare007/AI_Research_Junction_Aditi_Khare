@@ -8,7 +8,7 @@
 
 ** Global Top AI Community Member @Landing.AI @MLOPS Community, @Pandas AI, @Full Stack Deep Learning, @H2o.ai Generative AI, @Modular & @Cohere AI @hugging Face Research Papers Group @Papers with Code @DAIR.AI ** ** Completed 90+ Online Technical Courses from Udemy & Coursera as I believe in Continuous Learning and Growth Mindset ** 
 
-## ** WELCOME TO MY AI NEWSLETTER ADITI KHARE @AI Research Junction - Research Paper Summaries @Generative AI @Computer Vision @Quantum AI ** ##
+<a href="https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
 [<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/>)
 
@@ -16,11 +16,11 @@
 
 ### If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you!! ###
 
-## AI RESERACH PAPERS SUMMARIES ## 
+### AI RESERACH PAPERS SUMMARIES ## 
 
-## ** QUANTUM AI RESEARCH PAPERS SUMMARIES ** ##
+### ** QUANTUM AI RESEARCH PAPERS SUMMARIES ** ##
 
-## ** JAN 2024 - APRIL 2024 ** ##
+### ** JAN 2024 - APRIL 2024 ** ##
 
 | **AI RESEARCH PAPERS ** | **PAPERS SUMMARIES ** | **RESOURCE LINKS ** | **PAPERS CATEGORY ** | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
