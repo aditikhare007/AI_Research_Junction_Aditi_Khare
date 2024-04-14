@@ -37,9 +37,8 @@
 ## ** Gen AI Research Papers Summaries ** ##
 
 | **Research Papers Collection **  | **Resource Links** |
-| ------------- | ------------- | ------------- | ------------- | 
-| 1. **Leave No Context Behind:
-Efficient Infinite Context Transformers with Infini-attention**  | [Paper](https://arxiv.org/pdf/2404.07143.pdf) | [Hugging-Face](https://huggingface.co/papers/2404.07143) | [Github](https://arxiv.org/pdf/2404.07143.pdf) | [Blog](https://arxiv.org/pdf/2404.07143.pdf) 
+| ------------- | ------------- |
+| 1. **Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention**  | [Paper](https://arxiv.org/pdf/2404.07143.pdf) | [Hugging-Face](https://huggingface.co/papers/2404.07143) | [Github](https://arxiv.org/pdf/2404.07143.pdf) | [Blog](https://arxiv.org/pdf/2404.07143.pdf) | 
 
 ## ** FEB-MARCH-APRIL 2024 ** ##
 
