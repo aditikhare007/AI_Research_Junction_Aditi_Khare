@@ -26,7 +26,7 @@
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
-| 1. **1. Practical application of quantum neural network to materials informatics** | **This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention.** | [Paper](https://www.nature.com/articles/s41598-024-59276-0),[Github](https://github.com/Beomi/InfiniTransformer),[Blog](https://huggingface.co/papers/2404.07143)| **QUANTUM AI** | 
+| 1. **Practical application of quantum neural network to materials informatics** | **This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention.** | [Paper](https://www.nature.com/articles/s41598-024-59276-0),[Github](https://github.com/Beomi/InfiniTransformer),[Blog](https://huggingface.co/papers/2404.07143)|   **QUANTUM AI**   | 
 
 
 
