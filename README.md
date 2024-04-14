@@ -185,7 +185,7 @@ DBRX advances the state-of-the-art in efficiency among open models due to its fi
 
 ### AI LEARNING RESOURCES ### 
 
-|       **AI Research Papers **      |    **Papers Summaries**                 |       **Resource Links**            |     **Papers Category **    | 
+|       **AI LEARNING RESOURCES DESCRIPTION**      |    **AI LEARNING RESOURCES**                 |       **Resource Links**            |     **Papers Category **    | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
 | 1. **Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention** | **This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention.** | [Paper](https://arxiv.org/pdf/2404.07143.pdf),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | **Generative AI** | 
 
@@ -195,7 +195,7 @@ DBRX advances the state-of-the-art in efficiency among open models due to its fi
 
 |     **AI LEARNING RESOURCES DESCRIPTION **      |  **AI LEARNING RESOURCES**   |  **AI LEARNING CATEGORY**    |
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------  |
-----------------------------------  |
+----------------------------------  |---------------------------------------|
 
 | 1. **Open AI's Prompt Engineering Handbook** | [website](https://platform.openai.com/docs/guides/prompt-engineering),[Github](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks)| **PROMPT ENGINEERING** |
 | 2. **Lilianweng's Gitub Resources & Blogs** | [Github](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/) | **PROMPT ENGINEERING** |
