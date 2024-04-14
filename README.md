@@ -37,10 +37,8 @@
 ## ** Gen AI Research Papers Summaries ** ##
 
 | **Paper**  | **Links** |
-| ------------- | 
-| ------------- |
-| 1. **Many-shot Jailbreaking** 
-| [Paper](https://www.anthropic.com/research/many-shot-jailbreaking), [Tweet](https://x.com/AnthropicAI/status/1775211248239464837) 
+| ------------- | ------------- |
+| 1. **Many-shot Jailbreaking**  | [Paper](https://www.anthropic.com/research/many-shot-jailbreaking) 
 
 
 ## ** FEB-MARCH-APRIL 2024 ** ##
