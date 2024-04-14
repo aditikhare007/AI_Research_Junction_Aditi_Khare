@@ -189,10 +189,10 @@ DBRX advances the state-of-the-art in efficiency among open models due to its fi
 |     **AI LEARNING RESOURCES DESCRIPTION **     |  **AI LEARNING RESOURCES**   |  **AI LEARNING CATEGORY**    |
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | 
 
-| 1. **Open AI's Prompt Engineering Handbook** | [website](https://platform.openai.com/docs/guides/prompt-engineering),[Github](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks)   |   **PROMPT ENGINEERING**   | 
-| 2. **Lilianweng's Gitub Resources & Blogs** | [Github](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)   |   **PROMPT ENGINEERING**   |
-| 3. **Real-time machine learning-cChallenges & Solutions by @Chip Huyen** | [blog](https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.htm), [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)  |   **PRODUCTION-GRADE MACHINE LEARNING SYSTEMS**   |
-| 4. **Building LLM applications for production by @Chip Huyen** | [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)  |   **PRODUCTION-GRADE LLMS APPLICATIONS**   |
+| 1. **Open AI's Prompt Engineering Handbook** |[website](https://platform.openai.com/docs/guides/prompt-engineering),[Github](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks)|**PROMPT ENGINEERING**|
+| 2. **Lilianweng's Gitub Resources & Blogs** | [Github](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)| **PROMPT ENGINEERING**   |
+| 3. **Real-time machine learning-cChallenges & Solutions by @Chip Huyen**|[blog](https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.htm), [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)  |   **PRODUCTION-GRADE MACHINE LEARNING SYSTEMS**|
+| 4. **Building LLM applications for production by @Chip Huyen**|[Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)|**PRODUCTION-GRADE LLMS APPLICATIONS**|
 
 
 ## ** Thank you so much for visiting my AI Research Junction@Aditi Khare - Research Papers Summaries @Generative AI @Computer Vision @Quautum AI ** ##
