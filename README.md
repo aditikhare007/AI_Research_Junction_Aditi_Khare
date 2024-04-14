@@ -10,10 +10,6 @@
 
 ## ** WELCOME TO MY AI NEWSLETTER ADITI KHARE @AI Research Junction - Research Paper Summaries @Generative AI @Computer Vision @Quantum AI ** ##
 
-<a href="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare" class="button icon search"> ** AI Research Junction @Aditi Khare - Research Papers Summaries @Gen AI @Computer Vision @Qunatum AI ** </a> 
-
-## ** WELCOME TO MY AI NEWSLETTER ADITI KHARE @AI Research Junction - Research Paper Summaries @Generative AI @Computer Vision @Quantum AI ** ##
-
 [<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/>)
 
 <a href="https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
