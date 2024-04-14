@@ -14,9 +14,9 @@
 
 <a href="https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
-### ** If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you & Happy Reading** ###
+#### ** If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you & Happy Reading** ###
 
-### ** If you find my AI Research Junction@Aditi Khare useful please star this repository to support my work - Thank you & Happy Reading** ###
+#### ** If you find my AI Research Junction@Aditi Khare useful please star this repository to support my work - Thank you & Happy Reading** ###
 
 ### AI RESEARCH PAPERS SUMMARIES ## 
 
@@ -192,8 +192,8 @@
 2. **SparseGPT: Massive Language Models Can Be Accurately Pruned In One-Shot** - Presents a technique for compressing large language models while not sacrificing performance; "pruned to at least 50% sparsity in one-shot, without any retraining-https://arxiv.org/abs/2301.00774.                                                                                               
 3. **ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders**-https://arxiv.org/abs/2301.00808.
 
-## ** Thank you so much for visiting my AI Research Junction@Aditi Khare - Research Papers Summaries @Generative AI @Computer Vision @Quautum AI ** ##
+#### ** Thank you so much for visiting my AI Research Junction@Aditi Khare - Research Papers Summaries @Generative AI @Computer Vision @Quautum AI ** ##
 
-## ** If you find my AI Research Junction@Aditi Khare useful please star my repository to support my work - Happy Learning ** ##
+#### ** If you find my AI Research Junction@Aditi Khare useful please star my repository to support my work - Happy Learning ** ##
  
 
