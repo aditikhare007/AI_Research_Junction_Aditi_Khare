@@ -14,7 +14,9 @@
 
 <a href="https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
-### If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you!! ###
+### ** If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you & Happy Reading** ###
+
+### ** If you find my AI Research Junction@Aditi Khare useful please star this repository to support my work - Thank you & Happy Reading** ###
 
 ### AI RESERACH PAPERS SUMMARIES ## 
 
