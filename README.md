@@ -6,7 +6,7 @@
 [<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">](<https://twitter.com/AditiKh32506701/>)
 [<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">](<aditikhare007@gmail.com>)
 
-** Global Top AI Community Member @Landing.AI @MLOPS Community, @Pandas AI, @Full Stack Deep Learning, @H2o.ai Generative AI, @Modular & @Cohere AI @hugging Face Research Papers Group @Papers with Code @DAIR.AI ** ** Completed 90+ Online Technical Courses from Udemy & Coursera as I believe in Continuous Learning and Growth Mindset ** 
+** Global Top AI Community Member @Landing.AI @MLOPS Community, @Pandas AI, @Full Stack Deep Learning, @H2o.ai Generative AI, @Modular & @Cohere AI @hugging Face Research Papers Group @Papers with Code** ** Completed 90+ Online Technical Courses from Udemy & Coursera as I believe in Continuous Learning and Growth Mindset ** 
 
 <a href="https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
@@ -88,12 +88,12 @@ DBRX advances the state-of-the-art in efficiency among open models due to its fi
 5. **Mirasol3B**-https://arxiv.org/abs/2311.05698
 6. **GPQA** -https://arxiv.org/abs/2311.12022
 7. **Chain-of-Thought Reasoning to Language Agents** - summary of CoT reasoning, foundational mechanics underpinning CoT techniques, and their application to language agent frameworks.-https://arxiv.org/abs/2311.11797
-8. **GAIA** - a benchmark for general AI assistants consisting of real-world questions that require a set of fundamental abilities such as reasoning, multimodal handling, web browsing, and generally tool-use proficiency; shows that human respondents obtain 92% vs. 15% for GPT-4 equipped with plugins-https://arxiv.org/abs/2311.12983.
+8. **GAIA**-https://arxiv.org/abs/2311.12983.
 10. **LLMs for Scientific Discovery**-https://arxiv.org/abs/2311.08401.
-12.**Contrastive CoT Prompting**-Proposes a contrastive chain of thought method to enhance language model reasoning; the approach provides both valid and invalid reasoning demonstrations, to guide the model to reason step-by-step while reducing reasoning mistakes; also proposes an automatic method to construct contrastive demonstrations and demonstrates improvements over CoT promptiing-https://arxiv.org/abs/2311.09277.
-13.**A Survey on Language Models for Code**-Provides an overview of LLMs for code, including a review of 50+ models, 30+ evaluation tasks, and 500 related works-https://arxiv.org/abs/2311.07989v1
+12.**Contrastive CoT Prompting**-https://arxiv.org/abs/2311.09277.
+13.**A Survey on Language Models for Code**-https://arxiv.org/abs/2311.07989v1
 14. **JARVIS-1** - Open-world agent that can perceive multimodal input-https://arxiv.org/abs/2311.05997.
-15. **Learning to Filter Context for RAG** -Proposes a method that improves the quality of the context provided to the generator via two steps: 1) identifying useful context based on lexical and information-theoretic approaches & raining context filtering models that can filter retrieved contexts at inference outperforms existing approaches on extractive question answering-https://arxiv.org/abs/2311.08377v1.
+15. **Learning to Filter Context for RAG**-https://arxiv.org/abs/2311.08377v1.
 16. **MART**-https://arxiv.org/abs/2311.07689.
 17.**LLMs can Deceive Users**-Explores the use of an autonomous stock trading agent powered by LLMs; finds that the agent acts upon insider tips and hides the reason behind the trading decision; shows that helpful and safe LLMs can strategically deceive users in a realistic situation without direction instructions or training for deception-https://arxiv.org/abs/2311.07590.
 18. **Hallucination in LLMs**-A comprehensive survey-https://arxiv.org/abs/2311.05232.
