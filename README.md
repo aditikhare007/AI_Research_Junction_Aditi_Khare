@@ -6,21 +6,19 @@
 [<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">](<https://twitter.com/AditiKh32506701/>)
 [<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">](<aditikhare007@gmail.com>)
 
-** Global Top AI Community Member @Landing.AI @MLOPS Community, @Pandas AI, @Full Stack Deep Learning, @H2o.ai Generative AI, @Modular & @Cohere AI @hugging Face Research Papers Group @Papers with Code @DAIR.AI ** ** Completed 90+ Online Technical Paid Courses from Udemy & Coursera as I believe in Continuous Learning and Growth Mindset ** 
+** Global Top AI Community Member @Landing.AI @MLOPS Community, @Pandas AI, @Full Stack Deep Learning, @H2o.ai Generative AI, @Modular & @Cohere AI @hugging Face Research Papers Group @Papers with Code @DAIR.AI ** ** Completed 90+ Online Technical Courses from Udemy & Coursera as I believe in Continuous Learning and Growth Mindset ** 
 
-## ** AI Research Junction @Aditi Khare - Research Paper Summaries @Generative AI @Computer Vision @Quantum AI ** ##
+## ** WELCOME TO MY AI NEWSLETTER ADITI KHARE @AI Research Junction - Research Paper Summaries @Generative AI @Computer Vision @Quantum AI ** ##
 
 <a href="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare" class="button icon search"> ** AI Research Junction @Aditi Khare - Research Papers Summaries @Gen AI @Computer Vision @Qunatum AI ** </a> 
 
-## ** My AI Newsletter-AI Research Junction @Research Papers Summaries @Generative AI, @Computer Vision @Quantum AI ** ## 
+## ** WELCOME TO MY AI NEWSLETTER ADITI KHARE @AI Research Junction - Research Paper Summaries @Generative AI @Computer Vision @Quantum AI ** ##
 
 [<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/>)
 
 <a href="https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
 ### If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you!! ###
-
-## ** Welcome to AI Research Junction@Aditi Khare-AI Research Papers Summaries @Generative AI @Computer Vision @Quantum AI ** ##
 
 ## AI RESERACH PAPERS SUMMARIES ## 
 
