@@ -35,7 +35,7 @@
 
 ### ** FEB-MARCH-APRIL 2024 ** ###
 
-|       **AI Research Papers **      |    **Papers Summaries**                 |       **Resource Links**            |     **Papers Category **    | 
+|       **AI Research Papers**      |    **Papers Summaries**                 |       **Resource Links**            |     **Papers Category**    | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
 | 1. **Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention** | **This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention.** | [Paper](https://arxiv.org/pdf/2404.07143.pdf),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | **Generative AI** | 
 | 2. ** Google Research's CodecLM** | **CodecLM - General Framework for adaptively generating high quality synthetic data for LLM alignment with different downstream instruction distributions and LLMs.** | [Paper](https://arxiv.org/abs/2404.05875) | **LLMs Synthetic Data** | 
