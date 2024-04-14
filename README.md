@@ -33,7 +33,7 @@
 
 ### ** GENERATIVE AI RESEARCH PAPERS SUMMARIES  ** ###
 
-## ** FEB-MARCH-APRIL 2024 ** ##
+### ** FEB-MARCH-APRIL 2024 ** ###
 
 | **AI Research Papers ** | **Papers Summaries ** | **Resource Links** |     **Papers Category **    | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
@@ -41,42 +41,14 @@
 | 2. ** Google Research's CodecLM** | **CodecLM - General Framework for adaptively generating high quality synthetic data for LLM alignment with different downstream instruction distributions and LLMs.** | [Paper](https://arxiv.org/abs/2404.05875) | **LLMs Synthetic Data** | 
 | 3. **Multilingual Large Language Model-An Overview** | **This Paper Multilingual Large Language Models are capable of using powerful LLMs to handle and respond to queries supporting multiple languages, which achieves remarkable success in multilingual natural language processing tasks. Despite these breakthroughs, there still remains a lack of a comprehensive surveys to summarize existing approaches.** | [Paper](https://arxiv.org/pdf/2404.04925.pdf) | **MLLMs** | 
 | 4. **Google-DeepMind's Mixture-of-Depths** | **This Paper Introduces an approach of Dynamically allocating compute in Transformer-based Language Models.** | [Paper](https://arxiv.org/abs/2404.02258) | **Generative AI** | 
-| 5. **Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention** | **This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention.** | [Paper](https://arxiv.org/pdf/2404.07143.pdf),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | **Generative AI** | 
-| 1. **Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention** | **This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention.** | [Paper](https://arxiv.org/pdf/2404.07143.pdf),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | **Generative AI** | 
-| 1. **Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention** | **This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention.** | [Paper](https://arxiv.org/pdf/2404.07143.pdf),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | **Generative AI** | 
-| 1. **Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention** | **This Paper Introduces an efficient method to scale Transformer-based Large Language Models (LLMs) to infinitely long inputs with bounded memory and computation. A key component in our proposed approach is a new attention technique dubbed Infini-attention.** | [Paper](https://arxiv.org/pdf/2404.07143.pdf),[Github](https://github.com/Beomi/InfiniTransformer),[Hugging-Face](https://huggingface.co/papers/2404.07143) | **Generative AI** | 
+| 5. **Giskard** | **Open-Source Evaluation & Testing framework for LLMs and ML models.** | [Docs](https://docs.giskard.ai/en/stable/),[Github](https://github.com/Giskard-AI/giskard),[Hugging-Face](https://huggingface.co/papers/2404.07143) | **Generative AI** | 
+| 6. **Databricks-Mosaic AI Research's DBRX** | **This state-of-the-art quality comes with marked improvements in training and inference performance. 
+DBRX advances the state-of-the-art in efficiency among open models due to its fine-grained mixture-of-experts (MoE) architecture.** | [Hugging-Face](https://huggingface.co/databricks/dbrx-base),[Github](https://github.com/databricks/dbrx),[Blog](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm) | **Generative AI** | 
+| 7. **AI21's Jamba** | **SSM-Transformer Model-AI2I Labs.** | [Blog](https://www.ai21.com/blog/announcing-jamba),[Website](https://www.ai21.com/jamba),[Hugging-Face](https://huggingface.co/ai21labs/Jamba-v0.1) | **Generative AI** | 
+| 8. **Google's Genie** | **Open Language Model - Accelerating the Science of Language Models-Weights.** | [Paper](https://arxiv.org/pdf/2402.17944v1.pdf) | **Generative AI** | 
+| 9. **Allen Institute for AI's OLMo** | **Generative Interactive Environments & Large Language Models on Tabular Data.** | [Paper](https://arxiv.org/abs/2402.00838),[Github](https://github.com/allenai/OLMo ),[Hugging-Face](https://huggingface.co/datasets/allenai/dolma), [Website](https://allenai.org/olmo) | **Generative AI** | 
 
-
-
-
-
-
-
-
-
-3. Google-DeepMind's Mixture-of-Depths - Dynamically allocating compute in Transformer-based Language Models-https://arxiv.org/abs/2404.02258
-4. Giskard - Open-Source Evaluation & Testing framework for LLMs and ML models-Reference Links - 
-Website - https://www.giskard.ai/
-Github - https://github.com/Giskard-AI/giskard
-Docs - https://docs.giskard.ai/en/stable/
-DeepLearning.ai Red Teaming LLM Applications Course Link - https://www.giskard.ai/knowledge/course-deeplearningai-red-teaming-llm-applications
-5. Databricks-Mosaic AI Research's DBRX - Databricks Blog -https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm
-Github - https://github.com/databricks/dbrx
-Hugging Face - https://huggingface.co/databricks/dbrx-base
-6. AI21's Jamba - SSM-Transformer Model-AI2I Labs Blog - https://www.ai21.com/blog/announcing-jamba
-Website - https://www.ai21.com/jamba
-Hugging Face - https://huggingface.co/ai21labs/Jamba-v0.1
-7. Mistral AI's Mistral Large - New cutting-edge text generation model and Used for complex multilingual reasoning tasks- https://mistral.ai/news/mistral-large/
-8. Google's Genie - Generative Interactive Environments & Large Language Models on Tabular Data-https://arxiv.org/pdf/2402.17944v1.pdf
-9. Allen Institute for AI 's OLMo - Open Language Model - Accelerating the Science of Language Models-Weights - https://huggingface.co/allenai/OLMo-7B 
-Code - https://github.com/allenai/OLMo 
-Data - https://huggingface.co/datasets/allenai/dolma 
-Evaluation - https://github.com/allenai/OLMo-Eval 
-Adaptation - https://github.com/allenai/open-instruct
-Paper Link - https://arxiv.org/abs/2402.00838
-Website - https://allenai.org/olmo
-
-## ** JAN 2024 ** ##
+### ** JAN 2024 ** ###
 
 1. Amazon's Diffuse to Choose: Enriching Image Conditioned Inpainting in Latent Diffusion Models - https://arxiv.org/abs/2401.13795 - Computer Vision and Pattern Recognition
 2. Quantum-Inspired Machine Learning for Molecular Docking - https://arxiv.org/abs/2401.12999 - Quantum Computing 
