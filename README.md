@@ -18,7 +18,7 @@
 
 ### ** If you find my AI Research Junction@Aditi Khare useful please star this repository to support my work - Thank you & Happy Reading** ###
 
-### AI RESERACH PAPERS SUMMARIES ## 
+### AI RESEARCH PAPERS SUMMARIES ## 
 
 ### ** QUANTUM AI RESEARCH PAPERS SUMMARIES ** ##
 
@@ -30,7 +30,7 @@
 
 
 
-## ** GENERATIVE AI RESERACH PAPERS SUMMARIES  ** ##
+### ** GENERATIVE AI RESEARCH PAPERS SUMMARIES  ** ###
 
 ## ** FEB-MARCH-APRIL 2024 ** ##
 
