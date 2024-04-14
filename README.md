@@ -36,6 +36,13 @@
 
 ## ** Gen AI Research Papers Summaries ** ##
 
+| **Paper**  | **Links** |
+| ------------- | 
+| ------------- |
+| 1. **Many-shot Jailbreaking** 
+| [Paper](https://www.anthropic.com/research/many-shot-jailbreaking), [Tweet](https://x.com/AnthropicAI/status/1775211248239464837) 
+
+
 ## ** FEB-MARCH-APRIL 2024 ** ##
 
 1. Google Research's CodecLM - Aligning Language Models with Tailored Synthetic Data-https://arxiv.org/abs/2404.05875
