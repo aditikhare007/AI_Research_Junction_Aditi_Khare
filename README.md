@@ -102,34 +102,31 @@ DBRX advances the state-of-the-art in efficiency among open models due to its fi
 
 ## ** OCT 2023** ##                                                                                                                         
 
-1. **Spectron**--https://arxiv.org/abs/2305.15255.                      |
-2. **LLMs Meet New Knowledge** - Presents benchmark to assess LLMs' abilities in knowledge understanding, differentiation, and association; benchmark results show-https://arxiv.org/abs/2310.14820
-3. **Detecting Pretraining Data from LLMs**-https://arxiv.org/abs/2310.16764.                         |
-5. **Managing AI Risks** - Short Paper outlining risks from upcoming and advanced AI systems, including an examination of social harms, malicious uses, and other potential societal issues emerging from the rapid adoption of autonomous AI systems-https://managing-ai-risks.com/managing_ai_risks.pdf.
-6. **Branch-Solve-Merge Reasoning in LLMs**-LLM Program that consists of branch, solve, and merge modules parameterized with specific prompts to the base LLM; this enables an LLM to plan a decomposition of task into multiple parallel sub-tasks, independently solve them, and fuse solutions to the sub-tasks; improves evaluation correctness and consistency for multiple LLMs-https://arxiv.org/abs/2310.15123.               
-7. **LLMs for Software Engineering**-A comprehensive survey of LLMs for software engineering, including open research and technical challenges-https://arxiv.org/abs/2310.03533
-8. **Self-RAG**- Presents new retrieval-augmented framework that enhances an LM’s quality and factuality through retrieval and self-reflection; trains an LM that adaptively retrieves passages on demand, and generates and reflects on the passages and its own generations using special reflection tokens-it significantly outperforms SoTA LLMs-https://arxiv.org/abs/2310.11511.
-9. **Retrieval-Augmentation for Long-form Question Answering**-Explores retrieval-augmented language models on long-form question answering; finds that retrieval is an important component but evidence documents should be carefully added to the LLM; finds that attribution error happens more frequently when retrieved documents lack sufficient information/evidence for answering the question-https://arxiv.org/abs/2310.12150.   
-10. A Study of LLM-Generated Self-Explanations** - assesses an LLM's capability to self-generate feature attribution explanations; self-explanation is useful to improve performance and truthfulness in LLMs-this capability can be used together with chain-of-thought prompting-https://arxiv.org/abs/2310.11207.
-11. **OpenAgents** - Open Platform for using and hosting language agents in the wild; includes three agents, including a Data Agent for data analysis, a Plugins Agent with 200+ daily API tools, and a Web Agent for autonomous web browsing-https://arxiv.org/abs/2310.10634v1.                                                                                              |
-12.**LLMs can Learn Rules** - presents a two-stage framework that learns a rule library for reasoning with LLMs; in the first stage-https://arxiv.org/abs/2310.07064.
+1. **Spectron**--https://arxiv.org/abs/2305.15255.                      
+2. **LLMs Meet New Knowledge**-https://arxiv.org/abs/2310.14820
+3. **Detecting Pretraining Data from LLMs**-https://arxiv.org/abs/2310.16764.                         
+5. **Managing AI Risks**-https://managing-ai-risks.com/managing_ai_risks.pdf.
+6. **Branch-Solve-Merge Reasoning in LLMs**-https://arxiv.org/abs/2310.15123.               
+7. **LLMs for Software Engineering**-https://arxiv.org/abs/2310.11511.
+9. **Retrieval-Augmentation for Long-form Question Answering**-https://arxiv.org/abs/2310.12150.   
+10. A Study of LLM-Generated Self-Explanations**-https://arxiv.org/abs/2310.11207.
+11. **OpenAgents**-https://arxiv.org/abs/2310.10634v1.                                                                                              |
+12.**LLMs can Learn Rules**-https://arxiv.org/abs/2310.07064.
 13.**Meta Chain-of-Thought Prompting** - a generalizable chain-of-thought-https://arxiv.org/abs/2310.06692.
-14. **Improving Retrieval-Augmented LMs with Compressors**-Presents two approaches to compress retrieved documents into text summaries before pre-pending them in-context: 1) extractive compressor-Selects useful sentences from retrieved documents and abstractive compressor-https://arxiv.org/abs/2310.04408.
-15. ** Retrieval meets Long Context LLMs** - compares retrieval augmentation and long-context windows for downstream tasks to investigate if the methods can be combined to get the best of both worlds; an LLM with a 4K context window using simple RAG can achieve comparable performance to a fine-tuned LLM with 16K context; retrieval can significantly improve the performance of LLMs regardless of their extended context window sizes; a retrieval-augmented LLaMA2-70B with a 32K context window outperforms GPT-3.5-turbo-16k on seven long context tasks including question answering and query-based summarization-https://arxiv.org/abs/2310.03025.
-16. **StreamingLLM** - Framework that enables efficient streaming LLMs with attention sinks, a phenomenon where the KV states of initial tokens will largely recover the performance of window attention; the emergence of the attention sink is due to strong attention scores towards the initial tokens; this approach enables LLMs trained with finite length attention windows to generalize to infinite sequence length without any additional fine-tuning-https://arxiv.org/abs/2309.17453.
+14. **Improving Retrieval-Augmented LMs with Compressors**-https://arxiv.org/abs/2310.04408.
+15. **Retrieval meets Long Context LLMs**-https://arxiv.org/abs/2310.03025.
+16. **StreamingLLM**-https://arxiv.org/abs/2309.17453.
 17.**The Dawn of LMMs**-Comprehensive analysis of GPT-4V to deepen the understanding of large multimodal models-https://arxiv.org/abs/2309.17421.
-18. **Training LLMs with Pause Tokens**-Performs training and inference on LLMs with a learnable <pause> token which helps to delay the model's answer generation and attain performance gains on general understanding tasks of Commonsense QA and math word problem-solving; experiments show that this is only beneficial provided that the delay is introduced in both pertaining and downstream fine-tuning-  https://arxiv.org/abs/2310.02226.
+18. **Training LLMs with Pause Tokens**-https://arxiv.org/abs/2310.02226.
 19.**Analogical Prompting**-https://arxiv.org/abs/2310.01714.
 
 ## ** SEPT 2023 ** ##                                                                                                                                                                                                                                                                                                                                                                                                                         
-1. **AlphaMissense** - AI Model classifying missense variants to help pinpoint the cause of diseases; the model is used to develop a catalogue of genetic mutations; it can categorize 89% of all 71 million possible missense variants as either likely pathogenic or likely benign-https://www.science.org/doi/10.1126/science.adg7492.
+1. **AlphaMissense**-https://www.science.org/doi/10.1126/science.adg7492.
 2. **Chain-of-Verification reduces Hallucination in LLMs**-Develops a method to enable LLMs to "deliberate" on responses to correct mistakes; include the following steps: 1) draft initial response, 2) plan verification questions to fact-check the draft.
-3. Answer questions independently to avoid bias from other responses and generate a final verified response- https://arxiv.org/abs/2309.11495
-4. **Contrastive Decoding Improves Reasoning in Large Language Models**-Shows that contrastive decoding leads Llama-65B to outperform Llama 2 and other models on commonsense reasoning and reasoning benchmarks-https://arxiv.org/abs/2309.09117.
-5. **LongLoRA** - Efficient fine-tuning approach to significantly extend the context windows of pre-trained LLMs; implements shift short attention-a substitute that approximates the standard self-attention pattern during training; it has less GPU memory cost and training time compared to full fine-tuning while not compromising accuracy- https://arxiv.org/abs/2309.12307.
-6. **LLMs for Generating Structured Data**-Studies the use of LLMs for generating complex structured data; proposes a structure-aware fine-tuning method, applied to Llama-7B, which significantly outperform other model like GPT-3.5/4 and Vicuna-13B-https://arxiv.org/abs/2309.08963
-7. **Textbooks Are All You Need II**-New 1.3 billion parameter model trained on 30 billion tokens; the dataset consists of "textbook-quality" synthetically generated data; phi-1.5 competes or outperforms other larger models on reasoning tasks suggesting that data quality plays a more important role than previously thought-https://arxiv.org/abs/2309.05463.
-8. **The Rise and Potential of LLM Based Agents** - A Comprehensive overview of LLM based agents; covers from how to construct these agents to how to harness them for good-https://arxiv.org/abs/2309.07864.                                                                        |
+3. **Contrastive Decoding Improves Reasoning in Large Language Models**-https://arxiv.org/abs/2309.09117.
+4. **LongLoRA** - Efficient fine-tuning approach to significantly extend the context windows of pre-trained LLMs; implements shift short attention-a substitute that approximates the standard self-attention pattern during training; it has less GPU memory cost and training time compared to full fine-tuning while not compromising accuracy- https://arxiv.org/abs/2309.12307.
+5. **Textbooks Are All You Need II**-New 1.3 billion parameter model trained on 30 billion tokens; the dataset consists of "textbook-quality" synthetically generated data; phi-1.5 competes or outperforms other larger models on reasoning tasks suggesting that data quality plays a more important role than previously thought-https://arxiv.org/abs/2309.05463.
+6. **The Rise and Potential of LLM Based Agents** - A Comprehensive overview of LLM based agents; covers from how to construct these agents to how to harness them for good-https://arxiv.org/abs/2309.07864.                                                                        |
 ## ** AUG 2023 ** ##
 
 1. **Open Problem and Limitation of RLHF** - provides an overview of open problems and the limitations of RLHF- https://arxiv.org/abs/2307.15217
@@ -150,7 +147,7 @@ DBRX advances the state-of-the-art in efficiency among open models due to its fi
 ## ** JUNE 2023 ** ## 
 
 1. **LeanDojo** - Open-Source Lean Playground consisting of toolkits, data, models, and benchmarks for theorem proving-also develops ReProver, Retrieval augmented LLM-based prover for theorem solving using premises from a vast math library-https://arxiv.org/abs/2306.15626.
-2. **Extending Context Window of LLMs**-Extends the context window of LLMs like LLaMA to up to 32K with minimal fine-tuning (within 1000 steps); previous methods for extending the context window are inefficient but this approach attains good performance on several tasks while being more efficient and cost-effective-https://arxiv.org/abs/2306.15595.
+2. **Extending Context Window of LLMs**-https://arxiv.org/abs/2306.15595.
 3. **Computer Vision Through the Lens of Natural Language**-https://arxiv.org/abs/2306.16410.
 4. **Understanding Theory-of-Mind in LLMs with LLMs**- Framework for procedurally generating evaluations with LLMs; proposes a benchmark to study the social reasoning capabilities of LLMs with LLMs.   https://arxiv.org/abs/2306.15448.
 5. **Evaluations with No Labels**-https://arxiv.org/abs/2306.13651v1
@@ -172,13 +169,12 @@ DBRX advances the state-of-the-art in efficiency among open models due to its fi
 
 ## ** MARCH 2023 ** ##
 
-1. **GPT-4 Technical Report**-GPT-4-Large multimodal model with broader general knowledge and problem-solving abilities-https://arxiv.org/abs/2303.08774v2.
-2. **LERF: Language Embedded Radiance Fields**-Method for grounding language embeddings from models like CLIP into NeRF; this enables open-ended language queries in 3D.                                
-3. **An Overview on Language Models: Recent Developments and Outlook** - an overview of language models covering recent developments and future directions. It also covers topics like linguistic units, structures, training methods, evaluation, and applications-https://arxiv.org/abs/2303.05759.                                                 
-4. Eliciting Latent Predictions from Transformers with the Tuned Lens**-Method for transformer interpretability that can trace a language model predictions as it develops layer by layer-https://arxiv.org/abs/2303.08112.                                                 
+1. **GPT-4 Technical Report**-https://arxiv.org/abs/2303.08774v2.                               
+2. **An Overview on Language Models: Recent Developments and Outlook**-Provides overview of anguage models covering recent developments and future directions. It also covers topics like linguistic units, structures, training methods, evaluation, and applications-https://arxiv.org/abs/2303.05759.                                                 
+3. Eliciting Latent Predictions from Transformers with the Tuned Lens**-Method for transformer interpretability that can trace a language model predictions as it develops layer by layer-https://arxiv.org/abs/2303.08112.                                                 
 ## ** FEB 2023 ** ## 
 
-1. **Multimodal Chain-of-Thought Reasoning in Language Models** - Uses vision features to elicit chain-of-thought reasoning in multimodality, enabling the model to generate effective rationales that contribute to answer inference-https://arxiv.org/abs/2302.00923.
+1. **Multimodal Chain-of-Thought Reasoning in Language Models**-https://arxiv.org/abs/2302.00923.
 2. **Dreamix: Video Diffusion Models are General Video Editors** - a diffusion model that performs text-based motion and appearance editing of general videos.                                                        
 3. **Benchmarking Large Language Models for News Summarization**-https://arxiv.org/abs/2301.13848.                                                                                                                                                                                                  
 ## ** JAN 2023 ** ## 
