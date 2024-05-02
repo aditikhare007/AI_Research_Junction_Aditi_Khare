@@ -26,8 +26,7 @@
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
-| 1. **Quantum Solutions Lab team diving deep into the prospects for quantum speedups with near-term Rydberg atom arrays. ** | **JPMorgan Chase and AWS study the prospects for quantum speedups with near-term Rydberg atom arrays.** | [Amazon Blog](https://aws.amazon.com/blogs/quantum-computing/jpmorgan-chase-and-aws-study-the-prospects-for-quantum-speedups-with-near-term-rydberg-atom-arrays/)|   **QUANTUM AI**   | 
-      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
+| 1. **Quantum Solutions Lab team diving deep into the prospects for quantum speedups with near-term Rydberg atom arrays. ** | **JPMorgan Chase and AWS study the prospects for quantum speedups with near-term Rydberg atom arrays.** | [Amazon Blog](https://aws.amazon.com/blogs/quantum-computing/jpmorgan-chase-and-aws-study-the-prospects-for-quantum-speedups-with-near-term-rydberg-atom-arrays/) |   **QUANTUM AI**   | 
 | 2. **Learning Quantum Computing. ** | **Learning Quantum Computing.** | [Github](https://github.com/learnqc/code)|   **QUANTUM AI**   | 
 | 3. **LLama3. ** | **Extending Llama-3's Context Ten-Fold Overnight.** | [paper](https://huggingface.co/papers/2404.19553/)|   **GENERATIVE AI**   | 
 | 4. **Meta's Muti-Token Prediction. ** | **Better & Faster Large Language Models via Multi-token Prediction.** | [Paper](https://arxiv.org/abs/2404.19737/)|   **GENERATIVE AI**   | 
@@ -35,7 +34,7 @@
 | 6. **Evaluating LLM Generations with a Panel of Diverse Models. ** | **Evaluating LLM Generations with a Panel of Diverse Models.** | [Paper](https://arxiv.org/pdf/2404.18796/)|   **GENERATIVE AI**   | 
 | 7. ** Snowflake Arctic-Best LLM for Enterprise AI — Efficiently Intelligent, Truly Open** | **Top-tier enterprise intelligence at incredibly low training cost.** | [Snowflake Blog](https://www.snowflake.com/blog/arctic-open-efficient-foundation-language-models-snowflake//)|   **GENERATIVE AI**   | 
 | 8. ** Photonic Quantum Memory Capacity Expanded, Paving Way for Quantum Internet** | **Photonic Quantum Memory Capacity Expanded, Paving Way for Quantum Internet.** | [quantumzeitgeist](https://quantumzeitgeist.com/photonic-quantum-memory-capacity-expanded-paving-way-for-quantum-internet/#google_vignette/)|   **Quantum AI**   | 
-| 9. **Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone** | **Phi-3 Technical Report-A Highly Capable Language Model Locally on Your Phone.** | [Paper](https://arxiv.org/pdf/2404.14219/) |   **GENERATIVE  AI**  | 
+| 9. **Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone** | **Phi-3 Technical Report-A Highly Capable Language Model Locally on Your Phone.** | [Paper](https://arxiv.org/pdf/2404.14219/) | **GENERATIVE AI** | 
 | 10. ** Make Your LLM Fully Utilize the Context** | **Make Your LLM Fully Utilize the Context.** | [Paper](https://arxiv.org/abs/2404.16811/)|   **Quantum AI**   | 
 | 11. ** Production Guides - Implementing FrugalGPT: Reducing LLM Costs & Improving Performance** | **Implementing FrugalGPT: Reducing LLM Costs & Improving Performance.** | [Blog](https://portkey.ai/blog/implementing-frugalgpt-smarter-llm-usage-for-lower-costs#1-prompt-adaptation/)|   **GENERATIVE AI**   | 
 
