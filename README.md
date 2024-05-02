@@ -28,19 +28,12 @@
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
 | 1. **Quantum Solutions Lab team diving deep into the prospects for quantum speedups with near-term Rydberg atom arrays. ** | **JPMorgan Chase and AWS study the prospects for quantum speedups with near-term Rydberg atom arrays.** | [Amazon Blog](https://aws.amazon.com/blogs/quantum-computing/jpmorgan-chase-and-aws-study-the-prospects-for-quantum-speedups-with-near-term-rydberg-atom-arrays/)|   **QUANTUM AI**   | 
       **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
-| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
 | 2. **Learning Quantum Computing. ** | **Learning Quantum Computing.** | [Github](https://github.com/learnqc/code)|   **QUANTUM AI**   | 
-|      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
-| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
 | 3. **LLama3. ** | **Extending Llama-3's Context Ten-Fold Overnight.** | [paper](https://huggingface.co/papers/2404.19553/)|   **GENERATIVE AI**   | 
-|      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
-| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
 | 4. **Meta's Muti-Token Prediction. ** | **Better & Faster Large Language Models via Multi-token Prediction.** | [Paper](https://arxiv.org/abs/2404.19737/)|   **GENERATIVE AI**   | 
-|      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
-| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
 | 5. **Comprehensive Library of Variational LSE Solvers. ** | **Comprehensive Library of Variational LSE Solvers.** | [Paper](https://arxiv.org/abs/2404.09916/)|   **QUANTUM AI**   | 
-| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
 | 6. **Evaluating LLM Generations with a Panel of Diverse Models. ** | **Evaluating LLM Generations with a Panel of Diverse Models.** | [Paper](https://arxiv.org/pdf/2404.18796/)|   **GENERATIVE AI**   | 
+
 
 
 
