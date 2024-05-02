@@ -8,11 +8,11 @@
 
 ** Global Top AI Community Member @Landing.AI @MLOPS Community, @Pandas AI, @Full Stack Deep Learning, @H2o.ai Generative AI, @Modular & @Cohere AI @hugging Face Research Papers Group @Papers with Code** ** Completed 90+ Online Technical Courses from Udemy & Coursera as I believe in Continuous Learning and Growth Mindset ** 
 
-<a href="https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
+<a href="https://www.linkedin.com/pulse/metas-multi-token-prediction-snowflakes-arctic-microsofts-aditi-khare-rp7rc/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
-[<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/>)
+[<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/metas-multi-token-prediction-snowflakes-arctic-microsofts-aditi-khare-rp7rc//>)
 
-<a href="https://www.linkedin.com/pulse/google-researchs-codeclm-aligning-language-models-tailored-khare-yfjxc/?trackingId=sDXAsF5PTwOyCDNt208lDg%3D%3D/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
+<a href="https://www.linkedin.com/pulse/metas-multi-token-prediction-snowflakes-arctic-microsofts-aditi-khare-rp7rc//" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
 #### ** If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you & Happy Reading** ###
 
