@@ -40,8 +40,6 @@
 | 12. ** Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or - How I learned to start worrying about prompt formatting** | **Implementing FrugalGPT: Reducing LLM Costs & Improving Performance.** | [Paper](https://arxiv.org/pdf/2310.11324/)|   **GENERATIVE AI**   | 
 | 13. ** Inner Workings of Transformer-based Language Models** | **Inner Workings of Transformer-based Language Models.** | [Paper](https://arxiv.org/pdf/2405.00208/)|   **GENERATIVE AI**   | 
 
-A Primer on the Inner Workings of Transformer-based Language Models
-
 ### ** JAN 2024 - APRIL 2024 ** ##
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
