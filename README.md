@@ -38,7 +38,7 @@
 | 10. ** Make Your LLM Fully Utilize the Context** | **Make Your LLM Fully Utilize the Context.** | [Paper](https://arxiv.org/abs/2404.16811/)|   **QUANTUM AI**   | 
 | 11. ** Production Guides - Implementing FrugalGPT: Reducing LLM Costs & Improving Performance** | **Implementing FrugalGPT: Reducing LLM Costs & Improving Performance.** | [Blog](https://portkey.ai/blog/implementing-frugalgpt-smarter-llm-usage-for-lower-costs#1-prompt-adaptation/)|   **GENERATIVE AI**   | 
 | 12. ** Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or - How I learned to start worrying about prompt formatting** | **Implementing FrugalGPT: Reducing LLM Costs & Improving Performance.** | [Paper](https://arxiv.org/pdf/2310.11324/)|   **GENERATIVE AI**   | 
-| 13. ** Inner Workings of Transformer-based Language Models** | **Inner Workings of Transformer-based Language Models.** | [Paper](https://arxiv.org/pdf/2405.00208/)|   **GENERATIVE AI**   | 
+| 13. ** Inner Workings of Transformer-based Language Models** | **Inner Workings of Transformer-based Language Models.** | [Paper](https://arxiv.org/pdf/2405.00208/) |   **GENERATIVE AI**   | 
 
 ### ** JAN 2024 - APRIL 2024 ** ##
 
