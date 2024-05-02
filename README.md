@@ -37,7 +37,7 @@
 | 9. **Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone** | **Phi-3 Technical Report-A Highly Capable Language Model Locally on Your Phone.** | [Paper](https://arxiv.org/pdf/2404.14219/) | **GENERATIVE AI** | 
 | 10. ** Make Your LLM Fully Utilize the Context** | **Make Your LLM Fully Utilize the Context.** | [Paper](https://arxiv.org/abs/2404.16811/)|   **QUANTUM AI**   | 
 | 11. ** Production Guides - Implementing FrugalGPT: Reducing LLM Costs & Improving Performance** | **Implementing FrugalGPT: Reducing LLM Costs & Improving Performance.** | [Blog](https://portkey.ai/blog/implementing-frugalgpt-smarter-llm-usage-for-lower-costs#1-prompt-adaptation/)|   **GENERATIVE AI**   | 
-
+| 12. ** Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or - How I learned to start worrying about prompt formatting** | **Implementing FrugalGPT: Reducing LLM Costs & Improving Performance.** | [Paper](https://arxiv.org/pdf/2310.11324/)|   **GENERATIVE AI**   | 
 
 ### ** JAN 2024 - APRIL 2024 ** ##
 
@@ -64,6 +64,7 @@
 | 7. **AI21's Jamba** | **SSM-Transformer Model-AI2I Labs.** | [Blog](https://www.ai21.com/blog/announcing-jamba),[Website](https://www.ai21.com/jamba),[Hugging-Face](https://huggingface.co/ai21labs/Jamba-v0.1) | **Generative AI** | 
 | 8. **Google's Genie** | **Open Language Model - Accelerating the Science of Language Models-Weights.** | [Paper](https://arxiv.org/pdf/2402.17944v1.pdf) | **Generative AI** | 
 | 9. **Allen Institute for AI's OLMo** | **Generative Interactive Environments & Large Language Models on Tabular Data.** | [Paper](https://arxiv.org/abs/2402.00838),[Github](https://github.com/allenai/OLMo ),[Hugging-Face](https://huggingface.co/datasets/allenai/dolma), [Website](https://allenai.org/olmo) | **Generative AI** | 
+
 
 ### ** JAN 2024 ** ###
 
