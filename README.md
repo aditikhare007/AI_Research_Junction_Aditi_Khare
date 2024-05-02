@@ -26,7 +26,7 @@
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
-| 1. **Quantum Solutions Lab team diving deep into the prospects for quantum speedups with near-term Rydberg atom arrays. ** | **JPMorgan Chase and AWS study the prospects for quantum speedups with near-term Rydberg atom arrays.** | [PBlog](https://aws.amazon.com/blogs/quantum-computing/jpmorgan-chase-and-aws-study-the-prospects-for-quantum-speedups-with-near-term-rydberg-atom-arrays/)|   **QUANTUM AI**   | 
+| 1. **Quantum Solutions Lab team diving deep into the prospects for quantum speedups with near-term Rydberg atom arrays. ** | **JPMorgan Chase and AWS study the prospects for quantum speedups with near-term Rydberg atom arrays.** | [Amazon Blog](https://aws.amazon.com/blogs/quantum-computing/jpmorgan-chase-and-aws-study-the-prospects-for-quantum-speedups-with-near-term-rydberg-atom-arrays/)|   **QUANTUM AI**   | 
 
 ### ** JAN 2024 - APRIL 2024 ** ##
 
