@@ -14,9 +14,7 @@
 
 <a href="https://www.linkedin.com/pulse/metas-multi-token-prediction-snowflakes-arctic-microsofts-aditi-khare-rp7rc//" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
-#### ** If you find my content useful then please subscribe to my AI Research Junction Newsletter to support my work Thank you & Happy Reading** ###
-
-#### ** If you find my AI Research Junction@Aditi Khare useful please star this repository to support my work - Thank you & Happy Reading** ###
+### Thank you so much for visting my AI Research Profile & Happy Reading ###
 
 ### AI RESEARCH PAPERS SUMMARIES ## 
 
