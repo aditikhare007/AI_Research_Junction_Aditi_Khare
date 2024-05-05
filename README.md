@@ -8,11 +8,11 @@
 
 ** Global Top AI Community Member @Landing.AI @MLOPS Community, @Pandas AI, @Full Stack Deep Learning, @H2o.ai Generative AI, @Modular & @Cohere AI @hugging Face Research Papers Group @Papers with Code** ** Completed 90+ Online Technical Courses from Udemy & Coursera as I believe in Continuous Learning and Growth Mindset ** 
 
-<a href="https://www.linkedin.com/pulse/metas-multi-token-prediction-snowflakes-arctic-microsofts-aditi-khare-rp7rc/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
+<a href="https://www.linkedin.com/newsletters/7152631955203739649/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
-[<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/pulse/metas-multi-token-prediction-snowflakes-arctic-microsofts-aditi-khare-rp7rc//>)
+[<img src="https://github.com/aditikhare007/aditikhare007/blob/main/Aditi_AI_Research_Junction_Logo_16th_Jan_24_Final.png">](<https://www.linkedin.com/newsletters/7152631955203739649/>)
 
-<a href="https://www.linkedin.com/pulse/metas-multi-token-prediction-snowflakes-arctic-microsofts-aditi-khare-rp7rc//" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
+<a href="https://www.linkedin.com/newsletters/7152631955203739649/" class="button icon search"> ** Aditi Khare @ AI Research Junction Newletter ** </a> 
 
 ### Thank you so much for visting my AI Research Profile & Happy Reading ###
 
