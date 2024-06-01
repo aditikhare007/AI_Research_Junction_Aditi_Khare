@@ -108,6 +108,11 @@
 | 13. ** Inner Workings of Transformer-based Language Models** | **Inner Workings of Transformer-based Language Models.** | [Paper](https://arxiv.org/pdf/2405.00208/) |   **GENERATIVE AI**   | 
 | 14. ** Open-AI's GPT-4o [Audio,Vision & Text] Capabilities** | **Open-AI's GPT-4o [Audio,Vision & Text] Capabilities.** | [Open-AI Blog](https://openai.com/index/hello-gpt-4o/) |   **GENERATIVE AI**   | 
 | 15. ** LoRA Learns Less and Forgets Less** | **LoRA Learns Less and Forgets Less** | [Paper](https://arxiv.org/pdf/2405.09673/) |   **GENERATIVE AI**   | 
+| 16. ** GNN-RAG-Graph Neural Retrieval for LLMs Reasoning** | **GNN-RAG: Graph Neural Retrieval for Large Language Model Reasoning** | [Github](https://github.com/cmavro/GNN-RAG/) |   **GENERATIVE AI**   | 
+| 17. ** One QuantLLM for ALL: Fine-tuning Quantized LLMs Once for Efficient Deployments** | **One QuantLLM for ALL-Fine-tuning QuantizedLLMs Once for Efficient Deployments** | [Paper](https://arxiv.org/pdf/2405.20202/) |   **GENERATIVE AI**   | 
+| 18. ** Faithful Logical Reasoning via Symbolic Chain-of-Thought** | **Faithful Logical Reasoning via Symbolic Chain-of-Thought** | [Paper](https://arxiv.org/abs/2405.18357/) |   **GENERATIVE AI**   | 
+| 19. ** Contextual Position Encoding - Learning to Count What’s Important** | **Contextual Position Encoding-Learning to Count What’s Important** | [Paper](https://arxiv.org/pdf/2405.18719/) |   **GENERATIVE AI**   | 
+| 20. ** Introduction to Vision-Language Modeling** | **Vision-Language Modeling** | [Paper](https://arxiv.org/pdf/2405.17247/) |   **GENERATIVE AI**   | 
 
 
 ### ** JAN 2024 - APRIL 2024 ** ##
