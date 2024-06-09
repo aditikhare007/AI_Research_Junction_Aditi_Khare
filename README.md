@@ -89,6 +89,13 @@
 
 ### ** GENERATIVE AI & QUANTUM AI RESEARCH PAPERS SUMMARIES ** ##
 
+###  ** JUNE 2024 ** ##
+
+|      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
+| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
+| 2. **Open AI's Extracting Concepts from GPT-4. ** | **Open AI's Extracting Concepts from GPT-4.** | [Open-AI Blog](https://openai.com/index/extracting-concepts-from-gpt-4/) |   **GENERATIVE AI**   | 
+| 1. **Meta AI's No Language Left Behind- Scaling Human-Centered Machine Translation. ** | **Meta AI's No Language Left Behind- Scaling Human-Centered Machine Translation.** | [Github](https://github.com/facebookresearch/fairseq/tree/nllb/)|   **GENERATIVE AI**   | 
+
 ###  ** MAY 2024 ** ##
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
