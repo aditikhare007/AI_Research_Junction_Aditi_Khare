@@ -93,6 +93,8 @@
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
+| 4. **Microsoft's SAMBA LLM Model. ** | **Microsoft's SAMBA LLM Model.** | [Paper]( https://arxiv.org/pdf/2406.07522/) |   **GENERATIVE AI**   | 
+| 3. **Quixer - A Quantum Transformer Model. ** | **Quixer - A Quantum Transformer Model.** | [Paper](https://openai.com/index/extracting-concepts-from-gpt-4/) |   **QUANTUM AI**   | 
 | 2. **Open AI's Extracting Concepts from GPT-4. ** | **Open AI's Extracting Concepts from GPT-4.** | [Open-AI Blog](https://openai.com/index/extracting-concepts-from-gpt-4/) |   **GENERATIVE AI**   | 
 | 1. **Meta AI's No Language Left Behind- Scaling Human-Centered Machine Translation. ** | **Meta AI's No Language Left Behind- Scaling Human-Centered Machine Translation.** | [Github](https://github.com/facebookresearch/fairseq/tree/nllb/)|   **GENERATIVE AI**   | 
 
