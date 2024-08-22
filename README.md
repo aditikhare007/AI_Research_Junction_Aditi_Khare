@@ -93,7 +93,7 @@
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
-| 1. **The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery ** | ** The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery** | [Paper](https://paperswithcode.com/paper/the-ai-scientist-towards-fully-automated-open/) | **GENERATIVE AI**   | 
+| 3. **The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery ** | ** The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery** | [Paper](https://paperswithcode.com/paper/the-ai-scientist-towards-fully-automated-open/) | **GENERATIVE AI**   | 
 | 2. **ControlNeXt-Powerful and Efficient Control for Image and Video Generation ** | **ControlNeXt-Powerful and Efficient Control for Image and Video Generation.** | [Paper](https://arxiv.org/pdf/2408.06070v2/) |   **COMPUTER VISION**   | 
 | 1. **RAG-Checker-A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation ** | **RAG-Checker-A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation.** | [Paper](https://arxiv.org/abs/2408.08067/) |   **GENERATIVE AI**  | 
 
