@@ -89,6 +89,16 @@
 
 ### ** GENERATIVE AI & QUANTUM AI RESEARCH PAPERS SUMMARIES ** ##
 
+###  ** SEPTEMBER 2024 ** ##
+
+|      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
+| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
+| 5. ** AutoGen Studio ** | ** AutoGen Studio ** | [Github](https://github.com/microsoft/autogen) | **GENERATIVE AI**   | 
+| 4. **Strategic Chain-of-Thought ** | ** Strategic Chain-of-Thought** | [Paper](https://arxiv.org/abs/2409.03271/) | **GENERATIVE AI**   | 
+| 3. **Role of RAG Noise in Large Language Models ** | ** Role of RAG Noise in Large Language Models** | [Paper](https://arxiv.org/abs/2408.13533/) | **GENERATIVE AI**   | 
+| 2. ** Learning to Simulate Dynamic Environments with GameGAN ** | ** Learning to Simulate Dynamic Environments with GameGAN** | [Github](https://github.com/nv-tlabs/GameGAN_code/) | **GENERATIVE AI**   | 
+| 1. ** Agentic Retrieval-Augmented Generation for Time Series Analysis ** | ** Agentic Retrieval-Augmented Generation for Time Series Analysis ** | [Paper](https://arxiv.org/abs/2408.14484/) | **GENERATIVE AI**   | 
+
 ###  ** AUGUST 2024 ** ##
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
