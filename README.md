@@ -93,6 +93,7 @@
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
+| 6. ** Learning to Reason with LLMs-Introducing OpenAI o1 ** | ** Learning to Reason with LLMs - Introducing OpenAI o1 ** | [Paper]( https://openai.com/index/introducing-openai-o1-preview/) | **GENERATIVE AI**   | 
 | 5. ** AutoGen Studio ** | ** AutoGen Studio ** | [Github](https://github.com/microsoft/autogen) | **GENERATIVE AI**   | 
 | 4. **Strategic Chain-of-Thought ** | ** Strategic Chain-of-Thought** | [Paper](https://arxiv.org/abs/2409.03271/) | **GENERATIVE AI**   | 
 | 3. **Role of RAG Noise in Large Language Models ** | ** Role of RAG Noise in Large Language Models** | [Paper](https://arxiv.org/abs/2408.13533/) | **GENERATIVE AI**   | 
