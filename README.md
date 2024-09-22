@@ -1,7 +1,7 @@
 
 ## Greetings AI Community 👋 [<img src="https://img.shields.io/badge/About-Me-333333.svg?style=for-the-badge&logo=aboutdotme&logoColor=white">](<https://www.linkedin.com/in/aditi-khare-5840977b/>)
 
-** AWS & AI Research Scientist-Principal Applied AI Product Engineer [Product-Owner] & Enterprise Architect @PepsiCo | IIM-A | Community Member @Landing AI | AI Research Scientist [Portfolio] | Author | Quantum AI | Mojo | Bootstrap | React JS | 8+ Years of Experience in Fortune 50 Product Companies | **
+** AWS & AI Research Specialist-Full Stack Applied AI Research Scientist & Enterprise Architect-AI Search & Developer Platforms | IIM-A | Honoured to Contribute on Book "Generative AI Application Integration Patterns" Published by Packt| Community Member @Landing AI | AI Research Scientist [Portfolio] | Author | Quantum AI | Mojo | Bootstrap | React JS | 8+ Years of Experience in Fortune 50 Product Companies | **
 
 [<img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=white">](<https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare/>)
 [<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">](<https://www.linkedin.com/in/aditi-khare-5840977b/>)
@@ -93,6 +93,8 @@
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
+| 8. ** Training Language Models to Self-Correct via Reinforcement Learning** | ** Training Language Models to Self-Correct via Reinforcement Learning ** | [Paper](https://arxiv.org/abs/2409.12917/) | **GENERATIVE AI**   | 
+| 7. ** Iteration of Thought-Leveraging Inner Dialogue for Autonomous Large Language Model Reasoning ** | ** Iteration of Thought-Leveraging Inner Dialogue for Autonomous Large Language Model Reasoning ** | [Paper](https://arxiv.org/abs/2409.12618/) | **GENERATIVE AI**   | 
 | 6. ** Learning to Reason with LLMs-Introducing OpenAI o1 ** | ** Learning to Reason with LLMs - Introducing OpenAI o1 ** | [Paper]( https://openai.com/index/introducing-openai-o1-preview/) | **GENERATIVE AI**   | 
 | 5. ** AutoGen Studio ** | ** AutoGen Studio ** | [Github](https://github.com/microsoft/autogen) | **GENERATIVE AI**   | 
 | 4. **Strategic Chain-of-Thought ** | ** Strategic Chain-of-Thought** | [Paper](https://arxiv.org/abs/2409.03271/) | **GENERATIVE AI**   | 
