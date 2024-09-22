@@ -1,7 +1,7 @@
 
 ## Greetings AI Community 👋 [<img src="https://img.shields.io/badge/About-Me-333333.svg?style=for-the-badge&logo=aboutdotme&logoColor=white">](<https://www.linkedin.com/in/aditi-khare-5840977b/>)
 
-** AWS & AI Research Specialist-Full Stack Applied AI Research Scientist & Enterprise Architect-AI Search & Developer Platforms | IIM-A | Honoured to Contribute on Book "Generative AI Application Integration Patterns" Published by Packt| Community Member @Landing AI | AI Research Scientist [Portfolio] | Author | Quantum AI | Mojo | Bootstrap | React JS | 8+ Years of Experience in Fortune 50 Product Companies | **
+** AWS & AI Research Specialist-Full Stack Applied AI Research Scientist & Enterprise Architect-AI Search & Developer Platforms | IIM-A | Honoured to Contribute on Book "Generative AI Application Integration Patterns"@Packt| Community Member @Landing AI | AI Research Scientist [Portfolio] | Author | Quantum AI | Mojo | Bootstrap | React JS | 8+ Years of Experience in Fortune 50 Product Companies | **
 
 [<img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=white">](<https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare/>)
 [<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">](<https://www.linkedin.com/in/aditi-khare-5840977b/>)
@@ -18,8 +18,9 @@
 
 ** Global Top AI Community Member @Landing AI @MLOPS Community, @Pandas AI, @Full Stack Deep Learning, @HumaneAI @H2o.ai Generative AI, @Modular & @Cohere AI @Hugging Face Research Papers Group @Papers with Code** ** Completed 100+ Online Technical Paid Courses from Udemy & Coursera as I believe in Continuous Learning and Growth Mindset **
 
-## ** AWS & AI Research Scientist-Principal Applied AI Product Engineer Tech Stack ** ##
+## ** AWS & AI Research Specialist-Full Stack Applied AI Research Scientist & Enterprise Architect- AI Search & Developer Platforms Tech Stack ** ##
 <p>
+  
   <img src="https://img.shields.io/badge/arXiv-B31B1B.svg?style=for-the-badge&logo=arXiv&logoColor=white" />
   <img src="https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenAI-412991.svg?style=for-the-badge&logo=OpenAI&logoColor=white" />
@@ -74,6 +75,12 @@
   <img src="https://img.shields.io/badge/Anaconda-44A833.svg?style=for-the-badge&logo=Anaconda&logoColor=white" />
   <img src="https://img.shields.io/badge/sublime_text-%23575757.svg?&style=for-the-badge&logo=sublime-text&logoColor=white" />
 </p>
+
+## ** I am Honoured to Contribute on Book "Generative AI Application Integration Patterns" Published by Packt ** ## 
+[<img src="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare/blob/main/3.png/">](<https://www.amazon.com/dp/1835887600/ref=tsm_1_fb_lk/>)
+
+<a href="https://www.linkedin.com/newsletters/7152631955203739649/" class="button icon search"> ** Subscribe to my AI Research Junction Newletter ** </a> 
+### Thank you so much for visting my Profile & Happy Reading !! ###
 
 ## ** AI Research Junction@Aditi Khare-Research Papers Summaries @Gen AI @Computer Vision @Quantum AI ** ##
 
