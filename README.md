@@ -4,8 +4,7 @@
 ** AWS & AI Research Specialist-Full Stack Applied AI Research Scientist & Enterprise Architect-AI Search & Developer Platforms | IIM-A | Honoured to Contribute on Book "Generative AI Application Integration Patterns"@Packt| Community Member @Landing AI | AI Research Scientist [Portfolio] | Author | Quantum AI | Mojo | Bootstrap | React JS | 8+ Years of Experience in Fortune 50 Product Companies | **
 
 ## ** I am Honoured to Contribute on Book "Generative AI Application Integration Patterns" Published by Packt ** ## 
-[<img src="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare/blob/main/3.png/">]
-(<https://www.amazon.com/dp/1835887600/ref=tsm_1_fb_lk/>)
+[<img src="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare/blob/main/3.png/">](<https://www.amazon.com/dp/1835887600/ref=tsm_1_fb_lk/>)
 
 ## Generative AI Application Integration Patterns"@Packt is Avaiable on Amazon Grab your Copy Now !! ## 
 ## Book Overview ##
