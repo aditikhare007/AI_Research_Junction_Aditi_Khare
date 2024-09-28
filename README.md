@@ -107,6 +107,7 @@ Get acquainted with a variety of strategies and an easy to follow 4 step framewo
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
+| 9. ** Meta'sLlama 3.2-Edge AI & Vision with Open, Customizable Models** | ** Meta's Llama 3.2 - Edge AI & Vision with Open, Customizable Models ** | [Blog](https://www.llama.com/) | **EDGE AI & VISION **   | 
 | 8. ** Training Language Models to Self-Correct via Reinforcement Learning** | ** Training Language Models to Self-Correct via Reinforcement Learning ** | [Paper](https://arxiv.org/abs/2409.12917/) | **GENERATIVE AI**   | 
 | 7. ** Iteration of Thought-Leveraging Inner Dialogue for Autonomous Large Language Model Reasoning ** | ** Iteration of Thought-Leveraging Inner Dialogue for Autonomous Large Language Model Reasoning ** | [Paper](https://arxiv.org/abs/2409.12618/) | **GENERATIVE AI**   | 
 | 6. ** Learning to Reason with LLMs-Introducing OpenAI o1 ** | ** Learning to Reason with LLMs - Introducing OpenAI o1 ** | [Paper]( https://openai.com/index/introducing-openai-o1-preview/) | **GENERATIVE AI**   | 
