@@ -103,6 +103,12 @@ Get acquainted with a variety of strategies and an easy to follow 4 step framewo
 
 ### ** GENERATIVE AI & QUANTUM AI RESEARCH PAPERS SUMMARIES ** ##
 
+###  ** OCTOBER 2024 ** ##
+
+|      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
+| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
+| 9. ** Open AI Introduces Swarm Framework ** | **  Open AI Introduces Swarm Framework ** | [Github](https://github.com/openai/swarm) | ** GENERATIVE AI **   | 
+
 ###  ** SEPTEMBER 2024 ** ##
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
