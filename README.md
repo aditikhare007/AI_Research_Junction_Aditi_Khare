@@ -107,7 +107,8 @@ Get acquainted with a variety of strategies and an easy to follow 4 step framewo
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
 | --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
-| 9. ** Open AI Introduces Swarm Framework ** | **  Open AI Introduces Swarm Framework ** | [Github](https://github.com/openai/swarm) | ** GENERATIVE AI **   | 
+| 2. ** Claude 3.5 Sonnet and Claude 3.5 Haiku ** | ** Claude 3.5 Sonnet and Claude 3.5 Haiku ** | [Blog]( https://www.anthropic.com/news/3-5-models-and-computer-use) | ** GENERATIVE AI **   | 
+| 1. ** Open AI Introduces Swarm Framework ** | **  Open AI Introduces Swarm Framework ** | [Github](https://github.com/openai/swarm) | ** GENERATIVE AI **   | 
 
 ###  ** SEPTEMBER 2024 ** ##
 
