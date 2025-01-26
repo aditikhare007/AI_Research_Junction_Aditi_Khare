@@ -83,6 +83,14 @@ Get acquainted with a variety of strategies and an easy to follow 4 step framewo
 
 ### ** GENERATIVE AI & QUANTUM AI RESEARCH PAPERS SUMMARIES ** ##
 
+###  ** Nov 2024-Jan 2025 ** ##
+
+|      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
+| --------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------| ----------------------------------------------------------------------- | -------------------------------------- | 
+| 3. ** Modern BERT ** | ** Modern BERT ** | [Paper](https://arxiv.org/abs/2412.13663) | ** GENERATIVE AI **   | 
+| 2. ** LLM Inference-Time Self-Improvement ** | ** LLM Inference-Time Self-Improvement ** | [Paper](https://arxiv.org/pdf/2412.14352) | ** GENERATIVE AI **   | 
+| 1. ** DeepSeekv3 ** | ** DeepSeekv3 ** | [Github](https://github.com/deepseek-ai/DeepSeek-V3/tree/main) | ** GENERATIVE AI **   | 
+
 ###  ** OCTOBER 2024 ** ##
 
 |      **AI RESEARCH PAPERS**    |     **PAPERS SUMMARIES**     |    **RESOURCE LINKS**   |     **PAPERS CATEGORY**   | 
