@@ -1,192 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditi Khare - AI Research Portfolio</title>
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: #fff9f0;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      background: linear-gradient(90deg, #1e1e2f, #2b2b40);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
-    }
-
-    header img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      border: 3px solid #fff;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(255,255,255,0.2);
-    }
-
-    header h1 {
-      font-size: 2.4em;
-      margin-bottom: 8px;
-      letter-spacing: 0.5px;
-    }
-
-    header h2 {
-      font-size: 1.4em;
-      color: #ffd280;
-      margin-top: 10px;
-      line-height: 1.5;
-    }
-
-    header p {
-      font-size: 1.05em;
-      color: #e0e0e0;
-      margin-top: 10px;
-      line-height: 1.6;
-    }
-
-    header p strong {
-      display: block;
-      font-size: 1.15em;
-      color: #fff;
-      margin-top: 8px;
-    }
-
-    .highlight {
-      font-size: 1.15em;
-      font-style: italic;
-      color: #ffcc80;
-      font-weight: 500;
-      margin-top: 15px;
-    }
-
-    .button-container {
-      margin-top: 30px;
-    }
-
-    .button {
-      background-color: #d17a00;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      margin: 8px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 0.95em;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-      font-weight: 600;
-    }
-
-    .button:hover {
-      background-color: #ffb74d;
-      color: #fff;
-      transform: scale(1.05);
-    }
-
-    .community-badge {
-      display: inline-block;
-      margin-top: 14px;
-      background: linear-gradient(90deg, #ffcc80, #d17a00);
-      color: #1e1e2f;
-      font-weight: 600;
-      padding: 8px 18px;
-      border-radius: 20px;
-      font-size: 0.95em;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-      transition: all 0.3s ease;
-      cursor: default;
-    }
-
-    .community-badge:hover {
-      transform: scale(1.07);
-      background: linear-gradient(90deg, #ffd699, #e59400);
-      box-shadow: 0 6px 10px rgba(0,0,0,0.2);
-    }
-
-    .section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section h3 {
-      font-size: 2em;
-      color: #1e1e2f;
-      border-bottom: 3px solid #d17a00;
-      display: inline-block;
-      padding-bottom: 6px;
-      margin-bottom: 30px;
-    }
-
-    .tags {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .tag {
-      display: inline-block;
-      background-color: #fff3e0;
-      color: #d17a00;
-      padding: 10px 18px;
-      margin: 6px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 1em;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    .tag:hover {
-      background-color: #ffecb3;
-    }
-
-    .card {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      padding: 25px;
-      margin-bottom: 25px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    }
-
-    footer {
-      text-align: center;
-      padding: 35px;
-      background-color: #2b2b40;
-      color: white;
-      font-size: 0.95em;
-      margin-top: 60px;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8em;
-      }
-      header h2 {
-        font-size: 1.1em;
-      }
-      .button {
-        padding: 10px 16px;
-        font-size: 0.9em;
-      }
-      .card {
-        padding: 20px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditi Khare - AI Portfolio</title>
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff9f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+header {
+    background: linear-gradient(90deg, #1e1e2f, #2b2b40);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+}
+header h1 {
+    font-size: 2.4em;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+header h2 {
+    font-size: 1.4em;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ffd280, #ffb74d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header p {
+    font-size: 1.05em;
+    color: #e0e0e0;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+header p strong {
+    display: block;
+    font-size: 1.15em;
+    color: #fff;
+    margin-top: 8px;
+}
+.highlight {
+    font-size: 1.15em;
+    font-style: italic;
+    font-weight: 600;
+    background: linear-gradient(90deg, #ffcc80, #ffa726);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 15px;
+}
+.button-container {
+    margin-top: 30px;
+}
+.button {
+    background-color: #d17a00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+.button:hover {
+    background-color: #ffb74d;
+    color: #fff;
+    transform: scale(1.05);
+}
+.community-badge {
+    display: inline-block;
+    margin-top: 14px;
+    background: linear-gradient(90deg, #ffcc80, #d17a00);
+    color: #1e1e2f;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+.community-badge:hover {
+    transform: scale(1.07);
+    background: linear-gradient(90deg, #ffd699, #e59400);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+}
+.section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.section h3 {
+    font-size: 2em;
+    color: #1e1e2f;
+    border-bottom: 3px solid #d17a00;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 30px;
+}
+.tags {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.tag {
+    display: inline-block;
+    background-color: #fff3e0;
+    color: #d17a00;
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.tag:hover {
+    background-color: #ffecb3;
+}
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+footer {
+    text-align: center;
+    padding: 35px;
+    background-color: #2b2b40;
+    color: white;
+    font-size: 0.95em;
+    margin-top: 60px;
+}
+@media (max-width: 768px) {
+    header h1 { font-size: 1.8em; }
+    header h2 { font-size: 1.1em; }
+    .button { padding: 10px 16px; font-size: 0.9em; }
+    .card { padding: 20px; }
+}
+</style>
 </head>
 
 <body>
@@ -197,7 +172,7 @@
   <h2>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</h2>
   <p><strong>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</strong></p>
   <p><strong>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</strong></p>
-  <p class="highlight"><em>• Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI.</em></p>
+  <p class="highlight"><em>Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI.</em></p>
 
   <div class="button-container">
     <a href="about_me.html" class="button">About Me</a>
@@ -208,6 +183,7 @@
     <a href="https://topmate.io/aditi_khare" class="button" target="_blank">Mentorship@TopMate</a>
     <div class="community-badge">💠 Community Care</div>
     <a href="https://www.packtpub.com/" class="button" target="_blank">My Gen-AI Integration Book@Packt</a>
+    <a href="https://www.hackerrank.com/profile/aditikhare007" class="button" target="_blank">HackerRank</a>
   </div>
 </header>
 
@@ -219,7 +195,6 @@
     <span class="tag">Quantum AI</span>
   </div>
 
-  <!-- January 2025 Papers Section -->
   <div class="card">
     <h4>📘 January 2025: AI Research Highlights</h4>
     <p>1️⃣ <strong>AI-native Enterprise Platforms:</strong> Modular AI agents that self-adapt across data pipelines.</p>
@@ -227,7 +202,6 @@
     <p>3️⃣ <strong>Quantum Hybrid Architectures:</strong> Integrating variational quantum circuits with transformer-based AI models.</p>
   </div>
 
-  <!-- Resources Section -->
   <div class="card">
     <h4>🌐 Resources & Let's Connect</h4>
     <p><strong>Stay connected for AI collaborations, mentorship, and research insights:</strong></p>
