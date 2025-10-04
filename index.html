@@ -46,23 +46,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     box-shadow: 0 8px 25px rgba(209, 122, 0, 0.35);
 }
 
-.about-section {
-    background: #fff3e0;
-    padding: 12px 20px;
-    border-radius: 12px;
-    margin: 15px 0;
-    box-shadow: inset 0 1px 5px rgba(209,122,0,0.1);
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.5;
-    text-align: left;
-    transition: all 0.4s ease;
-}
-.about-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(209, 122, 0, 0.2);
-}
-
+/* Snapshot & Tags */
 .snapshot {
     display: flex;
     flex-direction: column;
@@ -189,12 +173,8 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 
 <!-- Profile Card -->
 <div class="profile-card">
-    <img src="https://github.com/username.png" alt="Aditi Khare" class="profile-photo">
+    <img src="https://github.com/yourusername.png" alt="Aditi Khare" class="profile-photo">
     <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
-    <div class="about-section" id="about-section">
-        <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
-        <p>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
-    </div>
     <div class="snapshot">
         <span>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</span>
         <span>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</span>
@@ -287,7 +267,7 @@ showMore.onclick = () => {
 };
 dashboard.appendChild(showMore);
 
-// === Back to Top ===
+// Back to Top
 const backToTop = document.getElementById("backToTop");
 window.onscroll = () => {
     if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -298,7 +278,7 @@ window.onscroll = () => {
 };
 function topFunction() { document.documentElement.scrollTop = 0; }
 
-// === Search Filter ===
+// Search Filter
 function filterCards() {
     let input = document.getElementById("searchInput").value.toLowerCase();
     document.querySelectorAll(".paper-card").forEach(card => {
