@@ -1,186 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditi Khare - AI Research Portfolio</title>
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: #fff9f0;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      scroll-behavior: smooth;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aditi Khare - AI Research Portfolio</title>
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff9f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+  }
 
-    header {
-      background: linear-gradient(90deg, #1e1e2f, #2b2b40);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
-    }
+  header {
+    background: linear-gradient(90deg, #1e1e2f, #2b2b40);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  }
 
-    header img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      border: 3px solid #fff;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(255,255,255,0.2);
-    }
+  header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+  }
 
-    header h1 {
-      font-size: 2.4em;
-      margin-bottom: 8px;
-      letter-spacing: 0.5px;
-    }
+  header h1 {
+    font-size: 2.4em;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
 
-    header h2 {
-      font-size: 1.4em;
-      color: #ffd280;
-      margin-top: 10px;
-      line-height: 1.5;
-    }
+  header h2 {
+    font-size: 1.4em;
+    color: #ffd280;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
 
-    header p {
-      font-size: 1.05em;
-      color: #e0e0e0;
-      margin-top: 10px;
-      line-height: 1.6;
-    }
+  header p {
+    font-size: 1.05em;
+    color: #e0e0e0;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
 
-    header p strong {
-      display: block;
-      font-size: 1.15em;
-      color: #fff;
-      margin-top: 8px;
-    }
+  header p strong {
+    display: block;
+    font-size: 1.15em;
+    color: #fff;
+    margin-top: 8px;
+  }
 
-    .highlight {
-      font-size: 1.15em;
-      font-style: italic;
-      color: #ffcc80;
-      font-weight: 500;
-      margin-top: 15px;
-    }
+  .highlight {
+    font-size: 1.15em;
+    font-style: italic;
+    color: #ffcc80;
+    font-weight: 500;
+    margin-top: 15px;
+  }
 
-    .button-container {
-      margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-    }
+  .button-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
 
-    .button {
-      background-color: #d17a00;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 0.95em;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      font-weight: 600;
-    }
+  .button {
+    background-color: #d17a00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+  }
 
-    .button:hover {
-      background-color: #ffb74d;
-      color: #fff;
-      transform: scale(1.05);
-    }
+  .button:hover {
+    background-color: #ffb74d;
+    color: #fff;
+    transform: scale(1.05);
+  }
 
-    .community-badge {
-      display: inline-block;
-      margin-top: 14px;
-      background: linear-gradient(90deg, #ffcc80, #d17a00);
-      color: #fff; /* white text */
-      font-weight: 600;
-      padding: 8px 18px;
-      border-radius: 20px;
-      font-size: 0.95em;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-      transition: all 0.3s ease;
-      cursor: pointer;
-      text-decoration: none;
-    }
+  .community-badge {
+    display: inline-block;
+    margin-top: 14px;
+    background: linear-gradient(90deg, #ffcc80, #d17a00);
+    color: #fff; /* white text */
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
 
-    .community-badge:hover {
-      transform: scale(1.07);
-      background: linear-gradient(90deg, #ffd699, #e59400);
-      box-shadow: 0 6px 10px rgba(0,0,0,0.2);
-    }
+  .community-badge:hover {
+    transform: scale(1.07);
+    background: linear-gradient(90deg, #ffd699, #e59400);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+  }
 
-    .section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
+  .section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
 
-    .section h3 {
-      font-size: 2em;
-      color: #1e1e2f;
-      border-bottom: 3px solid #d17a00;
-      display: inline-block;
-      padding-bottom: 6px;
-      margin-bottom: 30px;
-    }
+  .section h3 {
+    font-size: 2em;
+    color: #1e1e2f;
+    border-bottom: 3px solid #d17a00;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 30px;
+  }
 
-    .tags {
-      margin-bottom: 30px;
-      text-align: center;
-    }
+  .tags {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 
-    .tag {
-      display: inline-block;
-      background-color: #fff3e0;
-      color: #d17a00;
-      padding: 10px 18px;
-      margin: 6px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 1em;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
+  .tag {
+    display: inline-block;
+    background-color: #fff3e0;
+    color: #d17a00;
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
 
-    .tag:hover {
-      background-color: #ffecb3;
-    }
+  .tag:hover {
+    background-color: #ffecb3;
+  }
 
-    .card {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      padding: 25px;
-      margin-bottom: 25px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+  .card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
 
-    footer {
-      text-align: center;
-      padding: 35px;
-      background-color: #2b2b40;
-      color: white;
-      font-size: 0.95em;
-      margin-top: 60px;
-    }
+  footer {
+    text-align: center;
+    padding: 35px;
+    background-color: #2b2b40;
+    color: white;
+    font-size: 0.95em;
+    margin-top: 60px;
+  }
 
-    @media (max-width: 768px) {
-      header h1 { font-size: 1.8em; }
-      header h2 { font-size: 1.1em; }
-      .button { padding: 10px 16px; font-size: 0.9em; }
-      .card { padding: 20px; }
-    }
-  </style>
+  @media (max-width: 768px) {
+    header h1 { font-size: 1.8em; }
+    header h2 { font-size: 1.1em; }
+    .button { padding: 10px 16px; font-size: 0.9em; }
+    .card { padding: 20px; }
+  }
+</style>
 </head>
 
 <body>
@@ -213,33 +213,36 @@
     <span class="tag" onclick="filterCategory('Quantum AI')">Quantum AI</span>
   </div>
 
-  <!-- Research Papers Container -->
   <div id="papers-container">
-    <!-- Example Generative AI papers -->
+    <!-- Sample Papers -->
     <div class="card" data-category="Generative AI">
       <h4>Modern BERT</h4>
       <p>Modern BERT improvements and techniques</p>
       <a href="https://arxiv.org/abs/2412.13663" target="_blank">View Paper</a>
     </div>
-    <div class="card" data-category="Generative AI">
-      <h4>LLM Inference-Time Self-Improvement</h4>
-      <p>LLM improves itself at inference time</p>
-      <a href="https://arxiv.org/pdf/2412.14352" target="_blank">View Paper</a>
-    </div>
-
-    <!-- Example Computer Vision papers -->
     <div class="card" data-category="Computer Vision">
       <h4>Meta Llama 3.2 Edge AI</h4>
       <p>Customizable Edge AI & Vision models</p>
       <a href="https://www.llama.com/" target="_blank">View Paper</a>
     </div>
-
-    <!-- Example Quantum AI papers -->
     <div class="card" data-category="Quantum AI">
       <h4>Quantum Hybrid Architectures</h4>
       <p>Integrating variational quantum circuits with transformer-based AI models</p>
       <a href="#" target="_blank">View Paper</a>
     </div>
+    <!-- Add more papers here with proper data-category -->
+  </div>
+</section>
+
+<section class="section" id="connect-section">
+  <h3>Let's Connect</h3>
+  <div class="button-container">
+    <a href="mailto:aditikhare007@gmail.com" class="button">Email</a>
+    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
+    <a href="https://github.com/aditikhare007" class="button" target="_blank">GitHub</a>
+    <a href="https://topmate.io/aditi_khare" class="button" target="_blank">TopMate</a>
+    <a href="https://www.hackerrank.com/profile/aditikhare007" class="button" target="_blank">HackerRank</a>
+    <a href="https://www.packtpub.com/" class="button" target="_blank">My AI Books Publications Portfolio@Packt</a>
   </div>
 </section>
 
@@ -251,11 +254,7 @@
 function filterCategory(category) {
   const cards = document.querySelectorAll('#papers-container .card');
   cards.forEach(card => {
-    if(card.getAttribute('data-category') === category) {
-      card.style.display = 'block';
-    } else {
-      card.style.display = 'none';
-    }
+    card.style.display = (card.getAttribute('data-category') === category) ? 'block' : 'none';
   });
 }
 </script>
