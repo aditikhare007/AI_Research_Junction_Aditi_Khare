@@ -5,20 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aditi Khare - AI Research Portfolio</title>
 <style>
-body {
+/* --- Reset & Base --- */
+body, h1, h2, h3, h4, p, a {
+    margin: 0; padding: 0; box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
+}
+body {
     background-color: #fff9f0;
-    margin: 0;
-    padding: 0;
     color: #333;
     scroll-behavior: smooth;
 }
 
-/* Header */
+/* --- Header & Nav --- */
 header {
     text-align: center;
-    padding: 40px 20px;
     background: #fff3e0;
+    padding: 30px 20px 10px 20px;
+    position: relative;
 }
 header img {
     width: 140px;
@@ -29,19 +32,12 @@ header img {
     margin-bottom: 15px;
 }
 header h1 {
-    font-size: 2.2em;
-    margin-bottom: 5px;
+    font-size: 2.2em; margin-bottom: 5px;
 }
 header h2 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-    font-weight: 600;
+    font-size: 1.2em; margin-bottom: 5px; font-weight: 600;
 }
-header p {
-    margin: 3px 0;
-    font-size: 1em;
-    font-weight: 500;
-}
+header p { font-size: 1em; margin: 3px 0; font-weight: 500; }
 .highlight {
     font-style: italic;
     color: #d17a00;
@@ -49,11 +45,26 @@ header p {
     margin-top: 10px;
     font-size: 1.05em;
 }
-
-/* Top Buttons */
-.button-container {
-    margin-top: 20px;
+nav {
+    position: sticky;
+    top: 0;
+    background: #d17a00;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    z-index: 1000;
 }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+nav a:hover { color: #ffecb3; }
+
+/* --- Buttons --- */
+.button-container, .lets-connect { text-align: center; margin-top: 15px; }
 .button {
     background-color: #d17a00;
     color: #fff;
@@ -67,11 +78,7 @@ header p {
     display: inline-block;
     transition: all 0.3s ease;
 }
-.button:hover {
-    background-color: #ffb74d;
-    color: #fff;
-    transform: scale(1.05);
-}
+.button:hover { background-color: #ffb74d; transform: scale(1.05); }
 .community-badge {
     display: inline-block;
     background: #d17a00;
@@ -82,15 +89,13 @@ header p {
     margin: 5px 6px;
     text-decoration: none;
 }
-.community-badge:hover {
-    background: #ffb74d;
-}
+.community-badge:hover { background: #ffb74d; }
 
-/* Research Section */
+/* --- Sections --- */
 .section {
     max-width: 1200px;
-    margin: auto;
-    padding: 30px 20px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 .section h3 {
     font-size: 1.8em;
@@ -100,10 +105,7 @@ header p {
     display: inline-block;
     padding-bottom: 5px;
 }
-.tags {
-    text-align: center;
-    margin-bottom: 20px;
-}
+.tags { text-align: center; margin-bottom: 20px; }
 .tag {
     display: inline-block;
     background-color: #fff3e0;
@@ -115,35 +117,22 @@ header p {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.tag:hover {
-    background-color: #ffecb3;
-}
+.tag:hover { background-color: #ffecb3; }
 
-/* Paper Cards */
+/* --- Paper Cards --- */
 .card {
     background: #fff8f0;
     border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(209, 122, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(209,122,0,0.15);
     padding: 20px;
     margin-bottom: 20px;
 }
-.card h4 {
-    color: #d17a00;
-    margin-bottom: 8px;
-}
-.card p {
-    margin: 4px 0;
-}
-.card a {
-    color: #d17a00;
-    text-decoration: none;
-    font-weight: 600;
-}
-.card a:hover {
-    color: #ffb74d;
-}
+.card h4 { color: #d17a00; margin-bottom: 8px; }
+.card p { margin: 4px 0; }
+.card a { color: #d17a00; text-decoration: none; font-weight: 600; }
+.card a:hover { color: #ffb74d; }
 
-/* Lets Connect */
+/* --- Lets Connect Section --- */
 .lets-connect {
     text-align: center;
     padding: 30px 20px;
@@ -155,21 +144,17 @@ header p {
     color: #d17a00;
     margin-bottom: 15px;
 }
-.lets-connect .button {
-    margin: 6px 6px;
-}
 
-/* Responsive */
-@media (max-width: 768px) {
-    header h1 { font-size: 1.8em; }
-    header h2 { font-size: 1em; }
-    .button { padding: 8px 14px; font-size: 0.9em; }
+/* --- Responsive --- */
+@media (max-width:768px){
+    header h1 { font-size:1.8em; }
+    header h2 { font-size:1em; }
+    .button { padding: 8px 14px; font-size:0.9em; }
     .card { padding: 15px; }
     .section h3 { font-size: 1.5em; }
 }
 </style>
 </head>
-
 <body>
 
 <header>
@@ -179,16 +164,17 @@ header p {
     <p>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</p>
     <p>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</p>
     <p class="highlight">Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI.</p>
-
-    <div class="button-container">
-        <a href="about_me.html" class="button">About Me</a>
-        <a href="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare" class="button" target="_blank">Research & Resources</a>
-        <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/" class="button" target="_blank">AI Research Junction</a>
-        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
-    </div>
 </header>
 
-<section class="section">
+<!-- Sticky Navigation -->
+<nav>
+    <a href="#about-me">About Me</a>
+    <a href="#research-section">Research & Resources</a>
+    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a>
+</nav>
+
+<!-- Research Section -->
+<section class="section" id="research-section">
     <h3>AI Research Junction</h3>
     <div class="tags">
         <span class="tag" onclick="filterCategory('Generative AI')">Generative AI</span>
@@ -197,7 +183,7 @@ header p {
     </div>
 
     <div id="papers-container">
-        <!-- Generative AI papers visible by default -->
+        <!-- Generative AI Papers by default -->
         <div class="card" data-category="Generative AI">
             <h4>📘 Modern BERT</h4>
             <p>Modern BERT improvements and techniques.</p>
@@ -209,26 +195,41 @@ header p {
             <a href="https://arxiv.org/pdf/2412.14352" target="_blank">Read Paper</a>
         </div>
 
-        <!-- Computer Vision papers -->
+        <!-- Computer Vision -->
         <div class="card" data-category="Computer Vision" style="display:none;">
             <h4>📘 DeepSeek V3</h4>
             <p>DeepSeek V3 advancements for AI search.</p>
             <a href="https://github.com/deepseek-ai/" target="_blank">Read Paper</a>
         </div>
 
-        <!-- Quantum AI papers -->
+        <!-- Quantum AI -->
         <div class="card" data-category="Quantum AI" style="display:none;">
             <h4>📘 Quantum Hybrid Architectures</h4>
             <p>Integrating variational quantum circuits with transformer-based AI models.</p>
             <a href="https://quantumai.google/" target="_blank">Read Paper</a>
         </div>
 
+        <!-- Resources Card -->
+        <div class="card">
+            <h4>🌐 Resources</h4>
+            <p>Stay connected for AI collaborations, mentorship, and research insights.</p>
+            <a href="mailto:aditikhare007@gmail.com" class="button">Email</a>
+            <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button">LinkedIn</a>
+            <a href="https://github.com/aditikhare007" class="button">My AI Research Portfolio@Github</a>
+            <a href="https://topmate.io/aditi_khare" class="button community-badge">Community Care@TopMate</a>
+            <a href="https://www.hackerrank.com/profile/aditikhare007" class="button">HackerRank</a>
+            <a href="https://www.packtpub.com/" class="button">My AI Books Publications Portfolio@Packt</a>
+        </div>
+    </div>
+</section>
+
+<!-- Lets Connect -->
 <section class="lets-connect">
     <h4>Let's Connect</h4>
     <a href="mailto:aditikhare007@gmail.com" class="button">Email</a>
     <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button">LinkedIn</a>
     <a href="https://github.com/aditikhare007" class="button">My AI Research Portfolio@Github</a>
-    <a href="https://topmate.io/aditi_khare" class="button">TopMate</a>
+    <a href="https://topmate.io/aditi_khare" class="button community-badge">Community Care@TopMate</a>
     <a href="https://www.hackerrank.com/profile/aditikhare007" class="button">HackerRank</a>
     <a href="https://www.packtpub.com/" class="button">My AI Books Publications Portfolio@Packt</a>
 </section>
@@ -238,15 +239,10 @@ header p {
 </footer>
 
 <script>
-// Filter papers by category
 function filterCategory(category) {
     const cards = document.querySelectorAll('#papers-container .card[data-category]');
     cards.forEach(card => {
-        if(card.dataset.category === category) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
+        card.style.display = (card.dataset.category === category) ? "block" : "none";
     });
 }
 </script>
