@@ -39,7 +39,13 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     box-shadow: 0 4px 15px rgba(209, 122, 0, 0.2);
     margin: 0 auto 15px auto;
     display: block;
+    transition: all 0.4s ease;
 }
+.profile-photo:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(209, 122, 0, 0.35);
+}
+
 .about-section {
     background: #fff3e0;
     padding: 12px 20px;
@@ -50,7 +56,29 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     color: #333;
     line-height: 1.5;
     text-align: left;
+    transition: all 0.4s ease;
 }
+.about-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(209, 122, 0, 0.2);
+}
+
+.about-button button {
+    margin: 15px 0;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: #d17a00;
+    color: #fff9f0;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.about-button button:hover {
+    background: #ffb74d;
+    color: #fff;
+}
+
 .snapshot {
     display: flex;
     flex-direction: column;
@@ -179,7 +207,10 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 <div class="profile-card">
     <img src="https://raw.githubusercontent.com/username/repo/main/dummy-profile.jpg" alt="Aditi Khare" class="profile-photo">
     <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
-    <div class="about-section">
+    <div class="about-button">
+        <button onclick="document.getElementById('about-section').scrollIntoView({behavior: 'smooth'});">About Me</button>
+    </div>
+    <div class="about-section" id="about-section">
         <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
         <p>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
     </div>
@@ -227,74 +258,71 @@ const researchData = {
         {title: "Iteration of Thought-Leveraging Inner Dialogue", summary: "Autonomous LLM reasoning via inner dialogue", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12618/"},
         {title: "Learning to Reason with LLMs (OpenAI o1)", summary: "OpenAI o1 for reasoning", tag: "Generative AI", link: "https://openai.com/index/introducing-openai-o1-preview/"},
         {title: "AutoGen Studio", summary: "Framework for autonomous LLM agents", tag: "Generative AI", link: "https://github.com/microsoft/autogen"},
-        {title: "Strategic Chain-of-Thought", summary: "LLM reasoning methodology", tag: "Generative AI", link: "https://arxiv.org/abs/2409.03271/"}
-    ],
-    "Resources": [
-        {title: "OpenAI Prompt Engineering Handbook", summary: "Guides and techniques for prompt engineering", tag: "Generative AI", link: "https://platform.openai.com/docs/guides/prompt-engineering"},
-        {title: "Lilianweng's Blog & GitHub", summary: "AI & ML blog with tutorials and code", tag: "Generative AI & ML", link: "https://lilianweng.github.io/"},
-        {title: "DeepSeek AI Search", summary: "Advanced AI search frameworks", tag: "Generative AI", link: "https://github.com/deepseek-ai/DeepSeek-V3/tree/main"},
-        {title: "Hugging Face Transformers", summary: "Transformers library & documentation", tag: "Generative AI & NLP", link: "https://huggingface.co/docs/transformers/index"}
+        {title: "Strategic Chain-of-Thought", summary: "LLM reasoning methodology", tag: "Generative AI", link: "https://arxiv.org/abs/2409.03271/"},
+        {title: "Role of RAG Noise in LLMs", summary: "Impact of RAG noise on LLMs", tag: "Generative AI", link: "https://arxiv.org/abs/2408.13533/"},
+        {title: "Learning to Simulate Dynamic Environments with GameGAN", summary: "GameGAN for environment simulation", tag: "Generative AI", link: "https://github.com/nv-tlabs/GameGAN_code/"},
+        {title: "Agentic Retrieval-Augmented Generation for Time Series", summary: "Time series analysis with RAG", tag: "Generative AI", link: "https://arxiv.org/abs/2408.14484/"}
     ]
 };
 
-// === Render Dashboard ===
-const dashboard = document.getElementById('dashboard');
-const months = Object.keys(researchData);
-const latestMonth = months[0]; // First month is latest
-
-months.forEach((month) => {
-    const heading = document.createElement('div');
+// === Generate Dashboard ===
+const dashboard = document.getElementById("dashboard");
+let first = true;
+for (const month in researchData) {
+    let container = document.createElement("div");
+    container.className = "month-section";
+    let heading = document.createElement("h2");
     heading.className = "month-heading";
     heading.textContent = month;
-    dashboard.appendChild(heading);
+    container.appendChild(heading);
 
-    const container = document.createElement('div');
-    container.className = "paper-container";
-    container.id = month.replace(/\s+/g,'');
-
-    researchData[month].forEach((paper, index) => {
-        const card = document.createElement('div');
+    let paperContainer = document.createElement("div");
+    paperContainer.className = "paper-container";
+    researchData[month].forEach(paper => {
+        let card = document.createElement("div");
         card.className = "paper-card";
-        card.innerHTML = `<h4>${paper.title}</h4><p>${paper.summary}</p><span class="tag">${paper.tag}</span><a href="${paper.link}" target="_blank">View Paper</a>`;
-        if(month === latestMonth && index >= 5) card.style.display = "none";
-        container.appendChild(card);
+        card.innerHTML = `<h4>${paper.title}</h4>
+                          <p>${paper.summary}</p>
+                          <a href="${paper.link}" target="_blank">View</a>
+                          <span class="tag">${paper.tag}</span>`;
+        paperContainer.appendChild(card);
     });
+    container.appendChild(paperContainer);
 
-    dashboard.appendChild(container);
-
-    if(month === latestMonth && researchData[month].length > 5){
-        const btn = document.createElement('button');
-        btn.className = "show-more-btn";
-        btn.textContent = "Show More";
-        btn.onclick = () => {
-            const hidden = Array.from(container.children).filter(c => c.style.display === "none");
-            if(hidden.length > 0){
-                hidden.forEach(c => c.style.display = "flex");
-                btn.textContent = "Show Less";
-            } else {
-                Array.from(container.children).forEach((c,index) => {
-                    c.style.display = index<5 ? "flex" : "none";
-                });
-                btn.textContent = "Show More";
-            }
-        };
-        dashboard.appendChild(btn);
+    if(!first){
+        container.style.display = "none"; // hide older months
     }
-});
+    dashboard.appendChild(container);
+    first = false;
+}
+
+// Show More Button
+const showMore = document.createElement("button");
+showMore.className = "show-more-btn";
+showMore.textContent = "Show Older Months";
+showMore.onclick = () => {
+    document.querySelectorAll(".month-section").forEach((sec)=> sec.style.display = "block");
+    showMore.style.display = "none";
+};
+dashboard.appendChild(showMore);
 
 // === Back to Top ===
 const backToTop = document.getElementById("backToTop");
 window.onscroll = () => {
-    backToTop.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
 };
 function topFunction() { document.documentElement.scrollTop = 0; }
 
 // === Search Filter ===
 function filterCards() {
     let input = document.getElementById("searchInput").value.toLowerCase();
-    const cards = document.querySelectorAll(".paper-card");
-    cards.forEach(card => {
-        card.style.display = card.innerText.toLowerCase().includes(input) ? "flex" : "none";
+    document.querySelectorAll(".paper-card").forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? "" : "none";
     });
 }
 </script>
