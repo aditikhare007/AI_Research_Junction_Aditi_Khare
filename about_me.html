@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me - Aditi Khare</title>
+<style>
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff9f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+a { 
+    color: #d17a00; 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+}
+a:hover { 
+    color: #ffb74d; 
+    text-shadow: 0 0 3px #ffb74d; 
+}
+
+/* Profile Card */
+.profile-card {
+    max-width: 900px;
+    margin: 60px auto 40px auto;
+    padding: 30px;
+    background: #fff3e0;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(209, 122, 0, 0.25);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffe0b2;
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+/* Snapshot / Tags */
+.snapshot { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 8px; 
+    margin: 15px 0; 
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.8s ease;
+}
+.tag { 
+    display: inline-block; 
+    padding: 5px 12px; 
+    border-radius: 12px; 
+    margin: 4px 6px; 
+    font-size: 0.95rem; 
+    font-weight: 600; 
+    color: #fff; 
+}
+.tag.generative { background: #f57c00; }
+.tag.edge { background: #0288d1; }
+.tag.quantum { background: #7b1fa2; }
+
+/* Connect Links */
+.connect { 
+    margin-top: 20px; 
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+.connect a {
+    display: inline-block;
+    margin: 6px 12px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    background: #d17a00;
+    color: #fff9f0;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.connect a:hover { 
+    background: #ffb74d; 
+    color: #fff; 
+    transform: translateY(-2px); 
+}
+
+/* About Text */
+.about-text { 
+    margin-top: 20px; 
+    font-size: 1.15rem; 
+    line-height: 1.6; 
+    text-align: justify; 
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+.about-text h3 {
+    color: #d17a00; 
+    margin-top: 20px;
+}
+.about-text ul {
+    margin: 8px 0 15px 20px;
+}
+
+/* Card Container for Skills & Expertise */
+.card-container {
+    max-width: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #fff3e0;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(209, 122, 0, 0.2);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.card h4 {
+    color: #d17a00;
+    margin-bottom: 12px;
+}
+.card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+/* Animation active class */
+.active { 
+    opacity: 1 !important; 
+    transform: translate(0,0) !important; 
+}
+</style>
+</head>
+<body>
+
+<!-- Profile Card -->
+<div class="profile-card" id="profileCard">
+    <img src="https://avatars.githubusercontent.com/u/127643239?v=4" alt="Aditi Khare" class="profile-photo">
+    <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
+
+    <!-- Snapshot -->
+    <div class="snapshot" id="snapshot">
+        <span>Enterprise AI Leader — Product, Infrastructure, AI Architecture & Entrepreneurial Innovation</span>
+        <span>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</span>
+        <span>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</span>
+    </div>
+
+    <!-- Connect Links -->
+    <div class="connect" id="connectLinks">
+        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">AI Research Junction</a>
+        <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Gen-AI Integration Book</a>
+    </div>
+
+    <!-- About Text -->
+    <div class="about-text" id="aboutText">
+        <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
+
+        <p>🔷 I’m honored to be a contributor to the book <strong>"Generative AI Application Integration Patterns"</strong> (Packt Publishing, available on Amazon September 2024).</p>
+
+        <h3>Professional Snapshot:</h3>
+        <ul>
+            <li>Enterprise AI Leader — Product, Infrastructure, AI Architecture & Entrepreneurial Innovation</li>
+            <li>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</li>
+            <li>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Skills & Expertise Cards -->
+<div class="card-container">
+    <div class="card" id="card1">
+        <h4>Core Expertise</h4>
+        <ul>
+            <li>AI Research & Development: Full lifecycle — data prep, model training, inference, deployment</li>
+            <li>Machine Learning, Deep Learning, Computer Vision, Hyperspectral Imaging, Generative AI, LLMs</li>
+            <li>Scalable AI & ML infrastructure design and optimization on AWS</li>
+        </ul>
+    </div>
+    <div class="card" id="card2">
+        <h4>Education</h4>
+        <ul>
+            <li>IIM Ahmedabad (Executive Program in Big Data Analytics)</li>
+            <li>K.J Somaiya Institute of Management, Mumbai — Master’s in Computer Applications (Distinction)</li>
+        </ul>
+    </div>
+    <div class="card" id="card3">
+        <h4>Continuous Learning & Community</h4>
+        <ul>
+            <li>Completed 100+ technical courses on Udemy & Coursera</li>
+            <li>Active member: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI</li>
+        </ul>
+    </div>
+    <div class="card" id="card4">
+        <h4>Publications</h4>
+        <ul>
+            <li>Generative AI Application Integration Patterns — Contributor</li>
+            <li>Top AI Research Paper Summaries — Published portfolio</li>
+            <li>AI Research Junction — Creator & Author</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+// Scroll animation trigger
+function animateOnScroll() {
+    const elements = [
+        document.getElementById('profileCard'),
+        document.getElementById('snapshot'),
+        document.getElementById('connectLinks'),
+        document.getElementById('aboutText'),
+        document.getElementById('card1'),
+        document.getElementById('card2'),
+        document.getElementById('card3'),
+        document.getElementById('card4')
+    ];
+    const triggerPoint = window.innerHeight * 0.85;
+    elements.forEach(el => {
+        if (el.getBoundingClientRect().top < triggerPoint) {
+            el.classList.add('active');
+        }
+    });
+}
+window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('load', animateOnScroll);
+</script>
+
+</body>
+</html>
