@@ -17,11 +17,10 @@ body {
 a { color: #d17a00; text-decoration: none; transition: all 0.3s ease; }
 a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
 h1, h2, h3, h4 { color: #d17a00; margin: 0.5em 0; }
-h1 { font-size: 2.8rem; }
-h2 { font-size: 2.2rem; }
-h3 { font-size: 1.8rem; }
-h4 { font-size: 1.4rem; }
 p { font-size: 1.2rem; margin: 0.3em 0; }
+
+/* Remove default bullets */
+ul, li { list-style: none; padding: 0; margin: 0; }
 
 /* Profile Card */
 .profile-card {
@@ -83,7 +82,7 @@ p { font-size: 1.2rem; margin: 0.3em 0; }
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .paper-card {
@@ -104,6 +103,18 @@ p { font-size: 1.2rem; margin: 0.3em 0; }
 .paper-card a { color: #d17a00; font-weight: 600; margin-top: 10px; text-decoration: none; }
 .paper-card a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
 .paper-card .tag { align-self: flex-start; margin-top: 8px; font-size: 0.9rem; padding: 3px 8px; }
+
+/* Collapsible Month Sections */
+details {
+    margin: 15px auto;
+    max-width: 960px;
+    border-radius: 16px;
+    background: #fff3e0;
+    padding: 15px 20px;
+    box-shadow: 0 4px 20px rgba(209, 122, 0, 0.15);
+}
+summary { font-size: 1.5rem; font-weight: bold; cursor: pointer; outline: none; }
+summary::-webkit-details-marker { display: none; }
 
 /* Back to Top Button */
 #backToTop {
@@ -129,12 +140,10 @@ p { font-size: 1.2rem; margin: 0.3em 0; }
 @media (max-width: 768px) {
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.8rem; }
-    h3 { font-size: 1.5rem; }
     .profile-card { padding: 20px; margin: 60px 10px 30px 10px; }
     .paper-card { width: 90%; }
 }
 
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 body { padding-top: 20px; }
 </style>
 </head>
@@ -159,9 +168,10 @@ body { padding-top: 20px; }
 <!-- Search -->
 <input type="text" id="searchInput" onkeyup="filterPapers()" placeholder="Search papers by keyword...">
 
-<!-- Research Papers Container -->
-<div class="paper-container" id="paperContainer">
-    <!-- Nov 2024 – Jan 2025 -->
+<!-- Research Papers Container with Month Sections -->
+<details open>
+<summary>📅 Jan 2025 – Nov 2024</summary>
+<div class="paper-container">
     <div class="paper-card">
         <h4>Modern BERT</h4>
         <p>Modern BERT improvements and techniques</p>
@@ -180,8 +190,6 @@ body { padding-top: 20px; }
         <span class="tag">Generative AI</span>
         <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Paper</a>
     </div>
-
-    <!-- Oct 2024 -->
     <div class="paper-card">
         <h4>Claude 3.5 Sonnet & Haiku</h4>
         <p>Creative poetry LLMs</p>
@@ -194,8 +202,12 @@ body { padding-top: 20px; }
         <span class="tag">Generative AI</span>
         <a href="https://github.com/openai/swarm" target="_blank">View Paper</a>
     </div>
+</div>
+</details>
 
-    <!-- Sept 2024 -->
+<details>
+<summary>📅 Sept 2024</summary>
+<div class="paper-container">
     <div class="paper-card">
         <h4>Meta Llama 3.2 Edge AI</h4>
         <p>Customizable Edge AI & Vision models</p>
@@ -251,6 +263,7 @@ body { padding-top: 20px; }
         <a href="https://arxiv.org/abs/2408.14484/" target="_blank">View Paper</a>
     </div>
 </div>
+</details>
 
 <!-- Back to Top -->
 <button onclick="topFunction()" id="backToTop">⬆ Back to Top</button>
@@ -259,11 +272,7 @@ body { padding-top: 20px; }
 // Back to Top Button
 const backToTop = document.getElementById("backToTop");
 window.onscroll = () => {
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        backToTop.style.display = "block";
-    } else {
-        backToTop.style.display = "none";
-    }
+    backToTop.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
 };
 function topFunction() { document.documentElement.scrollTop = 0; }
 
@@ -272,8 +281,7 @@ function filterPapers() {
     let input = document.getElementById("searchInput").value.toLowerCase();
     const cards = document.querySelectorAll(".paper-card");
     cards.forEach(card => {
-        let text = card.innerText.toLowerCase();
-        card.style.display = text.includes(input) ? "flex" : "none";
+        card.style.display = card.innerText.toLowerCase().includes(input) ? "flex" : "none";
     });
 }
 </script>
