@@ -17,38 +17,44 @@ body {
 a { color: #d17a00; text-decoration: none; transition: all 0.3s ease; }
 a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
 h1, h2, h3, h4 { color: #d17a00; margin: 0.5em 0; }
-h1 { font-size: 2.8rem; }
-h2 { font-size: 2.2rem; }
-h3 { font-size: 1.8rem; }
-h4 { font-size: 1.4rem; }
-p, li, td { font-size: 1.2rem; }
+p { font-size: 1.2rem; margin: 0.3em 0; }
+ul, li { list-style: none; padding: 0; margin: 0; }
 
 /* Profile Card */
 .profile-card {
     max-width: 900px;
-    margin: 80px auto 40px auto;
+    margin: 60px auto 40px auto;
     padding: 30px;
     background: #fff3e0;
     border-radius: 20px;
-    box-shadow: 0 6px 25px rgba(209, 122, 0, 0.25);
+    box-shadow: 0 4px 25px rgba(209, 122, 0, 0.2);
     text-align: center;
-    animation: fadeIn 1s ease;
 }
-.profile-photo {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #ffe0b2;
-    margin: 0 auto 15px auto;
-    display: block;
+.profile-card .snapshot {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 15px 0;
 }
-.snapshot { display: flex; flex-direction: column; gap: 8px; margin: 15px 0; }
-.connect { margin-top: 20px; }
+.tag {
+    display: inline-block;
+    background: #ffe0b2;
+    color: #d17a00;
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin: 4px 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Connect Links */
+.connect {
+    margin-top: 20px;
+}
 .connect a {
     display: inline-block;
     margin: 6px 12px;
-    padding: 10px 18px;
+    padding: 8px 16px;
     border-radius: 12px;
     background: #d17a00;
     color: #fff9f0;
@@ -56,55 +62,60 @@ p, li, td { font-size: 1.2rem; }
     text-decoration: none;
     transition: all 0.3s ease;
 }
-.connect a:hover { background: #ffb74d; color: #fff; transform: translateY(-2px); }
+.connect a:hover { background: #ffb74d; color: #fff; }
 
-/* About Section */
-.about-text {
-    margin-top: 20px; 
-    font-size: 1.15rem; 
-    line-height: 1.6; 
-    text-align: justify;
-}
-.about-text span { display: block; margin: 6px 0; }
-
-/* Filters & Search */
-#filterSelect, #searchInput {
+/* Search Input */
+#searchInput {
     width: 90%;
-    max-width: 400px;
+    max-width: 450px;
+    padding: 12px 16px;
+    margin: 20px auto 25px auto;
     display: block;
-    margin: 10px auto;
-    padding: 10px 14px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: 1px solid #d17a00;
-    background: #fff8ef;
+    background: #fff8f0;
+    color: #333;
     font-size: 1.1rem;
+    box-shadow: inset 0 2px 6px rgba(209, 122, 0, 0.1);
 }
 
-/* Research Paper Cards */
+/* Paper Cards */
+.paper-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto 40px auto;
+    justify-content: center;
+}
 .paper-card {
-    max-width: 900px;
-    background: #fff8ef;
+    background: #fff8f0;
     border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(209,122,0,0.2);
-    margin: 20px auto;
-    padding: 20px;
-    transition: transform 0.3s ease;
-    animation: fadeIn 0.8s ease;
+    padding: 16px 20px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(209, 122, 0, 0.15);
+    display: flex;
+    flex-direction: column;
 }
-.paper-card:hover { transform: translateY(-5px); }
-.paper-card h3 { margin-bottom: 8px; }
-.paper-card p { margin: 6px 0; }
-.tag { display: inline-block; padding: 5px 12px; border-radius: 12px; margin: 4px 6px; font-size: 0.95rem; font-weight: 600; color: #fff; }
-.tag.generative { background: #f57c00; }
-.tag.cv { background: #0288d1; }
-.tag.quantum { background: #7b1fa2; }
+.paper-card h4 { margin: 0 0 8px 0; color: #d17a00; font-size: 1.2rem; }
+.paper-card p { margin: 4px 0; color: #333; font-size: 1rem; flex-grow: 1; }
+.paper-card a { color: #d17a00; font-weight: 600; margin-top: 10px; text-decoration: none; }
+.paper-card a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
+.paper-card .tag { align-self: flex-start; margin-top: 8px; font-size: 0.9rem; padding: 3px 8px; }
 
-/* Back to Top */
+/* Section Headings */
+.month-heading {
+    text-align: center;
+    margin: 30px 0 10px 0;
+    font-size: 1.6rem;
+    color: #d17a00;
+}
+
+/* Back to Top Button */
 #backToTop {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: #d17a0033;
+    background: rgba(209, 122, 0, 0.2);
     color: #d17a00;
     border: none;
     padding: 12px 18px;
@@ -112,20 +123,32 @@ p, li, td { font-size: 1.2rem; }
     cursor: pointer;
     font-weight: bold;
     font-size: 1.1rem;
-    box-shadow: 0 0 10px rgba(209,122,0,0.4);
+    box-shadow: 0 0 10px rgba(209, 122, 0, 0.2);
     display: none;
     z-index: 999;
 }
-#backToTop:hover { background: #d17a0055; color: #fff; }
+#backToTop:hover { background: rgba(209, 122, 0, 0.4); color: #fff9f0; }
 
-/* Animations */
-@keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+/* Show More Button */
+.show-more-btn {
+    margin: 10px auto 40px auto;
+    display: block;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: #d17a00;
+    color: #fff9f0;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.show-more-btn:hover { background: #ffb74d; color: #fff; }
 
+/* Responsive */
 @media (max-width: 768px) {
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.8rem; }
-    h3 { font-size: 1.5rem; }
-    .profile-card, .paper-card { padding: 20px; margin: 60px 10px 20px 10px; }
+    .profile-card { padding: 20px; margin: 60px 10px 30px 10px; }
+    .paper-card { width: 90%; }
 }
 </style>
 </head>
@@ -133,91 +156,120 @@ p, li, td { font-size: 1.2rem; }
 
 <!-- Profile Card -->
 <div class="profile-card">
-    <img src="https://avatars.githubusercontent.com/u/127643239?v=4" alt="Aditi Khare" class="profile-photo">
     <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
     <div class="snapshot">
         <span>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</span>
         <span>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</span>
         <span>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</span>
     </div>
+    <div>
+        <span class="tag">Generative AI</span>
+        <span class="tag">Computer Vision</span>
+        <span class="tag">Quantum AI</span>
+    </div>
+    <p>🚀 Welcome to AI Research Junction – Your hub for curated AI research paper summaries.</p>
     <div class="connect">
-        <a href="about_me.html">About Me</a>
-        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">AI Research Junction</a>
+        <a href="https://www.linkedin.com/in/aditikhares" target="_blank">AI Research Junction</a>
+        <a href="https://www.linkedin.com/newsletters/aditi-ai-newsletter" target="_blank">AI Research Newsletter</a>
         <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Gen-AI Integration Book</a>
     </div>
 </div>
 
-<!-- Filters -->
-<select id="filterSelect" onchange="filterCategory()">
-    <option value="all">Show All Categories</option>
-    <option value="generative">Generative AI</option>
-    <option value="cv">Computer Vision</option>
-    <option value="quantum">Quantum AI</option>
-</select>
+<!-- Search Input -->
+<input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Search papers by keyword...">
 
-<input type="text" id="searchInput" onkeyup="filterPapers()" placeholder="Search papers by keyword...">
-
-<!-- Research Papers Cards -->
-<div class="paper-card" data-category="generative">
-    <h3>Modern BERT</h3>
-    <p>Modern BERT improvements and techniques</p>
-    <a href="https://arxiv.org/abs/2412.13663" target="_blank">Paper</a>
-    <span class="tag generative">Generative AI</span>
-</div>
-
-<div class="paper-card" data-category="generative">
-    <h3>LLM Inference-Time Self-Improvement</h3>
-    <p>LLM improves itself at inference time</p>
-    <a href="https://arxiv.org/pdf/2412.14352" target="_blank">Paper</a>
-    <span class="tag generative">Generative AI</span>
-</div>
-
-<div class="paper-card" data-category="generative">
-    <h3>DeepSeek V3</h3>
-    <p>DeepSeek V3 advancements for AI search</p>
-    <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">Github</a>
-    <span class="tag generative">Generative AI</span>
-</div>
-
-<div class="paper-card" data-category="cv">
-    <h3>Meta Llama 3.2 CV</h3>
-    <p>Customizable Computer Vision models</p>
-    <a href="https://www.llama.com/" target="_blank">Blog</a>
-    <span class="tag cv">Computer Vision</span>
-</div>
-
-<!-- Continue adding all other papers from May 2024 to Jan 2025 here as separate cards, same format -->
+<!-- Dashboard -->
+<div id="dashboard"></div>
 
 <!-- Back to Top -->
 <button onclick="topFunction()" id="backToTop">⬆ Back to Top</button>
 
 <script>
-// Back to Top
+// === Data ===
+const researchData = {
+    "Jan 2025": [
+        {title: "Modern BERT", summary: "Modern BERT improvements and techniques", tag: "Generative AI", link: "https://arxiv.org/abs/2412.13663"},
+        {title: "LLM Inference-Time Self-Improvement", summary: "LLM improves itself at inference time", tag: "Generative AI", link: "https://arxiv.org/pdf/2412.14352"},
+        {title: "DeepSeekv3", summary: "DeepSeek V3 advancements for AI search", tag: "Generative AI", link: "https://github.com/deepseek-ai/DeepSeek-V3/tree/main"}
+    ],
+    "Oct – Dec 2024": [
+        {title: "Claude 3.5 Sonnet & Haiku", summary: "Creative poetry LLMs", tag: "Generative AI", link: "https://www.anthropic.com/news/3-5-models-and-computer-use"},
+        {title: "OpenAI Swarm Framework", summary: "Distributed AI framework", tag: "Generative AI", link: "https://github.com/openai/swarm"}
+    ],
+    "May – Sept 2024": [
+        {title: "Meta Llama 3.2 Edge AI", summary: "Customizable Edge AI & Vision models", tag: "Edge AI & Vision", link: "https://www.llama.com/"},
+        {title: "Training Language Models to Self-Correct", summary: "Reinforcement learning for self-correcting LLMs", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12917/"},
+        {title: "Iteration of Thought-Leveraging Inner Dialogue", summary: "Autonomous LLM reasoning via inner dialogue", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12618/"},
+        {title: "Learning to Reason with LLMs (OpenAI o1)", summary: "OpenAI o1 for reasoning", tag: "Generative AI", link: "https://openai.com/index/introducing-openai-o1-preview/"},
+        {title: "AutoGen Studio", summary: "Framework for autonomous LLM agents", tag: "Generative AI", link: "https://github.com/microsoft/autogen"},
+        {title: "Strategic Chain-of-Thought", summary: "LLM reasoning methodology", tag: "Generative AI", link: "https://arxiv.org/abs/2409.03271/"}
+    ],
+    "Resources": [
+        {title: "OpenAI Prompt Engineering Handbook", summary: "Guides and techniques for prompt engineering", tag: "Generative AI", link: "https://platform.openai.com/docs/guides/prompt-engineering"},
+        {title: "Lilianweng's Blog & GitHub", summary: "AI & ML blog with tutorials and code", tag: "Generative AI & ML", link: "https://lilianweng.github.io/"},
+        {title: "DeepSeek AI Search", summary: "Advanced AI search frameworks", tag: "Generative AI", link: "https://github.com/deepseek-ai/DeepSeek-V3/tree/main"},
+        {title: "Hugging Face Transformers", summary: "Transformers library & documentation", tag: "Generative AI & NLP", link: "https://huggingface.co/docs/transformers/index"}
+    ]
+};
+
+// === Render Dashboard ===
+const dashboard = document.getElementById('dashboard');
+const months = Object.keys(researchData);
+const latestMonth = months[0]; // First month is latest
+
+months.forEach((month) => {
+    const heading = document.createElement('div');
+    heading.className = "month-heading";
+    heading.textContent = month;
+    dashboard.appendChild(heading);
+
+    const container = document.createElement('div');
+    container.className = "paper-container";
+    container.id = month.replace(/\s+/g,'');
+
+    researchData[month].forEach((paper, index) => {
+        const card = document.createElement('div');
+        card.className = "paper-card";
+        card.innerHTML = `<h4>${paper.title}</h4><p>${paper.summary}</p><span class="tag">${paper.tag}</span><a href="${paper.link}" target="_blank">View Paper</a>`;
+        if(month === latestMonth && index >= 5) card.style.display = "none";
+        container.appendChild(card);
+    });
+
+    dashboard.appendChild(container);
+
+    if(month === latestMonth && researchData[month].length > 5){
+        const btn = document.createElement('button');
+        btn.className = "show-more-btn";
+        btn.textContent = "Show More";
+        btn.onclick = () => {
+            const hidden = Array.from(container.children).filter(c => c.style.display === "none");
+            if(hidden.length > 0){
+                hidden.forEach(c => c.style.display = "flex");
+                btn.textContent = "Show Less";
+            } else {
+                Array.from(container.children).forEach((c,index) => {
+                    c.style.display = index<5 ? "flex" : "none";
+                });
+                btn.textContent = "Show More";
+            }
+        };
+        dashboard.appendChild(btn);
+    }
+});
+
+// === Back to Top ===
 const backToTop = document.getElementById("backToTop");
 window.onscroll = () => {
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        backToTop.style.display = "block";
-    } else { backToTop.style.display = "none"; }
+    backToTop.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
 };
 function topFunction() { document.documentElement.scrollTop = 0; }
 
-// Search Filter
-function filterPapers() {
+// === Search Filter ===
+function filterCards() {
     let input = document.getElementById("searchInput").value.toLowerCase();
     const cards = document.querySelectorAll(".paper-card");
     cards.forEach(card => {
-        const text = card.innerText.toLowerCase();
-        card.style.display = text.includes(input) ? "" : "none";
-    });
-}
-
-// Category Filter
-function filterCategory() {
-    const category = document.getElementById("filterSelect").value;
-    const cards = document.querySelectorAll(".paper-card");
-    cards.forEach(card => {
-        if(category === "all") card.style.display = "";
-        else card.style.display = (card.dataset.category === category) ? "" : "none";
+        card.style.display = card.innerText.toLowerCase().includes(input) ? "flex" : "none";
     });
 }
 </script>
