@@ -167,6 +167,23 @@
     box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   }
 
+  .show-more-btn {
+    background-color: #d17a00;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .show-more-btn:hover {
+    background-color: #ffb74d;
+    transform: scale(1.05);
+  }
+
   footer {
     text-align: center;
     padding: 35px;
@@ -203,7 +220,7 @@
     <a href="https://github.com/aditikhare007" class="button" target="_blank">My AI Innovations & Open-Source Contributions Portfolio</a>
     <a href="https://topmate.io/aditi_khare" class="button" target="_blank">Mentorship@TopMate</a>
     <div class="community-badge">💠 Community Care</div>
-    <a href="https://www.packtpub.com/" class="button" target="_blank">My Gen-AI Integration Book@Packt</a>
+    <a href="https://www.packtpub.com/" class="button" target="_blank">My Packt Publications Portfolio</a>
     <a href="https://www.hackerrank.com/profile/aditikhare007" class="button" target="_blank">HackerRank</a>
   </div>
 </header>
@@ -217,7 +234,7 @@
   </div>
 
   <div id="papers-container">
-    <!-- Generative AI Papers -->
+    <!-- Papers Cards -->
     <div class="card active" data-category="Generative AI">
       <h4>Modern BERT</h4>
       <p>Modern BERT improvements and techniques.</p>
@@ -234,14 +251,12 @@
       <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Paper</a>
     </div>
 
-    <!-- Computer Vision Papers -->
     <div class="card" data-category="Computer Vision">
       <h4>Meta Llama 3.2 Edge AI</h4>
       <p>Customizable Edge AI & Vision models.</p>
       <a href="https://www.llama.com/" target="_blank">View Paper</a>
     </div>
 
-    <!-- Quantum AI Papers -->
     <div class="card" data-category="Quantum AI">
       <h4>Quantum Hybrid Architectures</h4>
       <p>Integrating variational quantum circuits with transformer-based AI models.</p>
@@ -258,10 +273,12 @@
         <a href="https://github.com/aditikhare007" class="button" target="_blank">GitHub</a>
         <a href="https://topmate.io/aditi_khare" class="button" target="_blank">TopMate</a>
         <a href="https://www.hackerrank.com/profile/aditikhare007" class="button" target="_blank">HackerRank</a>
-        <a href="https://www.packtpub.com/" class="button" target="_blank">Packt Publication</a>
+        <a href="https://www.packtpub.com/" class="button" target="_blank">My Packt Publications Portfolio</a>
       </p>
     </div>
   </div>
+
+  <button class="show-more-btn" onclick="toggleShowMore()">Show More</button>
 </section>
 
 <footer>
@@ -269,6 +286,8 @@
 </footer>
 
 <script>
+let showMore = false;
+
 function filterPapers(category) {
   const cards = document.querySelectorAll('#papers-container .card');
   cards.forEach(card => {
@@ -278,7 +297,30 @@ function filterPapers(category) {
       card.classList.remove('active');
     }
   });
+  showMore = false;
+  document.querySelector('.show-more-btn').textContent = 'Show More';
 }
+
+function toggleShowMore() {
+  const visibleCards = document.querySelectorAll('#papers-container .card.active');
+  const first5 = Array.from(visibleCards).slice(0,5);
+  const rest = Array.from(visibleCards).slice(5);
+  
+  if(!showMore) {
+    rest.forEach(c => c.style.display='block');
+    document.querySelector('.show-more-btn').textContent = 'Show Less';
+    showMore = true;
+  } else {
+    rest.forEach(c => c.style.display='none');
+    document.querySelector('.show-more-btn').textContent = 'Show More';
+    showMore = false;
+  }
+}
+
+// Initialize: show first 5 for active category
+document.addEventListener("DOMContentLoaded", () => {
+  toggleShowMore();
+});
 </script>
 
 </body>
