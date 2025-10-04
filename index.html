@@ -18,30 +18,31 @@
     background: linear-gradient(90deg, #1e1e2f, #2b2b40);
     color: white;
     text-align: center;
-    padding: 50px 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+    padding: 60px 20px 40px 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
   }
 
   header img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border: 3px solid #fff;
     margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+    box-shadow: 0 4px 15px rgba(255,255,255,0.2);
   }
 
   header h1 {
-    font-size: 2.4em;
+    font-size: 2.8em;
     margin-bottom: 8px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
   }
 
   header h2 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #ffd280;
     margin-top: 10px;
     line-height: 1.5;
+    font-weight: 500;
   }
 
   header p {
@@ -55,11 +56,11 @@
     display: block;
     font-size: 1.15em;
     color: #fff;
-    margin-top: 8px;
+    margin-top: 6px;
   }
 
   .highlight {
-    font-size: 1.15em;
+    font-size: 1.2em;
     font-style: italic;
     color: #ffcc80;
     font-weight: 500;
@@ -71,17 +72,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
+    gap: 14px;
   }
 
   .button {
     background-color: #d17a00;
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 25px;
+    padding: 14px 22px;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 0.95em;
+    font-size: 1em;
     transition: all 0.3s ease;
     text-decoration: none;
     font-weight: 600;
@@ -96,12 +97,12 @@
   .community-badge {
     display: inline-block;
     margin-top: 14px;
-    background: linear-gradient(90deg, #ffcc80, #d17a00);
-    color: #fff; /* white text */
+    background: linear-gradient(90deg, #d17a00, #ffcc80);
+    color: #fff;
     font-weight: 600;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: 0.95em;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1em;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -110,22 +111,22 @@
 
   .community-badge:hover {
     transform: scale(1.07);
-    background: linear-gradient(90deg, #ffd699, #e59400);
-    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    background: linear-gradient(90deg, #ffb74d, #ffd699);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   }
 
   .section {
-    padding: 50px 20px;
+    padding: 60px 20px;
     max-width: 1200px;
     margin: auto;
   }
 
   .section h3 {
-    font-size: 2em;
+    font-size: 2.2em;
     color: #1e1e2f;
     border-bottom: 3px solid #d17a00;
     display: inline-block;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     margin-bottom: 30px;
   }
 
@@ -138,11 +139,11 @@
     display: inline-block;
     background-color: #fff3e0;
     color: #d17a00;
-    padding: 10px 18px;
+    padding: 12px 20px;
     margin: 6px;
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.05em;
     transition: all 0.3s ease;
     cursor: pointer;
   }
@@ -154,31 +155,31 @@
   .card {
     background: white;
     border-radius: 16px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    padding: 25px;
-    margin-bottom: 25px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 28px;
+    margin-bottom: 28px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
   }
 
   footer {
     text-align: center;
-    padding: 35px;
+    padding: 40px;
     background-color: #2b2b40;
     color: white;
-    font-size: 0.95em;
+    font-size: 1em;
     margin-top: 60px;
   }
 
   @media (max-width: 768px) {
-    header h1 { font-size: 1.8em; }
-    header h2 { font-size: 1.1em; }
-    .button { padding: 10px 16px; font-size: 0.9em; }
-    .card { padding: 20px; }
+    header h1 { font-size: 2em; }
+    header h2 { font-size: 1.2em; }
+    .button { padding: 12px 18px; font-size: 0.95em; }
+    .card { padding: 22px; }
   }
 </style>
 </head>
@@ -217,20 +218,24 @@
     <!-- Sample Papers -->
     <div class="card" data-category="Generative AI">
       <h4>Modern BERT</h4>
-      <p>Modern BERT improvements and techniques</p>
+      <p>Modern BERT improvements and techniques.</p>
       <a href="https://arxiv.org/abs/2412.13663" target="_blank">View Paper</a>
+    </div>
+    <div class="card" data-category="Generative AI">
+      <h4>LLM Inference-Time Self-Improvement</h4>
+      <p>LLM improves itself at inference time.</p>
+      <a href="https://arxiv.org/pdf/2412.14352" target="_blank">View Paper</a>
     </div>
     <div class="card" data-category="Computer Vision">
       <h4>Meta Llama 3.2 Edge AI</h4>
-      <p>Customizable Edge AI & Vision models</p>
+      <p>Customizable Edge AI & Vision models.</p>
       <a href="https://www.llama.com/" target="_blank">View Paper</a>
     </div>
     <div class="card" data-category="Quantum AI">
       <h4>Quantum Hybrid Architectures</h4>
-      <p>Integrating variational quantum circuits with transformer-based AI models</p>
+      <p>Integrating variational quantum circuits with transformer-based AI models.</p>
       <a href="#" target="_blank">View Paper</a>
     </div>
-    <!-- Add more papers here with proper data-category -->
   </div>
 </section>
 
@@ -239,7 +244,7 @@
   <div class="button-container">
     <a href="mailto:aditikhare007@gmail.com" class="button">Email</a>
     <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
-    <a href="https://github.com/aditikhare007" class="button" target="_blank">GitHub</a>
+    <a href="https://github.com/aditikhare007" class="button" target="_blank">My AI Research Portfolio@Github</a>
     <a href="https://topmate.io/aditi_khare" class="button" target="_blank">TopMate</a>
     <a href="https://www.hackerrank.com/profile/aditikhare007" class="button" target="_blank">HackerRank</a>
     <a href="https://www.packtpub.com/" class="button" target="_blank">My AI Books Publications Portfolio@Packt</a>
@@ -258,6 +263,5 @@ function filterCategory(category) {
   });
 }
 </script>
-
 </body>
 </html>
