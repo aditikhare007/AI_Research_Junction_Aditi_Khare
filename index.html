@@ -71,11 +71,11 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 .tag.cv { background: #0288d1; }
 .tag.quantum { background: #7b1fa2; }
 
-/* Connect Links */
+/* Connect Links & Buttons */
 .connect {
     margin-top: 20px;
 }
-.connect a {
+.connect a, .show-more-btn, #backToTop {
     display: inline-block;
     margin: 6px 12px;
     padding: 8px 16px;
@@ -85,8 +85,10 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
 }
-.connect a:hover { background: #ffb74d; color: #fff; }
+.connect a:hover, .show-more-btn:hover, #backToTop:hover { background: #ffb74d; color: #fff; }
 
 /* Search Input */
 #searchInput {
@@ -135,38 +137,16 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     color: #d17a00;
 }
 
-/* Show More Button */
-.show-more-btn {
-    margin: 10px auto 40px auto;
-    display: block;
-    padding: 8px 16px;
-    border-radius: 12px;
-    background: #d17a00;
-    color: #fff9f0;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-.show-more-btn:hover { background: #ffb74d; color: #fff; }
-
 /* Back to Top Button */
 #backToTop {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: rgba(209, 122, 0, 0.2);
-    color: #d17a00;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-weight: bold;
     font-size: 1.1rem;
     box-shadow: 0 0 10px rgba(209, 122, 0, 0.2);
     display: none;
     z-index: 999;
 }
-#backToTop:hover { background: rgba(209, 122, 0, 0.4); color: #fff9f0; }
 
 /* Animations */
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
@@ -184,7 +164,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 <!-- Profile Card -->
 <div class="profile-card">
     <img src="https://github.com/aditikhare007.png" alt="Aditi Khare" class="profile-photo">
-    <h1> Aditi Khare – Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation </h1>
+    <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
     <div class="about-section">
         <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
         <p>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
@@ -228,7 +208,7 @@ const researchData = {
         {title: "OpenAI Swarm Framework", summary: "Distributed AI framework", tag: "Generative AI", link: "https://github.com/openai/swarm"}
     ],
     "May – Sept 2024": [
-        {title: "Meta Llama 3.2 Computer Vision", summary: "Customizable Computer Vision models", tag: "Computer Vision", link: "https://www.llama.com/"},
+        {title: "Meta Llama 3.2 Edge AI", summary: "Customizable Edge AI & Vision models", tag: "Computer Vision", link: "https://www.llama.com/"},
         {title: "Training Language Models to Self-Correct", summary: "Reinforcement learning for self-correcting LLMs", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12917/"},
         {title: "Iteration of Thought-Leveraging Inner Dialogue", summary: "Autonomous LLM reasoning via inner dialogue", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12618/"},
         {title: "Learning to Reason with LLMs (OpenAI o1)", summary: "OpenAI o1 for reasoning", tag: "Generative AI", link: "https://openai.com/index/introducing-openai-o1-preview/"},
@@ -246,7 +226,6 @@ const researchData = {
 // === Render Dashboard ===
 const dashboard = document.getElementById('dashboard');
 const months = Object.keys(researchData);
-const latestMonth = months[0];
 
 months.forEach((month) => {
     const heading = document.createElement('div');
@@ -261,15 +240,14 @@ months.forEach((month) => {
     researchData[month].forEach((paper, index) => {
         const card = document.createElement('div');
         card.className = "paper-card";
-        let tagClass = paper.tag === "Generative AI" ? "generative" : (paper.tag === "Computer Vision" ? "cv" : "quantum");
-        card.innerHTML = `<h4>${paper.title}</h4><p>${paper.summary}</p><span class="tag ${tagClass}">${paper.tag}</span><a href="${paper.link}" target="_blank">View Paper</a>`;
-        if(month === latestMonth && index >= 5) card.style.display = "none";
+        card.innerHTML = `<h4>${paper.title}</h4><p>${paper.summary}</p><span class="tag">${paper.tag}</span><a href="${paper.link}" target="_blank">View Paper</a>`;
+        if(index >= 5) card.style.display = "none";
         container.appendChild(card);
     });
 
     dashboard.appendChild(container);
 
-    if(month === latestMonth && researchData[month].length > 5){
+    if(researchData[month].length > 5){
         const btn = document.createElement('button');
         btn.className = "show-more-btn";
         btn.textContent = "Show More";
