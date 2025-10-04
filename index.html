@@ -95,7 +95,7 @@
       display: inline-block;
       margin-top: 14px;
       background: linear-gradient(90deg, #ffcc80, #d17a00);
-      color: #1e1e2f;
+      color: #fff; /* changed to white */
       font-weight: 600;
       padding: 8px 18px;
       border-radius: 20px;
@@ -231,22 +231,6 @@
       <p>Integrating variational quantum circuits with transformer-based AI models</p>
       <a href="#" target="_blank">View Paper</a>
     </div>
-
-    <!-- Add all other papers similarly with proper data-category -->
-  </div>
-
-  <!-- Resources & Let's Connect -->
-  <div class="card">
-    <h4>🌐 Resources & Let's Connect</h4>
-    <p><strong>Stay connected for AI collaborations, mentorship, and research insights:</strong></p>
-    <p>
-      <a href="mailto:aditikhare007@gmail.com" class="button">Email</a>
-      <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
-      <a href="https://github.com/aditikhare007" class="button" target="_blank">My AI Research Portfolio@GitHub</a>
-      <a href="https://topmate.io/aditi_khare" class="button" target="_blank">Mentorship@TopMate</a>
-      <a href="https://www.hackerrank.com/profile/aditikhare007" class="button" target="_blank">HackerRank</a>
-      <a href="https://www.packtpub.com/" class="button" target="_blank">My AI Books Publications Portfolio@Packt</a>
-    </p>
   </div>
 </section>
 
@@ -255,17 +239,16 @@
 </footer>
 
 <script>
-  // Filter papers by category
-  function filterCategory(category) {
-    const cards = document.querySelectorAll('#papers-container .card');
-    cards.forEach(card => {
-      if(card.dataset.category === category){
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  }
+function filterCategory(category) {
+  const cards = document.querySelectorAll('#papers-container .card');
+  cards.forEach(card => {
+    if(card.getAttribute('data-category') === category) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
 </script>
 
 </body>
