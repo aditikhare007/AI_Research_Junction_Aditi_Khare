@@ -47,6 +47,23 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     font-weight: 600;
 }
 
+/* Let's Connect Section */
+.connect {
+    margin-top: 20px;
+}
+.connect a {
+    display: inline-block;
+    margin: 6px 12px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: #d17a00;
+    color: #fff9f0;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.connect a:hover { background: #ffb74d; color: #fff; }
+
 /* Search Input */
 #searchInput {
     width: 90%;
@@ -84,6 +101,22 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 .paper-card a { color: #d17a00; font-weight: 600; margin-top: 10px; text-decoration: none; }
 .paper-card a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
 .paper-card .tag { align-self: flex-start; margin-top: 8px; font-size: 0.9rem; padding: 3px 8px; }
+
+/* Details / Collapsible */
+details {
+    margin: 20px auto;
+    max-width: 960px;
+    padding: 10px 15px;
+    background: #fff3e0;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(209, 122, 0, 0.1);
+}
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+details[open] .paper-container { display: flex; }
 
 /* Back to Top Button */
 #backToTop {
@@ -129,12 +162,19 @@ ul, li { list-style: none; padding: 0; margin: 0; }
         <span class="tag">Quantum AI</span>
     </div>
     <p>🚀 Welcome to AI Research Junction – Your hub for curated AI research paper summaries.</p>
+
+    <!-- Let's Connect -->
+    <div class="connect">
+        <a href="https://www.linkedin.com/in/aditikhares" target="_blank">LinkedIn Profile</a>
+        <a href="https://www.linkedin.com/newsletters/aditi-ai-newsletter" target="_blank">LinkedIn Newsletter</a>
+        <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Book</a>
+    </div>
 </div>
 
 <!-- Search Input -->
 <input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Search papers by keyword...">
 
-<!-- Latest Month Papers (Jan 2025) -->
+<!-- Latest Month Expanded (Jan 2025) -->
 <div class="paper-container" id="Jan2025">
     <div class="paper-card" data-month="Jan2025">
         <h4>Modern BERT</h4>
@@ -156,33 +196,97 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     </div>
 </div>
 
-<!-- Resources always visible -->
-<div class="paper-container" id="Resources">
-    <div class="paper-card" data-month="Resources">
-        <h4>OpenAI Prompt Engineering Handbook</h4>
-        <p>Guides and techniques for prompt engineering</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank">View Website</a>
+<!-- Collapsible Months (Oct 2024 → May 2024) -->
+<details>
+    <summary>Oct – Dec 2024</summary>
+    <div class="paper-container">
+        <div class="paper-card">
+            <h4>Claude 3.5 Sonnet & Haiku</h4>
+            <p>Creative poetry LLMs</p>
+            <span class="tag">Generative AI</span>
+            <a href="https://www.anthropic.com/news/3-5-models-and-computer-use" target="_blank">View</a>
+        </div>
+        <div class="paper-card">
+            <h4>OpenAI Swarm Framework</h4>
+            <p>Distributed AI framework</p>
+            <span class="tag">Generative AI</span>
+            <a href="https://github.com/openai/swarm" target="_blank">View</a>
+        </div>
     </div>
-    <div class="paper-card" data-month="Resources">
-        <h4>Lilianweng's Blog & GitHub</h4>
-        <p>AI & ML blog with tutorials and code</p>
-        <span class="tag">Generative AI & ML</span>
-        <a href="https://lilianweng.github.io/" target="_blank">View Website</a>
+</details>
+
+<details>
+    <summary>May – Sept 2024</summary>
+    <div class="paper-container">
+        <div class="paper-card">
+            <h4>Meta Llama 3.2 Edge AI</h4>
+            <p>Customizable Edge AI & Vision models</p>
+            <span class="tag">Edge AI & Vision</span>
+            <a href="https://www.llama.com/" target="_blank">View</a>
+        </div>
+        <div class="paper-card">
+            <h4>Training Language Models to Self-Correct</h4>
+            <p>Reinforcement learning for self-correcting LLMs</p>
+            <span class="tag">Generative AI</span>
+            <a href="https://arxiv.org/abs/2409.12917/" target="_blank">View Paper</a>
+        </div>
+        <div class="paper-card">
+            <h4>Iteration of Thought-Leveraging Inner Dialogue</h4>
+            <p>Autonomous LLM reasoning via inner dialogue</p>
+            <span class="tag">Generative AI</span>
+            <a href="https://arxiv.org/abs/2409.12618/" target="_blank">View Paper</a>
+        </div>
+        <div class="paper-card">
+            <h4>Learning to Reason with LLMs (OpenAI o1)</h4>
+            <p>OpenAI o1 for reasoning</p>
+            <span class="tag">Generative AI</span>
+            <a href="https://openai.com/index/introducing-openai-o1-preview/" target="_blank">View Paper</a>
+        </div>
+        <div class="paper-card">
+            <h4>AutoGen Studio</h4>
+            <p>Framework for autonomous LLM agents</p>
+            <span class="tag">Generative AI</span>
+            <a href="https://github.com/microsoft/autogen" target="_blank">View Paper</a>
+        </div>
+        <div class="paper-card">
+            <h4>Strategic Chain-of-Thought</h4>
+            <p>LLM reasoning methodology</p>
+            <span class="tag">Generative AI</span>
+            <a href="https://arxiv.org/abs/2409.03271/" target="_blank">View Paper</a>
+        </div>
     </div>
-    <div class="paper-card" data-month="Resources">
-        <h4>DeepSeek AI Search</h4>
-        <p>Advanced AI search frameworks</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View GitHub</a>
+</details>
+
+<!-- Resources Collapsible -->
+<details>
+    <summary>AI Learning Resources</summary>
+    <div class="paper-container">
+        <div class="paper-card">
+            <h4>OpenAI Prompt Engineering Handbook</h4>
+            <p>Guides and techniques for prompt engineering</p>
+            <span class="tag">Generative AI</span>
+            <a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank">View Website</a>
+        </div>
+        <div class="paper-card">
+            <h4>Lilianweng's Blog & GitHub</h4>
+            <p>AI & ML blog with tutorials and code</p>
+            <span class="tag">Generative AI & ML</span>
+            <a href="https://lilianweng.github.io/" target="_blank">View Website</a>
+        </div>
+        <div class="paper-card">
+            <h4>DeepSeek AI Search</h4>
+            <p>Advanced AI search frameworks</p>
+            <span class="tag">Generative AI</span>
+            <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View GitHub</a>
+        </div>
+        <div class="paper-card">
+            <h4>Hugging Face Transformers</h4>
+            <p>Transformers library & documentation</p>
+            <span class="tag">Generative AI & NLP</span>
+            <a href="https://huggingface.co/docs/transformers/index" target="_blank">View Website</a>
+        </div>
     </div>
-    <div class="paper-card" data-month="Resources">
-        <h4>Hugging Face Transformers</h4>
-        <p>Transformers library & documentation</p>
-        <span class="tag">Generative AI & NLP</span>
-        <a href="https://huggingface.co/docs/transformers/index" target="_blank">View Website</a>
-    </div>
-</div>
+</details>
 
 <!-- Back to Top -->
 <button onclick="topFunction()" id="backToTop">⬆ Back to Top</button>
