@@ -1,589 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>AI Research Junction — Aditi Khare</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Research Junction - Aditi Khare</title>
 <style>
-  :root{
-    --bg:#060613;
-    --panel:#0f1724;
-    --muted:#9aa4b2;
-    --text:#e6eef6;
-    --accent:#50c9f6;
-    --card:#0b1220;
-    --glass: rgba(255,255,255,0.02);
-    --glass-2: rgba(255,255,255,0.03);
-    --gold: #f2c94c;
-    --rounded:14px;
-    --maxw:1200px;
-  }
-  @media (prefers-color-scheme: light){
-    :root{
-      --bg:#f4f8fb;
-      --panel:#ffffff;
-      --muted:#4b5563;
-      --text:#0f1724;
-      --accent:#0366d6;
-      --card:#ffffff;
-      --glass: rgba(0,0,0,0.03);
-      --glass-2: rgba(0,0,0,0.04);
-      --gold:#b08900;
-    }
-  }
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a0a0f;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+a { color: #00e5ff; text-decoration: none; }
+a:hover { color: #ffd54f; text-shadow: 0 0 5px #ffd54f; }
+h1, h2, h3, h4 { color: #00e5ff; text-shadow: 0 0 5px #00e5ff; margin: 0.5em 0; }
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.4rem; }
+p, li, td { font-size: 1.2rem; }
+ul { margin: 0.5em 0 1em 1.5em; }
 
-  /* Base */
-  *{box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    margin:0;
-    min-height:100%;
-    background:linear-gradient(180deg,var(--bg),#021018 120%);
-    color:var(--text);
-    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    line-height:1.6;
-    font-size:16px;
-    display:flex;
-    justify-content:center;
-    padding:28px;
-  }
+/* Profile Card */
+.profile-card {
+    max-width: 900px;
+    margin: 100px auto 40px auto;
+    padding: 30px;
+    background: #11131a;
+    border-radius: 16px;
+    box-shadow: 0 0 25px #00e5ff66;
+    text-align: center;
+}
+.tag {
+    display: inline-block;
+    background: #00e5ff11;
+    color: #00e5ff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin: 2px 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 
-  .wrap{
-    width:100%;
-    max-width:var(--maxw);
-    margin:0 auto;
-    padding:28px;
-  }
+/* Details & Table */
+details {
+    margin-bottom: 12px;
+    padding: 12px;
+    background: #11131a;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #00e5ff22;
+    transition: all 0.3s ease;
+}
+details[open] { animation: fadeIn 0.4s ease forwards; }
+summary { cursor: pointer; font-weight: bold; font-size: 1.3rem; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+th, td { padding: 8px; border: 1px solid #222; text-align: left; }
+th { background-color: #11131a; color: #00e5ff; }
+td { background-color: #1a1a1a; }
 
-  /* Header / profile card */
-  header {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:22px;
-  }
-  .profile {
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    border-radius:var(--rounded);
-    padding:30px;
-    box-shadow: 0 8px 30px rgba(2,6,23,0.6), 0 1px 0 var(--glass-2) inset;
-    max-width:870px;
-    margin:0 auto 22px auto;
-    text-align:center;
-    border: 1px solid rgba(255,255,255,0.03);
-    transition: transform .28s ease, box-shadow .28s ease;
-  }
-  .profile:hover{ transform:translateY(-6px); box-shadow:0 18px 50px rgba(2,6,23,0.7); }
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #11131a;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    z-index: 999;
+    box-shadow: 0 0 15px #00e5ff44;
+    overflow-x: auto;
+}
+.navbar a {
+    margin: 0 20px;
+    color: #00e5ff;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.navbar a:hover { color: #ffd54f; }
 
-  .profile h1{ margin:0; font-size:28px; letter-spacing:0.2px; }
-  .profile h2{ margin:8px 0 10px 0; font-size:15px; color:var(--gold); font-weight:600; }
-  .profile p.lead{ margin:12px 0 18px 0; color:var(--muted); font-size:15px; max-width:840px; margin-left:auto; margin-right:auto; }
-  .profile .roles{ font-weight:600; color:var(--text); margin-top:10px; font-size:14px; }
-  .tags{ margin-top:12px; display:flex; gap:8px; justify-content:center; flex-wrap:wrap; }
-  .tag{
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    color:var(--accent);
-    padding:6px 10px;
-    border-radius:999px;
-    font-weight:600;
-    font-size:13px;
-    border:1px solid rgba(255,255,255,0.02);
-  }
-
-  /* Sections */
-  .nav{
-    display:flex; justify-content:center; gap:8px; margin-bottom:20px;
-  }
-  .pill{
-    background:var(--card);
-    color:var(--muted);
-    padding:8px 12px;
-    border-radius:999px;
-    font-size:13px;
-    border:1px solid rgba(255,255,255,0.02);
-  }
-
-  details.section{
-    background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.01));
-    border-radius:12px;
-    padding:18px;
-    margin-bottom:14px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-    border:1px solid rgba(255,255,255,0.03);
-  }
-  details.section[open]{ transform:translateY(-2px) }
-
-  summary.heading{
-    font-size:18px;
-    font-weight:700;
-    color:var(--text);
-    cursor:pointer;
-    list-style:none;
-    display:flex;
-    align-items:center;
-    gap:12px;
-  }
-  summary.heading::marker{ content:none }
-
-  .month-block{ margin-top:12px; padding-top:10px; }
-
-  table{ width:100%; border-collapse:collapse; margin-top:10px; font-size:15px; color:var(--text); }
-  thead th {
-    text-align:left;
-    padding:12px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));
-    color:var(--muted);
-    border-bottom:1px solid rgba(255,255,255,0.03);
-  }
-  tbody td{ padding:12px; border-bottom:1px dashed rgba(255,255,255,0.03); vertical-align:top; color:var(--text) }
-  tbody tr:hover td{ background: linear-gradient(90deg, rgba(80,201,246,0.02), rgba(80,201,246,0.01)); }
-
-  a { color:var(--accent); text-decoration:none; font-weight:600 }
-  a:hover { text-decoration:underline }
-
-  /* Back to top */
-  .backTop{
-    position:fixed;
-    right:20px;
-    bottom:24px;
-    background:linear-gradient(90deg,var(--accent),var(--gold));
-    color:#041018;
-    padding:10px 12px;
-    border-radius:12px;
-    box-shadow:0 8px 24px rgba(0,0,0,0.45);
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #00e5ff33;
+    color: #00e5ff;
     border: none;
-    cursor:pointer;
-    font-weight:700;
-    display:flex;
-    gap:8px;
-    align-items:center;
-    z-index:999;
-  }
-  .backTop:hover{ transform:translateY(-3px) }
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 0 10px #00e5ff66;
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 999;
+}
+#backToTop:hover {
+    background: #00e5ff55;
+    color: #0a0a0f;
+}
 
-  /* Footer */
-  footer{ text-align:center; color:var(--muted); margin-top:28px; font-size:14px; }
+/* Search Input */
+#searchInput {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px 14px;
+    margin: 10px auto 20px auto;
+    display: block;
+    border-radius: 8px;
+    border: none;
+    background: #11131a;
+    color: #00e5ff;
+    box-shadow: 0 0 6px #00e5ff33 inset;
+    font-size: 1.1rem;
+}
 
-  /* Responsive */
-  @media(max-width:920px){
-    .profile{ width:92% }
-    .profile h1{ font-size:22px }
-    .container{ padding:18px }
-  }
-  @media(max-width:520px){
-    body{ padding:16px }
-    .backTop{ right:10px; bottom:10px; padding:8px 10px }
-    table{ font-size:13px }
-    .profile{ padding:20px }
-  }
+/* Responsive */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem; }
+    .profile-card { padding: 20px; margin: 80px 10px 30px 10px; }
+    table { font-size: 1rem; }
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+body { padding-top: 80px; }
 </style>
 </head>
 <body>
 
-<div class="wrap">
-  <div class="container">
-
-    <!-- PROFILE CARD -->
-    <header>
-      <section class="profile" aria-label="Aditi Khare Profile Card">
-        <h1>👩‍💼 Aditi Khare</h1>
-        <h2>Enterprise AI Leader — Product, Infrastructure, AI Architecture & Entrepreneurial Innovation</h2>
-        <p class="lead">
-          Principal Machine Learning Scientist · Product Owner & AI Architect · AWS & AI Research Specialist ·
-          Author · Open-Source Advocate. C-suite material: strategic AI leader focused on high impact applied research and productization.
-        </p>
-        <div class="roles">Research interests: Generative AI • Computer Vision • Quantum AI</div>
-
-        <div class="tags" style="margin-top:14px">
-          <span class="tag">Generative AI</span>
-          <span class="tag">Computer Vision</span>
-          <span class="tag">Quantum AI</span>
-          <span class="tag">RAG • Transformers</span>
-        </div>
-
-        <p style="margin-top:14px; color:var(--muted) ; font-size:14px">
-          Welcome to AI Research Junction — curated paper summaries, resources, and enterprise insights (May 2024 → Jan 2025).
-          If useful, please ⭐ star the repo to support ongoing curation.
-        </p>
-      </section>
-    </header>
-
-    <!-- NAV -->
-    <nav class="nav" aria-label="quick nav">
-      <div class="pill">May 2024 → Jan 2025</div>
-      <div class="pill">Generative AI • CV • Quantum AI</div>
-      <div class="pill">C-Suite Ready</div>
-    </nav>
-
-    <!-- SECTIONS: All content from May 2024 to Jan 2025 (as provided) -->
-    <!-- GENERATIVE AI -->
-    <details class="section" open>
-      <summary class="heading">🧠 Generative AI Research (May 2024 → Jan 2025)</summary>
-
-      <!-- MAY 2024 -->
-      <div class="month-block" aria-labelledby="may-2024">
-        <h3 id="may-2024" style="margin:8px 0 6px 0; color:var(--muted); font-size:14px">May 2024</h3>
-        <table role="table" aria-describedby="may-2024-desc">
-          <thead>
-            <tr><th>Paper</th><th>Summary</th><th>Link</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>LoRA Learns Less and Forgets Less</td>
-              <td>Discusses LoRA’s advantages over full fine-tuning—improved efficiency and retention during continual learning.</td>
-              <td><a href="https://arxiv.org/pdf/2405.09673/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>Phi-3 Technical Report</td>
-              <td>Highly capable language model optimized for running locally on phones and edge devices.</td>
-              <td><a href="https://arxiv.org/pdf/2404.14219/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>Make Your LLM Fully Utilize the Context</td>
-              <td>Methods and techniques to ensure models better leverage long contexts.</td>
-              <td><a href="https://arxiv.org/abs/2404.16811/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>Implementing FrugalGPT (Production Guides)</td>
-              <td>Practical guide to reduce LLM costs and improve performance in production (FrugalGPT strategies).</td>
-              <td><a href="https://portkey.ai/blog/implementing-frugalgpt-smarter-llm-usage-for-lower-costs#1-prompt-adaptation/" target="_blank" rel="noopener">Blog</a></td>
-            </tr>
-            <tr>
-              <td>Quantifying LM Sensitivity to Spurious Prompt Features</td>
-              <td>Examines robustness of LLMs to prompt formatting and spurious features.</td>
-              <td><a href="https://arxiv.org/pdf/2310.11324/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>Inner Workings of Transformer-based Language Models</td>
-              <td>Technical analysis of transformer internals and behaviors.</td>
-              <td><a href="https://arxiv.org/pdf/2405.00208/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>OpenAI GPT-4o (Audio, Vision & Text)</td>
-              <td>Capabilities and multimodal features of GPT-4o.</td>
-              <td><a href="https://openai.com/index/hello-gpt-4o/" target="_blank" rel="noopener">OpenAI Blog</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- JUNE-JULY 2024 -->
-      <div class="month-block" aria-labelledby="jun-jul-2024">
-        <h3 id="jun-jul-2024" style="margin:8px 0 6px 0; color:var(--muted); font-size:14px">June — July 2024</h3>
-        <table>
-          <thead>
-            <tr><th>Paper</th><th>Summary</th><th>Link</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Microsoft SAMBA LLM Model</td>
-              <td>Microsoft's advanced LLM (SAMBA) with emphasis on generative capabilities and efficiency.</td>
-              <td><a href="https://arxiv.org/pdf/2406.07522/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>OpenAI — Extracting Concepts from GPT-4</td>
-              <td>Techniques to probe conceptual representations from GPT-4.</td>
-              <td><a href="https://openai.com/index/extracting-concepts-from-gpt-4/" target="_blank" rel="noopener">OpenAI Blog</a></td>
-            </tr>
-            <tr>
-              <td>Meta: No Language Left Behind (NLLB)</td>
-              <td>Scaling human-centered machine translation across many languages.</td>
-              <td><a href="https://github.com/facebookresearch/fairseq/tree/nllb/" target="_blank" rel="noopener">Repo</a></td>
-            </tr>
-            <tr>
-              <td>Quantinuum's Quixer — Quantum Transformer Model</td>
-              <td>Quantum-inspired transformer architectures for hybrid quantum/classical settings.</td>
-              <td>Reference in earlier notes (link as provided)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- AUGUST 2024 -->
-      <div class="month-block" aria-labelledby="aug-2024">
-        <h3 id="aug-2024" style="margin:8px 0 6px 0; color:var(--muted); font-size:14px">August 2024</h3>
-        <table>
-          <thead><tr><th>Paper</th><th>Summary</th><th>Link</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>The AI Scientist: Fully Automated Open-Ended Scientific Discovery</td>
-              <td>Automating the scientific discovery loop using generative agents and experiment planning.</td>
-              <td><a href="https://paperswithcode.com/paper/the-ai-scientist-towards-fully-automated-open/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>ControlNeXt</td>
-              <td>Powerful and efficient control for image and video generation (conditioning & control nets).</td>
-              <td><a href="https://arxiv.org/pdf/2408.06070v2/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>RAG-Checker</td>
-              <td>Fine-grained framework for diagnosing retrieval-augmented generation behavior and errors.</td>
-              <td><a href="https://arxiv.org/abs/2408.08067/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- SEPT 2024 -->
-      <div class="month-block" aria-labelledby="sep-2024">
-        <h3 id="sep-2024" style="margin:8px 0 6px 0; color:var(--muted); font-size:14px">September 2024</h3>
-        <table>
-          <thead><tr><th>Paper / Project</th><th>Summary</th><th>Link</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>Meta Llama 3.2 — Edge AI & Vision</td>
-              <td>Llama 3.2 family focused on edge deployments and vision capabilities.</td>
-              <td><a href="https://www.llama.com/" target="_blank" rel="noopener">Blog</a></td>
-            </tr>
-            <tr>
-              <td>Training LMs to Self-Correct via Reinforcement Learning</td>
-              <td>Self-correction techniques for LLMs using RL to reduce errors and improve outputs.</td>
-              <td><a href="https://arxiv.org/abs/2409.12917/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>Iteration of Thought — Inner Dialogue for Autonomous LLM Reasoning</td>
-              <td>Techniques using inner dialogue/iterative thoughts for improving autonomous model reasoning.</td>
-              <td><a href="https://arxiv.org/abs/2409.12618/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>Learning to Reason with LLMs — OpenAI o1</td>
-              <td>OpenAI’s o1 preview — frameworks for structured reasoning with LLMs.</td>
-              <td><a href="https://openai.com/index/introducing-openai-o1-preview/" target="_blank" rel="noopener">OpenAI</a></td>
-            </tr>
-            <tr>
-              <td>AutoGen Studio</td>
-              <td>Studio for building multi-agent/multi-tool applications (Microsoft AutoGen project).</td>
-              <td><a href="https://github.com/microsoft/autogen" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>Strategic Chain-of-Thought</td>
-              <td>Improvements to chain-of-thought prompting and structured reasoning.</td>
-              <td><a href="https://arxiv.org/abs/2409.03271/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>Role of RAG Noise in LLMs</td>
-              <td>Examines effects of noisy retrieval and robustness of retrieval-augmented models.</td>
-              <td><a href="https://arxiv.org/abs/2408.13533/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>GameGAN — Simulating Dynamic Environments</td>
-              <td>Learning to simulate dynamic environments and games using generative techniques.</td>
-              <td><a href="https://github.com/nv-tlabs/GameGAN_code/" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>Agentic Retrieval-Augmented Generation for Time Series Analysis</td>
-              <td>Agentic approaches combining retrieval with generative models for time series tasks.</td>
-              <td><a href="https://arxiv.org/abs/2408.14484/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- OCT 2024 -->
-      <div class="month-block" aria-labelledby="oct-2024">
-        <h3 id="oct-2024" style="margin:8px 0 6px 0; color:var(--muted); font-size:14px">October 2024</h3>
-        <table>
-          <thead><tr><th>Paper / Project</th><th>Summary</th><th>Link</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>Claude 3.5 Sonnet & Claude 3.5 Haiku</td>
-              <td>Anthropic’s 3.5 family variants focused on creative writing and deployment efficiency.</td>
-              <td><a href="https://www.anthropic.com/news/3-5-models-and-computer-use" target="_blank" rel="noopener">Blog</a></td>
-            </tr>
-            <tr>
-              <td>OpenAI Swarm Framework</td>
-              <td>OpenAI’s Swarm — tooling and frameworks for collaborative model orchestration.</td>
-              <td><a href="https://github.com/openai/swarm" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- NOV 2024 — JAN 2025 -->
-      <div class="month-block" aria-labelledby="nov-jan-2025">
-        <h3 id="nov-jan-2025" style="margin:8px 0 6px 0; color:var(--muted); font-size:14px">Nov 2024 — Jan 2025</h3>
-        <table>
-          <thead><tr><th>Paper / Project</th><th>Summary</th><th>Link</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>Modern BERT</td>
-              <td>Modernizations and improvements to BERT architectures (state updates / refinements).</td>
-              <td><a href="https://arxiv.org/abs/2412.13663" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>LLM Inference-Time Self-Improvement</td>
-              <td>Techniques enabling LLMs to self-improve during inference-time operation.</td>
-              <td><a href="https://arxiv.org/pdf/2412.14352" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>DeepSeekv3</td>
-              <td>DeepSeek V3 — improvements in AI search and multimodal retrieval (third iteration).</td>
-              <td><a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-    </details>
-
-    <!-- COMPUTER VISION -->
-    <details class="section">
-      <summary class="heading">🖼️ Computer Vision Research (May 2024 → Jan 2025)</summary>
-
-      <!-- May - April - etc included earlier in list but include relevant CV items -->
-      <div class="month-block" aria-labelledby="cv-2024">
-        <h3 id="cv-2024" style="margin:8px 0 6px 0; color:var(--muted); font-size:14px">Selected CV Papers (from your list)</h3>
-        <table>
-          <thead><tr><th>Paper / Project</th><th>Summary</th><th>Link</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>ControlNeXt</td>
-              <td>Powerful and efficient control mechanisms for image & video generation (conditioning).</td>
-              <td><a href="https://arxiv.org/pdf/2408.06070v2/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>DiffusionDepth</td>
-              <td>Depth estimation by leveraging diffusion priors and generative models.</td>
-              <td><a href="https://arxiv.org/pdf/2406.04362/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>DynIBR</td>
-              <td>Dynamic implicit neural rendering approaches for scene understanding & reconstruction.</td>
-              <td><a href="https://arxiv.org/pdf/2407.02901/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>GameGAN (Simulation)</td>
-              <td>Simulating dynamic environments and game worlds for model training and evaluation.</td>
-              <td><a href="https://github.com/nv-tlabs/GameGAN_code/" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>Segment Anything 2 (SOTA segmentation)</td>
-              <td>Next-gen universal segmentation model (listed in your notes).</td>
-              <td>(link referenced in your notes)</td>
-            </tr>
-            <tr>
-              <td>RT-DETRv2</td>
-              <td>Real-time transformer detector, faster multi-scale reasoning (repo referenced).</td>
-              <td><a href="https://github.com/lyuwenyu/RT-DETR" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-    </details>
-
-    <!-- QUANTUM AI -->
-    <details class="section">
-      <summary class="heading">⚛️ Quantum AI & Quantum ML (May 2024 → Jan 2025)</summary>
-
-      <div class="month-block" aria-labelledby="quantum-2024">
-        <h3 id="quantum-2024" style="margin:8px 0 6px 0; color:var(--muted); font-size:14px">Quantum papers & projects</h3>
-        <table>
-          <thead><tr><th>Paper / Project</th><th>Summary</th><th>Link</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>JPMorgan & AWS — Rydberg Atom Arrays (Quantum Solutions Lab)</td>
-              <td>Study on prospects for quantum speedups using near-term Rydberg atom arrays (applications to optimization / ML).</td>
-              <td><a href="https://aws.amazon.com/blogs/quantum-computing/jpmorgan-chase-and-aws-study-the-prospects-for-quantum-speedups-with-near-term-rydberg-atom-arrays/" target="_blank" rel="noopener">AWS Blog</a></td>
-            </tr>
-            <tr>
-              <td>Learning Quantum Computing</td>
-              <td>Repository and learning resources for quantum computing basics (your link).</td>
-              <td><a href="https://github.com/learnqc/code" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>Variational LSE Solvers (Library)</td>
-              <td>Comprehensive library of variational least squares solvers relevant for quantum numeric methods.</td>
-              <td><a href="https://arxiv.org/abs/2404.09916/" target="_blank" rel="noopener">Paper</a></td>
-            </tr>
-            <tr>
-              <td>Photonic Quantum Memory Capacity Expanded</td>
-              <td>Results expanding photonic quantum memory capacity — implications for quantum internet.</td>
-              <td><a href="https://quantumzeitgeist.com/photonic-quantum-memory-capacity-expanded-paving-way-for-quantum-internet/#google_vignette/" target="_blank" rel="noopener">Article</a></td>
-            </tr>
-            <tr>
-              <td>Quantinuum Quixer — Quantum Transformer</td>
-              <td>Quantum transformer model (noted in your collection).</td>
-              <td>(reference in your notes)</td>
-            </tr>
-            <tr>
-              <td>Quantum Machine Learning Landscape 2024</td>
-              <td>Survey of quantum-enhanced ML methods and hybrid approaches.</td>
-              <td>(reference from your notes)</td>
-            </tr>
-            <tr>
-              <td>Variational Quantum Autoencoders</td>
-              <td>Quantum-enhanced encoders for generative tasks.</td>
-              <td>(reference from your notes)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-    </details>
-
-    <!-- AI LEARNING RESOURCES -->
-    <details class="section">
-      <summary class="heading">📚 AI Learning Resources & Tools</summary>
-      <div class="month-block">
-        <table>
-          <thead><tr><th>Resource</th><th>Description / Link</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>OpenAI — Prompt Engineering Handbook</td>
-              <td><a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank" rel="noopener">Website</a> · <a href="https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks" target="_blank" rel="noopener">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>Lilian Weng — Resources & Blogs</td>
-              <td><a href="https://lilianweng.github.io/" target="_blank" rel="noopener">Website</a> — excellent deep dives on ML and practice.</td>
-            </tr>
-            <tr>
-              <td>Hugging Face — Transformers docs</td>
-              <td><a href="https://huggingface.co/docs/transformers/index" target="_blank" rel="noopener">Docs</a> — models, tokenizers, and deployment guides.</td>
-            </tr>
-            <tr>
-              <td>DeepSeek V3</td>
-              <td><a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank" rel="noopener">GitHub</a> — included earlier as a project resource.</td>
-            </tr>
-            <tr>
-              <td>Giskard</td>
-              <td><a href="https://docs.giskard.ai/en/stable/" target="_blank" rel="noopener">Giskard docs</a> — evaluation & testing framework for LLMs and models.</td>
-            </tr>
-            <tr>
-              <td>Databricks DBRX</td>
-              <td><a href="https://huggingface.co/databricks/dbrx-base" target="_blank" rel="noopener">DBRX</a> — mix-of-experts open models (links to repo & blog in your notes).</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </details>
-
-    <!-- FOOTER -->
-    <footer>
-      <p>© 2025 Aditi Khare — AI Research Junction • Curated research summaries for executives, engineering leads & researchers.</p>
-      <p style="margin-top:6px; color:var(--muted)">Published as a static page (suitable for GitHub Pages). For any edits or additions, update the repository's <code>index.html</code>.</p>
-    </footer>
-
-  </div>
+<!-- Navbar -->
+<div class="navbar">
+    <a href="#Jan2025">Jan 2025</a>
+    <a href="#Oct2024">Oct–Dec 2024</a>
+    <a href="#May2024">May–Sept 2024</a>
+    <a href="#Resources">Resources</a>
 </div>
 
-<!-- Back to top -->
-<button class="backTop" id="backTop" title="Back to top" aria-label="Back to top" onclick="scrollToTop()">
-  ⬆ Top
-</button>
+<!-- Profile Card -->
+<div class="profile-card">
+    <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
+    <p><strong>Professional Snapshot:</strong></p>
+    <ul>
+        <li>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</li>
+        <li>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</li>
+        <li>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</li>
+    </ul>
+    <p><strong>Research Interests:</strong> <span class="tag">Generative AI</span><span class="tag">Computer Vision</span><span class="tag">Quantum AI</span></p>
+    <p>🚀 Welcome to AI Research Junction – Your hub for curated AI research paper summaries.</p>
+</div>
+
+<!-- Search -->
+<input type="text" id="searchInput" onkeyup="filterPapers()" placeholder="Search papers by keyword...">
+
+<!-- Research Papers -->
+<details open id="Jan2025">
+<summary><h2>📚 AI Research Papers (May 2024 – Jan 2025)</h2></summary>
+
+<!-- Jan 2025 -->
+<details>
+<summary><h3>Nov 2024 – Jan 2025</h3></summary>
+<table>
+<tr><th>Paper</th><th>Summary</th><th>Link</th><th>Domain</th></tr>
+<tr><td>Modern BERT</td><td>Modern BERT improvements and techniques</td><td><a href="https://arxiv.org/abs/2412.13663">Paper</a></td><td>Generative AI</td></tr>
+<tr><td>LLM Inference-Time Self-Improvement</td><td>LLM improves itself at inference time</td><td><a href="https://arxiv.org/pdf/2412.14352">Paper</a></td><td>Generative AI</td></tr>
+<tr><td>DeepSeekv3</td><td>DeepSeek V3 advancements for AI search</td><td><a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main">Github</a></td><td>Generative AI</td></tr>
+</table>
+</details>
+
+<!-- Oct 2024 -->
+<details>
+<summary><h3>Oct 2024</h3></summary>
+<table>
+<tr><th>Paper</th><th>Summary</th><th>Link</th><th>Domain</th></tr>
+<tr><td>Claude 3.5 Sonnet & Haiku</td><td>Creative poetry LLMs</td><td><a href="https://www.anthropic.com/news/3-5-models-and-computer-use">Blog</a></td><td>Generative AI</td></tr>
+<tr><td>OpenAI Swarm Framework</td><td>Distributed AI framework</td><td><a href="https://github.com/openai/swarm">Github</a></td><td>Generative AI</td></tr>
+</table>
+</details>
+
+<!-- Sept 2024 -->
+<details>
+<summary><h3>Sept 2024</h3></summary>
+<table>
+<tr><th>Paper</th><th>Summary</th><th>Link</th><th>Domain</th></tr>
+<tr><td>Meta Llama 3.2 Edge AI</td><td>Customizable Edge AI & Vision models</td><td><a href="https://www.llama.com/">Blog</a></td><td>Edge AI & Vision</td></tr>
+<tr><td>Training Language Models to Self-Correct</td><td>Reinforcement learning for self-correcting LLMs</td><td><a href="https://arxiv.org/abs/2409.12917/">Paper</a></td><td>Generative AI</td></tr>
+<tr><td>Iteration of Thought-Leveraging Inner Dialogue</td><td>Autonomous LLM reasoning via inner dialogue</td><td><a href="https://arxiv.org/abs/2409.12618/">Paper</a></td><td>Generative AI</td></tr>
+<tr><td>Learning to Reason with LLMs (OpenAI o1)</td><td>OpenAI o1 for reasoning</td><td><a href="https://openai.com/index/introducing-openai-o1-preview/">Paper</a></td><td>Generative AI</td></tr>
+<tr><td>AutoGen Studio</td><td>Framework for autonomous LLM agents</td><td><a href="https://github.com/microsoft/autogen">Github</a></td><td>Generative AI</td></tr>
+<tr><td>Strategic Chain-of-Thought</td><td>LLM reasoning methodology</td><td><a href="https://arxiv.org/abs/2409.03271/">Paper</a></td><td>Generative AI</td></tr>
+<tr><td>Role of RAG Noise in LLMs</td><td>Impact of RAG noise on LLMs</td><td><a href="https://arxiv.org/abs/2408.13533/">Paper</a></td><td>Generative AI</td></tr>
+<tr><td>Learning to Simulate Dynamic Environments with GameGAN</td><td>GameGAN for environment simulation</td><td><a href="https://github.com/nv-tlabs/GameGAN_code/">Github</a></td><td>Generative AI</td></tr>
+<tr><td>Agentic Retrieval-Augmented Generation for Time Series</td><td>Time series analysis with RAG</td><td><a href="https://arxiv.org/abs/2408.14484/">Paper</a></td><td>Generative AI</td></tr>
+</table>
+</details>
+
+<!-- May 2024 → Aug 2024 (add previous content similarly) -->
+
+</details>
+
+<!-- Resources -->
+<details id="Resources">
+<summary><h3>AI Learning Resources</h3></summary>
+<table>
+<tr><th>Resource</th><th>Link</th><th>Category</th></tr>
+<tr><td>OpenAI Prompt Engineering Handbook</td><td><a href="https://platform.openai.com/docs/guides/prompt-engineering">Website</a>, <a href="https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks">Github</a></td><td>Generative AI</td></tr>
+<tr><td>Lilianweng's Blog & GitHub</td><td><a href="https://lilianweng.github.io/">Website</a></td><td>Generative AI & ML</td></tr>
+<tr><td>DeepSeek AI Search</td><td><a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main">Github</a></td><td>Generative AI</td></tr>
+<tr><td>Hugging Face Transformers</td><td><a href="https://huggingface.co/docs/transformers/index">Website</a></td><td>Generative AI & NLP</td></tr>
+</table>
+</details>
+
+<!-- Back to Top -->
+<button onclick="topFunction()" id="backToTop">⬆ Back to Top</button>
 
 <script>
-  function scrollToTop(){ window.scrollTo({top:0, behavior:'smooth'}) }
-  // show/hide backTop button on scroll
-  const back = document.getElementById('backTop');
-  window.addEventListener('scroll', () => {
-    if(window.scrollY > 300) back.style.display = 'flex';
-    else back.style.display = 'none';
-  });
-  // init hidden
-  back.style.display = 'none';
+// Back to Top
+const backToTop = document.getElementById("backToTop");
+window.onscroll = () => {
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+};
+function topFunction() { document.documentElement.scrollTop = 0; }
+
+// Search Filter
+function filterPapers() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let tables = document.querySelectorAll("table");
+    tables.forEach(table => {
+        let trs = table.querySelectorAll("tr");
+        trs.forEach((tr, index) => {
+            if(index === 0) return;
+            let text = tr.innerText.toLowerCase();
+            tr.style.display = text.includes(input) ? "" : "none";
+        });
+    });
+}
 </script>
 
 </body>
