@@ -62,21 +62,6 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     box-shadow: inset 0 2px 6px rgba(209, 122, 0, 0.1);
 }
 
-/* Collapsible Details */
-details {
-    max-width: 940px;
-    margin: 15px auto;
-    padding: 15px;
-    background: #fff8f0;
-    border-radius: 18px;
-    box-shadow: 0 3px 15px rgba(209, 122, 0, 0.15);
-}
-summary {
-    font-weight: bold;
-    font-size: 1.3rem;
-    cursor: pointer;
-}
-
 /* Paper Cards */
 .paper-container {
     display: flex;
@@ -149,10 +134,8 @@ summary {
 <!-- Search Input -->
 <input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Search papers by keyword...">
 
-<!-- Last Month Papers Expanded, Others Collapsible -->
-<details open>
-<summary>📚 Jan 2025</summary>
-<div class="paper-container">
+<!-- Latest Month Papers (Jan 2025) -->
+<div class="paper-container" id="Jan2025">
     <div class="paper-card" data-month="Jan2025">
         <h4>Modern BERT</h4>
         <p>Modern BERT improvements and techniques</p>
@@ -172,61 +155,6 @@ summary {
         <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Paper</a>
     </div>
 </div>
-</details>
-
-<details>
-<summary>📚 Oct 2024</summary>
-<div class="paper-container">
-    <div class="paper-card" data-month="Oct2024">
-        <h4>Claude 3.5 Sonnet & Haiku</h4>
-        <p>Creative poetry LLMs</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://www.anthropic.com/news/3-5-models-and-computer-use" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card" data-month="Oct2024">
-        <h4>OpenAI Swarm Framework</h4>
-        <p>Distributed AI framework</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://github.com/openai/swarm" target="_blank">View Paper</a>
-    </div>
-</div>
-</details>
-
-<details>
-<summary>📚 Sept 2024</summary>
-<div class="paper-container">
-    <div class="paper-card" data-month="Sept2024">
-        <h4>Meta Llama 3.2 Edge AI</h4>
-        <p>Customizable Edge AI & Vision models</p>
-        <span class="tag">Edge AI & Vision</span>
-        <a href="https://www.llama.com/" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card" data-month="Sept2024">
-        <h4>Training Language Models to Self-Correct</h4>
-        <p>Reinforcement learning for self-correcting LLMs</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://arxiv.org/abs/2409.12917/" target="_blank">View Paper</a>
-    </div>
-</div>
-</details>
-
-<details>
-<summary>📚 May – Aug 2024</summary>
-<div class="paper-container">
-    <div class="paper-card" data-month="MayAug2024">
-        <h4>OpenAI GPT-4 Turbo Release</h4>
-        <p>GPT-4 Turbo advancements, speed & efficiency improvements</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://openai.com/research/gpt-4-turbo" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card" data-month="MayAug2024">
-        <h4>DeepMind Gemini Updates</h4>
-        <p>Gemini model architecture improvements & multimodal abilities</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://www.deepmind.com/publications" target="_blank">View Paper</a>
-    </div>
-</div>
-</details>
 
 <!-- Resources always visible -->
 <div class="paper-container" id="Resources">
@@ -241,6 +169,18 @@ summary {
         <p>AI & ML blog with tutorials and code</p>
         <span class="tag">Generative AI & ML</span>
         <a href="https://lilianweng.github.io/" target="_blank">View Website</a>
+    </div>
+    <div class="paper-card" data-month="Resources">
+        <h4>DeepSeek AI Search</h4>
+        <p>Advanced AI search frameworks</p>
+        <span class="tag">Generative AI</span>
+        <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View GitHub</a>
+    </div>
+    <div class="paper-card" data-month="Resources">
+        <h4>Hugging Face Transformers</h4>
+        <p>Transformers library & documentation</p>
+        <span class="tag">Generative AI & NLP</span>
+        <a href="https://huggingface.co/docs/transformers/index" target="_blank">View Website</a>
     </div>
 </div>
 
