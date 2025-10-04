@@ -155,6 +155,11 @@
     padding: 25px;
     margin-bottom: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: none;
+  }
+
+  .card.active {
+    display: block;
   }
 
   .card:hover {
@@ -206,21 +211,47 @@
 <section class="section" id="research-section">
   <h3>AI Research Junction</h3>
   <div class="tags">
-    <span class="tag">Generative AI</span>
-    <span class="tag">Computer Vision</span>
-    <span class="tag">Quantum AI</span>
+    <span class="tag" onclick="filterPapers('Generative AI')">Generative AI</span>
+    <span class="tag" onclick="filterPapers('Computer Vision')">Computer Vision</span>
+    <span class="tag" onclick="filterPapers('Quantum AI')">Quantum AI</span>
   </div>
 
-  <!-- January 2025 Papers -->
-  <div class="card">
-    <h4>📘 January 2025: AI Research Highlights</h4>
-    <p>1️⃣ <strong>AI-native Enterprise Platforms:</strong> Modular AI agents that self-adapt across data pipelines.</p>
-    <p>2️⃣ <strong>Neural Edge Federations:</strong> Advancing low-latency inference at edge computing nodes.</p>
-    <p>3️⃣ <strong>Quantum Hybrid Architectures:</strong> Integrating variational quantum circuits with transformer-based AI models.</p>
+  <!-- Papers -->
+  <div id="papers-container">
+    <!-- Generative AI Papers -->
+    <div class="card active" data-category="Generative AI">
+      <h4>Modern BERT</h4>
+      <p>Modern BERT improvements and techniques.</p>
+      <a href="https://arxiv.org/abs/2412.13663" target="_blank">View Paper</a>
+    </div>
+    <div class="card active" data-category="Generative AI">
+      <h4>LLM Inference-Time Self-Improvement</h4>
+      <p>LLM improves itself at inference time.</p>
+      <a href="https://arxiv.org/pdf/2412.14352" target="_blank">View Paper</a>
+    </div>
+    <div class="card active" data-category="Generative AI">
+      <h4>DeepSeekv3</h4>
+      <p>DeepSeek V3 advancements for AI search.</p>
+      <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Paper</a>
+    </div>
+
+    <!-- Computer Vision Papers -->
+    <div class="card" data-category="Computer Vision">
+      <h4>Meta Llama 3.2 Edge AI</h4>
+      <p>Customizable Edge AI & Vision models.</p>
+      <a href="https://www.llama.com/" target="_blank">View Paper</a>
+    </div>
+
+    <!-- Quantum AI Papers -->
+    <div class="card" data-category="Quantum AI">
+      <h4>Quantum Hybrid Architectures</h4>
+      <p>Integrating variational quantum circuits with transformer-based AI models.</p>
+      <a href="#" target="_blank">View Paper</a>
+    </div>
   </div>
 
   <!-- Resources & Connect -->
-  <div class="card">
+  <div class="card active">
     <h4>🌐 Resources & Let's Connect</h4>
     <p><strong>Stay connected for AI collaborations, mentorship, and research insights:</strong></p>
     <p>
@@ -237,6 +268,19 @@
 <footer>
   © 2025 Aditi Khare — All Rights Reserved
 </footer>
+
+<script>
+  function filterPapers(category) {
+    const cards = document.querySelectorAll('#papers-container .card');
+    cards.forEach(card => {
+      if(card.dataset.category === category) {
+        card.classList.add('active');
+      } else {
+        card.classList.remove('active');
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
