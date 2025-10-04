@@ -51,15 +51,27 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     line-height: 1.5;
     text-align: left;
 }
+
+/* Highlighted Snapshot Section */
 .snapshot {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin: 15px 0;
+    gap: 12px;
+    margin: 20px 0;
+    background: #ffe0b2;
+    color: #d17a00;
+    padding: 20px;
+    border-radius: 16px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(209,122,0,0.3);
+    text-align: center;
 }
+
+/* Tags */
 .tag {
     display: inline-block;
-    background: #ffe0b2;
+    background: #fff3e0;
     color: #d17a00;
     padding: 6px 12px;
     border-radius: 12px;
@@ -200,6 +212,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     h2 { font-size: 1.8rem; }
     .profile-card { padding: 20px; margin: 60px 10px 30px 10px; }
     .paper-card { width: 90%; }
+    .snapshot { font-size: 1rem; padding: 15px; }
 }
 </style>
 </head>
