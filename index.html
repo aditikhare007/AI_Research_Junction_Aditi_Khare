@@ -166,18 +166,6 @@ p { font-size: 1.2rem; margin: 0.3em 0; }
 }
 .show-more-btn:hover { background: #ffb74d; color: #fff; transform: translateY(-2px); }
 
-/* About Section */
-#about {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 25px;
-    background: #fff3e0;
-    border-radius: 20px;
-    box-shadow: 0 4px 25px rgba(209, 122, 0, 0.2);
-    text-align: left;
-    transition: all 0.3s ease;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     h1 { font-size: 2.2rem; }
@@ -205,26 +193,14 @@ p { font-size: 1.2rem; margin: 0.3em 0; }
     </div>
     <div class="connect">
         <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">AI Research Junction</a>
-        <a href="https://www.linkedin.com/newsletters/aditi-ai-newsletter" target="_blank">AI Research Newsletter</a>
         <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Gen-AI Integration Book</a>
-        <a href="#about">About Me</a>
+        <a href="about.html">About Me</a>
     </div>
-</div>
-
-<!-- About Section -->
-<div id="about">
-    <h2>About Me</h2>
-    <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
-    <p>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
-    <p>🔷 Welcome to AI Research Junction – your curated hub for AI research paper summaries, insights, and learnings from generative AI, edge AI, and quantum AI domains. Explore, filter, and discover the latest advancements in AI research across multiple categories.</p>
 </div>
 
 <!-- Filter Dropdown -->
 <select id="categoryFilter" onchange="filterByCategory()">
     <option value="All">Show All Categories</option>
-    <option value="Generative AI">Generative AI</option>
-    <option value="Edge AI">Edge AI</option>
-    <option value="Quantum AI">Quantum AI</option>
 </select>
 
 <!-- Dashboard -->
@@ -258,9 +234,12 @@ const researchData = {
     ]
 };
 
-// === Generate Dashboard ===
+// === Generate Dashboard & Category Dropdown ===
 const dashboard = document.getElementById("dashboard");
+const categoryFilter = document.getElementById("categoryFilter");
 let first = true;
+let categoriesSet = new Set();
+
 for (const month in researchData) {
     let container = document.createElement("div");
     container.className = "month-section";
@@ -272,6 +251,7 @@ for (const month in researchData) {
     let paperContainer = document.createElement("div");
     paperContainer.className = "paper-container";
     researchData[month].forEach(paper => {
+        categoriesSet.add(paper.tag);
         let card = document.createElement("div");
         card.className = "paper-card";
         let tagClass = paper.tag === "Generative AI" ? "generative" : paper.tag === "Edge AI" ? "edge" : "quantum";
@@ -288,6 +268,14 @@ for (const month in researchData) {
     first = false;
 }
 
+// Populate Filter Dropdown Dynamically
+categoriesSet.forEach(cat => {
+    let opt = document.createElement("option");
+    opt.value = cat;
+    opt.textContent = cat;
+    categoryFilter.appendChild(opt);
+});
+
 // Show More Button
 const showMore = document.createElement("button");
 showMore.className = "show-more-btn";
@@ -300,7 +288,7 @@ dashboard.appendChild(showMore);
 
 // Filter by Category
 function filterByCategory(){
-    const val = document.getElementById("categoryFilter").value;
+    const val = categoryFilter.value;
     document.querySelectorAll(".paper-card").forEach(card => {
         if(val==="All") card.style.display="flex";
         else if(card.querySelector(".tag").textContent !== val) card.style.display="none";
