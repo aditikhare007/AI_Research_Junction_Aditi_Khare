@@ -30,7 +30,28 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     box-shadow: 0 4px 25px rgba(209, 122, 0, 0.2);
     text-align: center;
 }
-.profile-card .snapshot {
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffe0b2;
+    box-shadow: 0 4px 15px rgba(209, 122, 0, 0.2);
+    margin: 0 auto 15px auto;
+    display: block;
+}
+.about-section {
+    background: #fff3e0;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin: 15px 0;
+    box-shadow: inset 0 1px 5px rgba(209,122,0,0.1);
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+}
+.snapshot {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -156,7 +177,12 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 
 <!-- Profile Card -->
 <div class="profile-card">
+    <img src="https://raw.githubusercontent.com/username/repo/main/dummy-profile.jpg" alt="Aditi Khare" class="profile-photo">
     <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
+    <div class="about-section">
+        <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
+        <p>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
+    </div>
     <div class="snapshot">
         <span>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</span>
         <span>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</span>
@@ -167,9 +193,8 @@ ul, li { list-style: none; padding: 0; margin: 0; }
         <span class="tag">Computer Vision</span>
         <span class="tag">Quantum AI</span>
     </div>
-    <p>🚀 Welcome to AI Research Junction – Your hub for curated AI research paper summaries.</p>
     <div class="connect">
-        <a href="https://www.linkedin.com/in/aditikhares" target="_blank">AI Research Junction</a>
+        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">AI Research Junction</a>
         <a href="https://www.linkedin.com/newsletters/aditi-ai-newsletter" target="_blank">AI Research Newsletter</a>
         <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Gen-AI Integration Book</a>
     </div>
