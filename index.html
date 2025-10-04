@@ -29,6 +29,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     border-radius: 20px;
     box-shadow: 0 4px 25px rgba(209, 122, 0, 0.2);
     text-align: center;
+    animation: fadeIn 1s ease;
 }
 .profile-photo {
     width: 140px;
@@ -59,14 +60,16 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 }
 .tag {
     display: inline-block;
-    background: #ffe0b2;
-    color: #d17a00;
     padding: 6px 12px;
     border-radius: 12px;
     margin: 4px 6px;
     font-size: 1.1rem;
     font-weight: 600;
+    color: #fff;
 }
+.tag.generative { background: #f57c00; }
+.tag.cv { background: #0288d1; }
+.tag.quantum { background: #7b1fa2; }
 
 /* Connect Links */
 .connect {
@@ -116,6 +119,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     box-shadow: 0 4px 15px rgba(209, 122, 0, 0.15);
     display: flex;
     flex-direction: column;
+    animation: fadeIn 0.8s ease;
 }
 .paper-card h4 { margin: 0 0 8px 0; color: #d17a00; font-size: 1.2rem; }
 .paper-card p { margin: 4px 0; color: #333; font-size: 1rem; flex-grow: 1; }
@@ -130,6 +134,20 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     font-size: 1.6rem;
     color: #d17a00;
 }
+
+/* Show More Button */
+.show-more-btn {
+    margin: 10px auto 40px auto;
+    display: block;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: #d17a00;
+    color: #fff9f0;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.show-more-btn:hover { background: #ffb74d; color: #fff; }
 
 /* Back to Top Button */
 #backToTop {
@@ -150,21 +168,9 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 }
 #backToTop:hover { background: rgba(209, 122, 0, 0.4); color: #fff9f0; }
 
-/* Show More Button */
-.show-more-btn {
-    margin: 10px auto 40px auto;
-    display: block;
-    padding: 8px 16px;
-    border-radius: 12px;
-    background: #d17a00;
-    color: #fff9f0;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-.show-more-btn:hover { background: #ffb74d; color: #fff; }
+/* Animations */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
 
-/* Responsive */
 @media (max-width: 768px) {
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.8rem; }
@@ -177,7 +183,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 
 <!-- Profile Card -->
 <div class="profile-card">
-    <img src="https://raw.githubusercontent.com/username/repo/main/dummy-profile.jpg" alt="Aditi Khare" class="profile-photo">
+    <img src="https://github.com/aditikhare007.png" alt="Aditi Khare" class="profile-photo">
     <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
     <div class="about-section">
         <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
@@ -189,13 +195,13 @@ ul, li { list-style: none; padding: 0; margin: 0; }
         <span>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</span>
     </div>
     <div>
-        <span class="tag">Generative AI</span>
-        <span class="tag">Computer Vision</span>
-        <span class="tag">Quantum AI</span>
+        <span class="tag generative">Generative AI</span>
+        <span class="tag cv">Computer Vision</span>
+        <span class="tag quantum">Quantum AI</span>
     </div>
     <div class="connect">
+        <a href="about_me.html">About Me</a>
         <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">AI Research Junction</a>
-        <a href="https://www.linkedin.com/newsletters/aditi-ai-newsletter" target="_blank">AI Research Newsletter</a>
         <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Gen-AI Integration Book</a>
     </div>
 </div>
@@ -222,7 +228,7 @@ const researchData = {
         {title: "OpenAI Swarm Framework", summary: "Distributed AI framework", tag: "Generative AI", link: "https://github.com/openai/swarm"}
     ],
     "May – Sept 2024": [
-        {title: "Meta Llama 3.2 Edge AI", summary: "Customizable Edge AI & Vision models", tag: "Edge AI & Vision", link: "https://www.llama.com/"},
+        {title: "Meta Llama 3.2 Computer Vision", summary: "Customizable Computer Vision models", tag: "Computer Vision", link: "https://www.llama.com/"},
         {title: "Training Language Models to Self-Correct", summary: "Reinforcement learning for self-correcting LLMs", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12917/"},
         {title: "Iteration of Thought-Leveraging Inner Dialogue", summary: "Autonomous LLM reasoning via inner dialogue", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12618/"},
         {title: "Learning to Reason with LLMs (OpenAI o1)", summary: "OpenAI o1 for reasoning", tag: "Generative AI", link: "https://openai.com/index/introducing-openai-o1-preview/"},
@@ -240,7 +246,7 @@ const researchData = {
 // === Render Dashboard ===
 const dashboard = document.getElementById('dashboard');
 const months = Object.keys(researchData);
-const latestMonth = months[0]; // First month is latest
+const latestMonth = months[0];
 
 months.forEach((month) => {
     const heading = document.createElement('div');
@@ -255,7 +261,8 @@ months.forEach((month) => {
     researchData[month].forEach((paper, index) => {
         const card = document.createElement('div');
         card.className = "paper-card";
-        card.innerHTML = `<h4>${paper.title}</h4><p>${paper.summary}</p><span class="tag">${paper.tag}</span><a href="${paper.link}" target="_blank">View Paper</a>`;
+        let tagClass = paper.tag === "Generative AI" ? "generative" : (paper.tag === "Computer Vision" ? "cv" : "quantum");
+        card.innerHTML = `<h4>${paper.title}</h4><p>${paper.summary}</p><span class="tag ${tagClass}">${paper.tag}</span><a href="${paper.link}" target="_blank">View Paper</a>`;
         if(month === latestMonth && index >= 5) card.style.display = "none";
         container.appendChild(card);
     });
