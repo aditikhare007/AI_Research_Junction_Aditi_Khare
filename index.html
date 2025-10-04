@@ -1,442 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>AI Research Junction — Aditi Khare</title>
-<style>
-  :root{
-    --bg:#fff9f0;           /* creme page background */
-    --accent:#d17a00;       /* primary button / accent */
-    --accent-strong:#1e3a8a;/* secondary accent (used sparingly) */
-    --card:#fff8f0;
-    --muted:#6b6b6b;
-    --shadow: rgba(209,122,0,0.18);
-    --radius:14px;
-    --font-sans: "Segoe UI", "Poppins", system-ui, -apple-system, "Helvetica Neue", Arial;
-  }
-
-  /* ---- Base ---- */
-  html,body{height:100%;}
-  body{
-    font-family:var(--font-sans);
-    margin:0;
-    background:var(--bg);
-    color:#222;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    line-height:1.45;
-    scroll-behavior:smooth;
-  }
-  a{color:var(--accent); text-decoration:none;}
-  a:hover{text-decoration:underline;}
-
-  /* ---- Layout / header ---- */
-  .container{max-width:1100px;margin:28px auto;padding:0 20px;}
-  header.site-header{
-    display:flex;
-    gap:20px;
-    align-items:center;
-    justify-content:space-between;
-    padding:18px 0;
-  }
-  .brand{
-    display:flex;
-    gap:14px;
-    align-items:center;
-  }
-  .brand img{width:56px;height:56px;border-radius:50%;border:3px solid #ffe6cc;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
-  .brand h1{font-size:1.35rem;margin:0;color:var(--accent-strong);font-weight:700;}
-  nav.top-nav{display:flex;gap:14px;align-items:center;}
-  nav.top-nav a{font-weight:600;color:var(--accent-strong);font-size:0.98rem;padding:6px 10px;border-radius:10px;}
-  nav.top-nav a:hover{background:rgba(30,58,138,0.06);}
-
-  /* ---- Profile card ---- */
-  .profile-card{
-    background:#fff3e0;
-    border-radius:20px;
-    padding:26px;
-    box-shadow:0 8px 30px var(--shadow);
-    display:block;
-    text-align:center;
-    margin-bottom:22px;
-    position:relative;
-    overflow:visible;
-    transition:transform .35s ease;
-  }
-  .profile-card:hover{transform:translateY(-3px);}
-
-  .profile-photo{
-    width:140px;height:140px;border-radius:50%;object-fit:cover;
-    border:4px solid #ffe6cc; display:block;margin:0 auto 16px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  }
-
-  .profile-title{font-size:1.45rem;color:var(--accent-strong);margin:0;font-weight:800;}
-  .about-section{
-    margin:18px auto 10px; padding:14px 18px; border-radius:12px;
-    background:transparent; color:#333; text-align:left; max-width:820px; margin-top:18px;
-    font-size:1.02rem;
-  }
-
-  /* highlighted snapshot */
-  .snapshot{
-    margin:18px auto; padding:18px 20px; border-radius:var(--radius);
-    background:#ffe8c9; color:var(--accent); font-weight:700; font-size:1.06rem;
-    box-shadow:0 6px 18px rgba(209,122,0,0.14); max-width:920px;
-  }
-  .snapshot div{margin:6px 0;}
-
-  /* categories + AI Research button layout */
-  .top-controls{display:flex;flex-direction:column;gap:12px;align-items:center;margin-top:14px;}
-  .category-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
-  .category-chip{
-    background:#fff3e0;color:var(--accent);padding:10px 14px;border-radius:999px;
-    font-weight:700;border:1px solid rgba(209,122,0,0.06);font-size:1rem;
-  }
-
-  .ai-research-btn{
-    margin-top:8px;
-    display:inline-block;padding:10px 18px;border-radius:12px;
-    background:var(--accent);color: #fff9f0;font-weight:800;font-size:1rem;
-    text-decoration:none; box-shadow:0 8px 22px rgba(209,122,0,0.18);
-    transition:transform .18s ease, box-shadow .18s ease;
-  }
-  .ai-research-btn:hover{transform:translateY(-3px); box-shadow:0 14px 36px rgba(209,122,0,0.22);}
-
-  /* community highlight */
-  .community-highlight{
-    display:inline-block;margin-top:12px;padding:10px 14px;border-radius:12px;
-    background:#ffefda;color:var(--accent);font-weight:800;box-shadow:0 6px 18px rgba(209,122,0,0.12);
-    font-size:1.01rem;
-  }
-
-  /* connect buttons group */
-  .connect-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px;}
-  .btn{background:var(--accent);color:#fff;padding:9px 14px;border-radius:10px;font-weight:800;text-decoration:none;display:inline-block;}
-  .btn:hover{background:#ffb74d;color:#111}
-
-  /* Let's connect paragraph (same accent color) */
-  .lets-connect{
-    margin-top:18px;text-align:center;color:var(--accent);font-weight:700;font-size:1.02rem;
-  }
-  .lets-connect a{color:var(--accent);font-weight:800;margin:0 8px;text-decoration:none;}
-  .lets-connect a:hover{text-decoration:underline;}
-
-  /* search + filter bar */
-  .search-filter{
-    margin:20px 0 10px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;
-  }
-  .search-filter input[type="text"]{
-    width:420px;max-width:86%;padding:12px 14px;border-radius:12px;border:1px solid rgba(209,122,0,0.15);
-    background:#fff8f0;font-size:1rem;box-shadow:inset 0 2px 8px rgba(209,122,0,0.05);
-  }
-  .search-filter select{
-    padding:11px 12px;border-radius:12px;border:1px solid rgba(209,122,0,0.12);font-weight:700;
-    background:#fff8f0;
-  }
-
-  /* dashboard cards */
-  .dashboard{display:flex;flex-direction:column;gap:18px;padding:6px 6px 80px;}
-  .month-heading{text-align:center;font-size:1.3rem;color:var(--accent);font-weight:800;margin-top:8px;}
-  .paper-container{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;padding:6px;}
-
-  .paper-card{
-    width:320px;max-width:92%;background:var(--card);border-radius:12px;padding:16px;
-    box-shadow:0 8px 24px rgba(0,0,0,0.06);display:flex;flex-direction:column;gap:8px;
-    transform:translateY(12px);opacity:0; animation:cardIn .55s forwards; --delay:0s;
-  }
-  .paper-card h4{margin:0;color:var(--accent);font-size:1.05rem;font-weight:800;}
-  .paper-card p{margin:0;color:#333;font-size:0.98rem;}
-  .paper-card .tag{align-self:flex-start;padding:6px 10px;border-radius:10px;background:#fff3e0;color:var(--accent);font-weight:800;font-size:0.92rem;}
-  .paper-card a.view{margin-top:8px;display:inline-block;color:var(--accent);font-weight:800;text-decoration:none;}
-  .paper-card a.view:hover{text-decoration:underline;}
-
-  @keyframes cardIn{
-    to{transform:none;opacity:1}
-  }
-
-  /* show-more button */
-  .show-more-btn{display:block;margin:14px auto;padding:10px 18px;border-radius:12px;background:var(--accent);color:#fff;font-weight:800;border:none;cursor:pointer;}
-  .show-more-btn:hover{background:#ffb74d}
-
-  /* back to top */
-  #backToTop{position:fixed;right:24px;bottom:28px;background:rgba(209,122,0,0.16);color:var(--accent);padding:10px 14px;border-radius:999px;border:none;cursor:pointer;display:none;box-shadow:0 8px 24px rgba(209,122,0,0.12)}
-  #backToTop:hover{background:rgba(209,122,0,0.28);color:#fff}
-
-  /* responsive tweaks */
-  @media (max-width:880px){
-    .profile-card{padding:18px}
-    .brand h1{font-size:1.1rem}
-    .snapshot{font-size:1rem}
-    .paper-card{width:92%}
-    .search-filter input{width:260px}
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditi Khare - AI Research Portfolio</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #1e1e2f, #2b2b40);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header img {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+    header h2 {
+      font-size: 1.1em;
+      color: #b0b0b0;
+      font-weight: 400;
+      margin-top: 5px;
+    }
+    header p {
+      font-size: 1em;
+      color: #d0d0d0;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+    header p strong {
+      display: block;
+      font-size: 1.1em;
+      color: #fff;
+      margin-top: 10px;
+    }
+    .highlight {
+      font-size: 1.05em;
+      font-style: italic;
+      color: #e6e6e6;
+    }
+    .button-container {
+      margin-top: 25px;
+    }
+    .button {
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 8px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 0.95em;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #005fa3;
+      transform: scale(1.05);
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h3 {
+      font-size: 1.8em;
+      color: #1e1e2f;
+      border-bottom: 3px solid #0078d4;
+      display: inline-block;
+      padding-bottom: 6px;
+      margin-bottom: 25px;
+    }
+    .tags {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #e0e7ff;
+      color: #1e3a8a;
+      padding: 8px 15px;
+      margin: 5px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .tag:hover {
+      background-color: #c7d2fe;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      padding: 25px;
+      margin-bottom: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #2b2b40;
+      color: white;
+      margin-top: 50px;
+      font-size: 0.95em;
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container">
-    <!-- Header -->
-    <header class="site-header">
-      <div class="brand">
-        <img src="https://github.com/aditikhare007.png" alt="Aditi Khare photo">
-        <div>
-          <h1>Aditi Khare</h1>
-          <div style="font-size:0.96rem;color:var(--muted);font-weight:600">Enterprise AI — Research & Engineering</div>
-        </div>
-      </div>
+<header>
+  <img src="https://github.com/aditikhare007.png" alt="Aditi Khare">
+  <h1>Aditi Khare</h1>
+  <h2>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</h2>
+  <p><strong>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</strong></p>
+  <p><strong>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</strong></p>
+  <p class="highlight">• Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI.</p>
 
-      <nav class="top-nav" aria-label="Main navigation">
-        <a href="#research">Research</a>
-        <a href="#resources">Resources</a>
-        <a href="about_me.html">About Me</a>
-      </nav>
-    </header>
+  <div class="button-container">
+    <a href="about_me.html" class="button">About Me</a>
+    <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=6XekmRqMT9OJcuUU846fbA%3D%3D" class="button">AI Research Junction</a>
+    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button">LinkedIn</a>
+    <a href="https://github.com/aditikhare007" class="button">My AI Innovations & Open-Source Contributions Portfolio</a>
+    <a href="https://topmate.io/aditi_khare" class="button">Mentorship@TopMate</a>
+    <a href="https://www.packtpub.com/" class="button">My Gen-AI Integration Book@Packt</a>
+  </div>
+</header>
 
-    <!-- Profile card -->
-    <section class="profile-card" aria-labelledby="profile-title">
-      <img class="profile-photo" src="https://github.com/aditikhare007.png" alt="Aditi Khare">
-      <div id="profile-title" class="profile-title">👩‍💼 Aditi Khare – Enterprise AI Leader</div>
-
-      <!-- prominent snapshot -->
-      <div class="snapshot" role="region" aria-label="Professional snapshot">
-        <div>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</div>
-        <div>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</div>
-        <div>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</div>
-      </div>
-
-      <!-- categories / AI Research top placement -->
-      <div class="top-controls">
-        <div class="category-row" role="group" aria-label="Paper categories">
-          <div class="category-chip">Generative AI</div>
-          <div class="category-chip">Computer Vision</div>
-          <div class="category-chip">Quantum AI</div>
-        </div>
-
-        <a class="ai-research-btn" href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=6XekmRqMT9OJcuUU846fbA%3D%3D" target="_blank" rel="noopener">AI Research Junction</a>
-
-        <div class="community-highlight" role="note">
-          • Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI.
-        </div>
-      </div>
-
-      <!-- short about + action buttons -->
-      <div class="about-section">
-        <p style="margin:0 0 6px 0;">🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy.</p>
-        <p style="margin:0;">🔷 Contributor — <em>Generative AI Application Integration Patterns</em> (Packt Publishing, Sept 2024).</p>
-      </div>
-
-      <div class="connect-row" style="justify-content:center;">
-        <a class="btn" href="https://www.amazon.com/dp/yourbooklink" target="_blank" rel="noopener">My Gen-AI Integration Book@Packt</a>
-        <a class="btn" href="https://topmate.io/aditi_khare" target="_blank" rel="noopener">Mentorship@TopMate</a>
-        <a class="btn" href="https://github.com/aditikhare007" target="_blank" rel="noopener">My AI Innovations &amp; Open-Source Contributions Portfolio</a>
-      </div>
-
-      <div class="lets-connect" aria-label="contact">
-        📬 Let's Connect:
-        <a href="mailto:aditikhare007@gmail.com">aditikhare007@gmail.com</a> |
-        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank" rel="noopener">LinkedIn</a> |
-        <a href="https://github.com/aditikhare007" target="_blank" rel="noopener">GitHub</a> |
-        <a href="https://topmate.io/aditi_khare" target="_blank" rel="noopener">TopMate</a>
-      </div>
-    </section>
-
-    <!-- Search + Filter -->
-    <div class="search-filter" role="search" aria-label="Search papers and filter">
-      <input id="searchInput" type="text" placeholder="Search papers by keyword..." aria-label="Search papers">
-      <select id="categoryFilter" aria-label="Filter by category">
-        <option value="all">Filter: All Categories</option>
-        <option value="Generative AI">Generative AI</option>
-        <option value="Computer Vision">Computer Vision</option>
-        <option value="Quantum AI">Quantum AI</option>
-      </select>
-    </div>
-
-    <!-- Dashboard -->
-    <main class="dashboard" id="dashboard" aria-live="polite">
-      <!-- JS will inject latest month + resources here -->
-    </main>
-
-    <button id="backToTop" title="Back to top">⬆</button>
+<section class="section">
+  <h3>AI Research Junction</h3>
+  <div class="tags">
+    <span class="tag">Generative AI</span>
+    <span class="tag">Computer Vision</span>
+    <span class="tag">Quantum AI</span>
   </div>
 
-<script>
-/* ============================
-   Data: research papers + resources
-   Keep all months in data but only latest (Jan 2025) & Resources are shown by default.
-   ============================ */
-const researchData = {
-  "Jan 2025": [
-    { title: "Modern BERT", summary: "Modern BERT improvements and techniques", tag: "Generative AI", link: "https://arxiv.org/abs/2412.13663" },
-    { title: "LLM Inference-Time Self-Improvement", summary: "LLM improves itself at inference time", tag: "Generative AI", link: "https://arxiv.org/pdf/2412.14352" },
-    { title: "DeepSeekv3", summary: "DeepSeek V3 advancements for AI search", tag: "Generative AI", link: "https://github.com/deepseek-ai/DeepSeek-V3/tree/main" }
-  ],
-  "Oct – Dec 2024": [
-    { title: "Claude 3.5 Sonnet & Haiku", summary: "Creative poetry LLMs", tag: "Generative AI", link: "https://www.anthropic.com/news/3-5-models-and-computer-use" },
-    { title: "OpenAI Swarm Framework", summary: "Distributed AI framework", tag: "Generative AI", link: "https://github.com/openai/swarm" }
-  ],
-  "May – Sept 2024": [
-    { title: "Meta Llama 3.2 Edge AI", summary: "Customizable Edge AI & Vision models", tag: "Computer Vision", link: "https://www.llama.com/" },
-    { title: "Training Language Models to Self-Correct", summary: "Reinforcement learning for self-correcting LLMs", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12917/" },
-    { title: "Iteration of Thought-Leveraging Inner Dialogue", summary: "Autonomous LLM reasoning via inner dialogue", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12618/" },
-    { title: "Learning to Reason with LLMs (OpenAI o1)", summary: "OpenAI o1 for reasoning", tag: "Generative AI", link: "https://openai.com/index/introducing-openai-o1-preview/" },
-    { title: "AutoGen Studio", summary: "Framework for autonomous LLM agents", tag: "Generative AI", link: "https://github.com/microsoft/autogen" },
-    { title: "Strategic Chain-of-Thought", summary: "LLM reasoning methodology", tag: "Generative AI", link: "https://arxiv.org/abs/2409.03271/" }
-  ],
-  "Resources": [
-    { title: "OpenAI Prompt Engineering Handbook", summary: "Guides and techniques for prompt engineering", tag: "Generative AI", link: "https://platform.openai.com/docs/guides/prompt-engineering" },
-    { title: "Lilianweng's Blog & GitHub", summary: "AI & ML blog with tutorials and code", tag: "Generative AI & ML", link: "https://lilianweng.github.io/" },
-    { title: "DeepSeek AI Search", summary: "Advanced AI search frameworks", tag: "Generative AI", link: "https://github.com/deepseek-ai/DeepSeek-V3/tree/main" },
-    { title: "Hugging Face Transformers", summary: "Transformers library & documentation", tag: "Generative AI & NLP", link: "https://huggingface.co/docs/transformers/index" }
-  ]
-};
+  <!-- Only showing January 2025 papers -->
+  <div class="card">
+    <h4>📘 January 2025: AI Research Highlights</h4>
+    <p>1️⃣ <strong>AI-native Enterprise Platforms:</strong> Modular AI agents that self-adapt across data pipelines.</p>
+    <p>2️⃣ <strong>Neural Edge Federations:</strong> Advancing low-latency inference at edge computing nodes.</p>
+    <p>3️⃣ <strong>Quantum Hybrid Architectures:</strong> Integrating variational quantum circuits with transformer-based AI models.</p>
+  </div>
 
-/* ============================
-   Rendering logic
-   - Show only Jan 2025 (latestMonth) papers by default
-   - Show Resources section by default
-   - Older months exist in data but remain hidden unless you later choose to surface them
-   - Show More / Show Less for latest month when more than visibleCount
-   ============================ */
-const dashboard = document.getElementById('dashboard');
-const latestMonth = "Jan 2025";
-const visibleCount = 5; // number of latest cards visible initially (adjustable)
+  <div class="card">
+    <h4>🌐 Resources</h4>
+    <p>• <strong>Let’s Connect:</strong> Reach out at <a href="mailto:aditikhare007@gmail.com">aditikhare007@gmail.com</a></p>
+    <p>• <a href="https://www.linkedin.com/in/aditi-khare-5840977b/">LinkedIn</a> | 
+       <a href="https://github.com/aditikhare007">GitHub</a> | 
+       <a href="https://topmate.io/aditi_khare">TopMate</a> | 
+       <a href="https://www.packtpub.com/">Packt Publication</a>
+    </p>
+  </div>
+</section>
 
-/* helper to create a paper card */
-function createPaperCard(paper, idx){
-  const card = document.createElement('article');
-  card.className = 'paper-card';
-  // staggered animation delay
-  card.style.animationDelay = `${idx*0.08}s`;
-  card.innerHTML = `
-    <h4>${escapeHtml(paper.title)}</h4>
-    <p>${escapeHtml(paper.summary)}</p>
-    <span class="tag">${escapeHtml(paper.tag)}</span>
-    <a class="view" href="${paper.link}" target="_blank" rel="noopener">View Paper</a>
-  `;
-  return card;
-}
-
-/* escape basic html to avoid injection */
-function escapeHtml(s){
-  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-
-/* render latest month */
-function renderLatestMonth(){
-  const heading = document.createElement('div');
-  heading.className = 'month-heading';
-  heading.textContent = latestMonth;
-  dashboard.appendChild(heading);
-
-  const container = document.createElement('div');
-  container.className = 'paper-container';
-  container.id = 'latest-container';
-
-  researchData[latestMonth].forEach((paper, i) => {
-    const card = createPaperCard(paper, i);
-    // default hide beyond visibleCount
-    if(i >= visibleCount) card.style.display = 'none';
-    container.appendChild(card);
-  });
-
-  dashboard.appendChild(container);
-
-  // show more / show less if needed
-  if(researchData[latestMonth].length > visibleCount){
-    const btn = document.createElement('button');
-    btn.className = 'show-more-btn';
-    btn.textContent = 'Show More';
-    btn.onclick = () => {
-      const cards = Array.from(container.children);
-      const hidden = cards.filter(c => c.style.display === 'none');
-      if(hidden.length){
-        // show all
-        cards.forEach(c => c.style.display = 'flex');
-        btn.textContent = 'Show Less';
-      } else {
-        // collapse to visibleCount
-        cards.forEach((c,idx) => c.style.display = idx < visibleCount ? 'flex' : 'none');
-        btn.textContent = 'Show More';
-        // scroll to top of latest container
-        container.scrollIntoView({behavior:'smooth', block:'start'});
-      }
-    };
-    dashboard.appendChild(btn);
-  }
-}
-
-/* render resources section */
-function renderResources(){
-  const heading = document.createElement('div');
-  heading.className = 'month-heading';
-  heading.textContent = 'Resources';
-  dashboard.appendChild(heading);
-
-  const container = document.createElement('div');
-  container.className = 'paper-container';
-  container.id = 'resources-container';
-
-  researchData['Resources'].forEach((paper, i) => {
-    const card = createPaperCard(paper, i);
-    container.appendChild(card);
-  });
-
-  dashboard.appendChild(container);
-}
-
-/* initial render */
-renderLatestMonth();
-renderResources();
-
-/* ============================
-   Search + category filter
-   Combined filter: both must match
-   ============================ */
-const searchInput = document.getElementById('searchInput');
-const categorySelect = document.getElementById('categoryFilter');
-
-function applyFilters(){
-  const q = (searchInput.value || '').trim().toLowerCase();
-  const category = categorySelect.value;
-  const cards = document.querySelectorAll('.paper-card');
-
-  cards.forEach(card => {
-    const text = card.innerText.toLowerCase();
-    const tag = card.querySelector('.tag') ? card.querySelector('.tag').innerText : '';
-    const matchesQuery = q === '' || text.includes(q);
-    const matchesCategory = (category === 'all') || (tag === category);
-    card.style.display = (matchesQuery && matchesCategory) ? 'flex' : 'none';
-  });
-
-  // if search/filter hides everything in latest container, keep month heading but that's fine
-}
-
-searchInput.addEventListener('input', applyFilters);
-categorySelect.addEventListener('change', applyFilters);
-
-/* ============================
-   Back to top button
-   ============================ */
-const backToTop = document.getElementById('backToTop');
-window.addEventListener('scroll', () => {
-  const scrolled = window.scrollY || document.documentElement.scrollTop;
-  backToTop.style.display = scrolled > 320 ? 'block' : 'none';
-});
-backToTop.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
-
-/* ============================
-   Tiny accessibility: press Enter on search clears filters... (no blocking)
-   ============================ */
-searchInput.addEventListener('keydown', (e) => {
-  if(e.key === 'Escape') { searchInput.value=''; applyFilters(); }
-});
-
-/* ============================
-   End of script
-   ============================ */
-</script>
+<footer>
+  © 2025 Aditi Khare — All Rights Reserved
+</footer>
 
 </body>
 </html>
