@@ -16,9 +16,8 @@ body {
 }
 a { color: #d17a00; text-decoration: none; transition: all 0.3s ease; }
 a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
-h1, h2, h3, h4 { color: #d17a00; margin: 0.5em 0; }
+h1, h2, h3, h4 { color: #d17a00; margin: 0.5em 0; transition: all 0.3s ease; }
 p { font-size: 1.2rem; margin: 0.3em 0; }
-ul, li { list-style: none; padding: 0; margin: 0; }
 
 /* Profile Card */
 .profile-card {
@@ -27,9 +26,11 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     padding: 30px;
     background: #fff3e0;
     border-radius: 20px;
-    box-shadow: 0 4px 25px rgba(209, 122, 0, 0.2);
+    box-shadow: 0 6px 25px rgba(209, 122, 0, 0.25);
     text-align: center;
+    transition: all 0.3s ease;
 }
+.profile-card:hover { box-shadow: 0 8px 35px rgba(209, 122, 0, 0.35); }
 .profile-photo {
     width: 140px;
     height: 140px;
@@ -55,14 +56,16 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 }
 .tag {
     display: inline-block;
-    background: #ffe0b2;
-    color: #d17a00;
-    padding: 6px 12px;
+    padding: 5px 12px;
     border-radius: 12px;
     margin: 4px 6px;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-weight: 600;
+    color: #fff;
 }
+.tag.generative { background: #f57c00; }
+.tag.edge { background: #0288d1; }
+.tag.quantum { background: #7b1fa2; }
 
 /* Connect Links */
 .connect {
@@ -71,7 +74,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 .connect a {
     display: inline-block;
     margin: 6px 12px;
-    padding: 8px 16px;
+    padding: 10px 18px;
     border-radius: 12px;
     background: #d17a00;
     color: #fff9f0;
@@ -79,21 +82,18 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     text-decoration: none;
     transition: all 0.3s ease;
 }
-.connect a:hover { background: #ffb74d; color: #fff; }
+.connect a:hover { background: #ffb74d; color: #fff; transform: translateY(-2px); }
 
-/* Search Input */
-#searchInput {
-    width: 90%;
-    max-width: 450px;
-    padding: 12px 16px;
-    margin: 20px auto 25px auto;
+/* Filter Dropdown */
+#categoryFilter {
+    width: 220px;
+    margin: 0 auto 20px auto;
     display: block;
+    padding: 10px 14px;
     border-radius: 12px;
     border: 1px solid #d17a00;
     background: #fff8f0;
-    color: #333;
-    font-size: 1.1rem;
-    box-shadow: inset 0 2px 6px rgba(209, 122, 0, 0.1);
+    font-size: 1rem;
 }
 
 /* Paper Cards */
@@ -107,17 +107,21 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 .paper-card {
     background: #fff8f0;
     border-radius: 16px;
-    padding: 16px 20px;
+    padding: 18px 22px;
     width: 300px;
-    box-shadow: 0 4px 15px rgba(209, 122, 0, 0.15);
+    box-shadow: 0 4px 18px rgba(209, 122, 0, 0.12);
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease;
+}
+.paper-card:hover {
+    box-shadow: 0 8px 28px rgba(209, 122, 0, 0.25);
+    transform: translateY(-4px);
 }
 .paper-card h4 { margin: 0 0 8px 0; color: #d17a00; font-size: 1.2rem; }
 .paper-card p { margin: 4px 0; color: #333; font-size: 1rem; flex-grow: 1; }
 .paper-card a { color: #d17a00; font-weight: 600; margin-top: 10px; text-decoration: none; }
 .paper-card a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
-.paper-card .tag { align-self: flex-start; margin-top: 8px; font-size: 0.9rem; padding: 3px 8px; }
 
 /* Section Headings */
 .month-heading {
@@ -143,22 +147,24 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     box-shadow: 0 0 10px rgba(209, 122, 0, 0.2);
     display: none;
     z-index: 999;
+    transition: all 0.3s ease;
 }
-#backToTop:hover { background: rgba(209, 122, 0, 0.4); color: #fff9f0; }
+#backToTop:hover { background: rgba(209, 122, 0, 0.4); color: #fff9f0; transform: translateY(-2px); }
 
 /* Show More Button */
 .show-more-btn {
     margin: 10px auto 40px auto;
     display: block;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 12px;
     background: #d17a00;
     color: #fff9f0;
     border: none;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-.show-more-btn:hover { background: #ffb74d; color: #fff; }
+.show-more-btn:hover { background: #ffb74d; color: #fff; transform: translateY(-2px); }
 
 /* About Section */
 #about {
@@ -169,6 +175,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     border-radius: 20px;
     box-shadow: 0 4px 25px rgba(209, 122, 0, 0.2);
     text-align: left;
+    transition: all 0.3s ease;
 }
 
 /* Responsive */
@@ -184,23 +191,23 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 
 <!-- Profile Card -->
 <div class="profile-card">
-    <img src="https://github.com/aditikhare007.png" alt="Aditi Khare" class="profile-photo">
+    <img src="https://avatars.githubusercontent.com/u/127643239?v=4" alt="Aditi Khare" class="profile-photo">
     <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
     <div class="snapshot">
         <span>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</span>
         <span>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</span>
         <span>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</span>
     </div>
-    <div>
-        <span class="tag">Generative AI</span>
-        <span class="tag">Computer Vision</span>
-        <span class="tag">Quantum AI</span>
+    <div class="tag-container">
+        <span class="tag generative">Generative AI</span>
+        <span class="tag edge">Edge AI</span>
+        <span class="tag quantum">Quantum AI</span>
     </div>
     <div class="connect">
         <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">AI Research Junction</a>
         <a href="https://www.linkedin.com/newsletters/aditi-ai-newsletter" target="_blank">AI Research Newsletter</a>
         <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Gen-AI Integration Book</a>
-        <a href="#about" target="_self">About Me</a>
+        <a href="#about">About Me</a>
     </div>
 </div>
 
@@ -209,10 +216,16 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     <h2>About Me</h2>
     <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
     <p>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
+    <p>🔷 Welcome to AI Research Junction – your curated hub for AI research paper summaries, insights, and learnings from generative AI, edge AI, and quantum AI domains. Explore, filter, and discover the latest advancements in AI research across multiple categories.</p>
 </div>
 
-<!-- Search Input -->
-<input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Search papers by keyword...">
+<!-- Filter Dropdown -->
+<select id="categoryFilter" onchange="filterByCategory()">
+    <option value="All">Show All Categories</option>
+    <option value="Generative AI">Generative AI</option>
+    <option value="Edge AI">Edge AI</option>
+    <option value="Quantum AI">Quantum AI</option>
+</select>
 
 <!-- Dashboard -->
 <div id="dashboard"></div>
@@ -233,7 +246,7 @@ const researchData = {
         {title: "OpenAI Swarm Framework", summary: "Distributed AI framework", tag: "Generative AI", link: "https://github.com/openai/swarm"}
     ],
     "May – Sept 2024": [
-        {title: "Meta Llama 3.2 Edge AI", summary: "Customizable Edge AI & Vision models", tag: "Edge AI & Vision", link: "https://www.llama.com/"},
+        {title: "Meta Llama 3.2 Edge AI", summary: "Customizable Edge AI & Vision models", tag: "Edge AI", link: "https://www.llama.com/"},
         {title: "Training Language Models to Self-Correct", summary: "Reinforcement learning for self-correcting LLMs", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12917/"},
         {title: "Iteration of Thought-Leveraging Inner Dialogue", summary: "Autonomous LLM reasoning via inner dialogue", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12618/"},
         {title: "Learning to Reason with LLMs (OpenAI o1)", summary: "OpenAI o1 for reasoning", tag: "Generative AI", link: "https://openai.com/index/introducing-openai-o1-preview/"},
@@ -261,17 +274,16 @@ for (const month in researchData) {
     researchData[month].forEach(paper => {
         let card = document.createElement("div");
         card.className = "paper-card";
+        let tagClass = paper.tag === "Generative AI" ? "generative" : paper.tag === "Edge AI" ? "edge" : "quantum";
         card.innerHTML = `<h4>${paper.title}</h4>
                           <p>${paper.summary}</p>
                           <a href="${paper.link}" target="_blank">View</a>
-                          <span class="tag">${paper.tag}</span>`;
+                          <span class="tag ${tagClass}">${paper.tag}</span>`;
         paperContainer.appendChild(card);
     });
     container.appendChild(paperContainer);
 
-    if(!first){
-        container.style.display = "none"; // hide older months
-    }
+    if(!first){ container.style.display = "none"; }
     dashboard.appendChild(container);
     first = false;
 }
@@ -281,30 +293,29 @@ const showMore = document.createElement("button");
 showMore.className = "show-more-btn";
 showMore.textContent = "Show Older Months";
 showMore.onclick = () => {
-    document.querySelectorAll(".month-section").forEach((sec)=> sec.style.display = "block");
+    document.querySelectorAll(".month-section").forEach(sec=> sec.style.display="block");
     showMore.style.display = "none";
 };
 dashboard.appendChild(showMore);
 
+// Filter by Category
+function filterByCategory(){
+    const val = document.getElementById("categoryFilter").value;
+    document.querySelectorAll(".paper-card").forEach(card => {
+        if(val==="All") card.style.display="flex";
+        else if(card.querySelector(".tag").textContent !== val) card.style.display="none";
+        else card.style.display="flex";
+    });
+}
+
 // Back to Top
 const backToTop = document.getElementById("backToTop");
 window.onscroll = () => {
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        backToTop.style.display = "block";
-    } else {
-        backToTop.style.display = "none";
-    }
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) backToTop.style.display="block";
+    else backToTop.style.display="none";
 };
 function topFunction() { document.documentElement.scrollTop = 0; }
 
-// Search Filter
-function filterCards() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    document.querySelectorAll(".paper-card").forEach(card => {
-        let text = card.innerText.toLowerCase();
-        card.style.display = text.includes(input) ? "" : "none";
-    });
-}
 </script>
 
 </body>
