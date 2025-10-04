@@ -205,7 +205,8 @@ const researchData = {
     ],
     "Oct – Dec 2024": [
         {title: "Claude 3.5 Sonnet & Haiku", summary: "Creative poetry LLMs", tag: "Generative AI", link: "https://www.anthropic.com/news/3-5-models-and-computer-use"},
-        {title: "OpenAI Swarm Framework", summary: "Distributed AI framework", tag: "Generative AI", link: "https://github.com/openai/swarm"}
+        {title: "OpenAI Swarm Framework", summary: "Distributed AI framework", tag: "Gener
+ative AI", link: "https://github.com/openai/swarm"}
     ],
     "May – Sept 2024": [
         {title: "Meta Llama 3.2 Edge AI", summary: "Customizable Edge AI & Vision models", tag: "Computer Vision", link: "https://www.llama.com/"},
@@ -226,28 +227,36 @@ const researchData = {
 // === Render Dashboard ===
 const dashboard = document.getElementById('dashboard');
 const months = Object.keys(researchData);
+const latestMonth = months[0]; // First month is latest
 
-months.forEach((month) => {
+months.forEach((month, idx) => {
     const heading = document.createElement('div');
     heading.className = "month-heading";
     heading.textContent = month;
-    dashboard.appendChild(heading);
+    
+    // Only show latest month heading
+    if(idx === 0) dashboard.appendChild(heading);
 
     const container = document.createElement('div');
     container.className = "paper-container";
     container.id = month.replace(/\s+/g,'');
-
+    
     researchData[month].forEach((paper, index) => {
         const card = document.createElement('div');
         card.className = "paper-card";
-        card.innerHTML = `<h4>${paper.title}</h4><p>${paper.summary}</p><span class="tag">${paper.tag}</span><a href="${paper.link}" target="_blank">View Paper</a>`;
-        if(index >= 5) card.style.display = "none";
+        card.innerHTML = `<h4>${paper.title}</h4>
+                          <p>${paper.summary}</p>
+                          <span class="tag">${paper.tag}</span>
+                          <a href="${paper.link}" target="_blank">View Paper</a>`;
+        // Show only latest month papers
+        if(idx !== 0) card.style.display = "none";
         container.appendChild(card);
     });
 
     dashboard.appendChild(container);
 
-    if(researchData[month].length > 5){
+    // Show More / Less button for latest month if papers > 5
+    if(idx === 0 && researchData[month].length > 5){
         const btn = document.createElement('button');
         btn.className = "show-more-btn";
         btn.textContent = "Show More";
