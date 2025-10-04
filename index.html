@@ -243,6 +243,10 @@ const months = Object.keys(researchData);
 const latestMonth = "Jan 2025"; // Latest month to show
 
 months.forEach((month) => {
+    if(month !== "Resources") return; // Skip older months, only resources will be rendered below
+
+    if(month === latestMonth) return; // Jan 2025 rendered separately below
+
     const heading = document.createElement('div');
     heading.className = "month-heading";
     heading.textContent = month;
@@ -252,38 +256,80 @@ months.forEach((month) => {
     container.className = "paper-container";
     container.id = month.replace(/\s+/g,'');
 
-    researchData[month].forEach((paper, index) => {
+    researchData[month].forEach((paper) => {
         const card = document.createElement('div');
         card.className = "paper-card";
         card.innerHTML = `<h4>${paper.title}</h4>
                           <p>${paper.summary}</p>
                           <span class="tag">${paper.tag}</span>
                           <a href="${paper.link}" target="_blank">View Paper</a>`;
-        if(month !== latestMonth) card.style.display = "none"; // hide old months
         container.appendChild(card);
     });
 
     dashboard.appendChild(container);
-
-    if(month === latestMonth && researchData[month].length > 5){
-        const btn = document.createElement('button');
-        btn.className = "show-more-btn";
-        btn.textContent = "Show More";
-        btn.onclick = () => {
-            const hidden = Array.from(container.children).filter(c => c.style.display === "none");
-            if(hidden.length > 0){
-                hidden.forEach(c => c.style.display = "flex");
-                btn.textContent = "Show Less";
-            } else {
-                Array.from(container.children).forEach((c,index) => {
-                    c.style.display = index<5 ? "flex" : "none";
-                });
-                btn.textContent = "Show More";
-            }
-        };
-        dashboard.appendChild(btn);
-    }
 });
+
+// === Render Latest Month (Jan 2025) ===
+const latestHeading = document.createElement('div');
+latestHeading.className = "month-heading";
+latestHeading.textContent = latestMonth;
+dashboard.appendChild(latestHeading);
+
+const latestContainer = document.createElement('div');
+latestContainer.className = "paper-container";
+latestContainer.id = latestMonth.replace(/\s+/g,'');
+
+researchData[latestMonth].forEach((paper, index) => {
+    const card = document.createElement('div');
+    card.className = "paper-card";
+    card.innerHTML = `<h4>${paper.title}</h4>
+                      <p>${paper.summary}</p>
+                      <span class="tag">${paper.tag}</span>
+                      <a href="${paper.link}" target="_blank">View Paper</a>`;
+    latestContainer.appendChild(card);
+});
+dashboard.appendChild(latestContainer);
+
+// === Show More / Show Less for Latest Month ===
+if(researchData[latestMonth].length > 5){
+    const btn = document.createElement('button');
+    btn.className = "show-more-btn";
+    btn.textContent = "Show More";
+    btn.onclick = () => {
+        const hidden = Array.from(latestContainer.children).filter(c => c.style.display === "none");
+        if(hidden.length > 0){
+            hidden.forEach(c => c.style.display = "flex");
+            btn.textContent = "Show Less";
+        } else {
+            Array.from(latestContainer.children).forEach((c,index) => {
+                c.style.display = index<5 ? "flex" : "none";
+            });
+            btn.textContent = "Show More";
+        }
+    };
+    dashboard.appendChild(btn);
+}
+
+// === Render Resources ===
+const resHeading = document.createElement('div');
+resHeading.className = "month-heading";
+resHeading.textContent = "Resources";
+dashboard.appendChild(resHeading);
+
+const resContainer = document.createElement('div');
+resContainer.className = "paper-container";
+resContainer.id = "Resources";
+
+researchData["Resources"].forEach((paper) => {
+    const card = document.createElement('div');
+    card.className = "paper-card";
+    card.innerHTML = `<h4>${paper.title}</h4>
+                      <p>${paper.summary}</p>
+                      <span class="tag">${paper.tag}</span>
+                      <a href="${paper.link}" target="_blank">View Paper</a>`;
+    resContainer.appendChild(card);
+});
+dashboard.appendChild(resContainer);
 
 // === Back to Top ===
 const backToTop = document.getElementById("backToTop");
