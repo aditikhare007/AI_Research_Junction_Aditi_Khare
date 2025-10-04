@@ -116,12 +116,21 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     box-shadow: 0 4px 15px rgba(209, 122, 0, 0.15);
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s forwards;
+    animation-delay: var(--delay);
 }
 .paper-card h4 { margin: 0 0 8px 0; color: #d17a00; font-size: 1.2rem; }
 .paper-card p { margin: 4px 0; color: #333; font-size: 1rem; flex-grow: 1; }
 .paper-card a { color: #d17a00; font-weight: 600; margin-top: 10px; text-decoration: none; }
 .paper-card a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
 .paper-card .tag { align-self: flex-start; margin-top: 8px; font-size: 0.9rem; padding: 3px 8px; }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+}
 
 /* Section Headings */
 .month-heading {
@@ -217,18 +226,6 @@ const researchData = {
         {title: "LLM Inference-Time Self-Improvement", summary: "LLM improves itself at inference time", tag: "Generative AI", link: "https://arxiv.org/pdf/2412.14352"},
         {title: "DeepSeekv3", summary: "DeepSeek V3 advancements for AI search", tag: "Generative AI", link: "https://github.com/deepseek-ai/DeepSeek-V3/tree/main"}
     ],
-    "Oct – Dec 2024": [
-        {title: "Claude 3.5 Sonnet & Haiku", summary: "Creative poetry LLMs", tag: "Generative AI", link: "https://www.anthropic.com/news/3-5-models-and-computer-use"},
-        {title: "OpenAI Swarm Framework", summary: "Distributed AI framework", tag: "Generative AI", link: "https://github.com/openai/swarm"}
-    ],
-    "May – Sept 2024": [
-        {title: "Meta Llama 3.2 Edge AI", summary: "Customizable Edge AI & Vision models", tag: "Computer Vision", link: "https://www.llama.com/"},
-        {title: "Training Language Models to Self-Correct", summary: "Reinforcement learning for self-correcting LLMs", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12917/"},
-        {title: "Iteration of Thought-Leveraging Inner Dialogue", summary: "Autonomous LLM reasoning via inner dialogue", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12618/"},
-        {title: "Learning to Reason with LLMs (OpenAI o1)", summary: "OpenAI o1 for reasoning", tag: "Generative AI", link: "https://openai.com/index/introducing-openai-o1-preview/"},
-        {title: "AutoGen Studio", summary: "Framework for autonomous LLM agents", tag: "Generative AI", link: "https://github.com/microsoft/autogen"},
-        {title: "Strategic Chain-of-Thought", summary: "LLM reasoning methodology", tag: "Generative AI", link: "https://arxiv.org/abs/2409.03271/"}
-    ],
     "Resources": [
         {title: "OpenAI Prompt Engineering Handbook", summary: "Guides and techniques for prompt engineering", tag: "Generative AI", link: "https://platform.openai.com/docs/guides/prompt-engineering"},
         {title: "Lilianweng's Blog & GitHub", summary: "AI & ML blog with tutorials and code", tag: "Generative AI & ML", link: "https://lilianweng.github.io/"},
@@ -237,39 +234,9 @@ const researchData = {
     ]
 };
 
-// === Render Dashboard ===
-const dashboard = document.getElementById('dashboard');
-const months = Object.keys(researchData);
-const latestMonth = "Jan 2025"; // Latest month to show
-
-months.forEach((month) => {
-    if(month !== "Resources") return; // Skip older months, only resources will be rendered below
-
-    if(month === latestMonth) return; // Jan 2025 rendered separately below
-
-    const heading = document.createElement('div');
-    heading.className = "month-heading";
-    heading.textContent = month;
-    dashboard.appendChild(heading);
-
-    const container = document.createElement('div');
-    container.className = "paper-container";
-    container.id = month.replace(/\s+/g,'');
-
-    researchData[month].forEach((paper) => {
-        const card = document.createElement('div');
-        card.className = "paper-card";
-        card.innerHTML = `<h4>${paper.title}</h4>
-                          <p>${paper.summary}</p>
-                          <span class="tag">${paper.tag}</span>
-                          <a href="${paper.link}" target="_blank">View Paper</a>`;
-        container.appendChild(card);
-    });
-
-    dashboard.appendChild(container);
-});
-
 // === Render Latest Month (Jan 2025) ===
+const dashboard = document.getElementById('dashboard');
+const latestMonth = "Jan 2025";
 const latestHeading = document.createElement('div');
 latestHeading.className = "month-heading";
 latestHeading.textContent = latestMonth;
@@ -279,9 +246,10 @@ const latestContainer = document.createElement('div');
 latestContainer.className = "paper-container";
 latestContainer.id = latestMonth.replace(/\s+/g,'');
 
-researchData[latestMonth].forEach((paper, index) => {
+researchData[latestMonth].forEach((paper,index) => {
     const card = document.createElement('div');
     card.className = "paper-card";
+    card.style.setProperty('--delay', `${index*0.1}s`);
     card.innerHTML = `<h4>${paper.title}</h4>
                       <p>${paper.summary}</p>
                       <span class="tag">${paper.tag}</span>
@@ -290,25 +258,26 @@ researchData[latestMonth].forEach((paper, index) => {
 });
 dashboard.appendChild(latestContainer);
 
-// === Show More / Show Less for Latest Month ===
-if(researchData[latestMonth].length > 5){
+// Show More / Less
+if(researchData[latestMonth].length>5){
     const btn = document.createElement('button');
-    btn.className = "show-more-btn";
-    btn.textContent = "Show More";
-    btn.onclick = () => {
-        const hidden = Array.from(latestContainer.children).filter(c => c.style.display === "none");
-        if(hidden.length > 0){
-            hidden.forEach(c => c.style.display = "flex");
-            btn.textContent = "Show Less";
+    btn.className="show-more-btn";
+    btn.textContent="Show More";
+    btn.onclick = ()=>{
+        const hidden = Array.from(latestContainer.children).filter(c=>c.style.display==='none');
+        if(hidden.length>0){
+            hidden.forEach(c=>c.style.display='flex');
+            btn.textContent="Show Less";
         } else {
-            Array.from(latestContainer.children).forEach((c,index) => {
-                c.style.display = index<5 ? "flex" : "none";
-            });
-            btn.textContent = "Show More";
+            Array.from(latestContainer.children).forEach((c,i)=>c.style.display=i<5?'flex':'none');
+            btn.textContent="Show More";
         }
     };
     dashboard.appendChild(btn);
 }
+
+// Hide excess if more than 5
+Array.from(latestContainer.children).forEach((c,i)=>c.style.display=i<5?'flex':'none');
 
 // === Render Resources ===
 const resHeading = document.createElement('div');
@@ -318,11 +287,11 @@ dashboard.appendChild(resHeading);
 
 const resContainer = document.createElement('div');
 resContainer.className = "paper-container";
-resContainer.id = "Resources";
 
-researchData["Resources"].forEach((paper) => {
+researchData["Resources"].forEach((paper,index)=>{
     const card = document.createElement('div');
-    card.className = "paper-card";
+    card.className="paper-card";
+    card.style.setProperty('--delay', `${index*0.1}s`);
     card.innerHTML = `<h4>${paper.title}</h4>
                       <p>${paper.summary}</p>
                       <span class="tag">${paper.tag}</span>
@@ -333,17 +302,15 @@ dashboard.appendChild(resContainer);
 
 // === Back to Top ===
 const backToTop = document.getElementById("backToTop");
-window.onscroll = () => {
-    backToTop.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
-};
-function topFunction() { document.documentElement.scrollTop = 0; }
+window.onscroll = ()=>{ backToTop.style.display = (document.body.scrollTop>200 || document.documentElement.scrollTop>200)?"block":"none";};
+function topFunction(){document.documentElement.scrollTop=0;}
 
 // === Search Filter ===
-function filterCards() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    const cards = document.querySelectorAll(".paper-card");
-    cards.forEach(card => {
-        card.style.display = card.innerText.toLowerCase().includes(input) ? "flex" : "none";
+function filterCards(){
+    let input=document.getElementById("searchInput").value.toLowerCase();
+    const cards=document.querySelectorAll(".paper-card");
+    cards.forEach(card=>{
+        card.style.display=card.innerText.toLowerCase().includes(input)?"flex":"none";
     });
 }
 </script>
