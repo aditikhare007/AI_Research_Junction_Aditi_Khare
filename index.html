@@ -16,61 +16,36 @@ body {
 }
 a { color: #d17a00; text-decoration: none; transition: all 0.3s ease; }
 a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
-h1, h2, h3, h4 { color: #d17a00; margin: 0.5em 0; transition: all 0.3s ease; }
-p { font-size: 1.2rem; margin: 0.3em 0; }
+h1, h2, h3, h4 { color: #d17a00; margin: 0.5em 0; }
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.4rem; }
+p, li, td { font-size: 1.2rem; }
+ul { margin: 0.5em 0 1em 1.5em; }
 
 /* Profile Card */
 .profile-card {
     max-width: 900px;
-    margin: 60px auto 40px auto;
+    margin: 100px auto 40px auto;
     padding: 30px;
     background: #fff3e0;
     border-radius: 20px;
     box-shadow: 0 6px 25px rgba(209, 122, 0, 0.25);
     text-align: center;
-    transition: all 0.3s ease;
+    scroll-behavior: smooth;
 }
-.profile-card:hover { box-shadow: 0 8px 35px rgba(209, 122, 0, 0.35); }
 .profile-photo {
     width: 140px;
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #ffe0b2;
-    box-shadow: 0 4px 15px rgba(209, 122, 0, 0.2);
     margin: 0 auto 15px auto;
     display: block;
-    transition: all 0.4s ease;
 }
-.profile-photo:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 25px rgba(209, 122, 0, 0.35);
-}
-
-/* Snapshot & Tags */
-.snapshot {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 15px 0;
-}
-.tag {
-    display: inline-block;
-    padding: 5px 12px;
-    border-radius: 12px;
-    margin: 4px 6px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #fff;
-}
-.tag.generative { background: #f57c00; }
-.tag.edge { background: #0288d1; }
-.tag.quantum { background: #7b1fa2; }
-
-/* Connect Links */
-.connect {
-    margin-top: 20px;
-}
+.snapshot { display: flex; flex-direction: column; gap: 8px; margin: 15px 0; }
+.connect { margin-top: 20px; }
 .connect a {
     display: inline-block;
     margin: 6px 12px;
@@ -84,51 +59,61 @@ p { font-size: 1.2rem; margin: 0.3em 0; }
 }
 .connect a:hover { background: #ffb74d; color: #fff; transform: translateY(-2px); }
 
-/* Filter Dropdown */
-#categoryFilter {
-    width: 220px;
-    margin: 0 auto 20px auto;
+/* About Section inside Profile Card */
+.about-text {
+    margin-top: 20px; 
+    font-size: 1.15rem; 
+    line-height: 1.6; 
+    text-align: justify;
+}
+.about-text span {
     display: block;
-    padding: 10px 14px;
-    border-radius: 12px;
-    border: 1px solid #d17a00;
-    background: #fff8f0;
-    font-size: 1rem;
+    margin: 6px 0;
 }
 
-/* Paper Cards */
-.paper-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 20px auto 40px auto;
-    justify-content: center;
-}
-.paper-card {
-    background: #fff8f0;
-    border-radius: 16px;
-    padding: 18px 22px;
-    width: 300px;
-    box-shadow: 0 4px 18px rgba(209, 122, 0, 0.12);
-    display: flex;
-    flex-direction: column;
+/* Details & Table for Research Papers */
+details {
+    margin-bottom: 12px;
+    padding: 12px;
+    background: #fff3e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(209,122,0,0.2);
     transition: all 0.3s ease;
 }
-.paper-card:hover {
-    box-shadow: 0 8px 28px rgba(209, 122, 0, 0.25);
-    transform: translateY(-4px);
-}
-.paper-card h4 { margin: 0 0 8px 0; color: #d17a00; font-size: 1.2rem; }
-.paper-card p { margin: 4px 0; color: #333; font-size: 1rem; flex-grow: 1; }
-.paper-card a { color: #d17a00; font-weight: 600; margin-top: 10px; text-decoration: none; }
-.paper-card a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
+summary { cursor: pointer; font-weight: bold; font-size: 1.3rem; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 1.1rem; }
+th, td { padding: 8px; border: 1px solid #ffdca3; text-align: left; }
+th { background-color: #fff3e0; color: #d17a00; }
+td { background-color: #fff8ef; }
 
-/* Section Headings */
-.month-heading {
-    text-align: center;
-    margin: 30px 0 10px 0;
-    font-size: 1.6rem;
-    color: #d17a00;
+/* Tag styles for categories */
+.tag { display: inline-block; padding: 5px 12px; border-radius: 12px; margin: 4px 6px; font-size: 0.95rem; font-weight: 600; color: #fff; }
+.tag.generative { background: #f57c00; }
+.tag.cv { background: #0288d1; }
+.tag.quantum { background: #7b1fa2; }
+
+/* Filter dropdown */
+#filterSelect {
+    margin: 10px auto;
+    display: block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #d17a00;
+    background: #fff8ef;
+    font-size: 1.1rem;
+}
+
+/* Search Input */
+#searchInput {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px 14px;
+    margin: 10px auto 20px auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #d17a00;
+    background: #fff8ef;
+    font-size: 1.1rem;
 }
 
 /* Back to Top Button */
@@ -136,7 +121,7 @@ p { font-size: 1.2rem; margin: 0.3em 0; }
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: rgba(209, 122, 0, 0.2);
+    background: #d17a0033;
     color: #d17a00;
     border: none;
     padding: 12px 18px;
@@ -144,34 +129,19 @@ p { font-size: 1.2rem; margin: 0.3em 0; }
     cursor: pointer;
     font-weight: bold;
     font-size: 1.1rem;
-    box-shadow: 0 0 10px rgba(209, 122, 0, 0.2);
+    box-shadow: 0 0 10px rgba(209,122,0,0.4);
     display: none;
     z-index: 999;
-    transition: all 0.3s ease;
 }
-#backToTop:hover { background: rgba(209, 122, 0, 0.4); color: #fff9f0; transform: translateY(-2px); }
-
-/* Show More Button */
-.show-more-btn {
-    margin: 10px auto 40px auto;
-    display: block;
-    padding: 10px 20px;
-    border-radius: 12px;
-    background: #d17a00;
-    color: #fff9f0;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.show-more-btn:hover { background: #ffb74d; color: #fff; transform: translateY(-2px); }
+#backToTop:hover { background: #d17a0055; color: #fff; }
 
 /* Responsive */
 @media (max-width: 768px) {
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.8rem; }
-    .profile-card { padding: 20px; margin: 60px 10px 30px 10px; }
-    .paper-card { width: 90%; }
+    h3 { font-size: 1.5rem; }
+    .profile-card { padding: 20px; margin: 80px 10px 30px 10px; }
+    table { font-size: 1rem; }
 }
 </style>
 </head>
@@ -181,129 +151,88 @@ p { font-size: 1.2rem; margin: 0.3em 0; }
 <div class="profile-card">
     <img src="https://avatars.githubusercontent.com/u/127643239?v=4" alt="Aditi Khare" class="profile-photo">
     <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
-    <div class="snapshot">
-        <span>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</span>
-        <span>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</span>
-        <span>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</span>
+
+    <!-- About Me Section -->
+    <div class="about-text">
+        <span>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</span>
+        <span>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</span>
     </div>
-    <div class="tag-container">
-        <span class="tag generative">Generative AI</span>
-        <span class="tag edge">Edge AI</span>
-        <span class="tag quantum">Quantum AI</span>
-    </div>
+
+    <!-- Connect Links -->
     <div class="connect">
+        <a href="about_me.html">About Me</a>
         <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">AI Research Junction</a>
         <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Gen-AI Integration Book</a>
-        <a href="about.html">About Me</a>
     </div>
 </div>
 
-<!-- Filter Dropdown -->
-<select id="categoryFilter" onchange="filterByCategory()">
-    <option value="All">Show All Categories</option>
+<!-- Filter & Search -->
+<select id="filterSelect" onchange="filterCategory()">
+    <option value="all">Show All Categories</option>
+    <option value="generative">Generative AI</option>
+    <option value="cv">Computer Vision</option>
+    <option value="quantum">Quantum AI</option>
 </select>
 
-<!-- Dashboard -->
-<div id="dashboard"></div>
+<input type="text" id="searchInput" onkeyup="filterPapers()" placeholder="Search papers by keyword...">
+
+<!-- Research Papers Dashboard -->
+<details open id="Jan2025">
+<summary><h2>📚 AI Research Papers (May 2024 – Jan 2025)</h2></summary>
+<!-- Example papers -->
+<details>
+<summary><h3>Jan 2025</h3></summary>
+<table>
+<tr><th>Paper</th><th>Summary</th><th>Link</th><th>Domain</th></tr>
+<tr><td>Modern BERT</td><td>Modern BERT improvements and techniques</td><td><a href="https://arxiv.org/abs/2412.13663">Paper</a></td><td><span class="tag generative">Generative AI</span></td></tr>
+<tr><td>DeepSeekv3</td><td>DeepSeek V3 advancements for AI search</td><td><a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main">Github</a></td><td><span class="tag generative">Generative AI</span></td></tr>
+<tr><td>Meta Llama 3.2 CV</td><td>Customizable Computer Vision & Edge models</td><td><a href="https://www.llama.com/">Blog</a></td><td><span class="tag cv">Computer Vision</span></td></tr>
+</table>
+</details>
+</details>
 
 <!-- Back to Top -->
 <button onclick="topFunction()" id="backToTop">⬆ Back to Top</button>
 
 <script>
-// === Data ===
-const researchData = {
-    "Jan 2025": [
-        {title: "Modern BERT", summary: "Modern BERT improvements and techniques", tag: "Generative AI", link: "https://arxiv.org/abs/2412.13663"},
-        {title: "LLM Inference-Time Self-Improvement", summary: "LLM improves itself at inference time", tag: "Generative AI", link: "https://arxiv.org/pdf/2412.14352"},
-        {title: "DeepSeekv3", summary: "DeepSeek V3 advancements for AI search", tag: "Generative AI", link: "https://github.com/deepseek-ai/DeepSeek-V3/tree/main"}
-    ],
-    "Oct – Dec 2024": [
-        {title: "Claude 3.5 Sonnet & Haiku", summary: "Creative poetry LLMs", tag: "Generative AI", link: "https://www.anthropic.com/news/3-5-models-and-computer-use"},
-        {title: "OpenAI Swarm Framework", summary: "Distributed AI framework", tag: "Generative AI", link: "https://github.com/openai/swarm"}
-    ],
-    "May – Sept 2024": [
-        {title: "Meta Llama 3.2 Edge AI", summary: "Customizable Edge AI & Vision models", tag: "Edge AI", link: "https://www.llama.com/"},
-        {title: "Training Language Models to Self-Correct", summary: "Reinforcement learning for self-correcting LLMs", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12917/"},
-        {title: "Iteration of Thought-Leveraging Inner Dialogue", summary: "Autonomous LLM reasoning via inner dialogue", tag: "Generative AI", link: "https://arxiv.org/abs/2409.12618/"},
-        {title: "Learning to Reason with LLMs (OpenAI o1)", summary: "OpenAI o1 for reasoning", tag: "Generative AI", link: "https://openai.com/index/introducing-openai-o1-preview/"},
-        {title: "AutoGen Studio", summary: "Framework for autonomous LLM agents", tag: "Generative AI", link: "https://github.com/microsoft/autogen"},
-        {title: "Strategic Chain-of-Thought", summary: "LLM reasoning methodology", tag: "Generative AI", link: "https://arxiv.org/abs/2409.03271/"},
-        {title: "Role of RAG Noise in LLMs", summary: "Impact of RAG noise on LLMs", tag: "Generative AI", link: "https://arxiv.org/abs/2408.13533/"},
-        {title: "Learning to Simulate Dynamic Environments with GameGAN", summary: "GameGAN for environment simulation", tag: "Generative AI", link: "https://github.com/nv-tlabs/GameGAN_code/"},
-        {title: "Agentic Retrieval-Augmented Generation for Time Series", summary: "Time series analysis with RAG", tag: "Generative AI", link: "https://arxiv.org/abs/2408.14484/"}
-    ]
-};
-
-// === Generate Dashboard & Category Dropdown ===
-const dashboard = document.getElementById("dashboard");
-const categoryFilter = document.getElementById("categoryFilter");
-let first = true;
-let categoriesSet = new Set();
-
-for (const month in researchData) {
-    let container = document.createElement("div");
-    container.className = "month-section";
-    let heading = document.createElement("h2");
-    heading.className = "month-heading";
-    heading.textContent = month;
-    container.appendChild(heading);
-
-    let paperContainer = document.createElement("div");
-    paperContainer.className = "paper-container";
-    researchData[month].forEach(paper => {
-        categoriesSet.add(paper.tag);
-        let card = document.createElement("div");
-        card.className = "paper-card";
-        let tagClass = paper.tag === "Generative AI" ? "generative" : paper.tag === "Edge AI" ? "edge" : "quantum";
-        card.innerHTML = `<h4>${paper.title}</h4>
-                          <p>${paper.summary}</p>
-                          <a href="${paper.link}" target="_blank">View</a>
-                          <span class="tag ${tagClass}">${paper.tag}</span>`;
-        paperContainer.appendChild(card);
-    });
-    container.appendChild(paperContainer);
-
-    if(!first){ container.style.display = "none"; }
-    dashboard.appendChild(container);
-    first = false;
-}
-
-// Populate Filter Dropdown Dynamically
-categoriesSet.forEach(cat => {
-    let opt = document.createElement("option");
-    opt.value = cat;
-    opt.textContent = cat;
-    categoryFilter.appendChild(opt);
-});
-
-// Show More Button
-const showMore = document.createElement("button");
-showMore.className = "show-more-btn";
-showMore.textContent = "Show Older Months";
-showMore.onclick = () => {
-    document.querySelectorAll(".month-section").forEach(sec=> sec.style.display="block");
-    showMore.style.display = "none";
-};
-dashboard.appendChild(showMore);
-
-// Filter by Category
-function filterByCategory(){
-    const val = categoryFilter.value;
-    document.querySelectorAll(".paper-card").forEach(card => {
-        if(val==="All") card.style.display="flex";
-        else if(card.querySelector(".tag").textContent !== val) card.style.display="none";
-        else card.style.display="flex";
-    });
-}
-
 // Back to Top
 const backToTop = document.getElementById("backToTop");
 window.onscroll = () => {
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) backToTop.style.display="block";
-    else backToTop.style.display="none";
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTop.style.display = "block";
+    } else { backToTop.style.display = "none"; }
 };
 function topFunction() { document.documentElement.scrollTop = 0; }
 
+// Search Filter
+function filterPapers() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let tables = document.querySelectorAll("table");
+    tables.forEach(table => {
+        let trs = table.querySelectorAll("tr");
+        trs.forEach((tr, index) => {
+            if(index === 0) return;
+            let text = tr.innerText.toLowerCase();
+            tr.style.display = text.includes(input) ? "" : "none";
+        });
+    });
+}
+
+// Category Filter
+function filterCategory() {
+    const category = document.getElementById("filterSelect").value;
+    const tables = document.querySelectorAll("table tr");
+    tables.forEach((tr, index) => {
+        if(index === 0) return;
+        if(category === "all") {
+            tr.style.display = "";
+        } else {
+            const tag = tr.querySelector("span");
+            if(tag && tag.classList.contains(category)) tr.style.display = "";
+            else tr.style.display = "none";
+        }
+    });
+}
 </script>
 
 </body>
