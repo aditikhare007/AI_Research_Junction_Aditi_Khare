@@ -1,185 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aditi Khare - AI Research Portfolio</title>
   <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: #fff9f0;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      scroll-behavior: smooth;
-    }
+    /* General Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background-color: #f4f4f9; color: #333; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
 
-    header {
-      background: linear-gradient(90deg, #1e1e2f, #2b2b40);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
-    }
+    /* Header */
+    header { background: #1e1e2f; color: white; padding: 20px 0; text-align: center; position: relative; }
+    header img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    header h1 { margin: 10px 0; font-size: 2.5em; }
+    header h2 { font-size: 1.2em; color: #ffd280; margin-bottom: 10px; }
+    header p { font-size: 1em; color: #e0e0e0; margin-bottom: 15px; }
+    header .highlight { font-size: 1.1em; font-style: italic; color: #ffcc80; font-weight: 500; }
 
-    header img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      border: 3px solid #fff;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(255,255,255,0.2);
-    }
+    /* Navigation */
+    nav { position: sticky; top: 0; background: #fff; padding: 10px 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { font-size: 1.1em; color: #333; font-weight: 600; padding: 5px 10px; border-radius: 5px; transition: background-color 0.3s ease; }
+    nav ul li a:hover { background-color: #ffd280; }
 
-    header h1 {
-      font-size: 2.4em;
-      margin-bottom: 8px;
-      letter-spacing: 0.5px;
-    }
+    /* Section */
+    section { padding: 40px 20px; max-width: 1200px; margin: auto; }
+    section h3 { font-size: 2.2em; color: #1e1e2f; border-bottom: 3px solid #d17a00; display: inline-block; padding-bottom: 6px; margin-bottom: 30px; }
 
-    header h2 {
-      font-size: 1.4em;
-      color: #ffd280;
-      margin-top: 10px;
-      line-height: 1.5;
-    }
+    /* Cards */
+    .card { background: white; border-radius: 16px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); padding: 25px; margin-bottom: 25px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
+    .card h4 { font-size: 1.5em; color: #1e1e2f; margin-bottom: 10px; }
+    .card p { font-size: 1.1em; color: #555; margin-bottom: 15px; }
+    .card a { font-size: 1.1em; color: #d17a00; font-weight: 600; transition: color 0.3s ease; }
+    .card a:hover { color: #ffb74d; }
 
-    header p {
-      font-size: 1.05em;
-      color: #e0e0e0;
-      margin-top: 10px;
-      line-height: 1.6;
-    }
+    /* Footer */
+    footer { text-align: center; padding: 20px; background-color: #2b2b40; color: white; font-size: 0.95em; margin-top: 60px; }
 
-    header p strong {
-      display: block;
-      font-size: 1.15em;
-      color: #fff;
-      margin-top: 8px;
-    }
-
-    .highlight {
-      font-size: 1.15em;
-      font-style: italic;
-      color: #ffcc80;
-      font-weight: 500;
-      margin-top: 15px;
-    }
-
-    .button-container {
-      margin-top: 30px;
-    }
-
-    .button {
-      background-color: #d17a00;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      margin: 8px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 0.95em;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-      font-weight: 600;
-    }
-
-    .button:hover {
-      background-color: #ffb74d;
-      color: #fff;
-      transform: scale(1.05);
-    }
-
-    .community-badge {
-      display: inline-block;
-      margin-top: 14px;
-      background: linear-gradient(90deg, #ffcc80, #d17a00);
-      color: #1e1e2f;
-      font-weight: 600;
-      padding: 8px 18px;
-      border-radius: 20px;
-      font-size: 0.95em;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-      transition: all 0.3s ease;
-      cursor: default;
-    }
-
-    .community-badge:hover {
-      transform: scale(1.07);
-      background: linear-gradient(90deg, #ffd699, #e59400);
-      box-shadow: 0 6px 10px rgba(0,0,0,0.2);
-    }
-
-    .section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section h3 {
-      font-size: 2em;
-      color: #1e1e2f;
-      border-bottom: 3px solid #d17a00;
-      display: inline-block;
-      padding-bottom: 6px;
-      margin-bottom: 30px;
-    }
-
-    .tags {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .tag {
-      display: inline-block;
-      background-color: #fff3e0;
-      color: #d17a00;
-      padding: 10px 18px;
-      margin: 6px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 1em;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    .tag:hover {
-      background-color: #ffecb3;
-    }
-
-    .card {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      padding: 25px;
-      margin-bottom: 25px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    }
-
-    footer {
-      text-align: center;
-      padding: 35px;
-      background-color: #2b2b40;
-      color: white;
-      font-size: 0.95em;
-      margin-top: 60px;
-    }
-
+    /* Responsive Design */
     @media (max-width: 768px) {
-      header h1 { font-size: 1.8em; }
-      header h2 { font-size: 1.1em; }
-      .button { padding: 10px 16px; font-size: 0.9em; }
-      .card { padding: 20px; }
+      header h1 { font-size: 2em; }
+      header h2 { font-size: 1em; }
+      nav ul { flex-direction: column; }
+      nav ul li { margin: 10px 0; }
+      section { padding: 20px; }
     }
   </style>
 </head>
-
 <body>
 
 <header>
@@ -189,94 +59,73 @@
   <p><strong>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</strong></p>
   <p><strong>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</strong></p>
   <p class="highlight"><em>• Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI.</em></p>
-
-  <div class="button-container">
-    <a href="about_me.html" class="button">About Me</a>
-    <a href="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare" class="button" target="_blank">Research & Resources</a>
-    <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=6XekmRqMT9OJcuUU846fbA%3D%3D" class="button" target="_blank">AI Research Junction</a>
-    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
-    <a href="https://github.com/aditikhare007" class="button" target="_blank">My AI Innovations & Open-Source Contributions Portfolio</a>
-    <a href="https://topmate.io/aditi_khare" class="button" target="_blank">Mentorship@TopMate</a>
-    <div class="community-badge">💠 Community Care</div>
-    <a href="https://www.packtpub.com/" class="button" target="_blank">My AI Books Publications Portfolio@Packt</a>
-  </div>
 </header>
 
-<section class="section" id="research-section">
+<nav>
+  <ul>
+    <li><a href="#about-me">About Me</a></li>
+    <li><a href="#research-junction">Research Junction</a></li>
+    <li><a href="#ai-research">AI Research</a></li>
+    <li><a href="#lets-connect">Let's Connect</a></li>
+  </ul>
+</nav>
+
+<section id="about-me">
+  <h3>About Me</h3>
+  <p>Welcome to my AI Research Portfolio. I specialize in AI product development, infrastructure, and architecture, with a strong focus on generative AI, computer vision, and quantum AI. I am passionate about advancing AI research and contributing to the open-source community.</p>
+</section>
+
+<section id="research-junction">
   <h3>AI Research Junction</h3>
-  <div class="tags">
-    <span class="tag" onclick="filterCategory('Generative AI')">Generative AI</span>
-    <span class="tag" onclick="filterCategory('Computer Vision')">Computer Vision</span>
-    <span class="tag" onclick="filterCategory('Quantum AI')">Quantum AI</span>
-  </div>
-
-  <!-- Research Papers Cards -->
-  <div id="papers-container">
-    <!-- Sample papers -->
-    <div class="card" data-category="Generative AI">
-      <h4>📘 Modern BERT</h4>
-      <p>Modern BERT improvements and techniques</p>
-      <a href="https://arxiv.org/abs/2412.13663" target="_blank">View Paper</a>
-    </div>
-
-    <div class="card" data-category="Generative AI">
-      <h4>📘 LLM Inference-Time Self-Improvement</h4>
-      <p>LLM improves itself at inference time</p>
-      <a href="https://arxiv.org/pdf/2412.14352" target="_blank">View Paper</a>
-    </div>
-
-    <div class="card" data-category="Generative AI">
-      <h4>📘 DeepSeekv3</h4>
-      <p>DeepSeek V3 advancements for AI search</p>
-      <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Paper</a>
-    </div>
-
-    <div class="card" data-category="Computer Vision">
-      <h4>📘 Meta Llama 3.2 Edge AI</h4>
-      <p>Customizable Edge AI & Vision models</p>
-      <a href="https://www.llama.com/" target="_blank">View Paper</a>
-    </div>
-
-    <div class="card" data-category="Quantum AI">
-      <h4>📘 Quantum Hybrid Architectures</h4>
-      <p>Integrating variational quantum circuits with transformer-based AI models</p>
-      <a href="#" target="_blank">View Paper</a>
-    </div>
-    <!-- Add all other papers similarly -->
-  </div>
-
-  <!-- Resources & Let's Connect -->
+  <p>Here are some of the latest research papers I've curated:</p>
   <div class="card">
-    <h4>🌐 Resources & Let's Connect</h4>
-    <p><strong>Stay connected for AI collaborations, mentorship, and research insights:</strong></p>
-    <p>
-      <a href="mailto:aditikhare007@gmail.com" class="button">Email</a>
-      <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
-      <a href="https://github.com/aditikhare007" class="button" target="_blank">GitHub</a>
-      <a href="https://topmate.io/aditi_khare" class="button" target="_blank">TopMate</a>
-      <a href="https://www.hackerrank.com/profile/aditikhare007" class="button" target="_blank">HackerRank</a>
-      <a href="https://www.packtpub.com/" class="button" target="_blank">My AI Books Publications Portfolio@Packt</a>
-    </p>
+    <h4>📘 Modern BERT</h4>
+    <p>Modern BERT improvements and techniques.</p>
+    <a href="https://arxiv.org/abs/2412.13663" target="_blank">View Paper</a>
   </div>
+  <div class="card">
+    <h4>📘 LLM Inference-Time Self-Improvement</h4>
+    <p>LLM improves itself at inference time.</p>
+    <a href="https://arxiv.org/pdf/2412.14352" target="_blank">View Paper</a>
+  </div>
+  <div class="card">
+    <h4>📘 DeepSeekv3</h4>
+    <p>DeepSeek V3 advancements for AI search.</p>
+    <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Paper</a>
+  </div>
+</section>
+
+<section id="ai-research">
+  <h3>AI Research</h3>
+  <p>Explore more of my AI research work and contributions:</p>
+  <div class="card">
+    <h4>📘 Meta Llama 3.2 Edge AI</h4>
+    <p>Customizable Edge AI & Vision models.</p>
+    <a href="https://www.llama.com/" target="_blank">View Paper</a>
+  </div>
+  <div class="card">
+    <h4>📘 Quantum Hybrid Architectures</h4>
+    <p>Integrating variational quantum circuits with transformer-based AI models.</p>
+    <a href="#" target="_blank">View Paper</a>
+  </div>
+</section>
+
+<section id="lets-connect">
+  <h3>Let's Connect</h3>
+  <p>Stay connected for AI collaborations, mentorship, and research insights:</p>
+  <p>
+    <a href="mailto:aditikhare007@gmail.com" class="button">Email</a>
+    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
+    <a href="https://github.com/aditikhare007" class="button" target="_blank">GitHub</a>
+    <a href="https://topmate.io/aditi_khare" class="button" target="_blank">TopMate</a>
+    <a href="https://www.hackerrank.com/profile/aditikhare007" class="button" target="_blank">HackerRank</a>
+    <a href="https://www.packtpub.com/" class="button" target="_blank">My AI Books Publications Portfolio@Packt</a>
+  </p>
 </section>
 
 <footer>
   © 2025 Aditi Khare — All Rights Reserved
 </footer>
-
-<script>
-  // Filter papers by category
-  function filterCategory(category) {
-    const cards = document.querySelectorAll('#papers-container .card');
-    cards.forEach(card => {
-      if(card.dataset.category === category){
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  }
-</script>
 
 </body>
 </html>
