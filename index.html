@@ -51,27 +51,18 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     line-height: 1.5;
     text-align: left;
 }
-
-/* Highlighted Snapshot Section */
 .snapshot {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin: 20px 0;
-    background: #ffe0b2;
+    gap: 10px;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 1.1rem;
     color: #d17a00;
-    padding: 20px;
-    border-radius: 16px;
-    font-size: 1.15rem;
-    font-weight: 600;
-    box-shadow: 0 4px 12px rgba(209,122,0,0.3);
-    text-align: center;
 }
-
-/* Tags */
 .tag {
     display: inline-block;
-    background: #fff3e0;
+    background: #ffe0b2;
     color: #d17a00;
     padding: 6px 12px;
     border-radius: 12px;
@@ -82,7 +73,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 
 /* Connect Links */
 .connect {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .connect a {
     display: inline-block;
@@ -97,35 +88,15 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 }
 .connect a:hover { background: #ffb74d; color: #fff; }
 
-/* Category Tags under AI Research Junction */
-.category-tags {
-    margin-top: 6px;
-}
-.category-tags .tag { margin-right: 6px; font-size: 1rem; }
-
-/* Let’s Connect Section */
+/* Let's Connect Section */
 .lets-connect {
+    margin-top: 25px;
+    font-size: 1.05rem;
     text-align: center;
-    margin: 20px 0;
-    font-size: 1rem;
     color: #d17a00;
 }
-.lets-connect p {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.lets-connect a {
-    display: inline-block;
-    margin: 6px 10px;
-    padding: 8px 14px;
-    border-radius: 12px;
-    background: #d17a00;
-    color: #fff9f0;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-.lets-connect a:hover { background: #ffb74d; color: #fff; }
+.lets-connect a { color: #d17a00; font-weight: bold; margin: 0 8px; text-decoration: none; }
+.lets-connect a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
 
 /* Search Input */
 #searchInput {
@@ -158,19 +129,12 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     box-shadow: 0 4px 15px rgba(209, 122, 0, 0.15);
     display: flex;
     flex-direction: column;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 0.6s forwards;
-    animation-delay: var(--delay);
 }
 .paper-card h4 { margin: 0 0 8px 0; color: #d17a00; font-size: 1.2rem; }
 .paper-card p { margin: 4px 0; color: #333; font-size: 1rem; flex-grow: 1; }
 .paper-card a { color: #d17a00; font-weight: 600; margin-top: 10px; text-decoration: none; }
 .paper-card a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
 .paper-card .tag { align-self: flex-start; margin-top: 8px; font-size: 0.9rem; padding: 3px 8px; }
-
-/* Fade-in animation */
-@keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
 
 /* Section Headings */
 .month-heading {
@@ -219,7 +183,6 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     h2 { font-size: 1.8rem; }
     .profile-card { padding: 20px; margin: 60px 10px 30px 10px; }
     .paper-card { width: 90%; }
-    .snapshot { font-size: 1rem; padding: 15px; }
 }
 </style>
 </head>
@@ -238,21 +201,23 @@ ul, li { list-style: none; padding: 0; margin: 0; }
         <span>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</span>
         <span>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</span>
     </div>
+    <div>
+        <span class="tag">Generative AI</span>
+        <span class="tag">Computer Vision</span>
+        <span class="tag">Quantum AI</span>
+    </div>
     <div class="connect">
-        <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/" target="_blank">AI Research Junction</a>
-        <div class="category-tags">
-            <span class="tag">Generative AI</span>
-            <span class="tag">Computer Vision</span>
-            <span class="tag">Quantum AI</span>
-        </div>
-        <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Gen-AI Integration Book</a>
+        <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=6XekmRqMT9OJcuUU846fbA%3D%3D" target="_blank">AI Research Junction</a>
+        <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Gen-AI Integration Book@Packt</a>
+        <a href="https://topmate.io/aditi_khare" target="_blank">Mentorship@TopMate</a>
+        <a href="https://github.com/aditikhare007" target="_blank">My AI Innovations Github Portfolio</a>
     </div>
     <div class="lets-connect">
-        <p>Let's connect:</p>
-        <a href="mailto:aditikhare007@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/aditikhare007" target="_blank">GitHub</a>
-        <a href="https://topmate.io/aditi_khare" target="_blank">Topmate</a>
+        📬 Let’s Connect: 
+        <a href="mailto:aditikhare007@gmail.com">Email</a> | 
+        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/aditikhare007" target="_blank">GitHub</a> | 
+        <a href="https://topmate.io/aditi_khare" target="_blank">TopMate</a>
     </div>
 </div>
 
@@ -281,83 +246,65 @@ const researchData = {
     ]
 };
 
-// === Render Latest Month (Jan 2025) ===
+// === Render Dashboard ===
 const dashboard = document.getElementById('dashboard');
-const latestMonth = "Jan 2025";
-const latestHeading = document.createElement('div');
-latestHeading.className = "month-heading";
-latestHeading.textContent = latestMonth;
-dashboard.appendChild(latestHeading);
+const months = Object.keys(researchData);
+const latestMonth = months[0]; // First month is latest
 
-const latestContainer = document.createElement('div');
-latestContainer.className = "paper-container";
-latestContainer.id = latestMonth.replace(/\s+/g,'');
+months.forEach((month) => {
+    const heading = document.createElement('div');
+    heading.className = "month-heading";
+    heading.textContent = month;
+    dashboard.appendChild(heading);
 
-researchData[latestMonth].forEach((paper,index) => {
-    const card = document.createElement('div');
-    card.className = "paper-card";
-    card.style.setProperty('--delay', `${index*0.1}s`);
-    card.innerHTML = `<h4>${paper.title}</h4>
-                      <p>${paper.summary}</p>
-                      <span class="tag">${paper.tag}</span>
-                      <a href="${paper.link}" target="_blank">View Paper</a>`;
-    latestContainer.appendChild(card);
+    const container = document.createElement('div');
+    container.className = "paper-container";
+    container.id = month.replace(/\s+/g,'');
+
+    researchData[month].forEach((paper, index) => {
+        const card = document.createElement('div');
+        card.className = "paper-card";
+        card.innerHTML = `<h4>${paper.title}</h4><p>${paper.summary}</p><span class="tag">${paper.tag}</span><a href="${paper.link}" target="_blank">View Paper</a>`;
+        if(month !== latestMonth && month !== "Resources") card.style.display = "none"; // hide other months
+        container.appendChild(card);
+    });
+
+    dashboard.appendChild(container);
+
+    // Show More button only for latest month
+    if(month === latestMonth && researchData[month].length > 3){
+        const btn = document.createElement('button');
+        btn.className = "show-more-btn";
+        btn.textContent = "Show More";
+        btn.onclick = () => {
+            const hidden = Array.from(container.children).filter(c => c.style.display === "none");
+            if(hidden.length > 0){
+                hidden.forEach(c => c.style.display = "flex");
+                btn.textContent = "Show Less";
+            } else {
+                Array.from(container.children).forEach((c,index) => {
+                    c.style.display = index<3 ? "flex" : "none";
+                });
+                btn.textContent = "Show More";
+            }
+        };
+        dashboard.appendChild(btn);
+    }
 });
-dashboard.appendChild(latestContainer);
-
-// Show More / Less
-if(researchData[latestMonth].length>5){
-    const btn = document.createElement('button');
-    btn.className="show-more-btn";
-    btn.textContent="Show More";
-    btn.onclick = ()=>{
-        const hidden = Array.from(latestContainer.children).filter(c=>c.style.display==='none');
-        if(hidden.length>0){
-            hidden.forEach(c=>c.style.display='flex');
-            btn.textContent="Show Less";
-        } else {
-            Array.from(latestContainer.children).forEach((c,i)=>c.style.display=i<5?'flex':'none');
-            btn.textContent="Show More";
-        }
-    };
-    dashboard.appendChild(btn);
-}
-
-// Hide excess if more than 5
-Array.from(latestContainer.children).forEach((c,i)=>c.style.display=i<5?'flex':'none');
-
-// === Render Resources ===
-const resHeading = document.createElement('div');
-resHeading.className = "month-heading";
-resHeading.textContent = "Resources";
-dashboard.appendChild(resHeading);
-
-const resContainer = document.createElement('div');
-resContainer.className = "paper-container";
-
-researchData["Resources"].forEach((paper,index)=>{
-    const card = document.createElement('div');
-    card.className="paper-card";
-    card.style.setProperty('--delay', `${index*0.1}s`);
-    card.innerHTML = `<h4>${paper.title}</h4>
-                      <p>${paper.summary}</p>
-                      <span class="tag">${paper.tag}</span>
-                      <a href="${paper.link}" target="_blank">View Paper</a>`;
-    resContainer.appendChild(card);
-});
-dashboard.appendChild(resContainer);
 
 // === Back to Top ===
 const backToTop = document.getElementById("backToTop");
-window.onscroll = ()=>{ backToTop.style.display = (document.body.scrollTop>200 || document.documentElement.scrollTop>200)?"block":"none";};
-function topFunction(){document.documentElement.scrollTop=0;}
+window.onscroll = () => {
+    backToTop.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
+};
+function topFunction() { document.documentElement.scrollTop = 0; }
 
 // === Search Filter ===
-function filterCards(){
-    let input=document.getElementById("searchInput").value.toLowerCase();
-    const cards=document.querySelectorAll(".paper-card");
-    cards.forEach(card=>{
-        card.style.display=card.innerText.toLowerCase().includes(input)?"flex":"none";
+function filterCards() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    const cards = document.querySelectorAll(".paper-card");
+    cards.forEach(card => {
+        card.style.display = card.innerText.toLowerCase().includes(input) ? "flex" : "none";
     });
 }
 </script>
