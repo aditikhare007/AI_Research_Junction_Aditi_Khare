@@ -18,8 +18,6 @@ a { color: #d17a00; text-decoration: none; transition: all 0.3s ease; }
 a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
 h1, h2, h3, h4 { color: #d17a00; margin: 0.5em 0; }
 p { font-size: 1.2rem; margin: 0.3em 0; }
-
-/* Remove default bullets */
 ul, li { list-style: none; padding: 0; margin: 0; }
 
 /* Profile Card */
@@ -31,17 +29,13 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     border-radius: 20px;
     box-shadow: 0 4px 25px rgba(209, 122, 0, 0.2);
     text-align: center;
-    transition: all 0.3s ease;
 }
-.profile-card:hover { box-shadow: 0 8px 30px rgba(209, 122, 0, 0.25); }
-
 .profile-card .snapshot {
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin: 15px 0;
 }
-
 .tag {
     display: inline-block;
     background: #ffe0b2;
@@ -51,9 +45,7 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     margin: 4px 6px;
     font-size: 1.1rem;
     font-weight: 600;
-    transition: all 0.3s ease;
 }
-.tag:hover { background: #ffd59e; }
 
 /* Search Input */
 #searchInput {
@@ -68,12 +60,21 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     color: #333;
     font-size: 1.1rem;
     box-shadow: inset 0 2px 6px rgba(209, 122, 0, 0.1);
-    transition: all 0.3s ease;
 }
-#searchInput:focus {
-    outline: none;
-    border-color: #ffb74d;
-    box-shadow: 0 0 8px rgba(255, 183, 77, 0.3) inset;
+
+/* Collapsible Details */
+details {
+    max-width: 940px;
+    margin: 15px auto;
+    padding: 15px;
+    background: #fff8f0;
+    border-radius: 18px;
+    box-shadow: 0 3px 15px rgba(209, 122, 0, 0.15);
+}
+summary {
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
 }
 
 /* Paper Cards */
@@ -81,40 +82,23 @@ ul, li { list-style: none; padding: 0; margin: 0; }
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
     margin-top: 10px;
+    justify-content: center;
 }
-
 .paper-card {
     background: #fff8f0;
     border-radius: 16px;
     padding: 16px 20px;
     width: 300px;
     box-shadow: 0 4px 15px rgba(209, 122, 0, 0.15);
-    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-.paper-card:hover { box-shadow: 0 8px 25px rgba(209, 122, 0, 0.25); transform: translateY(-3px); }
-
 .paper-card h4 { margin: 0 0 8px 0; color: #d17a00; font-size: 1.2rem; }
 .paper-card p { margin: 4px 0; color: #333; font-size: 1rem; flex-grow: 1; }
 .paper-card a { color: #d17a00; font-weight: 600; margin-top: 10px; text-decoration: none; }
 .paper-card a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
 .paper-card .tag { align-self: flex-start; margin-top: 8px; font-size: 0.9rem; padding: 3px 8px; }
-
-/* Collapsible Month Sections */
-details {
-    margin: 15px auto;
-    max-width: 960px;
-    border-radius: 16px;
-    background: #fff3e0;
-    padding: 15px 20px;
-    box-shadow: 0 4px 20px rgba(209, 122, 0, 0.15);
-}
-summary { font-size: 1.5rem; font-weight: bold; cursor: pointer; outline: none; }
-summary::-webkit-details-marker { display: none; }
 
 /* Back to Top Button */
 #backToTop {
@@ -130,7 +114,6 @@ summary::-webkit-details-marker { display: none; }
     font-weight: bold;
     font-size: 1.1rem;
     box-shadow: 0 0 10px rgba(209, 122, 0, 0.2);
-    transition: all 0.3s ease;
     display: none;
     z-index: 999;
 }
@@ -143,8 +126,6 @@ summary::-webkit-details-marker { display: none; }
     .profile-card { padding: 20px; margin: 60px 10px 30px 10px; }
     .paper-card { width: 90%; }
 }
-
-body { padding-top: 20px; }
 </style>
 </head>
 <body>
@@ -165,40 +146,44 @@ body { padding-top: 20px; }
     <p>🚀 Welcome to AI Research Junction – Your hub for curated AI research paper summaries.</p>
 </div>
 
-<!-- Search -->
-<input type="text" id="searchInput" onkeyup="filterPapers()" placeholder="Search papers by keyword...">
+<!-- Search Input -->
+<input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Search papers by keyword...">
 
-<!-- Research Papers -->
-
-<!-- Nov 2024 – Jan 2025 -->
+<!-- Last Month Papers Expanded, Others Collapsible -->
 <details open>
-<summary>📅 Nov 2024 – Jan 2025</summary>
+<summary>📚 Jan 2025</summary>
 <div class="paper-container">
-    <div class="paper-card">
+    <div class="paper-card" data-month="Jan2025">
         <h4>Modern BERT</h4>
         <p>Modern BERT improvements and techniques</p>
         <span class="tag">Generative AI</span>
         <a href="https://arxiv.org/abs/2412.13663" target="_blank">View Paper</a>
     </div>
-    <div class="paper-card">
+    <div class="paper-card" data-month="Jan2025">
         <h4>LLM Inference-Time Self-Improvement</h4>
         <p>LLM improves itself at inference time</p>
         <span class="tag">Generative AI</span>
         <a href="https://arxiv.org/pdf/2412.14352" target="_blank">View Paper</a>
     </div>
-    <div class="paper-card">
+    <div class="paper-card" data-month="Jan2025">
         <h4>DeepSeekv3</h4>
         <p>DeepSeek V3 advancements for AI search</p>
         <span class="tag">Generative AI</span>
         <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Paper</a>
     </div>
-    <div class="paper-card">
+</div>
+</details>
+
+<details>
+<summary>📚 Oct 2024</summary>
+<div class="paper-container">
+    <div class="paper-card" data-month="Oct2024">
         <h4>Claude 3.5 Sonnet & Haiku</h4>
         <p>Creative poetry LLMs</p>
         <span class="tag">Generative AI</span>
         <a href="https://www.anthropic.com/news/3-5-models-and-computer-use" target="_blank">View Paper</a>
     </div>
-    <div class="paper-card">
+    <div class="paper-card" data-month="Oct2024">
         <h4>OpenAI Swarm Framework</h4>
         <p>Distributed AI framework</p>
         <span class="tag">Generative AI</span>
@@ -207,154 +192,71 @@ body { padding-top: 20px; }
 </div>
 </details>
 
-<!-- Sept 2024 -->
 <details>
-<summary>📅 Sept 2024</summary>
+<summary>📚 Sept 2024</summary>
 <div class="paper-container">
-    <div class="paper-card">
+    <div class="paper-card" data-month="Sept2024">
         <h4>Meta Llama 3.2 Edge AI</h4>
         <p>Customizable Edge AI & Vision models</p>
         <span class="tag">Edge AI & Vision</span>
         <a href="https://www.llama.com/" target="_blank">View Paper</a>
     </div>
-    <div class="paper-card">
+    <div class="paper-card" data-month="Sept2024">
         <h4>Training Language Models to Self-Correct</h4>
         <p>Reinforcement learning for self-correcting LLMs</p>
         <span class="tag">Generative AI</span>
         <a href="https://arxiv.org/abs/2409.12917/" target="_blank">View Paper</a>
     </div>
-    <div class="paper-card">
-        <h4>Iteration of Thought-Leveraging Inner Dialogue</h4>
-        <p>Autonomous LLM reasoning via inner dialogue</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://arxiv.org/abs/2409.12618/" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card">
-        <h4>Learning to Reason with LLMs (OpenAI o1)</h4>
-        <p>OpenAI o1 for reasoning</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://openai.com/index/introducing-openai-o1-preview/" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card">
-        <h4>AutoGen Studio</h4>
-        <p>Framework for autonomous LLM agents</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://github.com/microsoft/autogen" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card">
-        <h4>Strategic Chain-of-Thought</h4>
-        <p>LLM reasoning methodology</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://arxiv.org/abs/2409.03271/" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card">
-        <h4>Role of RAG Noise in LLMs</h4>
-        <p>Impact of RAG noise on LLMs</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://arxiv.org/abs/2408.13533/" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card">
-        <h4>Learning to Simulate Dynamic Environments with GameGAN</h4>
-        <p>GameGAN for environment simulation</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://github.com/nv-tlabs/GameGAN_code/" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card">
-        <h4>Agentic Retrieval-Augmented Generation for Time Series</h4>
-        <p>Time series analysis with RAG</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://arxiv.org/abs/2408.14484/" target="_blank">View Paper</a>
-    </div>
 </div>
 </details>
 
-<!-- May – Aug 2024 -->
 <details>
-<summary>📅 May – Aug 2024</summary>
+<summary>📚 May – Aug 2024</summary>
 <div class="paper-container">
-    <div class="paper-card">
+    <div class="paper-card" data-month="MayAug2024">
         <h4>OpenAI GPT-4 Turbo Release</h4>
         <p>GPT-4 Turbo advancements, speed & efficiency improvements</p>
         <span class="tag">Generative AI</span>
         <a href="https://openai.com/research/gpt-4-turbo" target="_blank">View Paper</a>
     </div>
-    <div class="paper-card">
+    <div class="paper-card" data-month="MayAug2024">
         <h4>DeepMind Gemini Updates</h4>
         <p>Gemini model architecture improvements & multimodal abilities</p>
         <span class="tag">Generative AI</span>
         <a href="https://www.deepmind.com/publications" target="_blank">View Paper</a>
     </div>
-    <div class="paper-card">
-        <h4>Transformers in Edge Devices</h4>
-        <p>Optimizing transformer models for mobile and edge AI applications</p>
-        <span class="tag">Edge AI & Vision</span>
-        <a href="https://arxiv.org/abs/2405.13571" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card">
-        <h4>LLM Fine-Tuning with RAG</h4>
-        <p>Integrating retrieval-augmented generation for fine-tuning LLMs</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://arxiv.org/abs/2406.12345" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card">
-        <h4>AutoML for Vision Models</h4>
-        <p>Automated model search and tuning for vision transformers</p>
-        <span class="tag">Computer Vision</span>
-        <a href="https://arxiv.org/abs/2407.23456" target="_blank">View Paper</a>
-    </div>
-    <div class="paper-card">
-        <h4>Diffusion Models in Generative AI</h4>
-        <p>Survey and applications of diffusion models in image generation</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://arxiv.org/abs/2408.34567" target="_blank">View Paper</a>
-    </div>
 </div>
 </details>
 
-<!-- Resources Section -->
-<details>
-<summary>📚 AI Learning Resources</summary>
-<div class="paper-container">
-    <div class="paper-card">
+<!-- Resources always visible -->
+<div class="paper-container" id="Resources">
+    <div class="paper-card" data-month="Resources">
         <h4>OpenAI Prompt Engineering Handbook</h4>
         <p>Guides and techniques for prompt engineering</p>
         <span class="tag">Generative AI</span>
         <a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank">View Website</a>
     </div>
-    <div class="paper-card">
+    <div class="paper-card" data-month="Resources">
         <h4>Lilianweng's Blog & GitHub</h4>
-        <p>Comprehensive AI & ML tutorials and insights</p>
+        <p>AI & ML blog with tutorials and code</p>
         <span class="tag">Generative AI & ML</span>
         <a href="https://lilianweng.github.io/" target="_blank">View Website</a>
     </div>
-    <div class="paper-card">
-        <h4>DeepSeek AI Search</h4>
-        <p>Open-source AI search framework</p>
-        <span class="tag">Generative AI</span>
-        <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Github</a>
-    </div>
-    <div class="paper-card">
-        <h4>Hugging Face Transformers</h4>
-        <p>Transformers library for NLP and multimodal models</p>
-        <span class="tag">Generative AI & NLP</span>
-        <a href="https://huggingface.co/docs/transformers/index" target="_blank">View Website</a>
-    </div>
 </div>
-</details>
 
 <!-- Back to Top -->
 <button onclick="topFunction()" id="backToTop">⬆ Back to Top</button>
 
 <script>
-// Back to Top Button
+// Back to Top
 const backToTop = document.getElementById("backToTop");
 window.onscroll = () => {
     backToTop.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
 };
 function topFunction() { document.documentElement.scrollTop = 0; }
 
-// Search Filter for Cards
-function filterPapers() {
+// Filter Cards
+function filterCards() {
     let input = document.getElementById("searchInput").value.toLowerCase();
     const cards = document.querySelectorAll(".paper-card");
     cards.forEach(card => {
