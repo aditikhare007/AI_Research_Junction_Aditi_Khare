@@ -15,6 +15,33 @@ body {
     scroll-behavior: smooth;
 }
 
+/* === Sticky Navigation Bar === */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #1e1e2f, #2b2b40);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffb74d;
+    color: #fff;
+    transform: scale(1.05);
+}
+
 /* === Header === */
 header {
     background: linear-gradient(90deg, #1e1e2f, #2b2b40);
@@ -61,7 +88,7 @@ header p {
     margin-top: 15px;
 }
 
-/* === Navigation Buttons === */
+/* === Header Buttons === */
 .button-container {
     margin-top: 30px;
 }
@@ -162,7 +189,7 @@ header p {
     box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
-/* === Footer === */
+/* Footer */
 footer {
     text-align: center;
     padding: 35px;
@@ -182,6 +209,14 @@ footer {
 </style>
 </head>
 <body>
+
+<!-- Sticky Navbar -->
+<div class="navbar">
+    <a href="#about-section">About Me</a>
+    <a href="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare" target="_blank">Research & Resources</a>
+    <a href="#research-section">AI Research Junction</a>
+    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a>
+</div>
 
 <!-- Header -->
 <header>
@@ -212,12 +247,11 @@ footer {
     <span class="tag" onclick="showCategory('Computer Vision')">Computer Vision</span>
     <span class="tag" onclick="showCategory('Quantum AI')">Quantum AI</span>
   </div>
-
   <div id="papers-container"></div>
 </section>
 
 <!-- Let's Connect Section -->
-<section class="section">
+<section class="section" id="connect-section">
   <h3>Let's Connect</h3>
   <p><strong>Stay connected for AI collaborations, mentorship, and research insights:</strong></p>
   <div style="text-align:center;">
@@ -247,7 +281,7 @@ const papersData = [
   { title: "Neural Edge Federations", summary: "Advancing low-latency inference at edge computing nodes", tag: "Quantum AI", link: "#" }
 ];
 
-// Function to show papers by category
+// Show papers by category
 function showCategory(category) {
   const container = document.getElementById('papers-container');
   container.innerHTML = '';
