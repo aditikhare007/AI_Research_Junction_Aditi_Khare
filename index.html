@@ -21,8 +21,7 @@ h1 { font-size: 2.8rem; }
 h2 { font-size: 2.2rem; }
 h3 { font-size: 1.8rem; }
 h4 { font-size: 1.4rem; }
-p, li { font-size: 1.2rem; }
-ul { margin: 0.5em 0 1em 1.5em; }
+p { font-size: 1.2rem; margin: 0.3em 0; }
 
 /* Profile Card */
 .profile-card {
@@ -36,6 +35,14 @@ ul { margin: 0.5em 0 1em 1.5em; }
     transition: all 0.3s ease;
 }
 .profile-card:hover { box-shadow: 0 8px 30px rgba(209, 122, 0, 0.25); }
+
+.profile-card .snapshot {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 15px 0;
+}
+
 .tag {
     display: inline-block;
     background: #ffe0b2;
@@ -136,13 +143,16 @@ body { padding-top: 20px; }
 <!-- Profile Card -->
 <div class="profile-card">
     <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
-    <p><strong>Professional Snapshot:</strong></p>
-    <ul>
-        <li>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</li>
-        <li>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</li>
-        <li>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</li>
-    </ul>
-    <p><strong>Research Interests:</strong> <span class="tag">Generative AI</span><span class="tag">Computer Vision</span><span class="tag">Quantum AI</span></p>
+    <div class="snapshot">
+        <span>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</span>
+        <span>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</span>
+        <span>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</span>
+    </div>
+    <div>
+        <span class="tag">Generative AI</span>
+        <span class="tag">Computer Vision</span>
+        <span class="tag">Quantum AI</span>
+    </div>
     <p>🚀 Welcome to AI Research Junction – Your hub for curated AI research paper summaries.</p>
 </div>
 
