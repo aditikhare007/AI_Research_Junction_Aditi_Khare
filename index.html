@@ -231,7 +231,6 @@ months.forEach((month) => {
         const card = document.createElement('div');
         card.className = "paper-card";
         card.innerHTML = `<h4>${paper.title}</h4><p>${paper.summary}</p><span class="tag">${paper.tag}</span><a href="${paper.link}" target="_blank">View Paper</a>`;
-        // Show More logic only for latest month if more than 5 papers
         if(month === latestMonth && index >= 5) card.style.display = "none";
         container.appendChild(card);
     });
