@@ -68,6 +68,10 @@
 
     .button-container {
       margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
     }
 
     .button {
@@ -75,13 +79,11 @@
       color: white;
       border: none;
       padding: 12px 20px;
-      margin: 8px;
       border-radius: 25px;
       cursor: pointer;
       font-size: 0.95em;
       transition: all 0.3s ease;
       text-decoration: none;
-      display: inline-block;
       font-weight: 600;
     }
 
@@ -95,7 +97,7 @@
       display: inline-block;
       margin-top: 14px;
       background: linear-gradient(90deg, #ffcc80, #d17a00);
-      color: #fff; /* changed to white */
+      color: #fff; /* white text */
       font-weight: 600;
       padding: 8px 18px;
       border-radius: 20px;
@@ -128,7 +130,7 @@
     }
 
     .tags {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       text-align: center;
     }
 
@@ -196,7 +198,7 @@
     <a href="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare" class="button" target="_blank">Research & Resources</a>
     <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=6XekmRqMT9OJcuUU846fbA%3D%3D" class="button" target="_blank">AI Research Junction</a>
     <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
-    <a href="https://github.com/aditikhare007" class="button" target="_blank">My AI Innovations & Open-Source Contributions Portfolio</a>
+    <a href="https://github.com/aditikhare007" class="button" target="_blank">My AI Research Portfolio@Github</a>
     <a href="https://topmate.io/aditi_khare" class="button" target="_blank">Mentorship@TopMate</a>
     <a href="https://topmate.io/aditi_khare" class="community-badge" target="_blank">Community Care@TopMate</a>
     <a href="https://www.packtpub.com/" class="button" target="_blank">My AI Books Publications Portfolio@Packt</a>
@@ -213,21 +215,28 @@
 
   <!-- Research Papers Container -->
   <div id="papers-container">
-    <!-- Example papers -->
+    <!-- Example Generative AI papers -->
     <div class="card" data-category="Generative AI">
-      <h4>📘 Modern BERT</h4>
+      <h4>Modern BERT</h4>
       <p>Modern BERT improvements and techniques</p>
       <a href="https://arxiv.org/abs/2412.13663" target="_blank">View Paper</a>
     </div>
+    <div class="card" data-category="Generative AI">
+      <h4>LLM Inference-Time Self-Improvement</h4>
+      <p>LLM improves itself at inference time</p>
+      <a href="https://arxiv.org/pdf/2412.14352" target="_blank">View Paper</a>
+    </div>
 
+    <!-- Example Computer Vision papers -->
     <div class="card" data-category="Computer Vision">
-      <h4>📘 Meta Llama 3.2 Edge AI</h4>
+      <h4>Meta Llama 3.2 Edge AI</h4>
       <p>Customizable Edge AI & Vision models</p>
       <a href="https://www.llama.com/" target="_blank">View Paper</a>
     </div>
 
+    <!-- Example Quantum AI papers -->
     <div class="card" data-category="Quantum AI">
-      <h4>📘 Quantum Hybrid Architectures</h4>
+      <h4>Quantum Hybrid Architectures</h4>
       <p>Integrating variational quantum circuits with transformer-based AI models</p>
       <a href="#" target="_blank">View Paper</a>
     </div>
