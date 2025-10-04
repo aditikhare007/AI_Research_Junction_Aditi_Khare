@@ -8,15 +8,15 @@
 /* Global Styles */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #0a0a0f;
-    color: #e0e0e0;
+    background-color: #fff9f0; /* light cream */
+    color: #333;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-a { color: #00e5ff; text-decoration: none; }
-a:hover { color: #ffd54f; text-shadow: 0 0 5px #ffd54f; }
-h1, h2, h3, h4 { color: #00e5ff; text-shadow: 0 0 5px #00e5ff; margin: 0.5em 0; }
+a { color: #d17a00; text-decoration: none; }
+a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
+h1, h2, h3, h4 { color: #d17a00; margin: 0.5em 0; }
 h1 { font-size: 2.8rem; }
 h2 { font-size: 2.2rem; }
 h3 { font-size: 1.8rem; }
@@ -27,17 +27,17 @@ ul { margin: 0.5em 0 1em 1.5em; }
 /* Profile Card */
 .profile-card {
     max-width: 900px;
-    margin: 100px auto 40px auto;
+    margin: 60px auto 40px auto;
     padding: 30px;
-    background: #11131a;
+    background: #fff3e0; /* light cream variation */
     border-radius: 16px;
-    box-shadow: 0 0 25px #00e5ff66;
+    box-shadow: 0 0 15px #d17a0044;
     text-align: center;
 }
 .tag {
     display: inline-block;
-    background: #00e5ff11;
-    color: #00e5ff;
+    background: #ffe0b2;
+    color: #d17a00;
     padding: 4px 10px;
     border-radius: 6px;
     margin: 2px 4px;
@@ -49,9 +49,9 @@ ul { margin: 0.5em 0 1em 1.5em; }
 details {
     margin-bottom: 12px;
     padding: 12px;
-    background: #11131a;
+    background: #fff3e0;
     border-radius: 12px;
-    box-shadow: 0 2px 12px #00e5ff22;
+    box-shadow: 0 2px 8px #d17a0022;
     transition: all 0.3s ease;
 }
 details[open] { animation: fadeIn 0.4s ease forwards; }
@@ -62,55 +62,9 @@ table {
     margin-top: 10px;
     font-size: 1.1rem;
 }
-th, td { padding: 8px; border: 1px solid #222; text-align: left; }
-th { background-color: #11131a; color: #00e5ff; }
-td { background-color: #1a1a1a; }
-
-/* Navbar */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #11131a;
-    display: flex;
-    justify-content: center;
-    padding: 12px 0;
-    z-index: 999;
-    box-shadow: 0 0 15px #00e5ff44;
-    overflow-x: auto;
-}
-.navbar a {
-    margin: 0 20px;
-    color: #00e5ff;
-    font-weight: 600;
-    text-decoration: none;
-    white-space: nowrap;
-}
-.navbar a:hover { color: #ffd54f; }
-
-/* Back to Top Button */
-#backToTop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: #00e5ff33;
-    color: #00e5ff;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.1rem;
-    box-shadow: 0 0 10px #00e5ff66;
-    transition: all 0.3s ease;
-    display: none;
-    z-index: 999;
-}
-#backToTop:hover {
-    background: #00e5ff55;
-    color: #0a0a0f;
-}
+th, td { padding: 8px; border: 1px solid #f0e0d6; text-align: left; }
+th { background-color: #ffe0b2; color: #d17a00; }
+td { background-color: #fff8f0; }
 
 /* Search Input */
 #searchInput {
@@ -120,11 +74,33 @@ td { background-color: #1a1a1a; }
     margin: 10px auto 20px auto;
     display: block;
     border-radius: 8px;
-    border: none;
-    background: #11131a;
-    color: #00e5ff;
-    box-shadow: 0 0 6px #00e5ff33 inset;
+    border: 1px solid #d17a00;
+    background: #fff8f0;
+    color: #333;
     font-size: 1.1rem;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #d17a0033;
+    color: #d17a00;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 0 10px #d17a0066;
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 999;
+}
+#backToTop:hover {
+    background: #d17a0055;
+    color: #fff9f0;
 }
 
 /* Responsive */
@@ -132,23 +108,15 @@ td { background-color: #1a1a1a; }
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.8rem; }
     h3 { font-size: 1.5rem; }
-    .profile-card { padding: 20px; margin: 80px 10px 30px 10px; }
+    .profile-card { padding: 20px; margin: 60px 10px 30px 10px; }
     table { font-size: 1rem; }
 }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-body { padding-top: 80px; }
+body { padding-top: 20px; } /* no navbar, so less top padding */
 </style>
 </head>
 <body>
-
-<!-- Navbar -->
-<div class="navbar">
-    <a href="#Jan2025">Jan 2025</a>
-    <a href="#Oct2024">Oct–Dec 2024</a>
-    <a href="#May2024">May–Sept 2024</a>
-    <a href="#Resources">Resources</a>
-</div>
 
 <!-- Profile Card -->
 <div class="profile-card">
@@ -170,7 +138,7 @@ body { padding-top: 80px; }
 <details open id="Jan2025">
 <summary><h2>📚 AI Research Papers (May 2024 – Jan 2025)</h2></summary>
 
-<!-- Jan 2025 -->
+<!-- Example Paper Section -->
 <details>
 <summary><h3>Nov 2024 – Jan 2025</h3></summary>
 <table>
@@ -181,35 +149,6 @@ body { padding-top: 80px; }
 </table>
 </details>
 
-<!-- Oct 2024 -->
-<details>
-<summary><h3>Oct 2024</h3></summary>
-<table>
-<tr><th>Paper</th><th>Summary</th><th>Link</th><th>Domain</th></tr>
-<tr><td>Claude 3.5 Sonnet & Haiku</td><td>Creative poetry LLMs</td><td><a href="https://www.anthropic.com/news/3-5-models-and-computer-use">Blog</a></td><td>Generative AI</td></tr>
-<tr><td>OpenAI Swarm Framework</td><td>Distributed AI framework</td><td><a href="https://github.com/openai/swarm">Github</a></td><td>Generative AI</td></tr>
-</table>
-</details>
-
-<!-- Sept 2024 -->
-<details>
-<summary><h3>Sept 2024</h3></summary>
-<table>
-<tr><th>Paper</th><th>Summary</th><th>Link</th><th>Domain</th></tr>
-<tr><td>Meta Llama 3.2 Edge AI</td><td>Customizable Edge AI & Vision models</td><td><a href="https://www.llama.com/">Blog</a></td><td>Edge AI & Vision</td></tr>
-<tr><td>Training Language Models to Self-Correct</td><td>Reinforcement learning for self-correcting LLMs</td><td><a href="https://arxiv.org/abs/2409.12917/">Paper</a></td><td>Generative AI</td></tr>
-<tr><td>Iteration of Thought-Leveraging Inner Dialogue</td><td>Autonomous LLM reasoning via inner dialogue</td><td><a href="https://arxiv.org/abs/2409.12618/">Paper</a></td><td>Generative AI</td></tr>
-<tr><td>Learning to Reason with LLMs (OpenAI o1)</td><td>OpenAI o1 for reasoning</td><td><a href="https://openai.com/index/introducing-openai-o1-preview/">Paper</a></td><td>Generative AI</td></tr>
-<tr><td>AutoGen Studio</td><td>Framework for autonomous LLM agents</td><td><a href="https://github.com/microsoft/autogen">Github</a></td><td>Generative AI</td></tr>
-<tr><td>Strategic Chain-of-Thought</td><td>LLM reasoning methodology</td><td><a href="https://arxiv.org/abs/2409.03271/">Paper</a></td><td>Generative AI</td></tr>
-<tr><td>Role of RAG Noise in LLMs</td><td>Impact of RAG noise on LLMs</td><td><a href="https://arxiv.org/abs/2408.13533/">Paper</a></td><td>Generative AI</td></tr>
-<tr><td>Learning to Simulate Dynamic Environments with GameGAN</td><td>GameGAN for environment simulation</td><td><a href="https://github.com/nv-tlabs/GameGAN_code/">Github</a></td><td>Generative AI</td></tr>
-<tr><td>Agentic Retrieval-Augmented Generation for Time Series</td><td>Time series analysis with RAG</td><td><a href="https://arxiv.org/abs/2408.14484/">Paper</a></td><td>Generative AI</td></tr>
-</table>
-</details>
-
-<!-- May 2024 → Aug 2024 (add previous content similarly) -->
-
 </details>
 
 <!-- Resources -->
@@ -217,7 +156,7 @@ body { padding-top: 80px; }
 <summary><h3>AI Learning Resources</h3></summary>
 <table>
 <tr><th>Resource</th><th>Link</th><th>Category</th></tr>
-<tr><td>OpenAI Prompt Engineering Handbook</td><td><a href="https://platform.openai.com/docs/guides/prompt-engineering">Website</a>, <a href="https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md#how-to-improve-reliability-on-complex-tasks">Github</a></td><td>Generative AI</td></tr>
+<tr><td>OpenAI Prompt Engineering Handbook</td><td><a href="https://platform.openai.com/docs/guides/prompt-engineering">Website</a></td><td>Generative AI</td></tr>
 <tr><td>Lilianweng's Blog & GitHub</td><td><a href="https://lilianweng.github.io/">Website</a></td><td>Generative AI & ML</td></tr>
 <tr><td>DeepSeek AI Search</td><td><a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main">Github</a></td><td>Generative AI</td></tr>
 <tr><td>Hugging Face Transformers</td><td><a href="https://huggingface.co/docs/transformers/index">Website</a></td><td>Generative AI & NLP</td></tr>
