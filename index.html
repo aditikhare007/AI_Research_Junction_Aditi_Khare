@@ -98,6 +98,18 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 .lets-connect a { color: #d17a00; font-weight: bold; margin: 0 8px; text-decoration: none; }
 .lets-connect a:hover { color: #ffb74d; text-shadow: 0 0 3px #ffb74d; }
 
+/* Highlighted Community Line */
+.community-highlight {
+    background: #ffebcc;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d17a00;
+    box-shadow: 0 0 10px rgba(209,122,0,0.2);
+}
+
 /* Search Input */
 #searchInput {
     width: 90%;
@@ -192,32 +204,43 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 <div class="profile-card">
     <img src="https://github.com/aditikhare007.png" alt="Aditi Khare" class="profile-photo">
     <h1>👩‍💼 Aditi Khare – Enterprise AI Leader</h1>
-    <div class="about-section">
-        <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
-        <p>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
-    </div>
+
     <div class="snapshot">
         <span>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</span>
         <span>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</span>
         <span>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</span>
     </div>
+
     <div>
         <span class="tag">Generative AI</span>
         <span class="tag">Computer Vision</span>
         <span class="tag">Quantum AI</span>
     </div>
+
     <div class="connect">
         <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=6XekmRqMT9OJcuUU846fbA%3D%3D" target="_blank">AI Research Junction</a>
-        <p style="color:#d17a00; margin:5px 0;">• Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere</p>
+    </div>
+
+    <div class="community-highlight">
+        • Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI.
+    </div>
+
+    <div class="about-section">
+        <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy.</p>
+        <p>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
+    </div>
+
+    <div class="connect">
         <a href="https://www.amazon.com/dp/yourbooklink" target="_blank">My Gen-AI Integration Book@Packt</a>
         <a href="https://topmate.io/aditi_khare" target="_blank">Mentorship@TopMate</a>
         <a href="https://github.com/aditikhare007" target="_blank">My AI Innovations & Open-Source Contributions Portfolio</a>
     </div>
+
     <div class="lets-connect">
-        📬 Let’s Connect: 
-        <a href="mailto:aditikhare007@gmail.com">Email</a> | 
-        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a> | 
-        <a href="https://github.com/aditikhare007" target="_blank">GitHub</a> | 
+        📬 Let’s Connect:
+        <a href="mailto:aditikhare007@gmail.com">Email</a> |
+        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/aditikhare007" target="_blank">GitHub</a> |
         <a href="https://topmate.io/aditi_khare" target="_blank">TopMate</a>
     </div>
 </div>
@@ -232,7 +255,6 @@ ul, li { list-style: none; padding: 0; margin: 0; }
 <button onclick="topFunction()" id="backToTop">⬆ Back to Top</button>
 
 <script>
-// === Data ===
 const researchData = {
     "Jan 2025": [
         {title: "Modern BERT", summary: "Modern BERT improvements and techniques", tag: "Generative AI", link: "https://arxiv.org/abs/2412.13663"},
@@ -250,7 +272,7 @@ const researchData = {
 // === Render Dashboard ===
 const dashboard = document.getElementById('dashboard');
 const months = Object.keys(researchData);
-const latestMonth = months[0]; // First month is latest
+const latestMonth = months[0]; 
 
 months.forEach((month) => {
     const heading = document.createElement('div');
@@ -262,35 +284,15 @@ months.forEach((month) => {
     container.className = "paper-container";
     container.id = month.replace(/\s+/g,'');
 
-    researchData[month].forEach((paper, index) => {
+    researchData[month].forEach((paper) => {
         const card = document.createElement('div');
         card.className = "paper-card";
         card.innerHTML = `<h4>${paper.title}</h4><p>${paper.summary}</p><span class="tag">${paper.tag}</span><a href="${paper.link}" target="_blank">View Paper</a>`;
-        if(month !== latestMonth && month !== "Resources") card.style.display = "none"; // hide other months
+        if(month !== latestMonth && month !== "Resources") card.style.display = "none";
         container.appendChild(card);
     });
 
     dashboard.appendChild(container);
-
-    // Show More button only for latest month
-    if(month === latestMonth && researchData[month].length > 3){
-        const btn = document.createElement('button');
-        btn.className = "show-more-btn";
-        btn.textContent = "Show More";
-        btn.onclick = () => {
-            const hidden = Array.from(container.children).filter(c => c.style.display === "none");
-            if(hidden.length > 0){
-                hidden.forEach(c => c.style.display = "flex");
-                btn.textContent = "Show Less";
-            } else {
-                Array.from(container.children).forEach((c,index) => {
-                    c.style.display = index<3 ? "flex" : "none";
-                });
-                btn.textContent = "Show More";
-            }
-        };
-        dashboard.appendChild(btn);
-    }
 });
 
 // === Back to Top ===
