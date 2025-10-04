@@ -102,7 +102,8 @@
       font-size: 0.95em;
       box-shadow: 0 4px 8px rgba(0,0,0,0.15);
       transition: all 0.3s ease;
-      cursor: default;
+      cursor: pointer;
+      text-decoration: none;
     }
 
     .community-badge:hover {
@@ -197,7 +198,7 @@
     <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
     <a href="https://github.com/aditikhare007" class="button" target="_blank">My AI Innovations & Open-Source Contributions Portfolio</a>
     <a href="https://topmate.io/aditi_khare" class="button" target="_blank">Mentorship@TopMate</a>
-    <div class="community-badge">💠 Community Care</div>
+    <a href="https://topmate.io/aditi_khare" class="community-badge" target="_blank">Community Care</a>
     <a href="https://www.packtpub.com/" class="button" target="_blank">My AI Books Publications Portfolio@Packt</a>
   </div>
 </header>
@@ -210,25 +211,13 @@
     <span class="tag" onclick="filterCategory('Quantum AI')">Quantum AI</span>
   </div>
 
-  <!-- Research Papers Cards -->
+  <!-- Research Papers Container -->
   <div id="papers-container">
-    <!-- Sample papers -->
+    <!-- Example papers -->
     <div class="card" data-category="Generative AI">
       <h4>📘 Modern BERT</h4>
       <p>Modern BERT improvements and techniques</p>
       <a href="https://arxiv.org/abs/2412.13663" target="_blank">View Paper</a>
-    </div>
-
-    <div class="card" data-category="Generative AI">
-      <h4>📘 LLM Inference-Time Self-Improvement</h4>
-      <p>LLM improves itself at inference time</p>
-      <a href="https://arxiv.org/pdf/2412.14352" target="_blank">View Paper</a>
-    </div>
-
-    <div class="card" data-category="Generative AI">
-      <h4>📘 DeepSeekv3</h4>
-      <p>DeepSeek V3 advancements for AI search</p>
-      <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Paper</a>
     </div>
 
     <div class="card" data-category="Computer Vision">
@@ -242,7 +231,8 @@
       <p>Integrating variational quantum circuits with transformer-based AI models</p>
       <a href="#" target="_blank">View Paper</a>
     </div>
-    <!-- Add all other papers similarly -->
+
+    <!-- Add all other papers similarly with proper data-category -->
   </div>
 
   <!-- Resources & Let's Connect -->
