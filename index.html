@@ -7,57 +7,71 @@
   <style>
     body {
       font-family: "Poppins", sans-serif;
-      background-color: #f4f6f8;
+      background-color: #fff9f0;
       margin: 0;
       padding: 0;
       color: #333;
+      scroll-behavior: smooth;
     }
+
     header {
       background: linear-gradient(90deg, #1e1e2f, #2b2b40);
       color: white;
       text-align: center;
-      padding: 40px 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 50px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
     }
+
     header img {
       border-radius: 50%;
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border: 3px solid #fff;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.2);
     }
+
     header h1 {
-      font-size: 2em;
-      margin-bottom: 5px;
+      font-size: 2.4em;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
     }
+
     header h2 {
-      font-size: 1.1em;
-      color: #b0b0b0;
-      font-weight: 400;
-      margin-top: 5px;
+      font-size: 1.4em;
+      color: #ffd280;
+      margin-top: 10px;
+      line-height: 1.5;
     }
+
     header p {
-      font-size: 1em;
-      color: #d0d0d0;
+      font-size: 1.05em;
+      color: #e0e0e0;
       margin-top: 10px;
       line-height: 1.6;
     }
+
     header p strong {
       display: block;
-      font-size: 1.1em;
+      font-size: 1.15em;
       color: #fff;
-      margin-top: 10px;
+      margin-top: 8px;
     }
+
     .highlight {
-      font-size: 1.05em;
+      font-size: 1.15em;
       font-style: italic;
-      color: #e6e6e6;
+      color: #ffcc80;
+      font-weight: 500;
+      margin-top: 15px;
     }
+
     .button-container {
-      margin-top: 25px;
+      margin-top: 30px;
     }
+
     .button {
-      background-color: #0078d4;
+      background-color: #d17a00;
       color: white;
       border: none;
       padding: 12px 20px;
@@ -68,43 +82,72 @@
       transition: all 0.3s ease;
       text-decoration: none;
       display: inline-block;
+      font-weight: 600;
     }
+
     .button:hover {
-      background-color: #005fa3;
+      background-color: #ffb74d;
+      color: #fff;
       transform: scale(1.05);
     }
+
+    .community-badge {
+      display: inline-block;
+      margin-top: 14px;
+      background: linear-gradient(90deg, #ffcc80, #d17a00);
+      color: #1e1e2f;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.95em;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+      cursor: default;
+    }
+
+    .community-badge:hover {
+      transform: scale(1.07);
+      background: linear-gradient(90deg, #ffd699, #e59400);
+      box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    }
+
     .section {
-      padding: 40px 20px;
+      padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
     }
+
     .section h3 {
-      font-size: 1.8em;
+      font-size: 2em;
       color: #1e1e2f;
-      border-bottom: 3px solid #0078d4;
+      border-bottom: 3px solid #d17a00;
       display: inline-block;
       padding-bottom: 6px;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
+
     .tags {
       margin-bottom: 20px;
       text-align: center;
     }
+
     .tag {
       display: inline-block;
-      background-color: #e0e7ff;
-      color: #1e3a8a;
-      padding: 8px 15px;
-      margin: 5px;
+      background-color: #fff3e0;
+      color: #d17a00;
+      padding: 10px 18px;
+      margin: 6px;
       border-radius: 20px;
       font-weight: 600;
-      font-size: 0.9em;
+      font-size: 1em;
       transition: all 0.3s ease;
       cursor: pointer;
     }
+
     .tag:hover {
-      background-color: #c7d2fe;
+      background-color: #ffecb3;
     }
+
     .card {
       background: white;
       border-radius: 16px;
@@ -113,20 +156,39 @@
       margin-bottom: 25px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 16px rgba(0,0,0,0.15);
     }
+
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 35px;
       background-color: #2b2b40;
       color: white;
-      margin-top: 50px;
       font-size: 0.95em;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+      header h2 {
+        font-size: 1.1em;
+      }
+      .button {
+        padding: 10px 16px;
+        font-size: 0.9em;
+      }
+      .card {
+        padding: 20px;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -135,19 +197,21 @@
   <h2>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation</h2>
   <p><strong>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</strong></p>
   <p><strong>Author | AI Strategy & Inference Optimization | Open-Source AI Advocate</strong></p>
-  <p class="highlight">• Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI.</p>
+  <p class="highlight"><em>• Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI.</em></p>
 
   <div class="button-container">
     <a href="about_me.html" class="button">About Me</a>
-    <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=6XekmRqMT9OJcuUU846fbA%3D%3D" class="button">AI Research Junction</a>
-    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button">LinkedIn</a>
-    <a href="https://github.com/aditikhare007" class="button">My AI Innovations & Open-Source Contributions Portfolio</a>
-    <a href="https://topmate.io/aditi_khare" class="button">Mentorship@TopMate</a>
-    <a href="https://www.packtpub.com/" class="button">My Gen-AI Integration Book@Packt</a>
+    <a href="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare" class="button" target="_blank">Research & Resources</a>
+    <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=6XekmRqMT9OJcuUU846fbA%3D%3D" class="button" target="_blank">AI Research Junction</a>
+    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
+    <a href="https://github.com/aditikhare007" class="button" target="_blank">My AI Innovations & Open-Source Contributions Portfolio</a>
+    <a href="https://topmate.io/aditi_khare" class="button" target="_blank">Mentorship@TopMate</a>
+    <div class="community-badge">💠 Community Care</div>
+    <a href="https://www.packtpub.com/" class="button" target="_blank">My Gen-AI Integration Book@Packt</a>
   </div>
 </header>
 
-<section class="section">
+<section class="section" id="research-section">
   <h3>AI Research Junction</h3>
   <div class="tags">
     <span class="tag">Generative AI</span>
@@ -155,7 +219,7 @@
     <span class="tag">Quantum AI</span>
   </div>
 
-  <!-- Only showing January 2025 papers -->
+  <!-- January 2025 Papers Section -->
   <div class="card">
     <h4>📘 January 2025: AI Research Highlights</h4>
     <p>1️⃣ <strong>AI-native Enterprise Platforms:</strong> Modular AI agents that self-adapt across data pipelines.</p>
@@ -163,13 +227,17 @@
     <p>3️⃣ <strong>Quantum Hybrid Architectures:</strong> Integrating variational quantum circuits with transformer-based AI models.</p>
   </div>
 
+  <!-- Resources Section -->
   <div class="card">
-    <h4>🌐 Resources</h4>
-    <p>• <strong>Let’s Connect:</strong> Reach out at <a href="mailto:aditikhare007@gmail.com">aditikhare007@gmail.com</a></p>
-    <p>• <a href="https://www.linkedin.com/in/aditi-khare-5840977b/">LinkedIn</a> | 
-       <a href="https://github.com/aditikhare007">GitHub</a> | 
-       <a href="https://topmate.io/aditi_khare">TopMate</a> | 
-       <a href="https://www.packtpub.com/">Packt Publication</a>
+    <h4>🌐 Resources & Let's Connect</h4>
+    <p><strong>Stay connected for AI collaborations, mentorship, and research insights:</strong></p>
+    <p>
+      <a href="mailto:aditikhare007@gmail.com" class="button" target="_blank">Email</a>
+      <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
+      <a href="https://github.com/aditikhare007" class="button" target="_blank">GitHub</a>
+      <a href="https://topmate.io/aditi_khare" class="button" target="_blank">TopMate</a>
+      <a href="https://www.hackerrank.com/profile/aditikhare007" class="button" target="_blank">HackerRank</a>
+      <a href="https://www.packtpub.com/" class="button" target="_blank">Packt Publication</a>
     </p>
   </div>
 </section>
