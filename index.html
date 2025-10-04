@@ -234,7 +234,7 @@
   </div>
 
   <div id="papers-container">
-    <!-- Papers Cards -->
+    <!-- ===== Generative AI Papers ===== -->
     <div class="card active" data-category="Generative AI">
       <h4>Modern BERT</h4>
       <p>Modern BERT improvements and techniques.</p>
@@ -251,19 +251,21 @@
       <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Paper</a>
     </div>
 
+    <!-- ===== Computer Vision Papers ===== -->
     <div class="card" data-category="Computer Vision">
       <h4>Meta Llama 3.2 Edge AI</h4>
       <p>Customizable Edge AI & Vision models.</p>
       <a href="https://www.llama.com/" target="_blank">View Paper</a>
     </div>
 
+    <!-- ===== Quantum AI Papers ===== -->
     <div class="card" data-category="Quantum AI">
       <h4>Quantum Hybrid Architectures</h4>
       <p>Integrating variational quantum circuits with transformer-based AI models.</p>
       <a href="#" target="_blank">View Paper</a>
     </div>
 
-    <!-- Resources & Let's Connect -->
+    <!-- ===== Resources & Connect ===== -->
     <div class="card active" data-category="Resources">
       <h4>🌐 Resources & Let's Connect</h4>
       <p><strong>Stay connected for AI collaborations, mentorship, and research insights:</strong></p>
@@ -293,8 +295,10 @@ function filterPapers(category) {
   cards.forEach(card => {
     if(card.dataset.category === category || card.dataset.category === "Resources") {
       card.classList.add('active');
+      card.style.display = 'block';
     } else {
       card.classList.remove('active');
+      card.style.display = 'none';
     }
   });
   showMore = false;
