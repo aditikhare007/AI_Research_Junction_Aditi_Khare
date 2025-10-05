@@ -10,7 +10,7 @@
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f8f7ff;
+    background: #f5f6fa;
     color: #1e1b4b;
     scroll-behavior: smooth;
   }
@@ -19,10 +19,10 @@
   a:hover { color: #5b21b6; text-decoration: underline; }
 
   header {
-    background: linear-gradient(135deg, #5b21b6, #4338ca);
+    background: linear-gradient(135deg, #6b21a8, #7c3aed);
     color: #fff;
     text-align: center;
-    padding: 40px 20px 30px 20px;
+    padding: 50px 20px 40px 20px;
   }
 
   header img {
@@ -54,7 +54,7 @@
     margin: 5px 10px;
     padding: 8px 16px;
     background: #fff;
-    color: #4338ca;
+    color: #7c3aed;
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.9em;
@@ -67,41 +67,56 @@
   }
 
   main {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 40px auto;
     padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
   }
 
-  section {
+  .portfolio-section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+  }
+
+  .portfolio-card {
+    min-width: 280px;
+    flex: 0 0 auto;
     background: #f3f0ff;
-    padding: 25px 20px;
+    border-left: 4px solid #7c3aed;
     border-radius: 12px;
-    border-left: 4px solid #4338ca;
+    padding: 20px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   }
 
-  section:hover {
+  .portfolio-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-    border-color: #5b21b6;
+    border-color: #6b21a8;
   }
 
-  h2 {
+  .portfolio-card a {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: 600;
+    color: #4338ca;
+  }
+
+  section h2 {
     font-size: 1.6em;
     color: #1e1b4b;
     border-bottom: 3px solid #4338ca;
     display: inline-block;
     padding-bottom: 6px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
-  h3 { margin-top: 0; margin-bottom: 8px; font-size: 1.15em; }
-  p { margin-bottom: 10px; font-size: 0.95em; line-height: 1.5; }
-  ul { padding-left: 20px; font-size: 0.95em; }
+  section h3 { margin-top: 0; margin-bottom: 8px; font-size: 1.15em; }
+  section p { margin-bottom: 10px; font-size: 0.95em; line-height: 1.5; }
+  section ul { padding-left: 20px; font-size: 0.95em; }
 
   footer {
     text-align: center;
@@ -113,7 +128,21 @@
     border-top: 2px solid #4338ca;
   }
 
-  @media(max-width: 600px) {
+  /* Scrollbar style for horizontal portfolio section */
+  .portfolio-section::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .portfolio-section::-webkit-scrollbar-thumb {
+    background-color: #7c3aed;
+    border-radius: 4px;
+  }
+
+  @media(max-width: 768px) {
+    .portfolio-card { min-width: 240px; }
+  }
+
+  @media(max-width: 480px) {
     header h1 { font-size: 1.7em; }
     header p { font-size: 0.85em; }
     .connect-links a { display: block; margin: 8px auto; }
@@ -135,34 +164,38 @@
 </header>
 
 <main>
-  <!-- Portfolio Cards -->
   <section>
-    <h3>AI Research Junction</h3>
-    <p>Research Simplified: GenAI, Quantum AI & Computer Vision</p>
-    <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=sQCy97XThGt0OIjpANN48w%3D%3D" target="_blank">View on LinkedIn</a>
-  </section>
+    <h2>My Portfolios</h2>
+    <div class="portfolio-section">
+      <div class="portfolio-card">
+        <h3>AI Research Junction</h3>
+        <p>Research Simplified: GenAI, Quantum AI & Computer Vision</p>
+        <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=sQCy97XThGt0OIjpANN48w%3D%3D" target="_blank">View on LinkedIn</a>
+      </div>
 
-  <section>
-    <h3>Packt Publications Portfolio</h3>
-    <p>Large-scale AI transformations — blending technology, architecture, and leadership into actionable insight.</p>
-    <a href="https://www.amazon.com/dp/1835887600" target="_blank">Available on Amazon</a>
-  </section>
+      <div class="portfolio-card">
+        <h3>Packt Publications Portfolio</h3>
+        <p>Large-scale AI transformations — blending technology, architecture, and leadership into actionable insight.</p>
+        <a href="https://www.amazon.com/dp/1835887600" target="_blank">Available on Amazon</a>
+      </div>
 
-  <section>
-    <h3>HackerRank Profile</h3>
-    <a href="https://www.hackerrank.com/profile/aditikhare007" target="_blank">View Profile</a>
-  </section>
+      <div class="portfolio-card">
+        <h3>HackerRank Profile</h3>
+        <a href="https://www.hackerrank.com/profile/aditikhare007" target="_blank">View Profile</a>
+      </div>
 
-  <section>
-    <h3>AI Research Junction GitHub</h3>
-    <p>Applied AI research and project repositories.</p>
-    <a href="https://github.com/aditikhare007" target="_blank">View GitHub Portfolio</a>
-  </section>
+      <div class="portfolio-card">
+        <h3>AI Research Junction GitHub</h3>
+        <p>Applied AI research and project repositories.</p>
+        <a href="https://github.com/aditikhare007" target="_blank">View GitHub Portfolio</a>
+      </div>
 
-  <section>
-    <h3>Full-Stack AI Products</h3>
-    <p>From model inference to user experience — delivering intelligent, scalable AI products.</p>
-    <a href="https://github.com/aditikhare007/Aditi_Full_Stack_App_React_JS_Gen_AI_Product_Portfolio" target="_blank">View Project on GitHub</a>
+      <div class="portfolio-card">
+        <h3>Full-Stack AI Products</h3>
+        <p>From model inference to user experience — delivering intelligent, scalable AI products.</p>
+        <a href="https://github.com/aditikhare007/Aditi_Full_Stack_App_React_JS_Gen_AI_Product_Portfolio" target="_blank">View Project on GitHub</a>
+      </div>
+    </div>
   </section>
 
   <!-- Profile Summary -->
