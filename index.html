@@ -21,11 +21,14 @@
   header {
     background: linear-gradient(135deg, #6b21a8, #7c3aed);
     color: #fff;
-    text-align: center;
-    padding: 40px 20px 30px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+    padding: 50px 20px 40px 20px;
+  }
+
+  header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   header img {
@@ -39,6 +42,7 @@
   header h1 {
     margin: 10px 0;
     font-size: 2em;
+    text-align: center;
   }
 
   header p {
@@ -46,15 +50,17 @@
     max-width: 750px;
     margin: auto;
     line-height: 1.5;
+    text-align: center;
   }
 
-  nav {
-    margin-top: 20px;
+  .connect-links {
+    margin: 25px 0;
+    text-align: center;
   }
 
-  nav a {
+  .connect-links a {
     display: inline-block;
-    margin: 0 12px;
+    margin: 5px 10px;
     padding: 8px 16px;
     background: #fff;
     color: #7c3aed;
@@ -64,7 +70,31 @@
     transition: all 0.3s ease;
   }
 
-  nav a:hover {
+  .connect-links a:hover {
+    background: #5b21b6;
+    color: #fff;
+  }
+
+  /* Top-right buttons */
+  .top-buttons {
+    text-align: right;
+    flex: 1 1 auto;
+    margin-top: 10px;
+  }
+
+  .top-buttons a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px 16px;
+    background: #fff;
+    color: #7c3aed;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .top-buttons a:hover {
     background: #5b21b6;
     color: #fff;
   }
@@ -131,44 +161,55 @@
     border-top: 2px solid #4338ca;
   }
 
-  .portfolio-section::-webkit-scrollbar { height: 8px; }
-  .portfolio-section::-webkit-scrollbar-thumb { background-color: #7c3aed; border-radius: 4px; }
+  /* Scrollbar style for horizontal portfolio section */
+  .portfolio-section::-webkit-scrollbar {
+    height: 8px;
+  }
 
-  @media(max-width: 768px) { .portfolio-card { min-width: 240px; } }
+  .portfolio-section::-webkit-scrollbar-thumb {
+    background-color: #7c3aed;
+    border-radius: 4px;
+  }
+
+  @media(max-width: 768px) {
+    .portfolio-card { min-width: 240px; }
+    .top-buttons { text-align: center; margin-top: 15px; }
+    .top-buttons a { margin: 5px; }
+  }
+
   @media(max-width: 480px) {
     header h1 { font-size: 1.7em; }
     header p { font-size: 0.85em; }
-    nav a { display: block; margin: 8px auto; }
+    .connect-links a { display: block; margin: 8px auto; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <img src="https://github.com/aditikhare007.png" alt="Aditi Khare Profile Photo">
-  <h1>Aditi Khare</h1>
-  <p>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation | Principal ML Scientist | AWS & AI Research Expert | IIM-A | Author | AI Strategy & Inference Optimization | AI Open-Source Advocate</p>
+  <div class="header-container">
+    <div style="flex: 1 1 100%; text-align: center;">
+      <img src="https://github.com/aditikhare007.png" alt="Aditi Khare Profile Photo">
+      <h1>Aditi Khare</h1>
+      <p>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation | Principal ML Scientist | AWS & AI Research Expert | IIM-A | Author | AI Strategy & Inference Optimization | AI Open-Source Advocate</p>
+      <div class="connect-links">
+        <a href="mailto:aditikhare007@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a>
+        <a href="https://topmate.io/aditikhare007" target="_blank">Book 1:1 Mentorship</a>
+        <a href="https://github.com/aditikhare007" target="_blank">GitHub</a>
+      </div>
+    </div>
 
-  <!-- Connect Links -->
-  <div class="connect-links">
-    <a href="mailto:aditikhare007@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a>
-    <a href="https://topmate.io/aditikhare007" target="_blank">Book 1:1 Mentorship</a>
-    <a href="https://github.com/aditikhare007" target="_blank">GitHub</a>
+    <div class="top-buttons">
+      <a href="#research-portfolio">AI Research Portfolio</a>
+      <a href="#projects-portfolio">AI Projects Portfolio</a>
+    </div>
   </div>
-
-  <!-- Navigation Tabs -->
-  <nav>
-    <a href="#research-portfolio">AI Research Portfolio</a>
-    <a href="#projects-portfolio">AI Projects Portfolio</a>
-  </nav>
 </header>
 
 <main>
-
-  <!-- AI Research Portfolio -->
   <section id="research-portfolio">
-    <h2>AI Research Portfolio</h2>
+    <h2>My Portfolios</h2>
     <div class="portfolio-section">
       <div class="portfolio-card">
         <h3>AI Research Junction</h3>
@@ -195,9 +236,8 @@
     </div>
   </section>
 
-  <!-- AI Projects Portfolio -->
   <section id="projects-portfolio">
-    <h2>AI Projects Portfolio</h2>
+    <h2>AI Products Portfolio</h2>
     <div class="portfolio-section">
       <div class="portfolio-card">
         <h3>AI Products Portfolio</h3>
@@ -242,7 +282,6 @@
       <li>AI Research Junction — Creator & Author — Generative AI, Computer Vision, Quantum AI summaries</li>
     </ul>
   </section>
-
 </main>
 
 <footer>
