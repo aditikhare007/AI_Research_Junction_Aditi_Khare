@@ -10,68 +10,133 @@
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    background: #f4f4f9;
     color: #1f2937;
-    background-color: #f4f4f9;
+    scroll-behavior: smooth;
   }
 
-  a { color:#1d4ed8; text-decoration:none; }
-  a:hover { text-decoration:underline; }
+  a { color: #1d4ed8; text-decoration: none; }
+  a:hover { text-decoration: underline; }
 
   header {
-    background:#111827;
-    color:#fff;
-    text-align:center;
-    padding:30px 20px 20px 20px;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px 30px 20px;
   }
 
   header img {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     border: 3px solid #fff;
     margin-bottom: 15px;
   }
 
-  header h1 { margin:10px 0; font-size:1.8em; }
-  header p { font-size:0.95em; max-width:700px; margin:auto; line-height:1.4; }
+  header h1 {
+    margin: 10px 0;
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 0.95em;
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.5;
+  }
 
   .connect-links {
-    margin: 20px 0;
+    margin: 25px 0;
   }
+
   .connect-links a {
-    display:inline-block;
-    margin:5px 8px;
-    padding:6px 12px;
-    background:#1d4ed8;
-    color:#fff;
-    border-radius:6px;
-    font-weight:600;
-    font-size:0.85em;
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 16px;
+    background: #fff;
+    color: #1d4ed8;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
   }
-  .connect-links a:hover { background:#2563eb; }
+
+  .connect-links a:hover {
+    background: #2563eb;
+    color: #fff;
+  }
 
   main {
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    gap:25px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
   }
 
-  section { background:#fff; padding:25px 20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+  section {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-  h2 { font-size:1.5em; color:#111827; border-bottom:2px solid #1d4ed8; display:inline-block; padding-bottom:4px; margin-bottom:15px; }
-  h3 { margin-top:0; margin-bottom:8px; font-size:1.15em; }
-  p { margin-bottom:10px; font-size:0.95em; line-height:1.4; }
+  section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
 
-  ul { padding-left:20px; font-size:0.95em; }
-  footer { text-align:center; padding:25px; background:#111827; color:#fff; font-size:0.85em; margin-top:40px; border-top:2px solid #1d4ed8; }
+  h2 {
+    font-size: 1.6em;
+    color: #111827;
+    border-bottom: 3px solid #1d4ed8;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+  }
 
-  @media(max-width:600px) {
-    header h1 { font-size:1.5em; }
-    header p { font-size:0.85em; }
-    .connect-links a { display:block; margin:5px auto; }
+  h3 { margin-top: 0; margin-bottom: 8px; font-size: 1.15em; }
+  p { margin-bottom: 10px; font-size: 0.95em; line-height: 1.5; }
+  ul { padding-left: 20px; font-size: 0.95em; }
+
+  .portfolio-card {
+    background: #f9f9ff;
+    border-left: 4px solid #1d4ed8;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-color: #2563eb;
+  }
+
+  .portfolio-card a {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #1d4ed8;
+  }
+
+  footer {
+    text-align: center;
+    padding: 25px;
+    background: #111827;
+    color: #fff;
+    font-size: 0.85em;
+    margin-top: 40px;
+    border-top: 2px solid #1d4ed8;
+  }
+
+  @media(max-width: 600px) {
+    header h1 { font-size: 1.7em; }
+    header p { font-size: 0.85em; }
+    .connect-links a { display: block; margin: 8px auto; }
   }
 </style>
 </head>
@@ -90,7 +155,7 @@
 </header>
 
 <main>
-  <!-- Profile Summary -->
+  <!-- Profile Summary Card -->
   <section>
     <h2>Profile Summary</h2>
     <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. Passionate about building AI systems that deliver lasting value at scale.</p>
@@ -110,33 +175,33 @@
     </ul>
   </section>
 
-  <!-- Portfolios -->
+  <!-- Portfolio Cards -->
   <section>
     <h2>Portfolios</h2>
-    <div>
+    <div class="portfolio-card">
       <h3>AI Research Junction</h3>
       <p>Research Simplified: GenAI, Quantum AI & Computer Vision</p>
       <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=sQCy97XThGt0OIjpANN48w%3D%3D" target="_blank">View on LinkedIn</a>
     </div>
 
-    <div>
+    <div class="portfolio-card">
       <h3>Packt Publications Portfolio</h3>
       <p>Large-scale AI transformations — blending technology, architecture, and leadership into actionable insight.</p>
       <a href="https://www.amazon.com/dp/1835887600" target="_blank">Available on Amazon</a>
     </div>
 
-    <div>
+    <div class="portfolio-card">
       <h3>HackerRank Profile</h3>
       <a href="https://www.hackerrank.com/profile/aditikhare007" target="_blank">View Profile</a>
     </div>
 
-    <div>
+    <div class="portfolio-card">
       <h3>AI Research Junction GitHub</h3>
       <p>Applied AI research and project repositories.</p>
       <a href="https://github.com/aditikhare007" target="_blank">View GitHub Portfolio</a>
     </div>
 
-    <div>
+    <div class="portfolio-card">
       <h3>Full-Stack AI Products</h3>
       <p>From model inference to user experience — delivering intelligent, scalable AI products.</p>
       <a href="https://github.com/aditikhare007/Aditi_Full_Stack_App_React_JS_Gen_AI_Product_Portfolio" target="_blank">View Project on GitHub</a>
