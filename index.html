@@ -1,168 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditi Khare — Enterprise AI Leader</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #1f2937;
-      background-color: #f9f9f9;
-      scroll-behavior: smooth;
-    }
-
-    a {
-      color: #1d4ed8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      background: #111827;
-      color: #fff;
-      padding: 30px 20px 20px 20px;
-      text-align: center;
-    }
-
-    header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #f9f9f9;
-      margin-bottom: 15px;
-    }
-
-    header h1 {
-      margin: 10px 0;
-      font-size: 1.8em;
-    }
-
-    header p {
-      font-size: 0.95em;
-      max-width: 700px;
-      margin: auto;
-      line-height: 1.4;
-    }
-
-    .connect-links {
-      margin: 15px 0;
-    }
-
-    .connect-links a {
-      display: inline-block;
-      margin: 5px 10px;
-      padding: 6px 12px;
-      background: #1d4ed8;
-      color: #fff;
-      border-radius: 6px;
-      font-weight: 600;
-      font-size: 0.85em;
-    }
-
-    .connect-links a:hover {
-      background: #2563eb;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      background: #fff;
-      padding: 10px 0;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-      z-index: 1000;
-    }
-
-    nav a {
-      margin: 0 12px;
-      font-weight: 600;
-      font-size: 0.9em;
-      color: #1d4ed8;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 1.5em;
-      color: #111827;
-      border-bottom: 2px solid #1d4ed8;
-      display: inline-block;
-      padding-bottom: 4px;
-      margin-bottom: 20px;
-    }
-
-    .portfolio-card {
-      background: #fff;
-      padding: 15px 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 15px;
-    }
-
-    .portfolio-card h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 1.1em;
-    }
-
-    .portfolio-card p {
-      margin: 0 0 8px 0;
-      font-size: 0.95em;
-    }
-
-    ul {
-      padding-left: 20px;
-      font-size: 0.95em;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111827;
-      color: #fff;
-      font-size: 0.85em;
-    }
-
-    details summary {
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 1em;
-      margin-bottom: 8px;
-      outline: none;
-    }
-
-    details p, details ul {
-      margin-left: 15px;
-      font-size: 0.9em;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.4em;
-      }
-      header p {
-        font-size: 0.85em;
-      }
-      .connect-links a {
-        display: block;
-        margin: 5px auto;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditi Khare — Enterprise AI Leader</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  body {font-family:'Inter',sans-serif;margin:0;padding:0;color:#1f2937;background:#f9f9f9;}
+  a {color:#1d4ed8;text-decoration:none;} a:hover{text-decoration:underline;}
+  header {background:#111827;color:#fff;padding:20px;text-align:center;}
+  header img {width:120px;height:120px;border-radius:50%;border:3px solid #fff;margin-bottom:15px;}
+  header h1 {margin:10px 0;font-size:1.8em;}
+  header p {font-size:0.9em;max-width:700px;margin:auto;line-height:1.4;}
+  .connect-links a {display:inline-block;margin:5px 10px;padding:6px 12px;background:#1d4ed8;color:#fff;border-radius:6px;font-weight:600;font-size:0.85em;}
+  .connect-links a:hover {background:#2563eb;}
+  main {display:flex;flex-wrap:wrap;max-width:1000px;margin:40px auto;padding:0 20px;gap:20px;}
+  .left-column, .right-column {flex:1 1 300px;}
+  .left-column {max-width:350px;}
+  section h2 {font-size:1.4em;color:#111827;border-bottom:2px solid #1d4ed8;display:inline-block;padding-bottom:4px;margin-bottom:15px;}
+  .portfolio-card {background:#fff;padding:15px 20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin-bottom:15px;}
+  .portfolio-card h3 {margin-top:0;margin-bottom:8px;font-size:1.05em;}
+  .portfolio-card p {margin:0 0 8px 0;font-size:0.9em;}
+  details summary {cursor:pointer;font-weight:600;font-size:1em;margin-bottom:8px;outline:none;}
+  details p, details ul {margin-left:15px;font-size:0.9em;}
+  footer {text-align:center;padding:20px;background:#111827;color:#fff;font-size:0.85em;margin-top:40px;}
+  @media (max-width:800px){main{flex-direction:column;} .left-column,.right-column{max-width:100%;}}
+</style>
 </head>
 <body>
 
@@ -178,101 +41,55 @@
   </div>
 </header>
 
-<nav>
-  <a href="#portfolios">Portfolios</a>
-  <a href="#summary">Profile Summary</a>
-</nav>
-
-<section id="portfolios">
-  <h2>Portfolios</h2>
-  <div class="portfolio-card">
-    <h3>AI Research Junction by Aditi Khare</h3>
-    <p>Research Simplified: GenAI, Quantum AI & Computer Vision</p>
-    <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=sQCy97XThGt0OIjpANN48w%3D%3D" target="_blank">View on LinkedIn</a>
+<main>
+  <div class="left-column">
+    <section>
+      <h2>Profile Summary</h2>
+      <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. Passionate about building AI systems that deliver lasting value at scale.</p>
+      <p>🔷 Contributor: "Generative AI Application Integration Patterns" (Packt Publishing, Sept 2024).</p>
+      <h3>Professional Snapshot</h3>
+      <ul>
+        <li>Enterprise AI Leader — Product, Infrastructure, AI Architecture & Entrepreneurial Innovation</li>
+        <li>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</li>
+        <li>Author | AI Strategy & Inference Optimization | AI Open-Source Advocate</li>
+      </ul>
+      <h3>Education</h3>
+      <ul>
+        <li>IIM Ahmedabad — Executive Program in Big Data Analytics</li>
+        <li>K.J Somaiya Institute of Management, Mumbai — Master’s in Computer Applications (Distinction)</li>
+      </ul>
+    </section>
   </div>
 
-  <div class="portfolio-card">
-    <h3>Packt Publications Portfolio</h3>
-    <p>This book captures my journey leading large-scale AI transformations — blending technology, architecture, and leadership into actionable insight.</p>
-    <a href="https://www.amazon.com/dp/1835887600" target="_blank">Available on Amazon</a>
+  <div class="right-column">
+    <section id="portfolios">
+      <h2>Portfolios</h2>
+      <div class="portfolio-card">
+        <h3>AI Research Junction</h3>
+        <p>Research Simplified: GenAI, Quantum AI & Computer Vision</p>
+        <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=sQCy97XThGt0OIjpANN48w%3D%3D" target="_blank">View on LinkedIn</a>
+      </div>
+      <div class="portfolio-card">
+        <h3>Packt Publications Portfolio</h3>
+        <p>Leading large-scale AI transformations — blending technology, architecture, and leadership.</p>
+        <a href="https://www.amazon.com/dp/1835887600" target="_blank">Available on Amazon</a>
+      </div>
+      <div class="portfolio-card">
+        <h3>HackerRank Profile</h3>
+        <a href="https://www.hackerrank.com/profile/aditikhare007" target="_blank">View Profile</a>
+      </div>
+      <div class="portfolio-card">
+        <h3>GitHub Portfolio</h3>
+        <p>Applied AI research and project repositories.</p>
+        <a href="https://github.com/aditikhare007" target="_blank">View GitHub</a>
+      </div>
+      <div class="portfolio-card">
+        <h3>Full-Stack AI Products</h3>
+        <p>From model inference to user experience — delivering intelligent, scalable AI products.</p>
+      </div>
+    </section>
   </div>
-
-  <div class="portfolio-card">
-    <h3>HackerRank Profile</h3>
-    <a href="https://www.hackerrank.com/profile/aditikhare007" target="_blank">View Profile</a>
-  </div>
-
-  <div class="portfolio-card">
-    <h3>AI Research Junction GitHub Portfolio</h3>
-    <p>Applied AI research and project repositories.</p>
-    <a href="https://github.com/aditikhare007" target="_blank">View GitHub Portfolio</a>
-  </div>
-
-  <div class="portfolio-card">
-    <h3>Full-Stack AI Products Portfolio</h3>
-    <p>From model inference to user experience — engineered for impact. Delivering AI products that think, interact, and scale — intelligently.</p>
-  </div>
-</section>
-
-<section id="summary">
-  <h2>Profile Summary</h2>
-  
-  <details>
-    <summary>Professional Overview</summary>
-    <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
-    <p>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
-  </details>
-
-  <details>
-    <summary>Professional Snapshot</summary>
-    <ul>
-      <li>Enterprise AI Leader — Product, Infrastructure, AI Architecture & Entrepreneurial Innovation</li>
-      <li>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</li>
-      <li>Author | AI Strategy & Inference Optimization | AI Open-Source Advocate</li>
-    </ul>
-  </details>
-
-  <details>
-    <summary>Education</summary>
-    <ul>
-      <li>IIM Ahmedabad — Executive Program in Big Data Analytics</li>
-      <li>K.J Somaiya Institute of Management, Mumbai — Master’s in Computer Applications (Distinction)</li>
-    </ul>
-  </details>
-
-  <details>
-    <summary>Experience & Expertise</summary>
-    <p>With 9+ years across diverse business domains in Fortune 50 product companies, I combine entrepreneurial spirit with deep technical expertise to build business and customer-centric AI products.</p>
-  </details>
-
-  <details>
-    <summary>Core Expertise</summary>
-    <ul>
-      <li>AI Research & Development: Full product lifecycle — data prep, model training, inference, deployment</li>
-      <li>Technologies: Machine Learning, Deep Learning, Computer Vision, Hyperspectral Imaging, Generative AI, LLMs, LLMOps</li>
-      <li>Infrastructure: Scalable AI & ML infrastructure design and optimization on AWS</li>
-    </ul>
-  </details>
-
-  <details>
-    <summary>Continuous Learning & Community</summary>
-    <ul>
-      <li>Completed 100+ technical courses on Udemy & Coursera</li>
-      <li>Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI</li>
-    </ul>
-  </details>
-
-  <details>
-    <summary>Publications</summary>
-    <ul>
-      <li>Generative AI Application Integration Patterns — Contributor (Packt Publishing | Sept 2024 | Available on Amazon)</li>
-      <li>Top AI Research Paper Summaries — Published portfolio</li>
-      <li>AI Research Junction — Creator & Author — research paper summaries on Generative AI, Computer Vision, Quantum AI</li>
-    </ul>
-  </details>
-
-  <p>🚀 Experienced AI product leader with deep technical expertise and architecture background, passionate about advising organizations on AI-driven strategy and product excellence. Positioned for influential advisory engagements and open to strategic dialogue on leadership opportunities. Fostering connections for high-impact advisory collaborations.</p>
-</section>
+</main>
 
 <footer>
   © 2025 Aditi Khare | AI Products That Think, Learn & Scale.
