@@ -67,11 +67,11 @@
   }
 
   main {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 25px;
   }
 
@@ -85,7 +85,7 @@
 
   section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
   }
 
   h2 {
@@ -105,7 +105,7 @@
     background: #f9f9ff;
     border-left: 4px solid #1d4ed8;
     border-radius: 10px;
-    padding: 15px 20px;
+    padding: 20px;
     margin-bottom: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   }
@@ -118,7 +118,7 @@
 
   .portfolio-card a {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 8px;
     font-weight: 600;
     color: #1d4ed8;
   }
@@ -155,7 +155,37 @@
 </header>
 
 <main>
-  <!-- Profile Summary Card -->
+  <!-- Portfolio Cards -->
+  <section class="portfolio-card">
+    <h3>AI Research Junction</h3>
+    <p>Research Simplified: GenAI, Quantum AI & Computer Vision</p>
+    <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=sQCy97XThGt0OIjpANN48w%3D%3D" target="_blank">View on LinkedIn</a>
+  </section>
+
+  <section class="portfolio-card">
+    <h3>Packt Publications Portfolio</h3>
+    <p>Large-scale AI transformations — blending technology, architecture, and leadership into actionable insight.</p>
+    <a href="https://www.amazon.com/dp/1835887600" target="_blank">Available on Amazon</a>
+  </section>
+
+  <section class="portfolio-card">
+    <h3>HackerRank Profile</h3>
+    <a href="https://www.hackerrank.com/profile/aditikhare007" target="_blank">View Profile</a>
+  </section>
+
+  <section class="portfolio-card">
+    <h3>AI Research Junction GitHub</h3>
+    <p>Applied AI research and project repositories.</p>
+    <a href="https://github.com/aditikhare007" target="_blank">View GitHub Portfolio</a>
+  </section>
+
+  <section class="portfolio-card">
+    <h3>Full-Stack AI Products</h3>
+    <p>From model inference to user experience — delivering intelligent, scalable AI products.</p>
+    <a href="https://github.com/aditikhare007/Aditi_Full_Stack_App_React_JS_Gen_AI_Product_Portfolio" target="_blank">View Project on GitHub</a>
+  </section>
+
+  <!-- Profile Summary Below -->
   <section>
     <h2>Profile Summary</h2>
     <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. Passionate about building AI systems that deliver lasting value at scale.</p>
@@ -173,57 +203,14 @@
       <li>IIM Ahmedabad — Executive Program in Big Data Analytics</li>
       <li>K.J Somaiya Institute of Management, Mumbai — Master’s in Computer Applications (Distinction)</li>
     </ul>
-  </section>
 
-  <!-- Portfolio Cards -->
-  <section>
-    <h2>Portfolios</h2>
-    <div class="portfolio-card">
-      <h3>AI Research Junction</h3>
-      <p>Research Simplified: GenAI, Quantum AI & Computer Vision</p>
-      <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=sQCy97XThGt0OIjpANN48w%3D%3D" target="_blank">View on LinkedIn</a>
-    </div>
-
-    <div class="portfolio-card">
-      <h3>Packt Publications Portfolio</h3>
-      <p>Large-scale AI transformations — blending technology, architecture, and leadership into actionable insight.</p>
-      <a href="https://www.amazon.com/dp/1835887600" target="_blank">Available on Amazon</a>
-    </div>
-
-    <div class="portfolio-card">
-      <h3>HackerRank Profile</h3>
-      <a href="https://www.hackerrank.com/profile/aditikhare007" target="_blank">View Profile</a>
-    </div>
-
-    <div class="portfolio-card">
-      <h3>AI Research Junction GitHub</h3>
-      <p>Applied AI research and project repositories.</p>
-      <a href="https://github.com/aditikhare007" target="_blank">View GitHub Portfolio</a>
-    </div>
-
-    <div class="portfolio-card">
-      <h3>Full-Stack AI Products</h3>
-      <p>From model inference to user experience — delivering intelligent, scalable AI products.</p>
-      <a href="https://github.com/aditikhare007/Aditi_Full_Stack_App_React_JS_Gen_AI_Product_Portfolio" target="_blank">View Project on GitHub</a>
-    </div>
-  </section>
-
-  <!-- Expertise -->
-  <section>
-    <h2>Experience & Expertise</h2>
-    <p>With 9+ years across Fortune 50 product companies, I combine entrepreneurial spirit with deep technical expertise to build business and customer-centric AI products.</p>
-
-    <h3>Core Expertise</h3>
+    <h3>Experience & Expertise</h3>
     <ul>
+      <li>9+ years across Fortune 50 product companies building customer-centric AI products</li>
       <li>AI R&D: Full lifecycle — data prep, model training, inference, deployment</li>
       <li>Technologies: ML, Deep Learning, Computer Vision, Hyperspectral Imaging, Generative AI, LLMs, LLMOps</li>
       <li>Infrastructure: Scalable AI & ML infrastructure on AWS</li>
-    </ul>
-
-    <h3>Community & Learning</h3>
-    <ul>
-      <li>Completed 100+ courses on Udemy & Coursera</li>
-      <li>Active in top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI</li>
+      <li>Active in AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI</li>
     </ul>
 
     <h3>Publications</h3>
