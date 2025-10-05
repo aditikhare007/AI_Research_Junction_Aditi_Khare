@@ -1,276 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditi Khare - AI Research Portfolio</title>
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: #fff9f0;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      scroll-behavior: smooth;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditi Khare — Enterprise AI Leader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #f9f9f9;
+        }
 
-    header {
-      background: linear-gradient(90deg, #1e1e2f, #2b2b40);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
-    }
+        a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
 
-    header img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      border: 3px solid #fff;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(255,255,255,0.2);
-    }
+        header {
+            background-color: #111827;
+            color: #f9f9f9;
+            padding: 60px 20px 40px 20px;
+            text-align: center;
+        }
 
-    header h1 {
-      font-size: 2.4em;
-      margin-bottom: 8px;
-      letter-spacing: 0.5px;
-    }
+        header img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid #f9f9f9;
+            margin-bottom: 20px;
+        }
 
-    header h2 {
-      font-size: 1.2em;
-      color: #ffd280;
-      margin-top: 10px;
-      line-height: 1.6;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
 
-    header p {
-      font-size: 1em;
-      color: #e0e0e0;
-      margin-top: 8px;
-      line-height: 1.6;
-    }
+        header p {
+            font-size: 1em;
+            max-width: 800px;
+            margin: 10px auto 0 auto;
+            line-height: 1.5;
+        }
 
-    .highlight {
-      font-size: 1.05em;
-      font-style: italic;
-      color: #ffcc80;
-      font-weight: 500;
-      margin-top: 15px;
-    }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
 
-    .button-container {
-      margin-top: 30px;
-      text-align: center;
-    }
+        h2 {
+            font-size: 1.75em;
+            color: #111827;
+            border-bottom: 2px solid #1d4ed8;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
 
-    .button {
-      background-color: #d17a00;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      margin: 6px;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 0.95em;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-      font-weight: 600;
-    }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
 
-    .button:hover {
-      background-color: #ffb74d;
-      color: #fff;
-      transform: scale(1.05);
-    }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #111827;
+            color: #f9f9f9;
+            font-size: 0.9em;
+        }
 
-    .community-badge {
-      display: inline-block;
-      margin-top: 14px;
-      background: linear-gradient(90deg, #ffcc80, #d17a00);
-      color: white;
-      font-weight: 600;
-      padding: 8px 18px;
-      border-radius: 20px;
-      font-size: 0.95em;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-      transition: all 0.3s ease;
-      cursor: pointer;
-      text-decoration: none;
-    }
+        .links a {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
 
-    .community-badge:hover {
-      transform: scale(1.07);
-      background: linear-gradient(90deg, #ffd699, #e59400);
-      box-shadow: 0 6px 10px rgba(0,0,0,0.2);
-    }
+        .portfolio-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
 
-    .section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
+        .portfolio-card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
 
-    .section h3 {
-      font-size: 2em;
-      color: #1e1e2f;
-      border-bottom: 3px solid #d17a00;
-      display: inline-block;
-      padding-bottom: 6px;
-      margin-bottom: 30px;
-    }
+        .portfolio-card p {
+            margin: 0;
+        }
 
-    .tags {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .tag {
-      display: inline-block;
-      background-color: #fff3e0;
-      color: #d17a00;
-      padding: 10px 18px;
-      margin: 6px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 1em;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    .tag:hover {
-      background-color: #ffecb3;
-    }
-
-    .card {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      padding: 25px;
-      margin-bottom: 25px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    }
-
-    footer {
-      text-align: center;
-      padding: 35px;
-      background-color: #2b2b40;
-      color: white;
-      font-size: 0.95em;
-      margin-top: 60px;
-    }
-
-    @media (max-width: 768px) {
-      header h1 { font-size: 1.8em; }
-      header h2 { font-size: 1em; }
-      .button { padding: 10px 16px; font-size: 0.9em; }
-      .card { padding: 20px; }
-    }
-  </style>
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            header p {
+                font-size: 0.95em;
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <img src="https://github.com/aditikhare007.png" alt="Aditi Khare Profile Photo">
+        <h1>Aditi Khare</h1>
+        <p>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation | Principal ML Scientist | AWS & AI Research Expert | IIM-A | Author | AI Strategy & Inference Optimization | AI Open-Source Advocate</p>
+    </header>
 
-<header>
-  <img src="https://github.com/aditikhare007.png" alt="Aditi Khare">
-  <h1>Aditi Khare</h1>
-  <h2>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation | Principal ML Scientist | AWS & AI Research Expert | IIM-A | Author | AI Strategy & Inference Optimization | AI Open-Source Advocate</h2>
-  <p class="highlight">🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
-  <p class="highlight">🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
+    <section>
+        <h2>Portfolios</h2>
+        <div class="portfolio-card">
+            <h3>AI Research Junction by Aditi Khare</h3>
+            <p>Research Simplified: GenAI, Quantum AI & Computer Vision</p>
+            <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=sQCy97XThGt0OIjpANN48w%3D%3D" target="_blank">View on LinkedIn</a>
+        </div>
 
-  <div class="button-container">
-    <a href="about_me.html" class="button">About Me</a>
-    <a href="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare" class="button" target="_blank">Research & Resources</a>
-    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
-    <a href="https://github.com/aditikhare007" class="button" target="_blank">My AI Research Portfolio@Github</a>
-    <a href="https://topmate.io/aditi_khare" class="community-badge" target="_blank">Community Care@TopMate</a>
-    <a href="https://www.packtpub.com/" class="button" target="_blank">My AI Books Publications Portfolio@Packt</a>
-  </div>
-</header>
+        <div class="portfolio-card">
+            <h3>Packt Publications Portfolio</h3>
+            <p>This book captures my journey leading large-scale AI transformations — blending technology, architecture, and leadership into actionable insight.</p>
+            <a href="https://www.amazon.com/dp/1835887600" target="_blank">Available on Amazon</a>
+        </div>
 
-<section class="section" id="research-section">
-  <h3>AI Research Junction</h3>
-  <div class="tags">
-    <span class="tag" onclick="filterCategory('Generative AI')">Generative AI</span>
-    <span class="tag" onclick="filterCategory('Computer Vision')">Computer Vision</span>
-    <span class="tag" onclick="filterCategory('Quantum AI')">Quantum AI</span>
-  </div>
+        <div class="portfolio-card">
+            <h3>HackerRank Profile</h3>
+            <a href="https://www.hackerrank.com/profile/aditikhare007" target="_blank">View Profile</a>
+        </div>
 
-  <div id="papers-container">
-    <!-- Generative AI Papers -->
-    <div class="card" data-category="Generative AI">
-      <h4>📘 Modern BERT</h4>
-      <p>Modern BERT improvements and techniques</p>
-      <a href="https://arxiv.org/abs/2412.13663" target="_blank">View Paper</a>
-    </div>
-    <div class="card" data-category="Generative AI">
-      <h4>📘 LLM Inference-Time Self-Improvement</h4>
-      <p>LLM improves itself at inference time</p>
-      <a href="https://arxiv.org/pdf/2412.14352" target="_blank">View Paper</a>
-    </div>
-    <div class="card" data-category="Generative AI">
-      <h4>📘 DeepSeekv3</h4>
-      <p>DeepSeek V3 advancements for AI search</p>
-      <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">View Paper</a>
-    </div>
+        <div class="portfolio-card">
+            <h3>AI Research Junction GitHub Portfolio</h3>
+            <p>Applied AI research and project repositories.</p>
+            <a href="https://github.com/aditikhare007" target="_blank">View GitHub Portfolio</a>
+        </div>
 
-    <!-- Computer Vision Paper -->
-    <div class="card" data-category="Computer Vision">
-      <h4>📘 Meta Llama 3.2 Edge AI</h4>
-      <p>Customizable Edge AI & Vision models</p>
-      <a href="https://www.llama.com/" target="_blank">View Paper</a>
-    </div>
+        <div class="portfolio-card">
+            <h3>Full-Stack AI Products Portfolio</h3>
+            <p>From model inference to user experience — engineered for impact. Delivering AI products that think, interact, and scale — intelligently.</p>
+        </div>
+    </section>
 
-    <!-- Quantum AI Paper -->
-    <div class="card" data-category="Quantum AI">
-      <h4>📘 Quantum Hybrid Architectures</h4>
-      <p>Integrating variational quantum circuits with transformer-based AI models</p>
-      <a href="#" target="_blank">View Paper</a>
-    </div>
-  </div>
+    <section>
+        <h2>Profile Summary</h2>
+        <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. I’m deeply passionate about advancing AI innovation and ambitiously focused on shaping AI systems that deliver lasting value at scale.</p>
+        <p>🔷 I’m honored to be a contributor to the book "Generative AI Application Integration Patterns" (Packt Publishing, available on Amazon September 2024).</p>
 
-  <!-- Resources & Let's Connect -->
-  <div class="card">
-    <h4>🌐 Resources & Let's Connect</h4>
-    <p><strong>Stay connected for AI collaborations, mentorship, and research insights:</strong></p>
-    <p>
-      <a href="mailto:aditikhare007@gmail.com" class="button">Email</a>
-      <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" class="button" target="_blank">LinkedIn</a>
-      <a href="https://github.com/aditikhare007" class="button" target="_blank">GitHub</a>
-      <a href="https://topmate.io/aditi_khare" class="button" target="_blank">TopMate</a>
-      <a href="https://www.hackerrank.com/profile/aditikhare007" class="button" target="_blank">HackerRank</a>
-      <a href="https://www.packtpub.com/" class="button" target="_blank">My AI Books Publications Portfolio@Packt</a>
-    </p>
-  </div>
-</section>
+        <h3>Professional Snapshot</h3>
+        <ul>
+            <li>Enterprise AI Leader — Product, Infrastructure, AI Architecture & Entrepreneurial Innovation</li>
+            <li>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</li>
+            <li>Author | AI Strategy & Inference Optimization | AI Open-Source Advocate</li>
+        </ul>
 
-<footer>
-  © 2025 Aditi Khare — All Rights Reserved
-</footer>
+        <h3>Education</h3>
+        <ul>
+            <li>IIM Ahmedabad — Executive Program in Big Data Analytics</li>
+            <li>K.J Somaiya Institute of Management, Mumbai — Master’s in Computer Applications (Distinction)</li>
+        </ul>
 
-<script>
-  // Show only Generative AI papers by default
-  document.addEventListener('DOMContentLoaded', () => {
-    filterCategory('Generative AI');
-  });
+        <h3>Experience & Expertise</h3>
+        <p>With 9+ years across diverse business domains in Fortune 50 product companies, I combine entrepreneurial spirit with deep technical expertise to build business and customer-centric AI products.</p>
 
-  // Filter papers by category
-  function filterCategory(category) {
-    const cards = document.querySelectorAll('#papers-container .card');
-    cards.forEach(card => {
-      if(card.dataset.category === category){
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  }
-</script>
+        <h3>Core Expertise</h3>
+        <ul>
+            <li>AI Research & Development: Full product lifecycle — data prep, model training, inference, deployment</li>
+            <li>Technologies: Machine Learning, Deep Learning, Computer Vision, Hyperspectral Imaging, Generative AI, LLMs, LLMOps</li>
+            <li>Infrastructure: Scalable AI & ML infrastructure design and optimization on AWS</li>
+        </ul>
 
+        <h3>Continuous Learning & Community</h3>
+        <ul>
+            <li>Completed 100+ technical courses on Udemy & Coursera</li>
+            <li>Active member of top AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI</li>
+        </ul>
+
+        <h3>Publications</h3>
+        <ul>
+            <li>Generative AI Application Integration Patterns — Contributor (Packt Publishing | Sept 2024 | Available on Amazon)</li>
+            <li>Top AI Research Paper Summaries — Published portfolio</li>
+            <li>AI Research Junction — Creator & Author — research paper summaries on Generative AI, Computer Vision, Quantum AI</li>
+        </ul>
+
+        <p>🚀 Experienced AI product leader with deep technical expertise and architecture background, passionate about advising organizations on AI-driven strategy and product excellence. Positioned for influential advisory engagements and open to strategic dialogue on leadership opportunities. Fostering connections for high-impact advisory collaborations.</p>
+
+        <h3>Connect with Me</h3>
+        <div class="links">
+            <a href="mailto:aditikhare007@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a>
+            <a href="https://topmate.io/aditikhare007" target="_blank">Book 1:1 Mentorship</a>
+            <a href="https://github.com/aditikhare007" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Aditi Khare | AI Products That Think, Learn & Scale.
+    </footer>
 </body>
 </html>
