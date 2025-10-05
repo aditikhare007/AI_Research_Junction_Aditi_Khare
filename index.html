@@ -21,14 +21,8 @@
   header {
     background: linear-gradient(135deg, #6b21a8, #7c3aed);
     color: #fff;
+    text-align: center;
     padding: 50px 20px 40px 20px;
-  }
-
-  header .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
   }
 
   header img {
@@ -42,7 +36,6 @@
   header h1 {
     margin: 10px 0;
     font-size: 2em;
-    text-align: center;
   }
 
   header p {
@@ -50,12 +43,10 @@
     max-width: 750px;
     margin: auto;
     line-height: 1.5;
-    text-align: center;
   }
 
   .connect-links {
     margin: 25px 0;
-    text-align: center;
   }
 
   .connect-links a {
@@ -71,30 +62,6 @@
   }
 
   .connect-links a:hover {
-    background: #5b21b6;
-    color: #fff;
-  }
-
-  /* Top-right buttons */
-  .top-buttons {
-    text-align: right;
-    flex: 1 1 auto;
-    margin-top: 10px;
-  }
-
-  .top-buttons a {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 10px 16px;
-    background: #fff;
-    color: #7c3aed;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .top-buttons a:hover {
     background: #5b21b6;
     color: #fff;
   }
@@ -173,8 +140,6 @@
 
   @media(max-width: 768px) {
     .portfolio-card { min-width: 240px; }
-    .top-buttons { text-align: center; margin-top: 15px; }
-    .top-buttons a { margin: 5px; }
   }
 
   @media(max-width: 480px) {
@@ -187,28 +152,19 @@
 <body>
 
 <header>
-  <div class="header-container">
-    <div style="flex: 1 1 100%; text-align: center;">
-      <img src="https://github.com/aditikhare007.png" alt="Aditi Khare Profile Photo">
-      <h1>Aditi Khare</h1>
-      <p>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation | Principal ML Scientist | AWS & AI Research Expert | IIM-A | Author | AI Strategy & Inference Optimization | AI Open-Source Advocate</p>
-      <div class="connect-links">
-        <a href="mailto:aditikhare007@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a>
-        <a href="https://topmate.io/aditikhare007" target="_blank">Book 1:1 Mentorship</a>
-        <a href="https://github.com/aditikhare007" target="_blank">GitHub</a>
-      </div>
-    </div>
-
-    <div class="top-buttons">
-      <a href="#research-portfolio">AI Research Portfolio</a>
-      <a href="#projects-portfolio">AI Projects Portfolio</a>
-    </div>
+  <img src="https://github.com/aditikhare007.png" alt="Aditi Khare Profile Photo">
+  <h1>Aditi Khare</h1>
+  <p>Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation | Principal ML Scientist | AWS & AI Research Expert | IIM-A | Author | AI Strategy & Inference Optimization | AI Open-Source Advocate</p>
+  <div class="connect-links">
+    <a href="mailto:aditikhare007@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/aditi-khare-5840977b/" target="_blank">LinkedIn</a>
+    <a href="https://topmate.io/aditikhare007" target="_blank">Book 1:1 Mentorship</a>
+    <a href="https://github.com/aditikhare007" target="_blank">GitHub</a>
   </div>
 </header>
 
 <main>
-  <section id="research-portfolio">
+  <section>
     <h2>My Portfolios</h2>
     <div class="portfolio-section">
       <div class="portfolio-card">
@@ -229,18 +185,13 @@
       </div>
 
       <div class="portfolio-card">
-        <h3>Applied AI Research Portfolio</h3>
+        <h3>AI Research Junction GitHub</h3>
         <p>Applied AI research and project repositories.</p>
         <a href="https://github.com/aditikhare007" target="_blank">View GitHub Portfolio</a>
       </div>
-    </div>
-  </section>
 
-  <section id="projects-portfolio">
-    <h2>AI Products Portfolio</h2>
-    <div class="portfolio-section">
       <div class="portfolio-card">
-        <h3>AI Products Portfolio</h3>
+        <h3>AI Products portfolio</h3>
         <p>From model inference to user experience — delivering intelligent, scalable AI products.</p>
         <a href="https://github.com/aditikhare007/Aditi_Full_Stack_App_React_JS_Gen_AI_Product_Portfolio" target="_blank">View Project on GitHub</a>
       </div>
@@ -285,7 +236,7 @@
 </main>
 
 <footer>
-  © 2025 Aditi Khare | Enterprise AI Leader — Product, Infra, AI Architecture & Entrepreneurial Innovation
+  © 2025 Aditi Khare | Architecting AI Products That Learn, Interact & Scale
 </footer>
 
 </body>
