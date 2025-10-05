@@ -10,16 +10,16 @@
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f9;
-    color: #1f2937;
+    background: #f8f7ff;
+    color: #1e1b4b;
     scroll-behavior: smooth;
   }
 
-  a { color: #1d4ed8; text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  a { color: #4338ca; text-decoration: none; }
+  a:hover { color: #5b21b6; text-decoration: underline; }
 
   header {
-    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    background: linear-gradient(135deg, #5b21b6, #4338ca);
     color: #fff;
     text-align: center;
     padding: 40px 20px 30px 20px;
@@ -54,7 +54,7 @@
     margin: 5px 10px;
     padding: 8px 16px;
     background: #fff;
-    color: #1d4ed8;
+    color: #4338ca;
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.9em;
@@ -62,7 +62,7 @@
   }
 
   .connect-links a:hover {
-    background: #2563eb;
+    background: #5b21b6;
     color: #fff;
   }
 
@@ -76,22 +76,24 @@
   }
 
   section {
-    background: #fff;
+    background: #f3f0ff;
     padding: 25px 20px;
     border-radius: 12px;
+    border-left: 4px solid #4338ca;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   }
 
   section:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    border-color: #5b21b6;
   }
 
   h2 {
     font-size: 1.6em;
-    color: #111827;
-    border-bottom: 3px solid #1d4ed8;
+    color: #1e1b4b;
+    border-bottom: 3px solid #4338ca;
     display: inline-block;
     padding-bottom: 6px;
     margin-bottom: 15px;
@@ -101,36 +103,14 @@
   p { margin-bottom: 10px; font-size: 0.95em; line-height: 1.5; }
   ul { padding-left: 20px; font-size: 0.95em; }
 
-  .portfolio-card {
-    background: #f9f9ff;
-    border-left: 4px solid #1d4ed8;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  }
-
-  .portfolio-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    border-color: #2563eb;
-  }
-
-  .portfolio-card a {
-    display: inline-block;
-    margin-top: 8px;
-    font-weight: 600;
-    color: #1d4ed8;
-  }
-
   footer {
     text-align: center;
     padding: 25px;
-    background: #111827;
+    background: #1e1b4b;
     color: #fff;
     font-size: 0.85em;
     margin-top: 40px;
-    border-top: 2px solid #1d4ed8;
+    border-top: 2px solid #4338ca;
   }
 
   @media(max-width: 600px) {
@@ -156,36 +136,36 @@
 
 <main>
   <!-- Portfolio Cards -->
-  <section class="portfolio-card">
+  <section>
     <h3>AI Research Junction</h3>
     <p>Research Simplified: GenAI, Quantum AI & Computer Vision</p>
     <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=sQCy97XThGt0OIjpANN48w%3D%3D" target="_blank">View on LinkedIn</a>
   </section>
 
-  <section class="portfolio-card">
+  <section>
     <h3>Packt Publications Portfolio</h3>
     <p>Large-scale AI transformations — blending technology, architecture, and leadership into actionable insight.</p>
     <a href="https://www.amazon.com/dp/1835887600" target="_blank">Available on Amazon</a>
   </section>
 
-  <section class="portfolio-card">
+  <section>
     <h3>HackerRank Profile</h3>
     <a href="https://www.hackerrank.com/profile/aditikhare007" target="_blank">View Profile</a>
   </section>
 
-  <section class="portfolio-card">
+  <section>
     <h3>AI Research Junction GitHub</h3>
     <p>Applied AI research and project repositories.</p>
     <a href="https://github.com/aditikhare007" target="_blank">View GitHub Portfolio</a>
   </section>
 
-  <section class="portfolio-card">
+  <section>
     <h3>Full-Stack AI Products</h3>
     <p>From model inference to user experience — delivering intelligent, scalable AI products.</p>
     <a href="https://github.com/aditikhare007/Aditi_Full_Stack_App_React_JS_Gen_AI_Product_Portfolio" target="_blank">View Project on GitHub</a>
   </section>
 
-  <!-- Profile Summary Below -->
+  <!-- Profile Summary -->
   <section>
     <h2>Profile Summary</h2>
     <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. Passionate about building AI systems that deliver lasting value at scale.</p>
