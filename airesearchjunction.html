@@ -14,106 +14,46 @@
     color: #1e1b4b;
     scroll-behavior: smooth;
   }
-
   a { color: #4338ca; text-decoration: none; }
   a:hover { color: #5b21b6; text-decoration: underline; }
-
   header {
     background: linear-gradient(135deg, #6b21a8, #7c3aed);
     color: #fff;
     padding: 40px 20px 30px 20px;
     text-align: center;
   }
-
   header h1 { margin: 0 0 10px; font-size: 2em; }
   header p { font-size: 1em; max-width: 800px; margin: 0 auto; line-height: 1.5; }
-
-  header .header-links {
-    margin-top: 20px;
-  }
-
+  header .header-links { margin-top: 20px; }
   header .header-links a {
-    display: inline-block;
-    margin: 5px 10px;
-    padding: 8px 16px;
-    background: #fff;
-    color: #7c3aed;
-    border-radius: 8px;
-    font-weight: 600;
+    display: inline-block; margin: 5px 10px; padding: 8px 16px;
+    background: #fff; color: #7c3aed; border-radius: 8px; font-weight: 600;
     transition: all 0.3s ease;
   }
-
-  header .header-links a:hover {
-    background: #5b21b6;
-    color: #fff;
-  }
-
-  main {
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 0 20px;
-  }
-
+  header .header-links a:hover { background: #5b21b6; color: #fff; }
+  main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
   section h2 {
-    font-size: 1.6em;
-    color: #1e1b4b;
-    border-bottom: 3px solid #4338ca;
-    display: inline-block;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
+    font-size: 1.6em; color: #1e1b4b; border-bottom: 3px solid #4338ca;
+    display: inline-block; padding-bottom: 6px; margin-bottom: 20px;
   }
-
   .portfolio-section {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 15px;
+    display: flex; overflow-x: auto; gap: 20px; padding-bottom: 15px;
   }
-
-  .portfolio-section::-webkit-scrollbar {
-    height: 10px;
-  }
-
-  .portfolio-section::-webkit-scrollbar-thumb {
-    background-color: #7c3aed;
-    border-radius: 5px;
-  }
-
+  .portfolio-section::-webkit-scrollbar { height: 10px; }
+  .portfolio-section::-webkit-scrollbar-thumb { background-color: #7c3aed; border-radius: 5px; }
   .card {
-    min-width: 280px;
-    flex: 0 0 auto;
-    background: #f3f0ff;
-    border-left: 4px solid #7c3aed;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    min-width: 280px; flex: 0 0 auto; background: #f3f0ff; border-left: 4px solid #7c3aed;
+    border-radius: 12px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-
   .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-    border-color: #6b21a8;
+    transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); border-color: #6b21a8;
   }
-
   .card h3 { margin-top: 0; font-size: 1.1em; }
   .card p { font-size: 0.9em; line-height: 1.4; }
   .card a { display: inline-block; margin-top: 8px; font-weight: 600; font-size: 0.9em; }
-
-  footer {
-    text-align: center;
-    padding: 25px;
-    background: #1e1b4b;
-    color: #fff;
-    font-size: 0.85em;
-    margin-top: 40px;
-    border-top: 2px solid #4338ca;
-  }
-
-  @media(max-width: 768px) {
-    .card { min-width: 240px; }
-  }
-
+  footer { text-align: center; padding: 25px; background: #1e1b4b; color: #fff; font-size: 0.85em; margin-top: 40px; border-top: 2px solid #4338ca; }
+  @media(max-width: 768px) { .card { min-width: 240px; } }
   @media(max-width: 480px) {
     header h1 { font-size: 1.7em; }
     header p { font-size: 0.85em; }
@@ -134,88 +74,9 @@
 
 <main>
   <section>
-    <h2>📚 AI Research Papers (Jan 2025 – May 2024)</h2>
+    <h2>📚 AI Research Papers (May 2024 – Jan 2025)</h2>
+    
     <div class="portfolio-section">
-      <!-- Jan 2025 -->
-      <div class="card">
-        <h3>DeepSeekv3</h3>
-        <p>DeepSeekv3 model for advanced generative AI tasks.</p>
-        <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">GitHub</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>LLM Inference-Time Self-Improvement</h3>
-        <p>Techniques for LLMs to self-improve at inference.</p>
-        <a href="https://arxiv.org/pdf/2412.14352" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>Modern BERT</h3>
-        <p>Latest advancements in BERT-based language models.</p>
-        <a href="https://arxiv.org/abs/2412.13663" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
-
-      <!-- Oct 2024 -->
-      <div class="card">
-        <h3>OpenAI Swarm Framework</h3>
-        <p>OpenAI introduces Swarm for collaborative AI workflows.</p>
-        <a href="https://github.com/openai/swarm" target="_blank">GitHub</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>Claude 3.5 Sonnet & Haiku</h3>
-        <p>Creative poetry generation models.</p>
-        <a href="https://www.anthropic.com/news/3-5-models-and-computer-use" target="_blank">Blog</a> | <span>Generative AI</span>
-      </div>
-
-      <!-- Sept 2024 -->
-      <div class="card">
-        <h3>Meta Llama 3.2-Edge AI & Vision</h3>
-        <p>Open, customizable LLMs for edge and vision tasks.</p>
-        <a href="https://www.llama.com/" target="_blank">Blog</a> | <span>Edge AI & Vision</span>
-      </div>
-      <div class="card">
-        <h3>Training LMs to Self-Correct via RL</h3>
-        <p>Self-correction of LLMs using reinforcement learning.</p>
-        <a href="https://arxiv.org/abs/2409.12917" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
-
-      <!-- Aug 2024 -->
-      <div class="card">
-        <h3>The AI Scientist</h3>
-        <p>Fully automated scientific discovery.</p>
-        <a href="https://paperswithcode.com/paper/the-ai-scientist-towards-fully-automated-open/" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>ControlNeXt</h3>
-        <p>Efficient control for image & video generation.</p>
-        <a href="https://arxiv.org/pdf/2408.06070v2/" target="_blank">Paper</a> | <span>Computer Vision</span>
-      </div>
-      <div class="card">
-        <h3>RAG-Checker</h3>
-        <p>Diagnosing retrieval-augmented generation.</p>
-        <a href="https://arxiv.org/abs/2408.08067/" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
-
-      <!-- June–July 2024 -->
-      <div class="card">
-        <h3>Microsoft SAMBA LLM</h3>
-        <p>New generative AI LLM model.</p>
-        <a href="https://arxiv.org/pdf/2406.07522/" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>Quantinuum Quixer</h3>
-        <p>Quantum transformer model.</p>
-        <a href="https://openai.com/index/extracting-concepts-from-gpt-4/" target="_blank">Blog</a> | <span>Quantum AI</span>
-      </div>
-      <div class="card">
-        <h3>OpenAI Concept Extraction from GPT-4</h3>
-        <p>Techniques to extract conceptual understanding.</p>
-        <a href="https://openai.com/index/extracting-concepts-from-gpt-4/" target="_blank">Blog</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>Meta No Language Left Behind</h3>
-        <p>Human-centered multilingual translation.</p>
-        <a href="https://github.com/facebookresearch/fairseq/tree/nllb/" target="_blank">GitHub</a> | <span>Generative AI</span>
-      </div>
-
       <!-- May 2024 -->
       <div class="card">
         <h3>JPMorgan & AWS Quantum Study</h3>
@@ -247,12 +108,127 @@
         <p>Panel evaluation of LLM outputs.</p>
         <a href="https://arxiv.org/abs/2404.18796/" target="_blank">Paper</a> | <span>Generative AI</span>
       </div>
+      <div class="card">
+        <h3>Snowflake Arctic</h3>
+        <p>Efficient enterprise AI.</p>
+        <a href="https://www.snowflake.com/blog/arctic-open-efficient-foundation-language-models-snowflake//" target="_blank">Blog</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>Photonic Quantum Memory Expansion</h3>
+        <p>Quantum internet advancement.</p>
+        <a href="https://quantumzeitgeist.com/photonic-quantum-memory-capacity-expanded-paving-way-for-quantum-internet/#google_vignette/" target="_blank">Blog</a> | <span>Quantum AI</span>
+      </div>
+      <div class="card">
+        <h3>Phi-3 Technical Report</h3>
+        <p>Mobile-friendly high-capability LLM.</p>
+        <a href="https://arxiv.org/pdf/2404.14219/" target="_blank">Paper</a> | <span>Generative AI</span>
+      </div>
+
+      <!-- June–July 2024 -->
+      <div class="card">
+        <h3>Microsoft SAMBA LLM</h3>
+        <p>New generative AI LLM model.</p>
+        <a href="https://arxiv.org/pdf/2406.07522/" target="_blank">Paper</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>Quantinuum Quixer</h3>
+        <p>Quantum transformer model.</p>
+        <a href="https://openai.com/index/extracting-concepts-from-gpt-4/" target="_blank">Blog</a> | <span>Quantum AI</span>
+      </div>
+      <div class="card">
+        <h3>OpenAI Concept Extraction from GPT-4</h3>
+        <p>Techniques to extract conceptual understanding.</p>
+        <a href="https://openai.com/index/extracting-concepts-from-gpt-4/" target="_blank">Blog</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>Meta No Language Left Behind</h3>
+        <p>Human-centered multilingual translation.</p>
+        <a href="https://github.com/facebookresearch/fairseq/tree/nllb/" target="_blank">GitHub</a> | <span>Generative AI</span>
+      </div>
+
+      <!-- August 2024 -->
+      <div class="card">
+        <h3>The AI Scientist</h3>
+        <p>Fully automated scientific discovery.</p>
+        <a href="https://paperswithcode.com/paper/the-ai-scientist-towards-fully-automated-open/" target="_blank">Paper</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>ControlNeXt</h3>
+        <p>Efficient control for image & video generation.</p>
+        <a href="https://arxiv.org/pdf/2408.06070v2/" target="_blank">Paper</a> | <span>Computer Vision</span>
+      </div>
+      <div class="card">
+        <h3>RAG-Checker</h3>
+        <p>Diagnosing retrieval-augmented generation.</p>
+        <a href="https://arxiv.org/abs/2408.08067/" target="_blank">Paper</a> | <span>Generative AI</span>
+      </div>
+
+      <!-- September 2024 -->
+      <div class="card">
+        <h3>Meta Llama 3.2-Edge AI & Vision</h3>
+        <p>Open, customizable LLMs for edge and vision tasks.</p>
+        <a href="https://www.llama.com/" target="_blank">Blog</a> | <span>Edge AI & Vision</span>
+      </div>
+      <div class="card">
+        <h3>Training LMs to Self-Correct via RL</h3>
+        <p>Self-correction of LLMs using reinforcement learning.</p>
+        <a href="https://arxiv.org/abs/2409.12917/" target="_blank">Paper</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>Iteration of Thought-Leveraging Inner Dialogue</h3>
+        <p>Autonomous LLM reasoning improvements.</p>
+        <a href="https://arxiv.org/abs/2409.12618/" target="_blank">Paper</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>Learning to Reason with LLMs (OpenAI o1)</h3>
+        <p>New framework for LLM reasoning.</p>
+        <a href="https://openai.com/index/introducing-openai-o1-preview/" target="_blank">Paper</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>AutoGen Studio</h3>
+        <p>Studio for autonomous AI agent generation.</p>
+        <a href="https://github.com/microsoft/autogen" target="_blank">GitHub</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>Strategic Chain-of-Thought</h3>
+        <p>Enhanced CoT reasoning techniques.</p>
+        <a href="https://arxiv.org/abs/2409.03271/" target="_blank">Paper</a> | <span>Generative AI</span>
+      </div>
+
+      <!-- October 2024 -->
+      <div class="card">
+        <h3>OpenAI Swarm Framework</h3>
+        <p>OpenAI introduces Swarm for collaborative AI workflows.</p>
+        <a href="https://github.com/openai/swarm" target="_blank">GitHub</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>Claude 3.5 Sonnet & Haiku</h3>
+        <p>Creative poetry generation models.</p>
+        <a href="https://www.anthropic.com/news/3-5-models-and-computer-use" target="_blank">Blog</a> | <span>Generative AI</span>
+      </div>
+
+      <!-- January 2025 -->
+      <div class="card">
+        <h3>DeepSeekv3</h3>
+        <p>DeepSeekv3 model for advanced generative AI tasks.</p>
+        <a href="https://github.com/deepseek-ai/DeepSeek-V3/tree/main" target="_blank">GitHub</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>LLM Inference-Time Self-Improvement</h3>
+        <p>Techniques for LLMs to self-improve at inference.</p>
+        <a href="https://arxiv.org/pdf/2412.14352" target="_blank">Paper</a> | <span>Generative AI</span>
+      </div>
+      <div class="card">
+        <h3>Modern BERT</h3>
+        <p>Latest advancements in BERT-based language models.</p>
+        <a href="https://arxiv.org/abs/2412.13663" target="_blank">Paper</a> | <span>Generative AI</span>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
-  © 2025 Aditi Khare | Enterprise AI Leader — Architecting Scalable AI & Product Excellence
+  © 2025 Aditi Khare | AI Research Junction
 </footer>
 
 </body>
