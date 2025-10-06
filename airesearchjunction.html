@@ -34,8 +34,9 @@
   main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
   section h2 {
     font-size: 1.6em; color: #1e1b4b; border-bottom: 3px solid #4338ca;
-    display: inline-block; padding-bottom: 6px; margin-bottom: 20px;
+    display: inline-block; padding-bottom: 6px; margin-bottom: 15px;
   }
+  .month-section { margin-bottom: 40px; }
   .portfolio-section {
     display: flex; overflow-x: auto; gap: 20px; padding-bottom: 15px;
   }
@@ -73,11 +74,10 @@
 </header>
 
 <main>
-  <section>
-    <h2>📚 AI Research Papers (May 2024 – Jan 2025)</h2>
-    
+  <!-- May 2024 -->
+  <section class="month-section">
+    <h2>May 2024</h2>
     <div class="portfolio-section">
-      <!-- May 2024 -->
       <div class="card">
         <h3>JPMorgan & AWS Quantum Study</h3>
         <p>Rydberg atoms & quantum speedups.</p>
@@ -93,38 +93,13 @@
         <p>Extending Llama-3’s context window.</p>
         <a href="https://huggingface.co/papers/2404.19553/" target="_blank">Paper</a> | <span>Generative AI</span>
       </div>
-      <div class="card">
-        <h3>Multi-Token Prediction</h3>
-        <p>Faster LLMs via multi-token prediction.</p>
-        <a href="https://arxiv.org/abs/2404.19737/" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>Variational LSE Solvers</h3>
-        <p>Library for variational LSE solutions.</p>
-        <a href="https://arxiv.org/abs/2404.09916/" target="_blank">Paper</a> | <span>Quantum AI</span>
-      </div>
-      <div class="card">
-        <h3>Evaluating LLM Generations</h3>
-        <p>Panel evaluation of LLM outputs.</p>
-        <a href="https://arxiv.org/abs/2404.18796/" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>Snowflake Arctic</h3>
-        <p>Efficient enterprise AI.</p>
-        <a href="https://www.snowflake.com/blog/arctic-open-efficient-foundation-language-models-snowflake//" target="_blank">Blog</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>Photonic Quantum Memory Expansion</h3>
-        <p>Quantum internet advancement.</p>
-        <a href="https://quantumzeitgeist.com/photonic-quantum-memory-capacity-expanded-paving-way-for-quantum-internet/#google_vignette/" target="_blank">Blog</a> | <span>Quantum AI</span>
-      </div>
-      <div class="card">
-        <h3>Phi-3 Technical Report</h3>
-        <p>Mobile-friendly high-capability LLM.</p>
-        <a href="https://arxiv.org/pdf/2404.14219/" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
+    </div>
+  </section>
 
-      <!-- June–July 2024 -->
+  <!-- June–July 2024 -->
+  <section class="month-section">
+    <h2>June–July 2024</h2>
+    <div class="portfolio-section">
       <div class="card">
         <h3>Microsoft SAMBA LLM</h3>
         <p>New generative AI LLM model.</p>
@@ -145,8 +120,13 @@
         <p>Human-centered multilingual translation.</p>
         <a href="https://github.com/facebookresearch/fairseq/tree/nllb/" target="_blank">GitHub</a> | <span>Generative AI</span>
       </div>
+    </div>
+  </section>
 
-      <!-- August 2024 -->
+  <!-- August 2024 -->
+  <section class="month-section">
+    <h2>August 2024</h2>
+    <div class="portfolio-section">
       <div class="card">
         <h3>The AI Scientist</h3>
         <p>Fully automated scientific discovery.</p>
@@ -162,8 +142,13 @@
         <p>Diagnosing retrieval-augmented generation.</p>
         <a href="https://arxiv.org/abs/2408.08067/" target="_blank">Paper</a> | <span>Generative AI</span>
       </div>
+    </div>
+  </section>
 
-      <!-- September 2024 -->
+  <!-- September 2024 -->
+  <section class="month-section">
+    <h2>September 2024</h2>
+    <div class="portfolio-section">
       <div class="card">
         <h3>Meta Llama 3.2-Edge AI & Vision</h3>
         <p>Open, customizable LLMs for edge and vision tasks.</p>
@@ -179,23 +164,13 @@
         <p>Autonomous LLM reasoning improvements.</p>
         <a href="https://arxiv.org/abs/2409.12618/" target="_blank">Paper</a> | <span>Generative AI</span>
       </div>
-      <div class="card">
-        <h3>Learning to Reason with LLMs (OpenAI o1)</h3>
-        <p>New framework for LLM reasoning.</p>
-        <a href="https://openai.com/index/introducing-openai-o1-preview/" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>AutoGen Studio</h3>
-        <p>Studio for autonomous AI agent generation.</p>
-        <a href="https://github.com/microsoft/autogen" target="_blank">GitHub</a> | <span>Generative AI</span>
-      </div>
-      <div class="card">
-        <h3>Strategic Chain-of-Thought</h3>
-        <p>Enhanced CoT reasoning techniques.</p>
-        <a href="https://arxiv.org/abs/2409.03271/" target="_blank">Paper</a> | <span>Generative AI</span>
-      </div>
+    </div>
+  </section>
 
-      <!-- October 2024 -->
+  <!-- October 2024 -->
+  <section class="month-section">
+    <h2>October 2024</h2>
+    <div class="portfolio-section">
       <div class="card">
         <h3>OpenAI Swarm Framework</h3>
         <p>OpenAI introduces Swarm for collaborative AI workflows.</p>
@@ -206,8 +181,13 @@
         <p>Creative poetry generation models.</p>
         <a href="https://www.anthropic.com/news/3-5-models-and-computer-use" target="_blank">Blog</a> | <span>Generative AI</span>
       </div>
+    </div>
+  </section>
 
-      <!-- January 2025 -->
+  <!-- January 2025 -->
+  <section class="month-section">
+    <h2>January 2025</h2>
+    <div class="portfolio-section">
       <div class="card">
         <h3>DeepSeekv3</h3>
         <p>DeepSeekv3 model for advanced generative AI tasks.</p>
@@ -225,6 +205,7 @@
       </div>
     </div>
   </section>
+
 </main>
 
 <footer>
