@@ -36,15 +36,16 @@
     font-size: 1.6em; color: #1e1b4b; border-bottom: 3px solid #4338ca;
     display: inline-block; padding-bottom: 6px; margin-bottom: 15px;
   }
-  .month-section { margin-bottom: 40px; }
-  .portfolio-section {
-    display: flex; overflow-x: auto; gap: 20px; padding-bottom: 15px;
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
   }
-  .portfolio-section::-webkit-scrollbar { height: 10px; }
-  .portfolio-section::-webkit-scrollbar-thumb { background-color: #7c3aed; border-radius: 5px; }
   .card {
-    min-width: 280px; flex: 0 0 auto; background: #f3f0ff; border-left: 4px solid #7c3aed;
-    border-radius: 12px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    background: #f3f0ff; border-left: 4px solid #7c3aed;
+    border-radius: 12px; padding: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .card:hover {
@@ -54,12 +55,7 @@
   .card p { font-size: 0.9em; line-height: 1.4; }
   .card a { display: inline-block; margin-top: 8px; font-weight: 600; font-size: 0.9em; }
   footer { text-align: center; padding: 25px; background: #1e1b4b; color: #fff; font-size: 0.85em; margin-top: 40px; border-top: 2px solid #4338ca; }
-  @media(max-width: 768px) { .card { min-width: 240px; } }
-  @media(max-width: 480px) {
-    header h1 { font-size: 1.7em; }
-    header p { font-size: 0.85em; }
-    header .header-links a { display: block; margin: 8px auto; }
-  }
+  @media(max-width: 480px) { header h1 { font-size: 1.7em; } header p { font-size: 0.85em; } header .header-links a { display: block; margin: 8px auto; } }
 </style>
 </head>
 <body>
@@ -74,10 +70,11 @@
 </header>
 
 <main>
+
   <!-- May 2024 -->
-  <section class="month-section">
+  <section>
     <h2>May 2024</h2>
-    <div class="portfolio-section">
+    <div class="grid-container">
       <div class="card">
         <h3>JPMorgan & AWS Quantum Study</h3>
         <p>Rydberg atoms & quantum speedups.</p>
@@ -97,9 +94,9 @@
   </section>
 
   <!-- June–July 2024 -->
-  <section class="month-section">
+  <section>
     <h2>June–July 2024</h2>
-    <div class="portfolio-section">
+    <div class="grid-container">
       <div class="card">
         <h3>Microsoft SAMBA LLM</h3>
         <p>New generative AI LLM model.</p>
@@ -124,9 +121,9 @@
   </section>
 
   <!-- August 2024 -->
-  <section class="month-section">
+  <section>
     <h2>August 2024</h2>
-    <div class="portfolio-section">
+    <div class="grid-container">
       <div class="card">
         <h3>The AI Scientist</h3>
         <p>Fully automated scientific discovery.</p>
@@ -146,9 +143,9 @@
   </section>
 
   <!-- September 2024 -->
-  <section class="month-section">
+  <section>
     <h2>September 2024</h2>
-    <div class="portfolio-section">
+    <div class="grid-container">
       <div class="card">
         <h3>Meta Llama 3.2-Edge AI & Vision</h3>
         <p>Open, customizable LLMs for edge and vision tasks.</p>
@@ -168,9 +165,9 @@
   </section>
 
   <!-- October 2024 -->
-  <section class="month-section">
+  <section>
     <h2>October 2024</h2>
-    <div class="portfolio-section">
+    <div class="grid-container">
       <div class="card">
         <h3>OpenAI Swarm Framework</h3>
         <p>OpenAI introduces Swarm for collaborative AI workflows.</p>
@@ -185,9 +182,9 @@
   </section>
 
   <!-- January 2025 -->
-  <section class="month-section">
+  <section>
     <h2>January 2025</h2>
-    <div class="portfolio-section">
+    <div class="grid-container">
       <div class="card">
         <h3>DeepSeekv3</h3>
         <p>DeepSeekv3 model for advanced generative AI tasks.</p>
