@@ -75,82 +75,6 @@
     color: #fff;
   }
 
-  /* Top-right buttons */
-  .top-buttons {
-    text-align: right;
-    flex: 1 1 auto;
-    margin-top: 10px;
-  }
-
-  .top-buttons a {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 10px 16px;
-    background: #fff;
-    color: #7c3aed;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .top-buttons a:hover {
-    background: #5b21b6;
-    color: #fff;
-  }
-
-  main {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-
-  .portfolio-section {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
-  }
-
-  .portfolio-card {
-    min-width: 280px;
-    flex: 0 0 auto;
-    background: #f3f0ff;
-    border-left: 4px solid #7c3aed;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  }
-
-  .portfolio-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-    border-color: #6b21a8;
-  }
-
-  .portfolio-card a {
-    display: inline-block;
-    margin-top: 8px;
-    font-weight: 600;
-    color: #4338ca;
-  }
-
-  section h2 {
-    font-size: 1.6em;
-    color: #1e1b4b;
-    border-bottom: 3px solid #4338ca;
-    display: inline-block;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-  }
-
-  section h3 { margin-top: 0; margin-bottom: 8px; font-size: 1.15em; }
-  section p { margin-bottom: 10px; font-size: 0.95em; line-height: 1.5; }
-  section ul { padding-left: 20px; font-size: 0.95em; }
-
   footer {
     text-align: center;
     padding: 25px;
@@ -159,22 +83,6 @@
     font-size: 0.85em;
     margin-top: 40px;
     border-top: 2px solid #4338ca;
-  }
-
-  /* Scrollbar style for horizontal portfolio section */
-  .portfolio-section::-webkit-scrollbar {
-    height: 8px;
-  }
-
-  .portfolio-section::-webkit-scrollbar-thumb {
-    background-color: #7c3aed;
-    border-radius: 4px;
-  }
-
-  @media(max-width: 768px) {
-    .portfolio-card { min-width: 240px; }
-    .top-buttons { text-align: center; margin-top: 15px; }
-    .top-buttons a { margin: 5px; }
   }
 
   @media(max-width: 480px) {
@@ -199,106 +107,8 @@
         <a href="https://github.com/aditikhare007" target="_blank">GitHub</a>
       </div>
     </div>
-
-    <div class="top-buttons">
-      <a href="#research-portfolio">AI Research Capsules</a>
-      <a href="#projects-portfolio">AI Innovation Snapshots</a>
-      <a href="#architecture-portfolio">AI Architecture Gallery</a>
-    </div>
   </div>
 </header>
-
-<main>
-  <section id="research-portfolio">
-    <h2>My Portfolios</h2>
-    <div class="portfolio-section">
-      <div class="portfolio-card">
-        <h3>AI Research Junction</h3>
-        <p>Research Simplified: GenAI, Quantum AI & Computer Vision</p>
-        <a href="https://www.linkedin.com/pulse/codescientist-step-toward-automated-scientific-discovery-khare-kgozc/?trackingId=sQCy97XThGt0OIjpANN48w%3D%3D" target="_blank">
-        View on LinkedIn
-        </a>
-        <br>
-        <a href="https://github.com/aditikhare007/AI_Research_Junction_Aditi_Khare" target="_blank">
-        View on GitHub
-        </a>
-       </div>
-
-      <div class="portfolio-card">
-        <h3>Packt Publications Portfolio</h3>
-        <p>Large-scale AI transformations — blending technology, architecture, and leadership into actionable insight.</p>
-        <a href="https://www.amazon.com/dp/1835887600" target="_blank">Available on Amazon</a>
-      </div>
-
-      <div class="portfolio-card">
-        <h3>HackerRank Profile</h3>
-        <a href="https://www.hackerrank.com/profile/aditikhare007" target="_blank">View Profile</a>
-      </div>
-
-      <div class="portfolio-card">
-        <h3>Applied AI Research Portfolio</h3>
-        <p>Applied AI research and project repositories.</p>
-        <a href="https://github.com/aditikhare007" target="_blank">View GitHub Portfolio</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects-portfolio">
-    <h2>AI Products Portfolio</h2>
-    <div class="portfolio-section">
-      <div class="portfolio-card">
-        <h3>AI Products Portfolio</h3>
-        <p>From model inference to user experience — delivering intelligent, scalable AI products.</p>
-        <a href="https://github.com/aditikhare007/Aditi_Full_Stack_App_React_JS_Gen_AI_Product_Portfolio" target="_blank">View Project on GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Profile Summary -->
-  <section>
-    <h2>Profile Summary</h2>
-    <p>🔷 I lead enterprise-scale AI transformation for Fortune 50 companies, architecting GenAI and ML infrastructure that fuses deep research, cloud engineering, and product strategy. Passionate about building AI systems that deliver lasting value at scale.</p>
-    <p>🔷 Contributor: "Generative AI Application Integration Patterns" (Packt Publishing, Sept 2024).</p>
-
-    <h3>Professional Snapshot</h3>
-    <ul>
-      <li>Enterprise AI Leader — Product, Infrastructure, AI Architecture & Entrepreneurial Innovation</li>
-      <li>Principal ML Scientist | Product Owner & AI Architect | AWS & AI Research Expert</li>
-      <li>Author | AI Strategy & Inference Optimization | AI Open-Source Advocate</li>
-    </ul>
-
-    <h3>Education</h3>
-    <ul>
-      <li>IIM Ahmedabad — Executive Program in Big Data Analytics</li>
-      <li>K.J Somaiya Institute of Management, Mumbai — Master’s in Computer Applications (Distinction)</li>
-    </ul>
-
-    <h3>Experience & Expertise</h3>
-    <ul>
-      <li>9+ years across Fortune 50 product companies building customer-centric AI products</li>
-      <li>AI R&D: Full lifecycle — data prep, model training, inference, deployment</li>
-      <li>Technologies: ML, Deep Learning, Computer Vision, Hyperspectral Imaging, Generative AI, LLMs, LLMOps</li>
-      <li>Infrastructure: Scalable AI & ML infrastructure on AWS</li>
-      <li>Active in AI communities: Landing AI, MLOps Community, H2O.ai, Pandas AI, Cohere AI</li>
-    </ul>
-
-    <h3>Publications</h3>
-    <ul>
-      <li>Generative AI Application Integration Patterns — Contributor (Packt Publishing, Sept 2024)</li>
-      <li>Top AI Research Paper Summaries — Published portfolio</li>
-      <li>AI Research Junction — Creator & Author — Generative AI, Computer Vision, Quantum AI summaries</li>
-    </ul>
-    
-    <section>
-  <h4>Open to Leadership & Advisory Opportunities</h4>
-  <ul>
-    <li>🚀 Experienced AI product leader with deep technical expertise and architecture background, passionate about advising organizations on AI-driven strategy and product excellence.</li>
-    <li>Positioned for influential advisory engagements and open to strategic dialogue on leadership opportunities.</li>
-    <li>Fostering connections for high-impact advisory collaborations.</li>
-  </ul>
-</section>
-
-</main>
 
 <footer>
   © 2025 Aditi Khare | Enterprise AI Leader — Architecting Scalable AI & Product Excellence
