@@ -14,7 +14,7 @@
 ---
 
 <details open>
-<summary><h2>📚 AI Research Papers (Jan 2024 – Jan 2025)</h2></summary>
+<summary><h2>📚 AI Research Papers (Jan 2024 – Dec 2025)</h2></summary>
   
 A comprehensive collection of AI research papers from **January 2024 to January 2025**, including **paper summaries, resource links, and categories**. Organized month-wise for easy reference.
 
