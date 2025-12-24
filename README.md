@@ -21,6 +21,9 @@ A comprehensive collection of AI research papers from **January 2024 to January 
 ---
 
 ## Table of Contents
+- [Dec 2025](#Dec-2025)
+- [Nov 2025](#Nov-2025)
+- [Oct 2025](#Oct-2025)
 - [Jan 2025](#jan-2025)
 - [Oct 2024](#oct-2024)
 - [Sept 2024](#sept-2024)
@@ -29,7 +32,35 @@ A comprehensive collection of AI research papers from **January 2024 to January 
 - [May 2024](#may-2024)
 
 ---
+## Dec 2025
 
+| Paper | Summary | Resource Link | Category |
+|-------|---------|---------------|---------|
+| Copyright Detection in LLMs | Copyright Detection in Large Language Models | [Paper](https://arxiv.org/abs/2511.20623) | Generative AI |
+| Beyond Automation- Rethinking Governance in GenAI | Beyond Automation-Rethinking Work, Creativity & Governance in the Age of GenAI | [Paper](https://arxiv.org/abs/2512.11893) | Generative AI |
+| AgentEval-GenAI Agents | AgentEval: Generative Agents for AI Content Evaluation | [Paper](https://arxiv.org/abs/2512.08273) | Generative AI |
+
+---
+
+## Nov 2025
+
+| Paper | Summary | Resource Link | Category |
+|-------|---------|---------------|---------|
+| Generative Artificial Intelligence meets Extended Reality | When Generative Artificial Intelligence meets Extended Reality: A Systematic Review | [Paper](https://arxiv.org/abs/2511.03282) | Generative AI |
+| Generative Artificial Intelligence in Qualitative Research Methods | Generative Artificial Intelligence in Qualitative Research Methods: Between Hype and Risks | [Paper](https://arxiv.org/abs/2511.08461) | Generative AI |
+| Safety Guardrails in Generative AI Chatbots | Safety Guardrails in Generative AI Chatbots | [Paper](https://arxiv.org/abs/2511.15732) | Generative AI |
+
+---
+
+## Oct 2025
+
+| Paper | Summary | Resource Link | Category |
+|-------|---------|---------------|---------|
+| Generative AI in depth-Advancements | Generative AI in depth: A Survey of Recent Advances, Model Variants, and Real-World Applications | [Paper](https://arxiv.org/pdf/2510.21887) | Generative AI |
+| An Empirical Study on Two-Million Preprints in GenAI| Does GenAI Rewrite How We Write? An Empirical Study on Two-Million Preprints | [Paper](https://arxiv.org/abs/2510.17882) | Generative AI |
+| Chronologically Consistent Generative AI | Chronologically Consistent Generative AI | [Paper](https://arxiv.org/abs/2510.11677) | Generative AI |
+
+---
 ## Jan 2025
 
 | Paper | Summary | Resource Link | Category |
